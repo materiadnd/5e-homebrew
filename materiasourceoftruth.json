@@ -2865,6 +2865,63 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Cordon of Arrows",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 5,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "four or more arrows or bolts"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 8,
+                        "type": "hour"
+                    }
+                }
+            ],
+            "entries": [
+                "You plant four pieces of nonmagical ammunition - arrows or crossbow bolts - in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. Make a ranged spell attack against the target. On a hit, the creature takes {@dice 1d8} plus your spellcasting ability modifier piercing damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains.",
+                "When you cast this spell, you can designate any creatures you choose, and the spell ignores them."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the amount of ammunition that can be affected increases by two for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "piercing"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    }
+                ]
+            }
         }
     ],
     "feat": [
