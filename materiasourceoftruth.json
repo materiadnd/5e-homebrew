@@ -2743,6 +2743,74 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Borrowed Knowledge",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a book worth at least 25 gp"
+            },
+            "duration": [
+                {
+                    "concentration": true,
+                    "type": "timed",
+                    "duration": {
+                        "amount": 1,
+                        "type": "hour"
+                    }
+                }
+            ],
+            "entries": [
+                "You draw on knowledge from spirits of the past. Choose one skill or tool in which you lack proficiency. For the spell's duration, you have proficiency in the chosen skill or tool. The spell ends early if you cast it again."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        " When you cast this spell using a spell slot of 4th to 5th level, you gain an additional skill or tool in which you lack proficiency.",
+                        "When you cast this spell using a spell slot of 6th level, the duration does not require {@status concentration|phb}.",
+                        "When you cast this spell using a slot of 7th or 8th level, you gain expertise in a skill or tool you have proficiency with.",
+                        "When you cast this spell using a slot of 9th level, you gain expertise in all skill or tool you have proficiency with, and the duration is 8 hours."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
         }
     ],
     "feat": [
