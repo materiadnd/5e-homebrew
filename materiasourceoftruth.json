@@ -3065,6 +3065,690 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Enthrall",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute"
+                    }
+                }
+            ],
+            "entries": [
+                "You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw.  If you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target is {@condition charmed} and has disadvantage on Wisdom ({@skill Perception}) checks while {@condition charmed} in this way made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are {@condition incapacitated} or can no longer speak."
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "conditionInflict": [
+                "charmed"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Find Traps",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 120,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You sense the location of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the {@spell alarm} spell, a {@spell glyph of warding}, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.",
+                "This spell reveals the location of traps, the location of the triggers of those traps, and the general nature of the danger posed by a trap you detect."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Flame Blade",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "leaf of sumac"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 10,
+                        "type": "minute"
+                    }
+                }
+            ],
+            "entries": [
+                "You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.",
+                "You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes {@dice 3d6} fire damage.",
+                "The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level through 7th level, you may attack twice with the blade using your action on your turn. When you cast this spell using a spell slot of 8th level or higher, you may attack three times with the blade suing your action on your turn."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    }
+                ],
+                "fromClassListVariant": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Gentle Repose",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pinch of salt and one copper piece placed on each of the corpse's eyes, which must remain there for the duration"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 33,
+                        "type": "day"
+                    }
+                }
+            ],
+            "entries": [
+                "You touch a corpse or other remains. For the duration, the target is protected from decay and can't become undead. The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as raise dead."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Locate Object",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a forked twig"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Describe or name an object that is familiar to you. You sense the direction and distance to the object's location, as long as that object is within 5 miles of you. If the object is in motion, you know the direction of its movement.",
+                "The spell can locate a specific object known to you, as long as you have seen it up close - within 30 feet - at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon.",
+                "This spell can't locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Magic Mouth",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 30,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a small bit of honeycomb and jade dust worth at least 10 gp, which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "special",
+                    "ends": [
+                        "dispel"
+                    ]
+                }
+            ],
+            "entries": [
+                "You implant a message within an object in range, a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or less, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the spell to deliver your message.",
+                "When that circumstance occurs, a magical mouth appears on the object and recites the message in your voice and at the same volume you spoke. If the object you chose has a mouth or something that looks like a mouth (for example, the mouth of a statue), the magical mouth appears there so that the words appear to come from the object's mouth. When you cast this spell, you can have the spell end after it delivers its message, or it can remain and repeat its message whenever the trigger occurs.",
+                "The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object. For example, you could instruct the mouth to speak when any creature moves within 30 feet of the object or when a silver bell rings within 30 feet of it. The magic mouth ignores illusions, and an illusory effects never trigger a magic mouth on their own."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Mind Spike",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "concentration": true,
+                    "type": "timed",
+                    "duration": {
+                        "amount": 1,
+                        "type": "hour"
+                    }
+
+                }
+            ],
+            "entries": [
+                "You reach into the mind of one creature that you can see within range. Alternatively, you can utter a creature's name. If the named target is within range, it becomes the spell's target even if you can't see it. If the named target isn't within range, the spell dissipates without effect. The target must make a Wisdom saving throw, taking {@dice 3d8} psychic damage on a failed save, or half as much damage on a successful one. On a failed save, you also always know the target's location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target cannot become hidden from you, and if it's {@condition invisible}, it gains no benefit from that condition against you."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd.",
+                        "When you cast this spell using a spell slot of 6th level or higher, you know the target's location even if they are on a different plane of existence from you.",
+                        "Using a spell slot of 9th level or higher grants a duration that does not require concentration."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Nathair's Mischief",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a piece of crust from an apple pie"
+            },
+            "duration": [
+                {
+                    "concentration": true,
+                    "type": "timed",
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute"
+                    }
+                }
+            ],
+            "entries": [
+                "You fill a 20-foot cube you can see within range with fey and draconic magic. Roll on the Mischievous Surge table to determine the magical effect produced, and roll again at the start of each of your turns until the spell ends. You can move the cube up to 10 feet before you roll.",
+                {
+                    "type": "table",
+                    "caption": "Mischievous Surge",
+                    "colLabels": [
+                        "d4",
+                        "Effect"
+                    ],
+                    "rows": [
+                        ["1", "The smell of apple pie fills the air, and each creature in the cube must succeed on a Wisdom saving throw or become {@condition charmed} by you until the start of your next turn. A {@condition charmed} creature regards you and your companions as friendly acquaintances."],
+                        ["2", "Bouquets of flowers appear all around, and each creature in the cube must succeed on a Dexterity saving throw or be {@condition blinded} until the start of your next turn as the flowers spray water in their faces."],
+                        ["3", "Each creature in the cube must succeed on a Wisdom saving throw or begin giggling until the start of your next turn. A giggling creature is {@condition incapacitated} and uses all its movement at the start of its turn to move in a random direction."],
+                        ["4", "Drops of molasses hover in the cube, making it difficult terrain until the start of your next turn."]
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "dexterity",
+                "wisdom"
+            ],
+            "conditionInflict": [
+                "charmed",
+                "blinded",
+                "incapacitated"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Prayer of Healing",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 30,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You incite a prayer that upon completion you have a pool of healing equal to {@dice 12d6} + your spellcasting ability modifier which you roll and add up. This pool of healing is then immediately used on up to six creatures of your choice within range to regain hit points. Any unused healing from the pool is lost. This spell has no effect on undead or constructs."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 2d6} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Ray of Enfeeblement",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "concentration": true,
+                    "type": "timed",
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute"
+                    }
+                }
+            ],
+            "entries": [
+                "A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks until the spell ends.",
+                "At the end of each of the target's turns, it can make a Constitution saving throw against the spell. On a success, the spell ends."
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Warding Bond",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pair of platinum rings worth at least 50 gp each, which you and the target must wear for the duration"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 1,
+                        "type": "hour"
+                    }
+                }
+            ],
+            "entries": [
+                "This spell wards a willing creature (other than yourself) you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has resistance to all damage. Also, each time it takes damage, you take the same amount of damage.",
+                "The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th, 5th or 6th level, roll a {@dice d6} and on a 6 you take no damage instead of the same amount.",
+                        "When you cast this spell using a spell slot of 7th level or higher, roll a {@dice d6} and on a 5-6 you take no damage instead of the same amount."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Zone of Truth",
+            "source": "MateriaSourceOfTruth",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 10,
+                        "type": "minute"
+                    }
+                }
+            ],
+            "entries": [
+                "You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, an unwilling creature that enters the spell's area for the first time on a turn or starts its turn there must make a Charisma saving throw. If the target is willing, or if an unwilling creature fails their save, a creature can't speak a deliberate lie while in the radius. You know whether each creature succeeded on their saving throw if they made one.",
+                "An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth."
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    }
+                ]
+            }
         }
     ],
     "feat": [
