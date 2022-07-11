@@ -13,11 +13,11 @@
                     "diddlypow"
                 ],
                 "targetSchema": "1.0.0",
-                "version": "1.0.0"
+                "version": "1.0.1"
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 0
+        "dateLastModified": 1657570092 
 	},
     "class": [
         {
@@ -3742,6 +3742,64 @@
                         "name": "Cleric",
                         "source": "PHB"
                     },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Blinding Smite",
+            "source": "MateriaSourceOfTruth",
+            "level": 3,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "concentration": true,
+                    "type": "timed",
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute"
+                    }
+                }
+            ],
+            "entries": [
+                "The next time you hit a creature with a melee weapon attack during this spell's duration, you weapon flares with a bright light, and the attack deals an extra {@dice 3d8} radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be {@condition blinded} for one minute.",
+                "A creature {@condition blinded} by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer {@condition blinded}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th or higher level, the damage increases by {@dice 1d8} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "classes": {
+                "fromClassList": [
                     {
                         "name": "Paladin",
                         "source": "PHB"
