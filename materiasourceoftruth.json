@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1657613219
+        "dateLastModified": 1657640708
 	},
     "class": [
         {
@@ -1870,7 +1870,70 @@
                         "name": "Sorcerer",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Light",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Fiend",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Genie",
+							"source": "TCE",
+							"subSubclass": "Efreeti"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Wildfire",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Monk",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Four Elements",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Monk",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Sun Soul",
+							"source": "XGE"
+						}
+					}
+				]
             }
         },
         {
@@ -6956,7 +7019,2315 @@
                     }
                 ]
             }
+        },
+        {
+			"name": "Cloudkill",
+			"source": "MateriaSourceOfTruth",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured.",
+				"When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes {@damage 5d8} poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don't need to breathe.",
+				"The fog moves 10 feet in the direction of your choice at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 5d8|5-9|1d8} for each slot level above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Death",
+							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB",
+							"subSubclass": "Underdark"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Conquest",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Alchemist",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Undead",
+							"source": "VRGR"
+						}
+					}
+				]
+			}
+		},
+        {
+			"name": "Contagion",
+			"source": "MateriaSourceOfTruth",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 7
+					}
+				}
+			],
+			"entries": [
+				"Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, the target is {@condition poisoned}.",
+				"Whether {@condition poisoned} or not, if you hit your target it must make a Constitution saving throw the end of each of the it's turns. If the target took damage or failed a saving throw in the round, it makes the Constitution saving throw at disadvantage. If the target succeeds on three of these saves, it is no longer {@condition poisoned} (if it ever was), and the spell ends. If the target fails three of these saving throws, the target is no longer {@condition poisoned} (if it was at all), but choose one of the diseases below. The target is subjected to the chosen disease for the spell's duration.",
+				"While this spell induces a normally natural disease in the target, the diseases are considered magical in nature. {@spell Lesser Restoration} cast at 5th level or higher, 25 hit points expended by a paladin's {@spell Lay on Hands}, or similar effects can cure the disease.",
+				{
+					"type": "entries",
+					"name": "Blinding Sickness",
+					"entries": [
+						"Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is {@condition blinded}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Filth Fever",
+					"entries": [
+						"A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength. Additionally, if they move more than 10 feet in a turn they must succeed a Strength saving throw against your spell DC or they fall {@condition prone}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Flesh Rot",
+					"entries": [
+						"The creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mindfire",
+					"entries": [
+						"The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the {@spell confusion|MateriaSourceOfTruth} spell during combat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Seizure",
+					"entries": [
+						"The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity. Additionally, the target cannot take the {@action dash}, {@action disengage}, or {@action dodge} action, or take reactions."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Slimy Doom",
+					"entries": [
+						"The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it must succed a Constitution saving throw against your spell DC or it is {@condition stunned} until the end of it's next turn."
+					]
+				}
+			],
+            "entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, the range is increased to 30 feet."
+					]
+				}
+            ],
+			"conditionInflict": [
+				"blinded",
+				"stunned",
+				"poisoned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oathbreaker",
+							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Undying",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "TCE"
+						}
+					}
+				]
+			}
+		},
+        {
+			"name": "Control Winds",
+			"source": "MateriaSourceOfTruth",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You take control of the air in a 100-foot cube that you can see within range. Choose one of the following effects when you cast the spell. The effect lasts for the spell's duration, unless you use your action on a later turn to switch to a different effect. You can also use your action to temporarily halt the effect or to restart one you've halted.",
+				{
+					"type": "entries",
+					"name": "Gusts",
+					"entries": [
+						"A wind picks up within the cube, continually blowing in a horizontal direction you designate. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged attacks that pass through it or that are made against targets within the cube have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved, and speaking is made more difficult. If a creature attempts to cast a spell with a verbal component or utter a command word (as if to {@action use an object}) then they must succeed a Constitution check against your Spell Save DC. On a failure, they are unable to speak as they are buffeted by the strong winds."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Downdraft",
+					"entries": [
+						"You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked {@condition prone}. Creatures that end a fall within the cube take double damage from the fall."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Updraft",
+					"entries": [
+						"You cause a sustained updraft within the cube, rising upward from the cube's bottom side. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal."
+					]
+				}
+			],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration"
+                    ]
+                }
+            ],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Creation",
+			"source": "MateriaSourceOfTruth",
+			"level": 5,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a tiny piece of matter of the same type of the item you plan to create"
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"entries": [
+				"You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be no larger than a 10-foot cube, and the object must be of a form and material that you have seen before.",
+				"The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.",
+				{
+					"type": "table",
+					"caption": "Creation",
+					"colLabels": [
+						"Material",
+						"Duration"
+					],
+					"colStyles": [
+						"col-8",
+						"col-4"
+					],
+					"rows": [
+						[
+							"Vegetable matter",
+							"1 week"
+						],
+						[
+							"Stone or crystal",
+							"1 day"
+						],
+						[
+							"Precious metals",
+							"12 hours"
+						],
+						[
+							"Gems",
+							"1 hour"
+						],
+						[
+							"Adamantine or mithral",
+							"10 minutes"
+						]
+					]
+				},
+				"Using any material created by this spell as another spell's material component causes that spell to fail."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the cube increases by 10 feet for each slot level above 5th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Forge",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Genie",
+							"source": "TCE"
+						}
+					}
+				]
+			}
+		},
+        {
+			"name": "Dawn",
+			"source": "MateriaSourceOfTruth",
+            "level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a sunburst pendant worth at least 100 gp",
+					"cost": 10000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The light of dawn shines down on a location you specify within range. Until the spell ends, a 30-foot-radius, 40-foot-high cylinder of bright light glimmers there. This light is sunlight.  Creatures, such as {@creature specter|mm|specters}, @{creature wraith|mm|wraiths}, and @{creature will-o'-wisp|mm|will-o'-wisps} within the cylinder cannot benefit from incorporeal movement",
+				"When the cylinder appears, each creature in it must make a Constitution saving throw, taking {@damage 4d10} radiant damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw whenever it ends its turn in the cylinder.",
+				"If you're within 60 feet of the cylinder, you can move it up to 60 feet as a bonus action on your turn."
+			],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@dice 1d10} for each slot level above 5th"
+                    ]
+                }
+            ],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Dispel Evil and Good",
+			"source": "MateriaSourceOfTruth",
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "holy water or powdered silver and iron"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, aberrations, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you and you also can't be {@condition charmed}, @{condition frightened}, or possessed by them.",
+				"At any time during the spells duration you may use either of the following abilities",
+				{
+					"type": "entries",
+					"name": "Break Enchantment",
+					"entries": [
+						"As your action, you touch a creature you can reach that is {@condition charmed}, {@condition frightened}, or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer {@condition charmed}, {@condition frightened}, or possessed by such creatures and is immune to further attempts to {@condition charmed|charm}, {@condition frightened|frighten}, or possess them for the duration of the spell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dismissal",
+					"entries": [
+						"As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild."
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Dominate Person",
+			"source": "MateriaSourceOfTruth",
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You attempt to beguile a humanoid that you can see within range. It must succeed on a Wisdom saving throw or be {@condition charmed} by you for the duration.",
+				"While the target is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.  At the end of each of its turns, the target may attempt a Wisdom saving throw, on a successful save, the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours."
+					]
+				}
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Trickery",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oathbreaker",
+							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Archfey",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Great Old One",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Conquest",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Order",
+							"source": "TCE"
+						}
+					}
+				]
+			}
+		},
+        {
+			"name": "Dream",
+			"source": "MateriaSourceOfTruth",
+			"level": 5,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a personal item of the target of the dream, such as a locket, a lock of hair, or a item of significance to the target, if the target takes damage from this spell, the component is consumed when the spell ends."
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"This spell shapes a creature's dreams. Choose a creature known to you as the target of this spell. The target must be on the same plane of existence as you. Creatures that don't sleep, such as elves, can't be contacted by this spell. You, or a willing creature you touch, enters a trance state, acting as a messenger. While in the trance, the messenger is aware of his or her surroundings, but can't take actions or move.",
+				"If the target is asleep, the messenger establishes telepathic contact with the target and appears in the target's dreams and can converse with the target as long as it remains asleep, through the duration of the spell. The messenger can also shape the environment of the dream, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the effect of the spell early. The target recalls the dream perfectly upon waking. If the target is awake when you cast the spell, the messenger knows it, and can either end the trance (and the spell) or wait for the target to fall asleep, at which point the messenger appears in the target's dreams.",
+				"You can make the messenger appear monstrous and terrifying to the target. If you do, the messenger can create horrible images of the target being injured or destroyed and can deliver up to {@damage 5d6} psychic damage to the target each round. Once the target takes {@damage 10d6} damage this way, they may make a Wisdom saving throw. On a successful save, the target wakes up and the spell ends, on a failed save, the messenger may continue delivering damage this way with the target making a new saving throw after each {@damage 10d6} psychic damage delivered. If the target reaches 0 hp, the spell ends. Should the target suffer damage from this spell, it prevents the target from gaining any benefit from that rest.  A target of a dream spell cannot be targeted by a second dream spell for the duration."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB",
+							"subSubclass": "Grassland"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB"
+						}
+					}
+				]
+			}
+		},
+        {
+			"name": "Enervation",
+			"source": "MateriaSourceOfTruth",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Tendrils of inky darkness reaches out from you, touching creatures you can see within range to drain life from them. A creature of your choice within range must make a Dexterity saving throw. On a failed save, the target takes {@damage 4d8} plus your spellcasting modifier, or half as much on a successful one. Until the spell ends, you can target a creature within range on each of your turns as an action. The spell ends early if you use your action to do anything else.",
+				"Whenever the spell deals damage to a target, you regain hit points equal to half the amount of necrotic damage the target takes. Alternatively, if you can reduce the hit points regain by 20 to reduce your current exhaustion by 1 instead."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 4d8;2d8|5-9|1d8} for each slot level above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Far Step",
+			"source": "MateriaSourceOfTruth",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You teleport up to 60 feet to an unoccupied space you can see. On each of your turns before the spell ends, you can use a bonus action to teleport in this way again.",
+                "Additionally, while under the effects of this spell, you can use your reaction to teleport 10 feet to an unoccupied space you can see if a creature makes an attack roll against you. If you are still in reach or range of the attack then it is made at disadvantage against you."
+			],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "Using a spell slot of 9th level or higher grants a duration that does not require concentration"
+                    ]
+                }
+            ],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Flame Strike",
+			"source": "MateriaSourceOfTruth",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "pinch of sulfur"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A vertical column of divine fire roars down from the heavens in a location you specify. Each creature of your choice in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes {@damage 4d8} fire damage and {@damage 4d8} radiant damage on a failed save, or half as much damage on a successful one."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by {@scaledamage 4d8|5-9|1d8} for each slot level above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire",
+				"radiant"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Light",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "War",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Devotion",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Fiend",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Celestial",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Glory",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Genie",
+							"source": "TCE",
+							"subSubclass": "Efreeti"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Wildfire",
+							"source": "TCE"
+						}
+					}
+				]
+			}
+       },
+       {
+        "name": "Geas",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "E",
+        "time": [
+            {
+                "number": 1,
+                "unit": "minute"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "day",
+                    "amount": 30
+                }
+            }
+        ],
+        "entries": [
+            "You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become {@condition charmed} by you for the duration. While the creature is {@condition charmed} by you, it must make a Wisdom saving throw each time it attempts to act in a manner directly counter to your instructions, on a failed saving throw, it corrects its actions to follow your instructions. A creature that can't understand you is unaffected by the spell.",
+            "You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.",
+            "You can end the spell early by using an action to dismiss it. A {@spell remove curse}, {@spell greater restoration}, or {@spell wish} spell also ends it."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above."
+                ]
+            }
+        ],
+        "conditionInflict": [
+            "charmed"
+        ],
+        "savingThrow": [
+            "wisdom"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Paladin",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Crown",
+                        "source": "SCAG"
+                    }
+                }
+            ]
         }
+       },
+       {
+        "name": "Hallow",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "V",
+        "time": [
+            {
+                "number": 24,
+                "unit": "hour"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "herbs, oils, and incense worth at least 1,000 gp, which the spell consumes",
+                "cost": 100000,
+                "consume": true
+            }
+        },
+        "duration": [
+            {
+                "type": "permanent",
+                "ends": [
+                    "dispel"
+                ]
+            }
+        ],
+        "entries": [
+            "You touch a point and infuse an area around it with holy (or unholy) power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect a hallow spell. The affected area is subject to the following effects.",
+            "First, aberrations, celestials, elementals, fey, fiends, and undead can't enter the area, nor can such creatures charm, frighten, or possess creatures within it. Any creature {@condition charmed}, {@condition frightened}, or possessed by such a creature is no longer {@condition charmed}, {@condition frightened}, or possessed upon entering the area. You can exclude one or more of those types of creatures from this effect.",
+            "Second, you can bind an extra effect to the area. Choose the effect from the following list, or choose an effect offered by the DM. Some of these effects apply to creatures in the area; you can designate whether the effect applies to all creatures, creatures that follow a specific deity or leader, or creatures of a specific sort, such as orcs or trolls. When a creature that would be affected enters the spell's area for the first time on a turn or starts its turn there, it can make a Charisma saving throw. On a success, the creature ignores the extra effect until it leaves the area.",
+            {
+                "type": "entries",
+                "name": "Courage",
+                "entries": [
+                    "Affected creatures can't be {@condition frightened} while in the area."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Darkness",
+                "entries": [
+                    "Darkness fills the area. Normal light, as well as magical light created by spells of a lower level than the slot you used to cast this spell, can't illuminate the area.  You cannot select the Daylight effect with this effect."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Daylight",
+                "entries": [
+                    "Bright light fills the area. Magical darkness created by spells of a lower level than the slot you used to cast this spell can't extinguish the light.  You cannot select the Darkness effect with this effect."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Energy Protection",
+                "entries": [
+                    "Affected creatures in the area have resistance to one damage type of your choice, except for bludgeoning, piercing, or slashing."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Energy Vulnerability",
+                "entries": [
+                    "Affected creatures in the area have vulnerability to one damage type of your choice, except for bludgeoning, piercing, or slashing."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Everlasting Rest",
+                "entries": [
+                    "Dead bodies interred in the area can't be turned into undead."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Extradimensional Interference",
+                "entries": [
+                    "Affected creatures can't move or travel using teleportation or by extradimensional or interplanar means."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Fear",
+                "entries": [
+                    "Affected creatures are {@condition frightened} while in the area."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Silence",
+                "entries": [
+                    "No sound can emanate from within the area, and no sound can reach into it."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Tongues",
+                "entries": [
+                    "Affected creatures can communicate with any other creature in the area, even if they don't share a common language."
+                ]
+            }
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 7th or 8th level, you can include one additional effect for a total of two. When you cast this spell using a spell slot of 9th level, you can include one more additional effect for a total of three."
+                ]
+            }
+        ],
+        "savingThrow": [
+            "charisma"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Fiend",
+                        "source": "PHB"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Holy Weapon",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "bonus"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "You imbue a weapon you touch with holy power. Until the spell ends, the weapon emits bright light in a 30-foot radius and dim light for an additional 30 feet. In addition, weapon attacks made with it deal an extra {@damage 2d8} radiant damage on a hit. If the weapon isn't already a magic weapon, it becomes one for the duration. When a creature takes the {@action Attack} action with the weapon, they may attack twice with the weapon on their turn if they would normally attack one time.",
+            "As a bonus action on your turn, you can dismiss this spell and cause the weapon to emit a burst of radiance. Each creature of your choice that you can see within 30 feet of the weapon must make a Constitution saving throw. On a failed save, a creature takes {@damage 4d8} radiant damage, and it is {@condition blinded} for 1 minute. On a successful save, a creature takes half as much damage and isn't {@condition blinded}. At the end of each of its turns, a {@condition blinded} creature can make a Constitution saving throw, ending the effect on itself on a success."
+        ],
+        "damageInflict": [
+            "radiant"
+        ],
+        "conditionInflict": [
+            "blinded"
+        ],
+        "savingThrow": [
+            "constitution"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Paladin",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Immolation",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 90
+            }
+        },
+        "components": {
+            "v": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                }
+            }
+        ],
+        "entries": [
+            "Flames wreathe a number of creatures equal to your spellcasting modifier (minimum of 1) you can see within range. The target must make a Dexterity saving throw. It takes {@damage 8d6} fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also burns for the spell's duration. The burning target sheds bright light in a 30-foot radius and dim light for an additional 30 feet. At the end of each of its turns, the target repeats the saving throw. It takes {@damage 4d6} fire damage on a failed save, and the spell ends on a successful one. These magical flames can't be extinguished by nonmagical means.",
+            "If damage from this spell kills a target, the target is turned to ash."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, the initial and burn fire damage increases by {@dice 2d6} for each slot level above 5th."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "fire"
+        ],
+        "savingThrow": [
+            "dexterity"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Insect Plague",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "C",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 300
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "a few grains of sugar, some kernels of grain, and a smear of fat"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 10
+                }
+            }
+        ],
+        "entries": [
+            "Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphere's area is {@quickref difficult terrain||3}.",
+            "When the area appears, each creature in it must make a Constitution saving throw. A creature takes {@damage 4d10} piercing damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.  You may use your action to end the spell at any time before the duration expires."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 4d10|5-9|1d10} for each slot level above 5th."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "piercing"
+        ],
+        "savingThrow": [
+            "constitution"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Nature",
+                        "source": "PHB"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Tempest",
+                        "source": "PHB"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Land",
+                        "source": "PHB",
+                        "subSubclass": "Desert"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Land",
+                        "source": "PHB",
+                        "subSubclass": "Forest"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Land",
+                        "source": "PHB",
+                        "subSubclass": "Grassland"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Land",
+                        "source": "PHB",
+                        "subSubclass": "Swamp"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Land",
+                        "source": "PHB",
+                        "subSubclass": "Underdark"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Swarmkeeper",
+                        "source": "TCE"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Legend Lore",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "D",
+        "time": [
+            {
+                "number": 10,
+                "unit": "minute"
+            }
+        ],
+        "meta": {
+            "ritual": true
+        },
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "self"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "incense worth at least 250 gp, which the spell consumes, and four ivory strips worth at least 50 gp each",
+                "cost": 25000,
+                "consume": true
+            }
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "Name or describe a person, place, or object. The spell brings to your mind a brief summary of the significant lore about the thing you named. The lore might consist of current tales, forgotten stories, or even secret lore that has never been widely known. If the thing you named isn't of legendary importance, you gain no information. The more information you already have about the thing, the more precise and detailed the information you receive is.",
+            "The information you learn is accurate but might be couched in figurative language. For example, if you have a mysterious magic axe on hand, the spell might yield this information: \"Woe to the evildoer whose hand touches the axe, for even the haft slices the hand of the evil ones. Only a true Child of Stone, lover and beloved of Moradin, may awaken the true powers of the axe, and only with the sacred word Rudnogg on the lips.\""
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Knowledge",
+                        "source": "PHB"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Undying",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        },
+        "races": [
+            {
+                "name": "Half-Elf (Mark of Detection)",
+                "source": "ERLW",
+                "baseName": "Half-Elf",
+                "baseSource": "PHB"
+            }
+        ]
+    },
+    {
+        "name": "Maelstrom",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "paper or leaf in the shape of a funnel"
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "A swirling mass of 5-foot-deep water appears in a 30-foot radius centered on a point you can see within range. The point must be on the ground or in a body of water. Until the spell ends, that area is {@quickref difficult terrain||3}, and any creature that starts its turn there must succeed on a Strength saving throw. On a failed save, a creature takes {@damage 6d6} bludgeoning damage and is pulled 10 feet toward the center.  On a successful save, the creature takes half as much damage and is not pulled"
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 6d6|5-9|1d6} for each slot level above 5th"
+                ]
+            }
+        ],
+        "damageInflict": [
+            "bludgeoning"
+        ],
+        "savingThrow": [
+            "strength"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Mass Cure Wounds",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to {@dice 6d6} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, the healing increases by {@scaledice 6d6|5-9|2d6} for each slot level above 5th."
+                ]
+            }
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Life",
+                        "source": "PHB"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    "subclass": {
+                        "name": "Battle Smith",
+                        "source": "TCE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Wildfire",
+                        "source": "TCE"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Negative Energy Flood",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "N",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true,
+            "m": "a broken bone and a square of black silk"
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "You send ribbons of negative energy at one creature you can see within range. Unless the target is undead, it must make a Constitution saving throw, taking {@damage 5d12} plus your spellcasting modifier necrotic damage on a failed save, or half as much damage on a successful one. A target killed by this damage rises up as a an undead version of itself at the start of your next turn. The undead creature pursues whatever creature it can see that is closest to it. The statistics change in the following way.",
+            {
+                "type": "list",
+                "items": [
+                    "The creature cannot use any Legendary Actions, Legendary Resistances or Lair Actions if it has any",
+                    "The creature's hit points are equal to an amount as if each Hit Die rolled a 1. For example a {@creature brown bear} from the Monster Manual has 4d10 + 12 hit points. When risen as an undead it's hit point total would be 4 + 12 = 16 hit points.",
+                    "The creature gains the Undead Fortitude feature.",
+                    {
+                        "type": "entries",
+                        "name": "Undead Fortitude",
+                        "entries": [
+                            " If damage reduces the creature to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the creature drops to 1 hit point instead."
+                        ]
+                    }
+               ]
+            },
+            "If you target an undead with this spell, the target doesn't make a saving throw. Instead, roll {@dice 5d12}. The target gains half the total as temporary hit points."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 5d12|5-9|1d12} for each slot level above 5th"
+                ]
+            }
+        ],
+        "damageInflict": [
+            "necrotic"
+        ],
+        "savingThrow": [
+            "constitution"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Planar Binding",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "A",
+        "time": [
+            {
+                "number": 10,
+                "unit": "minute"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "a jewel worth at least 1,000 gp, which the spell consumes",
+                "cost": 100000,
+                "consume": true
+            }
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 24
+                }
+            }
+        ],
+        "entries": [
+            "With this spell, you attempt to bind a {@filter celestial|bestiary|type=celestial|miscellaneous=!swarm}, an {@filter elemental|bestiary|type=elemental|miscellaneous=!swarm}, a {@filter fey|bestiary|type=fey|miscellaneous=!swarm}, or a {@filter fiend|bestiary|type=fiend|miscellaneous=!swarm} to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of an inverted {@spell magic circle} in order to keep it trapped while this spell is cast.) At the completion of the casting, the target must make a Charisma saving throw. On a failed save, it is bound to serve you for the duration. If the creature was summoned or created by another spell, that spell's duration is replaced by the duration of this spell.",
+            "A bound creature must follow your instructions to the best of its ability. You might command the creature to accompany you on an adventure, to guard a location, or to deliver a message. The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives. If the creature carries out your instructions completely before the spell ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane of existence, it returns to the place where you bound it and remains there until the spell ends."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th-level slot, to 30 days with a 7th-level slot, to 180 days with an 8th-level slot, and to a year and a day with a 9th-level spell slot."
+                ]
+            }
+        ],
+        "savingThrow": [
+            "charisma"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana",
+                        "source": "SCAG"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Monster Slayer",
+                        "source": "XGE"
+                    }
+                }
+            ],
+            "fromClassListVariant": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Skill Empowerment",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "Your magic deepens a creature's understanding of its own talent. You touch one willing creature and give it expertise in one skill of your choice; until the spell ends, the creature doubles its proficiency bonus for ability checks it makes that use the chosen skill.",
+            "You must choose a skill in which the target is proficient and that isn't already benefiting from an effect, such as Expertise, that doubles its proficiency bonus."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, you can choose another skill in which the target is proficient that is not already benefiting from an effect, such as Expertise, that doubles its proficiency bonus for each slot level above 5th.",
+                    "Using a spell slot of 9th level or higher grants a duration that doesn't require concentration"
+                ]
+            }
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Artificer",
+                    "source": "TCE"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Steel Wind Strike",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "C",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 30
+            }
+        },
+        "components": {
+            "s": true,
+            "m": {
+                "text": "a melee weapon worth at least 1 sp",
+                "cost": 10
+            }
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes {@damage 6d10} force damage.",
+            "You can then teleport to an unoccupied space you can see within 5 feet of one of the targets you hit or missed."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 6d10|5-9|1d10} for each slot level above 5th.",
+                    "When you cast this spell using a spell slot of 9th or higher, the damage is further increased by your weapons used and the weapons properties"
+                ]
+            }
+        ],
+        "damageInflict": [
+            "force"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Ranger",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Swift Quiver",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "bonus"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "a quiver containing at least one piece of ammunition"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                }
+            }
+        ],
+        "entries": [
+            "You transmute your quiver so it produces an endless supply of nonmagical ammunition, which seems to leap into your hand when you reach for it.",
+            "When you cast the spell, and as a bonus action on each of your subsequent turns, you may make two attacks with a weapon that uses ammunition from the quiver. Each time you make such a ranged attack, your quiver magically replaces the piece of ammunition you used with a similar piece of nonmagical ammunition. Any pieces of ammunition created by this spell disintegrate when the spell ends. If the quiver leaves your possession, the spell ends."
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Ranger",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Temporal Shunt",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "reaction",
+                "condition": "taken when a creature you can see makes an attack roll or starts to cast a spell"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 120
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "round",
+                    "amount": 1
+                }
+            }
+        ],
+        "entries": [
+            "You target the triggering creature, which must succeed on a Charisma saving throw or vanish, being thrown to another point in time and causing the attack to miss or the spell to be wasted. At the start of its next turn, the target reappears where it was or in the closest unoccupied space. The target doesn't remember you casting the spell or being affected by it."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. All targets must be within 30 feet of each other."
+                ]
+            }
+        ],
+        "savingThrow": [
+            "charisma"
+        ],
+        "classes": {
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Chronurgy",
+                        "source": "EGW"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Wall of Light",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 120
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "a hand mirror"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 10
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "A shimmering wall of bright light appears at a point you choose within range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It can be free floating, or it can rest on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. The wall blocks line of sight, but creatures and objects can pass through it. It emits bright light out to 120 feet and dim light for an additional 120 feet.",
+            "When the wall appears, each creature in its area must make a Constitution saving throw. On a failed save, a creature takes {@damage 4d8} radiant damage, and it is {@condition blinded} for 1 minute. On a successful save, it takes half as much damage and isn't {@condition blinded}. A {@condition blinded} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "A creature that ends its turn in the wall's area takes {@damage 4d8} radiant damage.",
+            "Until the spell ends, you can use an action to launch a beam of radiance from the wall at one creature you can see within 60 feet of it. Make a ranged spell attack. On a hit, the target takes {@damage 4d8} plus your spellcasting modifier radiant damage and must make a Constitution saving throw.  On a failed save, it is {@condition blinded} until the end of your next turn. Whether you hit or miss, reduce the length of the wall by 10 feet. If the wall's length drops to 0 feet, the spell ends."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 4d8|5-9|1d8} for each slot level above 5th."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "radiant"
+        ],
+        "conditionInflict": [
+            "blinded"
+        ],
+        "savingThrow": [
+            "constitution"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ]
+        }
+    }
     ],
     "feat": [
    		{
