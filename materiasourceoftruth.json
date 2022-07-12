@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1657606000
+        "dateLastModified": 1657609163
 	},
     "class": [
         {
@@ -927,6 +927,204 @@
                 },
                 "Once you use this feature, you must finish a long rest or a Respite before you can use it again."
             ]
+        },
+        {
+            "name": "Magus Chief",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "entries": [
+                "You do not fight with iron and steel alone. You are steeped in a tradition that blends martial prowess with the esoteric arts. You stride through war-torn lands often occupied by mages and priests as well as soldiers. Firmly practiced, and focused you bolster practitioners of magic while picking up on some of their secrets for yourself."
+            ]
+        },
+        {
+            "name": "Spellcasting",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 2,
+            "entries": []
+        },
+        {
+            "name": "Magical Pursuits",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 3,
+            "entries": [
+                "At 2nd level when you choose this presence, you gain the ability to cast spells to further your influence based on the Magical Pursuits you focus on. See Spells Rules in the Player's Handbook for the general rules of spellcasting and then pick one of the pursuits listed below.",
+                "While you are concentrating on a spell from your chosen Magical Pursuit or from Pursuit of Charismata you can expend one Merit dice and place it when you hit a target with an attack or warlord spell is if it was the target of your Strike like Iron. Merit dice placed in this way do not require your concentration to be maintained. You can have a maximum number of Merit dice placed in this way equal to the spell level you are concentrating on.",
+                {
+                    "type": "entries",
+                    "name": "Mystic Pursuits",
+                    "entries": [
+                        "You have chosen to weave arcane magic in with your martial prowess, having studied with scholars and mages alike. Your spell list for your Magical Pursuits is the wizard spell list."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Pursuing Divinity",
+                    "entries": [
+                        "You have witnessed the impact of faith take form in self-sacrifice as well as zealous retribution. Your spell list for your Magical Pursuits is the cleric and paladin spell lists."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Pursuit of Balance",
+                    "entries": [
+                        "You understand that conflict is a part of nature which is both nurturing and cruel. Your spell list for your Magical Pursuits is the druid and ranger spell lists."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cantrips",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 4,
+            "entries": [
+                "You learn two cantrips of your choice from your Magical Pursuits spell list. You learn an additional cantrip at 6th level in this class, and again at 14th level in this class.",
+                "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class's Spellcasting feature with another cantrip from your Magical Pursuits list"
+            ]
+        },
+        {
+            "name": "Spell Slots",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 4,
+            "entries": [
+                "The Magus Chief Spellcasting table shows how many spell slots you have to cast your Magical Pursuits spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+                "For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot."
+            ]
+        },
+        {
+            "name": "Spells Known of 1st-Level and Higher",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 4,
+            "entries": [
+                "You know two 1st-level Magical Pursuits spells of your choice, which you must choose from the enchantment and transmutation spells on your spell list.",
+                "The Spells Known column of the Magus Chief Spellcasting table shows when you learn more of your Magical Pursuits spells of 1st level or higher. Each of these spells must be an enchantment or transmutation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
+                {
+                    "type": "table",
+                    "caption": "Magus Chief Spellcasting",
+                    "colLabels": [
+                        "Warlord Level",
+                        "Cantrips Known",
+                        "Spells Known",
+                        "1st",
+                        "2nd",
+                        "3rd",
+                        "4th"
+                    ],
+                    "rows": [
+                        ["2nd", "2", "2", "1", "-", "-", "-"],
+                        ["3rd", "2", "3", "2", "-", "-", "-"],
+                        ["4th", "2", "4", "3", "-", "-", "-"],
+                        ["5th", "2", "4", "3", "-", "-", "-"],
+                        ["6th", "3", "4", "3", "-", "-", "-"],
+                        ["7th", "3", "5", "4", "2", "-", "-"],
+                        ["8th", "3", "6", "4", "2", "-", "-"],
+                        ["9th", "3", "6", "4", "2", "-", "-"],
+                        ["10th", "3", "7", "4", "3", "-", "-"],
+                        ["11th", "3", "8", "4", "3", "-", "-"],
+                        ["12th", "3", "8", "4", "3", "-", "-"],
+                        ["13th", "3", "9", "4", "3", "2", "-"],
+                        ["14th", "4", "10", "4", "3", "2", "-"],
+                        ["15th", "4", "10", "4", "3", "2", "-"],
+                        ["16th", "4", "10", "4", "3", "3", "-"],
+                        ["17th", "4", "11", "4", "3", "3", "-"],
+                        ["18th", "4", "11", "4", "3", "3", "-"],
+                        ["19th", "4", "12", "4", "3", "3", "1"],
+                        ["20th", "4", "13", "4", "3", "3", "1"]
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Pursuit of Charismata",
+                    "entries": [
+                        "The spells you learn at 3rd, 8th, 14th, and 20th level can come from any school of magic, and in addition to your Magical Pursuits spell list, you may also choose from the bard, sorcerer or warlock spell list."
+                    ]
+                },
+                "Whenever you gain a level in this class, you can replace one of your Magical Pursuits spells you know with another spell of your choice from your Magical Pursuits spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or transmutation spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic or appropriate spell listings."
+            ]
+        },
+        {
+            "name": "Spellcasting Ability",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 4,
+            "entries": [
+                "Charisma is your spellcasting ability for your Magical Pursuits spells, since you learn your spells through your training to best utilize magical practices in your strategies. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a chosen class spell you cast and when making an attack roll with one.",
+                "Spell save DC = 8 + your proficiency bonus + your Charisma modifier",
+                "Spell attack modifier = your proficiency bonus + your Charisma modifier"
+            ]
+        },
+        {
+            "name": "Esoteric Order",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Starting at 6th level, you guide the hand of magic. The target of your Spotter's Order can cast a cantrip at their target, rather than making a weapon attack. The cantrip must have a casting time of 1 action and must target only one creature.",
+                "Moreover, when you take the Attack action you can cast one of your cantrips in place of one of those attacks."
+            ]
+        },
+        {
+            "name": "Catechism of Magic",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "Beginning at 10th level, your influence and skill hinders your enemies. When a creature you can see or hear within 30 feet of you succeeds on a saving throw, you can use your Bravura to reduce it. Roll the Merit die. The creature must subtract the number rolled from the saving throw."
+            ]
+        },
+        {
+            "name": "Confluence of Focus",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "At 14th level, your prowess has converged into unmatched focus for you and your allies. You add your Charisma modifier to the damage you deal with any warlord cantrip or warlord spell.",
+                "Additionally, the target of your Spotter's Order can cast a spell, rather than making a weapon attack. The spell must have a casting time of 1 action and must target only one creature."
+            ]
         }
     ],
     "subclass": [
@@ -983,6 +1181,25 @@
             ],
             "source": "MateriaSourceOfTruth",
             "shortName": "Warbrave",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth"
+        },
+        {
+            "name": "Magus Chief",
+            "subclassFeatures": [
+                "Magus Chief|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Spellcasting|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Magical Pursuits|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Cantrips|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Spell Slots|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Spells Known of 1st-Level and Higher|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Spellcasting Ability|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Esoteric Order|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|6",
+                "Catechism of Magic|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|10",
+                "Confluence of Focus|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|14"
+            ],
+            "source": "MateriaSourceOfTruth",
+            "shortName": "Magus Chief",
             "className": "Warlord",
             "classSource": "MateriaSourceOfTruth"
         }
