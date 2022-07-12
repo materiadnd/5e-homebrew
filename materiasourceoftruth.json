@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1657644838
+        "dateLastModified": 1657647829
 	},
     "class": [
         {
@@ -7602,7 +7602,7 @@
 				}
 			],
 			"entries": [
-				"Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, aberrations, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you and you also can't be {@condition charmed}, @{condition frightened}, or possessed by them.",
+				"Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, aberrations, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you and you also can't be {@condition charmed}, {@condition frightened}, or possessed by them.",
 				"At any time during the spells duration you may use either of the following abilities",
 				{
 					"type": "entries",
