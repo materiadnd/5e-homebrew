@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1657610473
+        "dateLastModified": 1657613219
 	},
     "class": [
         {
@@ -1253,7 +1253,19 @@
                         "name": "Druid",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Archer",
+							"source": "XGE"
+						}
+					}
+				]
             }
         },
         {
@@ -1610,7 +1622,19 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "TCE"
+						}
+					}
+				]
             }
         },
         {
@@ -1917,7 +1941,29 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Trickery",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Fey Wanderer",
+							"source": "TCE"
+						}
+					}
+				]
             }
         },
         {
@@ -2031,7 +2077,14 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromClassListVariant": [
+					{
+						"name": "Bard",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					}
+				]
             }
         },
         {
@@ -2098,7 +2151,49 @@
                         "name": "Ranger",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Life",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Celestial",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Wildfire",
+							"source": "TCE"
+						}
+					}
+				]
             }
         },
         {
@@ -2143,7 +2238,19 @@
                         "name": "Paladin",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "War",
+							"source": "PHB"
+						}
+					}
+				]
             }
         },
         {
@@ -2351,7 +2458,19 @@
                         "name": "Warlock",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oathbreaker",
+							"source": "DMG"
+						}
+					}
+				]
             }
         },
         {
@@ -2402,7 +2521,29 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Knowledge",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Forge",
+							"source": "XGE"
+						}
+					}
+				]
             }
         },
         {
@@ -2583,7 +2724,66 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Devotion",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Horizon Walker",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Monster Slayer",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Clockwork Soul",
+							"source": "TCE"
+						}
+					}
+				],
+				"fromClassListVariant": [
+					{
+						"name": "Druid",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					}
+				]
             }
         },
         {
@@ -2641,7 +2841,39 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Death",
+							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Undying",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Alchemist",
+							"source": "TCE"
+						}
+					}
+				]
             }
         },
         {
@@ -2695,7 +2927,26 @@
                         "name": "Paladin",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Forge",
+							"source": "XGE"
+						}
+					}
+				],
+				"fromClassListVariant": [
+					{
+						"name": "Ranger",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					}
+				]
             }
         },
         {
@@ -2923,7 +3174,40 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB",
+							"subSubclass": "Swamp"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Alchemist",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB"
+						}
+					}
+				]
             }
         },
         {
@@ -2969,7 +3253,40 @@
                         "name": "Ranger",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB",
+							"subSubclass": "Forest"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB"
+						}
+					}
+				]
             }
         },
         {
@@ -3091,7 +3408,29 @@
                         "name": "Paladin",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Battle Smith",
+							"source": "TCE"
+						}
+					}
+				]
             }
         },
         {
@@ -3127,7 +3466,7 @@
                 }
             ],
             "entries": [
-                "You plant four pieces of nonmagical ammunition - arrows or crossbow bolts - in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. Make a ranged spell attack against the target. On a hit, the creature takes {@dice 1d8} plus your spellcasting ability modifier piercing damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains.",
+                "You plant four pieces of nonmagical ammunition - {@item arrow|phb|arrows} or {@item crossbow bolt|phb|crossbow bolts} - in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. Make a ranged spell attack against the target. On a hit, the creature takes {@dice 1d8} plus your spellcasting ability modifier piercing damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains.",
                 "When you cast this spell, you can designate any creatures you choose, and the spell ignores them."
             ],
             "entriesHigherLevel": [
@@ -3185,7 +3524,7 @@
             ],
             "entries": [
                 "One humanoid of your choice that you can see within range must succeed on a Wisdom saving throw or become {@condition charmed} by you for the duration. While the target is {@condition charmed} in this way, a twisted crown of jagged iron appears on its head, and a madness glows in its eyes.",
-                "At the beginning of the charmed target's turn, you may either command the target to spend its action to make a weapon attack against a creature other than itself, or command it to move up to its speed in a direction of your choice. The target follows your command before doing anything else on its turn. The target may act normally on its turn if you do not command it.",
+                "At the beginning of the {@condition charmed} target's turn, you may either command the target to spend its action to make a weapon attack against a creature other than itself, or command it to move up to its speed in a direction of your choice. The target follows your command before doing anything else on its turn. The target may act normally on its turn if you do not command it.",
                 "A target isn't compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction.",
                 "On your subsequent turns, you must use your action to maintain control over the target, or the spell ends. Also, the target can make a Wisdom saving throw at the end of each of its turns. On a success, the spell ends."
             ],
@@ -3221,7 +3560,19 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oathbreaker",
+							"source": "DMG"
+						}
+					}
+				]
             }
         },
         {
@@ -3505,7 +3856,36 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Grave",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "TCE"
+						}
+					}
+				],
+				"fromClassListVariant": [
+					{
+						"name": "Paladin",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					}
+				]
             }
         },
         {
@@ -3736,6 +4116,10 @@
                         "d4",
                         "Effect"
                     ],
+                    "colStyles": [
+                        "col-1 text-center",
+                        "col-11"
+                    ],
                     "rows": [
                         ["1", "The smell of apple pie fills the air, and each creature in the cube must succeed on a Wisdom saving throw or become {@condition charmed} by you until the start of your next turn. A {@condition charmed} creature regards you and your companions as friendly acquaintances."],
                         ["2", "Bouquets of flowers appear all around, and each creature in the cube must succeed on a Dexterity saving throw or be {@condition blinded} until the start of your next turn as the flowers spray water in their faces."],
@@ -3866,7 +4250,29 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Death",
+							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Grave",
+							"source": "XGE"
+						}
+					}
+				]
             }
         },
         {
@@ -3920,7 +4326,46 @@
                         "name": "Cleric",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Crown",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Battle Smith",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Peace",
+							"source": "TCE"
+						}
+					}
+				],
+				"fromClassListVariant": [
+					{
+						"name": "Paladin",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					}
+				]
             }
         },
         {
@@ -3975,7 +4420,49 @@
                         "name": "Paladin",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Devotion",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Crown",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Monster Slayer",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Order",
+							"source": "TCE"
+						}
+					}
+				]
             }
         },
         {
@@ -4094,7 +4581,40 @@
                         "name": "Druid",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Tempest",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB",
+							"subSubclass": "Forest"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB"
+						}
+					}
+				]
             }
         },
         {
@@ -4145,6 +4665,18 @@
                     {
                         "name": "Ranger",
                         "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Battle Smith",
+                            "source": "TCE"
+                        }
                     }
                 ]
             }
@@ -4207,7 +4739,50 @@
                         "name": "Sorcerer",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Light",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB",
+							"subSubclass": "Grassland"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Celestial",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB"
+						}
+					}
+				]
             }
         },
         {
@@ -4262,7 +4837,41 @@
                         "name": "Paladin",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Forge",
+							"source": "XGE"
+						}
+					}
+				],
+				"fromClassListVariant": [
+					{
+						"name": "Druid",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					}
+				]
             }
         },
         {
@@ -4321,7 +4930,19 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Undying",
+							"source": "SCAG"
+						}
+					}
+				]
             }
         },
         {
@@ -4375,7 +4996,60 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB",
+							"subSubclass": "Underdark"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Alchemist",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Swarmkeeper",
+							"source": "TCE"
+						}
+					}
+				]
             }
         },
         {
@@ -4514,7 +5188,19 @@
                         "name": "Warlock",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Aberrant Mind",
+							"source": "TCE"
+						}
+					}
+				]
             }
         },
         {
@@ -4694,11 +5380,33 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Monster Slayer",
+							"source": "XGE"
+						}
+					}
+				]
             }
         },
         {
-            "name": "Protection From Energy",
+            "name": "Protection from Energy",
             "source": "MateriaSourceOfTruth",
             "level": 3,
             "school": "A",
@@ -4766,7 +5474,80 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB",
+							"subSubclass": "Desert"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Ancients",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Vengeance",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Forge",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Glory",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Clockwork Soul",
+							"source": "TCE"
+						}
+					}
+				]
             }
         },
         {
@@ -4825,7 +5606,36 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Death",
+							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Grave",
+							"source": "XGE"
+						}
+					}
+				],
+				"fromClassListVariant": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					}
+				]
             }
         },
         {
@@ -4892,7 +5702,80 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Death",
+							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Grave",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB",
+							"subSubclass": "Desert"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oathbreaker",
+							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Alchemist",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB"
+						}
+					}
+				]
             }
         },
         {
@@ -5007,9 +5890,14 @@
                 "An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.",
                 {
                     "type": "table",
+                    "caption": "Confusion Behavior",
                     "colLabels": [
                         "d10",
                         "Behavior"
+                    ],
+                    "colStyles": [
+                        "col-1 text-center",
+                        "col-11"
                     ],
                     "rows": [
                         ["1", "The creature uses all its movement to move in a random direction. To determine the direction, roll a {@dice d8} and assign a direction to each die face. The creature doesn't take an action this turn."],
@@ -5050,7 +5938,39 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Knowledge",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oathbreaker",
+							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Spores",
+							"source": "TCE"
+						}
+					}
+				]
             }
         },
         {
@@ -5099,7 +6019,69 @@
                         "name": "Paladin",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Death",
+							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Life",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Undying",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Grave",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Alchemist",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Undead",
+							"source": "VRGR"
+						}
+					}
+				]
             }
         },
         {
@@ -5220,7 +6202,39 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Great Old One",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Aberrant Mind",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Fathomless",
+							"source": "TCE"
+						}
+					}
+				]
             }
         },
         {
@@ -5275,7 +6289,19 @@
                         "name": "Ranger",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature",
+							"source": "PHB"
+						}
+					}
+				]
             }
         },
         {
@@ -5340,7 +6366,50 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB",
+							"subSubclass": "Arctic"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Ancients",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Artillerist",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB"
+						}
+					}
+				]
             }
         },
         {
@@ -5399,7 +6468,36 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Hexblade",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Genie",
+							"source": "TCE"
+						}
+					}
+				],
+				"fromClassListVariant": [
+					{
+						"name": "Bard",
+						"source": "PHB",
+						"definedInSource": "TCE"
+					}
+				]
             }
         },
         {
@@ -5592,7 +6690,80 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
-                ]
+                ],
+                "fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "War",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Ancients",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Conquest",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Redemption",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Monk",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Four Elements",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"source": "PHB",
+							"subSubclass": "Mountain"
+						}
+					}
+				]
             }
         },
         {
