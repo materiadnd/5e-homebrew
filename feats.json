@@ -17,189 +17,104 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659543190
+        "dateLastModified": 1659550536 
 	},
     "feat": [
    		{
 			"name": "Armor Specialist",
 			"source": "MateriaSourceOfTruth",
 			"entries": [
-				"You have studied the use of armor, and have improved your ability to use armor effectively."
-			]
-		},
-        {
-			"name": "Armor Specialist - Armored Agility",
-			"source": "MateriaSourceOfTruth",
-            "prerequisite": [
+				"You have studied the use of armor, and have improved your ability to use armor effectively.",
                 {
-                    "other": "{@feat Armor Specialist|MateriaSourceOfTruth}" 
-                }
-            ],
-			"entries": [
-				"When you wear medium armor you are proficient in, you can add 3, rather than 2, to your AC if you have a Dexterity of 16 or higher."
-			]
-		},
-		{
-			"name": "Armor Specialist - Armor Mastery",
-			"source": "MateriaSourceOfTruth",
-			"prerequisite": [
-				{
-                    "other": "{@feat Armor Specialist|MateriaSourceOfTruth}" 
-				}
-			],
-			"entries": [
-				"While you are wielding a shield, wearing medium heavy or heavy armor you are proficient in, bludgeoning, piercing, and slashing damage that you take from nonmagical weapons is reduced by your proficiency bonus. If you are wielding a magical shield, wearing magical medium armor or magical heavy armor (of any type) damage reduction applies to all bludgeoning, piercing or slashing weapons."
-			]
-		},
-        {
-			"name": "Armor Specialist - Armored Stealth",
-			"source": "MateriaSourceOfTruth",
-			"prerequisite": [
-				{
-                    "other": "{@feat Armor Specialist|MateriaSourceOfTruth}" 
-				}
-			],
-			"entries": [
-				"Wearing medium or heavy armor which you are proficient in doesn't impose disadvantage on your Dexterity (Stealth) checks."
-			]
-		},
-        {
-			"name": "Armor Specialist - Heavy Armor Mobility",
-			"source": "MateriaSourceOfTruth",
-			"prerequisite": [
-				{
-                    "other": "{@feat Armor Specialist|MateriaSourceOfTruth}" 
-				}
-			],
-			"entries": [
-				"You may ignore the minimum Strength requirement of heavy armor you are proficient in."
-			]
-		},
-        {
-			"name": "Armor Specialist - Heavy Armor Proficiency",
-			"source": "MateriaSourceOfTruth",
-			"prerequisite": [
-				{
-                    "other": "{@feat Armor Specialist|MateriaSourceOfTruth}" ,
-                    "proficiency": [
+                    "type": "list",
+                    "items": [
                         {
-                            "armor": "medium"
+                            "type": "entries",
+                            "name": "Armored Agility",
+                            "entries": [
+                                "When you wear medium armor you are proficient in, you can add 3, rather than 2, to your AC if you have a Dexterity of 16 or higher."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Armor Mastery",
+                            "entries": [
+                                "While you are wielding a shield, wearing medium heavy or heavy armor you are proficient in, bludgeoning, piercing, and slashing damage that you take from nonmagical weapons is reduced by your proficiency bonus. If you are wielding a magical shield, wearing magical medium armor or magical heavy armor (of any type) damage reduction applies to all bludgeoning, piercing or slashing weapons."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Armored Stealth",
+                            "entries": [
+                                "Wearing medium or heavy armor which you are proficient in doesn't impose disadvantage on your Dexterity (Stealth) checks."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Heavy Armor Mobility",
+                            "entries": [
+                                "You may ignore the minimum Strength requirement of heavy armor you are proficient in."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Heavy Armor Proficiency",
+                            "entries": [
+                                "You gain proficiency in heavy armor (you must be proficient in medium armor from a source other than this feat to choose this feature)."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Light Armor Defense",
+                            "entries": [
+                                "While wearing light armor, you may add your armor's AC bonus to your Dexterity saving throws."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Light Armor Mastery",
+                            "entries": [
+                                "While wearing light armor which you are proficient in, and you are damaged by a melee attack, you can use your reaction to move 5 feet in any direction without provoking an opportunity attack."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Light Armor Mobility",
+                            "entries": [
+                                "While wearing light armor, opportunity attacks are made against you with disadvantage."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Light Armor Proficiency",
+                            "entries": [
+                                "You gain proficiency in light armor."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Light Armor Versatility",
+                            "entries": [
+                                "You may wear a {@item chain shirt|phb} or {@item hide armor|phb} as light armor for the sake of determining proficiency. When wearing a {@item chain shirt|phb} or {@item hide armor|phb}, you can add 3, rather than 2, to your AC if you have a Dexterity of 16 or higher."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Medium Armor Proficiency",
+                            "entries": [
+                                "You gain proficiency in medium armor (you must be proficient in light armor through a source other than this feat to choose this feature)."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Shield Proficiency",
+                            "entries": [
+                                "You gain proficiency in shields."
+                            ]
                         }
                     ]
-				}
-			],
-			"entries": [
-				"You gain proficiency in heavy armor (you must be proficient in medium armor from a source other than this feat to choose this feature)."
-			],
-            "armorProficiencies": [
-                {
-                    "heavy": true
                 }
-            ]
-		},
-        {
-			"name": "Armor Specialist - Light Armor Defense",
-			"source": "MateriaSourceOfTruth",
-			"prerequisite": [
-				{
-                    "other": "{@feat Armor Specialist|MateriaSourceOfTruth}" 
-				}
-			],
-			"entries": [
-				"While wearing light armor, you may add your armor's AC bonus to your Dexterity saving throws."
 			]
-		},
-        {
-			"name": "Armor Specialist - Light Armor Mastery",
-			"source": "MateriaSourceOfTruth",
-			"prerequisite": [
-				{
-                    "other": "{@feat Armor Specialist|MateriaSourceOfTruth}" 
-				}
-			],
-			"entries": [
-				"While wearing light armor which you are proficient in, and you are damaged by a melee attack, you can use your reaction to move 5 feet in any direction without provoking an opportunity attack."
-			]
-		},
-        {
-			"name": "Armor Specialist - Light Armor Mobility",
-			"source": "MateriaSourceOfTruth",
-			"prerequisite": [
-				{
-                    "other": "{@feat Armor Specialist|MateriaSourceOfTruth}" 
-				}
-			],
-			"entries": [
-				"While wearing light armor, opportunity attacks are made against you with disadvantage."
-			]
-		},
-        {
-			"name": "Armor Specialist - Light Armor Proficiency",
-			"source": "MateriaSourceOfTruth",
-			"prerequisite": [
-				{
-                    "other": "{@feat Armor Specialist|MateriaSourceOfTruth}" 
-				}
-			],
-			"entries": [
-				"You gain proficiency in light armor."
-			],
-            "armorProficiencies": [
-                {
-                    "light": true
-                }
-            ]
-		},
-        {
-			"name": "Armor Specialist - Light Armor Versatility",
-			"source": "MateriaSourceOfTruth",
-			"prerequisite": [
-				{
-                    "other": "{@feat Armor Specialist|MateriaSourceOfTruth}" 
-				}
-			],
-			"entries": [
-				"You may wear a {@item chain shirt|phb} or {@item hide armor|phb} as light armor for the sake of determining proficiency. When wearing a {@item chain shirt|phb} or {@item hide armor|phb}, you can add 3, rather than 2, to your AC if you have a Dexterity of 16 or higher."
-			]
-		},
-        {
-			"name": "Armor Specialist - Medium Armor Proficiency",
-			"source": "MateriaSourceOfTruth",
-			"prerequisite": [
-				{
-                    "other": "{@feat Armor Specialist|MateriaSourceOfTruth}" ,
-                    "proficiency": [
-                        {
-                            "armor": "light"
-                        }
-                    ]
-				}
-			],
-			"entries": [
-				"You gain proficiency in medium armor (you must be proficient in light armor through a source other than this feat to choose this feature)."
-			],
-            "armorProficiencies": [
-                {
-                    "medium": true
-                }
-            ]
-		},
-        {
-			"name": "Armor Specialist - Shield Proficiency",
-			"source": "MateriaSourceOfTruth",
-			"prerequisite": [
-				{
-                    "other": "{@feat Armor Specialist|MateriaSourceOfTruth}" 
-				}
-			],
-			"entries": [
-				"You gain proficiency in shields."
-			],
-            "armorProficiencies": [
-                {
-                    "shield|phb": true
-                }
-            ]
 		},
         {
             "name": "Battle Magic",
