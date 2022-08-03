@@ -1,0 +1,1207 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "MateriaSourceOfTruth",
+				"abbreviation": "Materia",
+				"full": "Materia Source of Truth - Warlord",
+				"authors": [
+                    "Adam Owczarek"
+                ],
+				"convertedBy": [
+                    "diddlypow"
+                ],
+                "targetSchema": "1.0.0",
+                "version": "1.0.0"
+			}
+		],
+        "dateAdded": 1657676716,
+        "dateLastModified": 1657676716
+	},
+    "class": [
+        {
+            "name": "Warlord",
+            "source": "MateriaSourceOfTruth",
+            "hd": {
+                "number": 1,
+                "faces": 10
+            },
+            "proficiency": [
+                "wis",
+                "cha"
+            ],
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "Merit Dice",
+                        "Merit Die"
+                    ],
+                    "rows": [
+                        [ 1, "d6" ],
+                        [ 2, "d6" ],
+                        [ 3, "d6" ],
+                        [ 4, "d6" ],
+                        [ 5, "d8" ],
+                        [ 6, "d8" ],
+                        [ 7, "d8" ],
+                        [ 8, "d8" ],
+                        [ 9, "d8" ],
+                        [ 10, "d10" ],
+                        [ 11, "d10" ],
+                        [ 12, "d10" ],
+                        [ 13, "d10" ],
+                        [ 14, "d10" ],
+                        [ 15, "d12" ],
+                        [ 16, "d12" ],
+                        [ 17, "d12" ],
+                        [ 18, "d12" ],
+                        [ 19, "d12" ],
+                        [ 20, "d12" ]
+                    ]
+                }
+            ],
+            "startingProficiencies": {
+                "armor": [
+                    "light",
+                    "medium",
+                    "{@item shield|phb|shields}"
+                ],
+                "weapons": [
+                    "simple",
+                    "martial"
+                ],
+                "tools": [ 
+                    "Your choice of vehicles (land) or vehicles (water)"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "animal handling",
+                                "athletics",
+                                "deception",
+                                "history",
+                                "insight",
+                                "intimidation",
+                                "investigation",
+                                "medicine",
+                                "persuasion",
+                                "survival"
+                            ],
+                            "count": 3
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    "(a) a {@filter simple weapon|items|source=phb|category=basic|type=simple weapon} and a {@item shield|phb} or (b) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+                    "(a) 5 {@item javelin|phb|javelins} or (b) a {@item light crossbow|phb} with 20 {@item crossbow bolt|phb|bolts}",
+                    "(a) a {@item chain shirt|phb} or (b) {@item leather armor|phb}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+
+                ],
+				"goldAlternative": "{@dice 5d4×10|5d4 × 10|Starting Gold}"
+            },
+            "multiclassing": {
+                "requirements": {
+                    "or": [
+                        {
+                            "str": 13,
+                            "dex": 13
+                        }
+                    ],
+                    "cha": 13
+                },
+                "proficienciesGained": {
+                    "armor": [
+                        "light",
+                        "medium"
+                    ],
+                    "weapons": [
+                        "simple",
+                        "martial"
+                    ]
+                }
+            },
+            "classFeatures": [
+                "Merit|Warlord|MateriaSourceOfTruth|1",
+                "Bravura|Warlord|MateriaSourceOfTruth|1",
+                "Strike Like Iron|Warlord|MateriaSourceOfTruth|1",
+                "Moment of Courage|Warlord|MateriaSourceOfTruth|2",
+                {
+                    "classFeature": "Warlord's Presence|Materia|MateriaSourceOfTruth",
+                    "gainSubclassFeature": true
+                },
+                "Fighting Style|Warlord|MateriaSourceOfTruth|2",
+                "Spotter's Order|Warlord|MateriaSourceOfTruth|3",
+                "Megaboss|Warlord|MateriaSourceOfTruth|3",
+                "Ability Score Improvement|Warlord|MateriaSourceOfTruth|4",
+                "Respite|Warlord|MateriaSourceOfTruth|4",
+                "Extra Attack|Warlord|MateriaSourceOfTruth|5",
+                "Tireless Leader|Warlord|MateriaSourceOfTruth|6",
+                {
+                    "classFeature": "Warlord's Presence Feature|Materia|MateriaSourceOfTruth",
+                    "gainSubclassFeature": true
+                },
+                "Command Style|Warlord|MateriaSourceOfTruth|7",
+                "Ability Score Improvement|Warlord|MateriaSourceOfTruth|8",
+                "Veteran Scars|Warlord|MateriaSourceOfTruth|9",
+                "Consummate Command|Warlord|MateriaSourceOfTruth|10",
+                {
+                    "classFeature": "Warlord's Presence Feature|Materia|MateriaSourceOfTruth",
+                    "gainSubclassFeature": true
+                },
+                "Hedonist Insight|Warlord|MateriaSourceOfTruth|11",
+                "Ability Score Improvement|Warlord|MateriaSourceOfTruth|12",
+                "Instinctive Leader|Warlord|MateriaSourceOfTruth|13",
+                {
+                    "classFeature": "Warlord's Presence Feature|Materia|MateriaSourceOfTruth",
+                    "gainSubclassFeature": true
+                },
+                "Overwhelming Odds|Warlord|MateriaSourceOfTruth|15",
+                "Ability Score Improvement|Warlord|MateriaSourceOfTruth|16",
+                "Grand Stratagem|Warlord|MateriaSourceOfTruth|16",
+                "Meritborne|Warlord|MateriaSourceOfTruth|17",
+                "Press the Advantage|Warlord|MateriaSourceOfTruth|18",
+                "Ability Score Improvement|Warlord|MateriaSourceOfTruth|19",
+                "Warlord's Favor|Warlord|MateriaSourceOfTruth|20"
+            ],
+            "subclassTitle": "Warlord's Presence",
+            "fluff": [
+                {
+                    "name": "Warlord",
+                    "source": "MateriaSourceOfTruth",
+                    "type": "section",
+                    "entries": [
+                        "Someone that steps up and leads can come from any background, and what style of leadership they bring can vary greatly. History is dotted with the most unlikely individuals gathering support and exercising their sway to gain militant, economic and regional control because they had the special quality that brought those to rally around them.",
+                        "As stated the single most defining trait shared amongst these peoples is their ability to bring out the best from those who follow them. The warlord can embody a legendary battlefield commander whose name is passed on through the generations, and stories of their conquests are spoken with awe. It takes time to build up such renown, derived from physical training, combat intuition, focused ambition, strategic savvy and the relentless pursuit of victory.", 
+                        "What a warlord is might on the surface appear different but aspects can be seen in a former army official to a tactical genius to a grizzled veteran to a charismatic gangboss. When the order is given, few question the warlord. As they share their insight, ambition, and might with those who gather with them to prevail in war and conflict. To know the leadership of such a person is to know that they need not believe in themselves, but to believe in the warlord that believes in them."
+                    ]
+                }
+            ]
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Merit",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 1,
+            "entries": [
+                "At 1st level, you are able to recognize the quality of being particularly good or worthy of those around you. You have a pool of Merit dice represented by a number of d6s equal to your warlord level. Certain warlord features require you to expend these Merit dice. You regain your expended Merit dice when you finish a long rest.",
+                "Your Merit die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
+            ]
+        },
+        {
+            "name": "Bravura",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 1,
+            "entries": [
+                "When you or a creature who can see or hear you within 30 feet of you makes an ability check at disadvantage, you can use your reaction to roll a Merit die and add it to the result (this does not expend the Merit die). You can wait until after the d20 is rolled before deciding to use this feature, but must decide before the DM says whether the roll succeeds or fails.",
+                "The creature does not need disadvantage if it engages in an opposed ability check (or opposed roll at your DM's discretion). This can include, but is not limited to: Wisdom ({@skill Perception}) vs Dexterity ({@skill Sleight of Hand}) to see a letter being passed off, Strength ({@skill Athletics}) vs Dexterity ({@skill Acrobatics}) to escape a grapple, or Charisma ({@skill Deception}) vs Wisdom ({@skill Insight}) to bluff your way out of danger.",
+                "Once you use this feature, you can't use it again until you finish a long rest. Any time before you regain the use of this feature, if a creature rolls a 6 or higher on a Merit die that you have expended, you then regain the use of this feature."
+            ]
+        },
+        {
+            "name": "Strike Like Iron",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 1,
+            "entries": [
+                "Starting at 1st level, your attacks help to point out the flaws in an enemy's defenses. Once per turn when you hit with a weapon attack, you can expend a Merit die and place it on the target for up to 1 minute or until your {@status concentration|phb} ends (as if you were concentrating on a spell). If a creature misses with an attack roll against the target you hit they can roll this Merit die, and on a 6 or higher the attack instead hits, regardless of the original roll. You may only have one Merit die placed in this way at a time.",
+                "If an attack hits as a result of your Strike like Iron the Merit die on the target is consumed and your {@status concentration|phb} ends."
+            ]
+        },
+        {
+            "name": "Moment of Courage",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "entries": [
+                "At 2nd level, you can inspire allies to fight on courageously. As a bonus action, you can choose one creature that you can see within 60 feet of you and spend a number of Merit dice up to your Charisma modifier (minimum of 1). Roll the spent Merit dice and add them together. The target regains hit points equal to the total. The target can also spend a Hit Die for each Merit die spent to further increase the health restored to them."
+            ]
+        },
+        {
+            "name": "Warlord's Presence",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "entries": [
+                "At 2nd level, you choose one of four archetypes that expresses your leadership style: Battlefront Marshal, Icon of Victory, Tactician, or Warbrave. All are detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+            ]
+        },
+        {
+            "name": "Fighting Style",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "isClassFeatureVariant": true,
+            "entries": [
+                "{@i 2nd-level {@variantrule optional class features|tce|optional warlord feature}}",
+                "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again",
+                {
+                    "type": "options",
+                    "count": 1,
+                    "entries": [
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Archery"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Blind Fighting|UAClassFeatureVariants"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Defense"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Dueling"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Great Weapon Fighting"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Interception|UAClassFeatureVariants"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Protection"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Thrown Weapon Fighting|UAClassFeatureVariants"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Two-Weapon Fighting"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Unarmed Fighting|UAClassFeatureVariants"
+                        },
+                        {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Blind Fighting|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Interception|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Thrown Weapon Fighting|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Unarmed Fighting|TCE"
+						}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spotter's Order",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 3,
+            "entries": [
+                "Once you reach 3rd level, as an action you can target one ally you can see within 30 feet of you. If the target can see and hear you, the target can make one weapon attack as a reaction."
+            ]
+        },
+        {
+            "name": "Megaboss",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 3,
+            "isClassFeatureVariant": true,
+            "entries": [
+                "{@i 3rd-level {@variantrule optional class features|tce|optional warlord feature}}",
+                "As you strive for excellence you harness your potential as a capable leader. When you have no Merit die remaining, you can use your bonus action to regain a number of Merit die equal to your proficiency bonus.",
+                "You cannot use this feature again until you finish a long rest."
+            ]
+
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 4,
+            "entries": [
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+                "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."
+            ]
+        },
+        {
+            "name": "Respite",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 4,
+            "entries": [
+                "Beginning at 4th level, rest does not interfere with your desire to achieve your goals. You and any allies that can see or hear you within 60 feet are able to take a short rest, needing only 10 minutes to do so. At the end of this rest, any creature that benefits from this rest can reduce their {@condition exhaustion} by one level.",
+                "Additionally, you can restore a number of spent Hit Dice equal to twice your proficiency bonus, divided as you choose among any number of creatures that took part in this rest. Hit Dice gained as a result of your Respite can be spent immediately at the end of this short rest.",
+                "You cannot use this feature again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 5,
+            "entries": [
+                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+            ]
+        },
+        {
+            "name": "Tireless Leader",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 6,
+            "entries": [
+                "Starting at 6th level, you can now use your Spotter's Order as a bonus action."
+            ]
+        },
+        {
+            "name": "Command Style",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 7,
+            "entries": [
+                "Once you reach 7th level, you can shape the battlefield as you see fit through Command Styles. You can prepare one Command Style of your choice. You can change your prepared Command Style after finishing a long rest or a Respite.",
+                {
+                    "type": "options",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Ambition Through Conflict",
+                            "entries": [
+                                "When you use a warlord feature as a bonus action and are wielding a weapon in each hand, you may make a single weapon attack as part of the same bonus action dealing bonus damage equal to your Charisma modifier (minimum of 0). An Icon of Victory is able to use their shield in place of a weapon for the purpose of this Command Style.",
+                                "Additionally, whenever a creature succeeds an opposed ability check with your Bravura you regain use of it."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Combat Dilation",
+                            "entries": [
+                                "When you roll initiative, you can choose a number of creatures that can see or hear you within 60 feet of you, up to a number equal to half your warlord level. Reduce their initiative rolls by your Charisma modifier (minimum of 1).",
+                                "Additionally, if a hostile creature makes an ability check, attack roll, or saving throw at disadvantage while you are within 5 feet of it, they roll an additional die and must take the lowest."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Cry Havoc",
+                            "entries": [
+                                "When a creature hits as a result of your Spotter's Order they deal extra damage equal to your Charisma modifier (minimum of 0) and you can expend a Merit die to place it on their target as if through your Strike like Iron. You must have a Merit die available to be placed in this way. Merit dice placed in this way do not require your {@status concentration|phb} to be maintained."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Daedalus",
+                            "entries": [
+                                "When a creature within 30 feet of you hits as a result of your Strike like Iron you can use your reaction to make a weapon attack. The attack must be made within range of your weapon. If you hit with this attack you deal extra damage equal to your Charisma modifier (minimum of 0)."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Feed the Pack",
+                            "entries": [
+                                "When a 6 or higher is rolled on one of your Merit die, you gain an additional attack that can be used on your turn when you take the {@action Attack} action. You can have a maximum number of additional attacks equal to your proficiency bonus, and you cannot gain one while at your maximum. You may only use one additional attack per turn. You lose these additional attacks after 1 minute if you do not use them.",
+                                "Additionally, yourself and up to your proficiency bonus number of creatures that complete a Respite gain temporary hit points equal to half your warlord level + your Charisma modifier if this is your chosen Command Style at the end of the rest."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "General's Bearing",
+                            "entries": [
+                                "When a creature with one of your Merit dice placed on it is reduced to 0 hit points, you can choose to maintain {@status concentration|phb} on it for use on your next turn. Before the end of your next turn, if you hit another creature with a weapon attack, you may choose to place a Merit die on them as through your Strike Like Iron without expending an additional Merit die.",
+                                "Additionally, while you concentrate on your Strike Like Iron, creatures of your choice that start their turn within 10 feet of you benefit from your Veteran Scars until the start of their next turn as long as you are not incapacitated."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Grudge Keeper",
+                            "entries": [
+                                "You have advantage on {@status concentration|phb} checks to maintain your Strike Like Iron.",
+                                "Additionally, if you lose {@status concentration|phb} on your Strike like Iron as a result of taking damage from a creature, you can use your reaction to move up to your speed toward an enemy of your choice that you can see or hear. If you end your movement within reach of your melee weapon you can make one weapon attack as part of the same reaction. You must end this move closer to the enemy than you started."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Pile It On",
+                            "entries": [
+                                "When using your Strike Like Iron, you can place a number of Merit dice on the target up to your Charisma modifier (minimum of 1).",
+                                "If an enemy creature you can see takes the {@action Dash} or {@action Disengage} action, you can use your reaction to command an ally to make an attack on the enemy creature per your Spotter's Order."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Relentless Discipline",
+                            "entries": [
+                                "On your turn, when you score a critical hit with an attack, or a creature that you are concentrating your Strike Like Iron on is reduced to 0 hit points, you can choose one creature within 30 feet of you that can see or hear you and grant them a special action on their next turn. That action can be used only to take the Attack (one weapon attack only), {@action Dash}, {@action Disengage}, {@action Hide}, or {@action Use an Object} action."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Strength of the Host",
+                            "entries": [
+                                "When an allied creature you can see or hear within 30 feet of you uses their reaction, you can spend your reaction to allow that creature to take an additional reaction before the start of their next turn.",
+                                "Additionally, the target of your Spotter's Order can move up to their speed as part of their reaction."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Tip the Scales",
+                            "entries": [
+                                "A creature that is the target of your Moment of Courage or Spotter's Order gains temporary hit points equal to half your warlord level.",
+                                "Additionally, creatures you choose for your Consummate Command can move up to their speed, ignoring {@quickref difficult terrain||3} as part of the same reaction."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Unyielding Will",
+                            "entries": [
+                                "The target of your Moment of Courage can roll d4s instead of using Hit Dice to further increase the health restored to them.",
+                                "Additionally, when you would normally roll one or more dice to restore hit points with your Moment of Courage to a creature at 0 hit points, they instead use the highest number possible for each die."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 8,
+            "entries": [
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+                "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."
+            ]
+        },
+        {
+            "name": "Veteran Scars",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 9,
+            "entries": [
+                "At 9th level, your body and mind are shaped by your resolve through the conflicts you have endured. You have advantage on saving throws against effects that would impose a condition on you (at your DM's discretion), such as traps and spells."
+            ]
+        },
+        {
+            "name": "Consummate Command",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 10,
+            "entries": [
+                "Once you reach 10th level, your flair is shared amongst those who follow your command. When initiative is rolled a number of creatures of your choice equal to your Charisma modifier within 60 feet of you can use their reaction to take a bonus action.",
+                "Some examples might be a Barbarian's Rage, a Monk spending Ki Points for Patient Defense, a Sorcerer converting Sorcery Points, or a Bard giving a Bardic Inspiration",
+                "You cannot use this feature again until you finish a long rest or a Respite."
+            ]
+        },
+        {
+            "name": "Hedonist Insight",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 11,
+            "entries": [
+                "Once you reach 11th level, when you roll initiative you can regain a number of Merit dice equal to your Charisma modifier (minimum of 1), but you cannot exceed your maximum number based on your warlord level.",
+                "You cannot use this feature again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 12,
+            "entries": [
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+                "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."
+            ]
+        },
+        {
+            "name": "Instinctive Leader",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 13,
+            "entries": [
+                "Starting at 13th level, the target of your Spotter's Order makes their attack roll at advantage."
+            ]
+        },
+        {
+            "name": "Overwhelming Odds",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 15,
+            "entries": [
+                "Starting at 15th level, you care little about the odds. When you use your Moment of Courage you can affect a number of creatures of your choice up to your Charisma modifier (minimum of 1) as long as they are within 60 feet and you can see them.",
+                "Roll a number of Merit dice up to your Charisma modifier (minimum of 1) and add them together. This total represents an amount of hit points that can be divided as you choose among any number of your affected targets. Each affected target can spend a Hit Die for each Merit die spent.",
+                "You cannot use this feature again until you finish a long rest or a Respite."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 16,
+            "entries": [
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+                "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."
+            ]
+        },
+        {
+            "name": "Grand Stratagem",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 16,
+            "isClassFeatureVariant": true,
+            "entries": [
+                "{@i 16th-level {@variantrule optional class features|tce|optional warlord feature}}",
+                "Achieving an end is always within reach. Your warlord features that normally have a range of 30 feet are increased to 60 feet."
+            ]
+        },
+        {
+            "name": "Meritborne",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 17,
+            "entries": [
+                "Starting at 17th level, your encouragement pushes your allies even further. When you or a creature rolls one or more of your Merit die, instead roll two and take the result of your choice."
+            ]
+        },
+        {
+            "name": "Press the Advantage",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 18,
+            "entries": [
+                "Upon reaching 18th level, when you are given an inch you take a mile. Whenever a friendly creature that can see or hear you has advantage on an ability check, attack roll, or saving throw they can reroll one of the dice once. You must be conscious to grant this bonus."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 19,
+            "entries": [
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.",
+                "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."
+            ]
+        },
+        {
+            "name": "Warlord's Favor",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "level": 20,
+            "entries": [
+                "At 20th level, your favor can break limitations. When you take a Respite it takes 1 minute to complete and, a number of creatures of your choice up to your Charisma modifier (minimum of 1) benefiting from this Respite may regain the use of a feature of their choice which would normally require completing a long rest. This feature may not be applied to regain Warlord's Favor or spell slots of any kind.",
+                "You cannot use this feature again until you finish a long rest."
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Battlefront Marshal",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Battlefront Marshal",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "entries": [
+                "You might prefer warfare that is irregular in which you command small groups utilizing ambushes, sabotage and hit-and-run tactics. Mustering troops quickly and coordinated attacks help you press the advantage that you have created for you and your allies. You do not sly away large scale conflict but rather shape, mold, and dominate it."
+            ]
+        },
+        {
+            "name": "Muster for Battle",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Battlefront Marshal",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 2,
+            "entries": [
+                "At 2nd level when you choose this presence, you bring shock and awe. When you roll initiative, choose a number of creatures within 30 feet of you that can see or hear you, up to a number equal to your Charisma modifier (minimum of 1). These creatures may double their proficiency bonus against creatures that haven't acted in the encounter yet."
+            ]
+        },
+        {
+            "name": "Tempered Hand",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Battlefront Marshal",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Beginning at 6th level, when you hit a creature with a weapon attack that is no more than one size category larger than you, you can move the creature 5 feet in a direction of your choice to an unoccupied space (this movement does not provoke attacks of opportunity). If this movement would force the creature into obviously dangerous ground, such as a fire or a pit, they must succeed a Strength saving throw",
+                {
+                    "type": "abilityDc",
+                    "name": "Forced movement",
+                    "attributes": [
+                        "cha"
+                    ]
+                },
+                "to not move instead. When you move the target in this way you can move 5 feet in the same direction as part of the attack without provoking attacks of opportunity.",
+                "Alternatively, if the creature you hit is larger than you by more than one size category you can move 5 feet around the target to an unoccupied space without provoking attacks of opportunity."
+            ]
+        },
+        {
+            "name": "Marshal",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Battlefront Marshal",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "At 10th level, you learn to harness your presence on the battlefield to inspire greatness from others. As a bonus action, you unleash a battle cry that sways the outcome of conflict. Up to ten other creatures of your choice within 60 feet of you that can hear you double their proficiency bonus until the start of your next turn.",
+                "Additionally, the creatures you chose can make attacks of opportunity against creatures that you move using your Tempered Hand.",
+                "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Dominant Command",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Battlefront Marshal",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Starting at 14th level, you mold yourself for conquest. You can prepare two Command Styles of your choice rather than one. You can change one or both of your prepared Command Styles when you finish a long rest or during a Respite.",
+                "Additionally, when initiative is rolled you may choose to change one of your Command Styles. Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Icon of Victory",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Icon of Victory",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "entries": [
+                "Your presence on the battlefield cannot be ignored. You stand as a beacon of resolve and a symbol of glory. Your profession is war. Your armor makes you an indomitable force which helps your troops as they stand invincible against the enemy and proceed indubitably."
+            ]
+        },
+        {
+            "name": "Artisan of War",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Icon of Victory",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 2,
+            "entries": [
+                "At 2nd level when you choose this presence, you have committed yourself to a life of war. You gain proficiency with heavy armor and when wielding a weapon with the versatile property in one hand you can roll the weapon's damage as if you were wielding it with two hands.",
+                "Additionally, while you are wielding a shield and a 6 or higher is rolled on one of your Merit dice you can choose to make a melee weapon attack with your shield when you take one of the following actions before the end of your next turn: {@action Attack}, {@action Dash}, {@action Disengage}, {@action Dodge} or {@action Use an Object}.",
+                "You are proficient with attacks using your shield. These attacks use your strength, and deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If the shield is magical, then the attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+            ]
+        },
+        {
+            "name": "For Glory",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Icon of Victory",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Beginning at 6th level, you move towards glory. While you are wearing medium or heavy armor you can use your Charisma modifier in place of your Dexterity modifier when rolling initiative.",
+                "Additionally, standing from prone, mounting and dismounting a creature only costs you 5 feet of movement, rather than half your speed."
+            ]
+        },
+        {
+            "name": "Indomitable Inspiration",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Icon of Victory",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "When you reach 10th level, you are a beacon of resolve. The target of your Moment of Courage can expend one additional Hit Die to further increase the healing and has advantage on all saving throws until the end of their next turn."
+            ]
+        },
+        {
+            "name": "Stand Invincible",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Icon of Victory",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "At 14th level, those who you command cannot be ignored. As a reaction when you or a creature you can see within 30 feet of you is reduced to 0 hit points and is not killed outright, you can spend a Merit die to allow them to drop to 1 hit point instead and they can immediately spend a number of their Hit Dice up to your Charisma modifier (minimum of 1) to regain hit points. If they are prone they can immediately rise to their feet (costing no movement).",
+                "Alternatively, if that ally takes damage that would outright kill them, you can spend your reaction to instead reduce them to 0 hit points. That ally has disadvantage on death saving throws until stabilized or dead.",
+                "Once a creature benefits from this feature, they cannot benefit from it again until they complete a long rest."
+            ]
+        },
+        {
+            "name": "Tactician",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Tactician",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "entries": [
+                "You are a master of planning and execution. The actions and commands you give are always calculated to achieve the most ideal result. You can manipulate any situation to be advantageous: from your small band of fighters to the mighty legions who follow you. You influence the battle with your guile and always have a cunning ploy."
+            ]
+        },
+        {
+            "name": "Tactical Approach",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Tactician",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 2,
+            "entries": [
+                "At 2nd level when you choose this presence, you apply your wit to control the field of battle as well as social interactions. You can use your Intelligence modifier in place of your Charisma modifier for all your warlord features, and you gain proficiency in one of the following skills of your choice: {@skill Arcana}, {@skill History}, {@skill Investigation}, {@skill Nature}, {@skill Religion} or a language of your choice.",
+                "Furthermore, you can use your Intelligence modifier instead of your Wisdom modifier or Charisma modifier when making Wisdom or Charisma checks. You may do this a number of times equal to your proficiency bonus per long rest."           ]
+        },
+        {
+            "name": "Field Control",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Tactician",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Starting at 6th level, you have come to recognize the flow of battle is malleable. Your Moment of Courage allows the target to use their reaction to immediately rise to their feet if prone (costing no movement) and they can take the {@action Disengage} action moving up to half their current speed."
+            ]
+        },
+        {
+            "name": "Guile",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Tactician",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "When you reach 10th level, your mind is as sharp as many of the weapons you wield. You gain proficiency in Intelligence saving throws. After a long rest, the first time you use a warlord feature that can be regained from a rest benefiting from your Respite, or that allows you to regain expended Merit dice, you can choose not to expend the use of the feature.",
+                "Additionally, when using your Tactical Approach you can now use your Intelligence modifier in place of any modifier for an ability check."
+            ]
+        },
+        {
+            "name": "Cunning Ploy",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Tactician",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Beginning at 14th level, your plans are steps ahead of your opposition. When a 6 or higher is rolled on one of your Merit dice, you can use your reaction to target a creature within 60 feet of you that you can see and grant them an additional turn immediately after their next turn if they are conscious.",
+                "Once you use this feature, you must take a long rest or a Respite before you can use it again."
+            ]
+        },
+        {
+            "name": "Warbrave",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Warbrave",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "entries": [
+                "You rush headstrong into the vanguard. Some might consider you brash, fighting shoulder to shoulder with your men. Your armor is worn, your body is scarred, and your enemies shake at your ferocity. All come to respect you."
+            ]
+        },
+        {
+            "name": "Into the Vanguard",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Warbrave",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 2,
+            "entries": [
+                "Starting at 2nd level, you are eager to be on the frontlines.",
+                "When you roll initiative you can gain temporary hit points by expending a Hit Die. Roll the die, and if it is less than your Charisma modifier (minimum of 0) you may choose to use this instead. You gain temporary hit points equal to double that number.",
+                "Moreover, when the target of your Moment of Courage expends one or more of its Hit Dice they can choose to gain temporary hit points rather than regaining hit points for one Hit Die.",
+                "Additionally, you can add your Charisma modifier to @{status concentration|phb} checks made to maintain {@status concentration|phb} on your Strike like Iron."
+            ]
+        },
+        {
+            "name": "Forced Respect",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Warbrave",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "At 6th level, all shall come to respect you, one way or another. When an enemy within 10 feet of you attacks a creature other than you that you can see or hear with an attack or harmful spell, you may spend your reaction to make the enemy roll a Wisdom saving throw",
+                {
+                    "type": "abilityDc",
+                    "name": "Forced movement",
+                    "attributes": [
+                        "cha"
+                    ]
+                },
+                "On a failed save, the enemy must choose you as the new target or lose the attack or spell. The effect doesn't protect from area effects, such as the explosion of a fireball.",
+                "Furthermore, you have resistance to any damage received as a result of this attack or spell."
+            ]
+        },
+        {
+            "name": "Brash Valor",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Warbrave",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "Starting at 10th level, you have a knack for provoking your foes into overextension. When you take damage as a result of your Forced Respect the attacker takes force damage equal to your warlord level. You can expend a number of Merit dice, up to your Charisma modifier, to deal additional force damage to the target. Roll the Merit dice and the damage is equal to the roll's total. Doing so allows you to place one of the expended Merit dice on the target as if it was the target of your Strike like Iron. Merit dice placed in this way do not require your {@status concentration|phb} to be maintained."
+            ]
+        },
+        {
+            "name": "Crescendo of Violence",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Warbrave",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "At 14th level, when you roll initiative you can release a warcry that fuels your allies and wreaks your foes with dread. You and a number of additional creatures of your choice up to your Charisma modifier (minimum of 0) within 30 feet of you can spend one Hit Die to gain temporary hit points as with your Into the Vanguard. Additionally, for 1 minute you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your Forced Respect range increases to 30 feet.",
+                        "Whenever a creature successfully saves against your Forced Respect during this time, they must reroll the save at disadvantage.",
+                        "Any feature that requires a threshold to be met when rolling your Merit die has that threshold reduced by one."
+                    ]
+                },
+                "Once you use this feature, you must finish a long rest or a Respite before you can use it again."
+            ]
+        },
+        {
+            "name": "Magus Chief",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "entries": [
+                "You do not fight with iron and steel alone. You are steeped in a tradition that blends martial prowess with the esoteric arts. You stride through war-torn lands often occupied by mages and priests as well as soldiers. Firmly practiced, and focused you bolster practitioners of magic while picking up on some of their secrets for yourself."
+            ]
+        },
+        {
+            "name": "Spellcasting",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 2,
+            "entries": []
+        },
+        {
+            "name": "Magical Pursuits",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 3,
+            "entries": [
+                "At 2nd level when you choose this presence, you gain the ability to cast spells to further your influence based on the Magical Pursuits you focus on. See Spells Rules in the Player's Handbook for the general rules of spellcasting and then pick one of the pursuits listed below.",
+                "While you are concentrating on a spell from your chosen Magical Pursuit or from Pursuit of Charismata you can expend one Merit dice and place it when you hit a target with an attack or warlord spell is if it was the target of your Strike like Iron. Merit dice placed in this way do not require your concentration to be maintained. You can have a maximum number of Merit dice placed in this way equal to the spell level you are concentrating on.",
+                {
+                    "type": "entries",
+                    "name": "Mystic Pursuits",
+                    "entries": [
+                        "You have chosen to weave arcane magic in with your martial prowess, having studied with scholars and mages alike. Your spell list for your Magical Pursuits is the wizard spell list."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Pursuing Divinity",
+                    "entries": [
+                        "You have witnessed the impact of faith take form in self-sacrifice as well as zealous retribution. Your spell list for your Magical Pursuits is the cleric and paladin spell lists."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Pursuit of Balance",
+                    "entries": [
+                        "You understand that conflict is a part of nature which is both nurturing and cruel. Your spell list for your Magical Pursuits is the druid and ranger spell lists."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cantrips",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 4,
+            "entries": [
+                "You learn two cantrips of your choice from your Magical Pursuits spell list. You learn an additional cantrip at 6th level in this class, and again at 14th level in this class.",
+                "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class's Spellcasting feature with another cantrip from your Magical Pursuits list"
+            ]
+        },
+        {
+            "name": "Spell Slots",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 4,
+            "entries": [
+                "The Magus Chief Spellcasting table shows how many spell slots you have to cast your Magical Pursuits spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+                "For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot."
+            ]
+        },
+        {
+            "name": "Spells Known of 1st-Level and Higher",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 4,
+            "entries": [
+                "You know two 1st-level Magical Pursuits spells of your choice, which you must choose from the enchantment and transmutation spells on your spell list.",
+                "The Spells Known column of the Magus Chief Spellcasting table shows when you learn more of your Magical Pursuits spells of 1st level or higher. Each of these spells must be an enchantment or transmutation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
+                {
+                    "type": "table",
+                    "caption": "Magus Chief Spellcasting",
+                    "colLabels": [
+                        "Warlord Level",
+                        "Cantrips Known",
+                        "Spells Known",
+                        "1st",
+                        "2nd",
+                        "3rd",
+                        "4th"
+                    ],
+                    "rows": [
+                        ["2nd", "2", "2", "1", "-", "-", "-"],
+                        ["3rd", "2", "3", "2", "-", "-", "-"],
+                        ["4th", "2", "4", "3", "-", "-", "-"],
+                        ["5th", "2", "4", "3", "-", "-", "-"],
+                        ["6th", "3", "4", "3", "-", "-", "-"],
+                        ["7th", "3", "5", "4", "2", "-", "-"],
+                        ["8th", "3", "6", "4", "2", "-", "-"],
+                        ["9th", "3", "6", "4", "2", "-", "-"],
+                        ["10th", "3", "7", "4", "3", "-", "-"],
+                        ["11th", "3", "8", "4", "3", "-", "-"],
+                        ["12th", "3", "8", "4", "3", "-", "-"],
+                        ["13th", "3", "9", "4", "3", "2", "-"],
+                        ["14th", "4", "10", "4", "3", "2", "-"],
+                        ["15th", "4", "10", "4", "3", "2", "-"],
+                        ["16th", "4", "10", "4", "3", "3", "-"],
+                        ["17th", "4", "11", "4", "3", "3", "-"],
+                        ["18th", "4", "11", "4", "3", "3", "-"],
+                        ["19th", "4", "12", "4", "3", "3", "1"],
+                        ["20th", "4", "13", "4", "3", "3", "1"]
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Pursuit of Charismata",
+                    "entries": [
+                        "The spells you learn at 3rd, 8th, 14th, and 20th level can come from any school of magic, and in addition to your Magical Pursuits spell list, you may also choose from the bard, sorcerer or warlock spell list."
+                    ]
+                },
+                "Whenever you gain a level in this class, you can replace one of your Magical Pursuits spells you know with another spell of your choice from your Magical Pursuits spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or transmutation spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic or appropriate spell listings."
+            ]
+        },
+        {
+            "name": "Spellcasting Ability",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 2,
+            "header": 4,
+            "entries": [
+                "Charisma is your spellcasting ability for your Magical Pursuits spells, since you learn your spells through your training to best utilize magical practices in your strategies. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a chosen class spell you cast and when making an attack roll with one.",
+                "Spell save DC = 8 + your proficiency bonus + your Charisma modifier",
+                "Spell attack modifier = your proficiency bonus + your Charisma modifier"
+            ]
+        },
+        {
+            "name": "Esoteric Order",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Starting at 6th level, you guide the hand of magic. The target of your Spotter's Order can cast a cantrip at their target, rather than making a weapon attack. The cantrip must have a casting time of 1 action and must target only one creature.",
+                "Moreover, when you take the Attack action you can cast one of your cantrips in place of one of those attacks."
+            ]
+        },
+        {
+            "name": "Catechism of Magic",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "Beginning at 10th level, your influence and skill hinders your enemies. When a creature you can see or hear within 30 feet of you succeeds on a saving throw, you can use your Bravura to reduce it. Roll the Merit die. The creature must subtract the number rolled from the saving throw."
+            ]
+        },
+        {
+            "name": "Confluence of Focus",
+            "source": "MateriaSourceOfTruth",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth",
+            "subclassShortName": "Magus Chief",
+            "subclassSource": "MateriaSourceOfTruth",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "At 14th level, your prowess has converged into unmatched focus for you and your allies. You add your Charisma modifier to the damage you deal with any warlord cantrip or warlord spell.",
+                "Additionally, the target of your Spotter's Order can cast a spell, rather than making a weapon attack. The spell must have a casting time of 1 action and must target only one creature."
+            ]
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Battlefront Marshal",
+            "subclassFeatures": [
+                "Battlefront Marshal|Warlord|MateriaSourceOfTruth|Battlefront Marshal|MateriaSourceOfTruth|2",
+                "Muster for Battle|Warlord|MateriaSourceOfTruth|Battlefront Marshal|MateriaSourceOfTruth|2",
+                "Tempered Hand|Warlord|MateriaSourceOfTruth|Battlefront Marshal|MateriaSourceOfTruth|6",
+                "Marshal|Warlord|MateriaSourceOfTruth|Battlefront Marshal|MateriaSourceOfTruth|10",
+                "Dominant Command|Warlord|MateriaSourceOfTruth|Battlefront Marshal|MateriaSourceOfTruth|14"
+            ],
+            "source": "MateriaSourceOfTruth",
+            "shortName": "Battlefront Marshal",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth"
+        },
+        {
+            "name": "Icon of Victory",
+            "subclassFeatures": [
+                "Icon of Victory|Warlord|MateriaSourceOfTruth|Icon of Victory|MateriaSourceOfTruth|2",
+                "Artisan of War|Warlord|MateriaSourceOfTruth|Icon of Victory|MateriaSourceOfTruth|2",
+                "For Glory|Warlord|MateriaSourceOfTruth|Icon of Victory|MateriaSourceOfTruth|6",
+                "Indomitable Inspiration|Warlord|MateriaSourceOfTruth|Icon of Victory|MateriaSourceOfTruth|10",
+                "Stand Invincible|Warlord|MateriaSourceOfTruth|Icon of Victory|MateriaSourceOfTruth|14"
+            ],
+            "source": "MateriaSourceOfTruth",
+            "shortName": "Icon of Victory",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth"
+        },
+        {
+            "name": "Tactician",
+            "subclassFeatures": [
+                "Tactician|Warlord|MateriaSourceOfTruth|Tactician|MateriaSourceOfTruth|2",
+                "Tactical Approach|Warlord|MateriaSourceOfTruth|Tactician|MateriaSourceOfTruth|2",
+                "Field Control|Warlord|MateriaSourceOfTruth|Tactician|MateriaSourceOfTruth|6",
+                "Guile|Warlord|MateriaSourceOfTruth|Tactician|MateriaSourceOfTruth|10",
+                "Cunning Ploy|Warlord|MateriaSourceOfTruth|Tactician|MateriaSourceOfTruth|14"
+            ],
+            "source": "MateriaSourceOfTruth",
+            "shortName": "Tactician",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth"
+        },
+        {
+            "name": "Warbrave",
+            "subclassFeatures": [
+                "Warbrave|Warlord|MateriaSourceOfTruth|Warbrave|MateriaSourceOfTruth|2",
+                "Into the Vanguard|Warlord|MateriaSourceOfTruth|Warbrave|MateriaSourceOfTruth|2",
+                "Forced Respect|Warlord|MateriaSourceOfTruth|Warbrave|MateriaSourceOfTruth|6",
+                "Brash Valor|Warlord|MateriaSourceOfTruth|Warbrave|MateriaSourceOfTruth|10",
+                "Crescendo of Violence|Warlord|MateriaSourceOfTruth|Warbrave|MateriaSourceOfTruth|14"
+            ],
+            "source": "MateriaSourceOfTruth",
+            "shortName": "Warbrave",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth"
+        },
+        {
+            "name": "Magus Chief",
+            "subclassFeatures": [
+                "Magus Chief|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Spellcasting|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Magical Pursuits|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Cantrips|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Spell Slots|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Spells Known of 1st-Level and Higher|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Spellcasting Ability|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
+                "Esoteric Order|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|6",
+                "Catechism of Magic|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|10",
+                "Confluence of Focus|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|14"
+            ],
+            "source": "MateriaSourceOfTruth",
+            "shortName": "Magus Chief",
+            "className": "Warlord",
+            "classSource": "MateriaSourceOfTruth"
+        }
+    ]
+}
