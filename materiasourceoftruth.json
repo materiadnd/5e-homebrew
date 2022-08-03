@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659495160
+        "dateLastModified": 1659543190
 	},
     "class": [
         {
@@ -11601,6 +11601,7 @@
                 "walk": 30,
                 "fly": true
             },
+            "lineage": "VRGR",
             "traitTags": [
                 "Natural Weapon"
             ],
@@ -11653,8 +11654,10 @@
 				"M"
 			],
 			"speed": 30,
+            "lineage": "VRGR",
 			"age": {
-				"max": 180
+				"mature": 20,
+				"max": 100
 			},
 			"darkvision": 60,
 			"resist": [
@@ -11756,6 +11759,17 @@
 				"M"
 			],
 			"speed": 30,
+            "lineage": "VRGR",
+			"heightAndWeight": {
+				"baseHeight": 72,
+				"heightMod": "2d12",
+				"baseWeight": 200,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 16,
+				"max": 80
+			},
 			"darkvision": 60,
 			"traitTags": [
 				"Powerful Build"
@@ -12230,6 +12244,7 @@
 				"S",
 				"M"
 			],
+            "lineage": "VRGR",
 			"speed": 30,
 			"skillProficiencies": [
 				{
@@ -12295,6 +12310,7 @@
 				"M"
 			],
 			"speed": 30,
+            "lineage": "VRGR",
             "languageProficiencies": [
                 {
                     "any": 3
@@ -12342,9 +12358,14 @@
 			"name": "Genasi (Air)",
 			"source": "MateriaSourceOfTruth",
 			"speed": 35,
+            "lineage": "VRGR",
 			"resist": [
 				"lightning"
 			],
+            "size": [
+                "S",
+                "M"
+            ],
 			"additionalSpells": [
 				{
 					"innate": {
@@ -12361,6 +12382,20 @@
 				}
 			],
 			"entries": [
+                {
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
                 {
 					"type": "entries",
 					"name": "Unending Breath",
@@ -12388,8 +12423,14 @@
         {
 			"name": "Genasi (Earth)",
 			"source": "MateriaSourceOfTruth",
+            "lineage": "VRGR",
+            "speed": 30,
             "resist": [
                 "poison"
+            ],
+            "size": [
+                "S",
+                "M"
             ],
 			"additionalSpells": [
 				{
@@ -12407,6 +12448,20 @@
 				}
 			],
 			"entries": [
+                {
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
 				{
 					"type": "entries",
 					"name": "Earth Walk",
@@ -12433,6 +12488,12 @@
         {
 			"name": "Genasi (Fire)",
 			"source": "MateriaSourceOfTruth",
+            "speed": 30,
+            "lineage": "VRGR",
+            "size": [
+                "S",
+                "M"
+            ],
 			"additionalSpells": [
 				{
 					"innate": {
@@ -12449,6 +12510,20 @@
 				}
 			],
 			"entries": [
+                {
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
                 {
 					"type": "entries",
 					"name": "Fire Resistance",
@@ -12704,6 +12779,13 @@
 					"name": "Languages",
 					"entries": [
 						"You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
+					],
+					"type": "entries"
+				},
+                {
+					"name": "Dwarven Toughness",
+					"entries": [
+						"Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
 					],
 					"type": "entries"
 				}
@@ -12988,6 +13070,7 @@
 				"walk": 30,
 				"swim": true
 			},
+            "lineage": "VRGR",
 			"traitTags": [
 				"Natural Armor",
 				"Natural Weapon"
@@ -13049,6 +13132,13 @@
 					"name": "Nature's Intuition",
 					"entries": [
 						"Thanks to your mystical connection to nature, you gain proficiency with two of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
 					]
 				}
 			]
@@ -13167,6 +13257,7 @@
 				"M"
 			],
 			"speed": 30,
+            "lineage": "VRGR",
 			"traitTags": [
 				"Natural Weapon"
 			],
@@ -13401,6 +13492,7 @@
 				"M"
 			],
 			"speed": 30,
+            "lineage": "VRGR",
 			"traitTags": [
 				"Natural Armor",
 				"Natural Weapon"
