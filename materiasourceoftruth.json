@@ -11589,5 +11589,1893 @@
                 }
             ]
         }
+    ],
+    "race": [
+        {
+            "name": "Featherfolk (Aarakocra)",
+            "source": "MateriaSourceOfTruth",
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30,
+                "fly": true
+            },
+            "traitTags": [
+                "Natural Weapon"
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "3": [
+                            "gust of wind"
+                        ]
+                    },
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Flight",
+                    "entries": [
+                        "Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.  The wingspan of a mature aarakocra is typically 15 feet."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Talons",
+                    "entries": [
+                        "You have talons that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength or Dexterity modifier (You choose this when you select this race) slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Wind Caller",
+                    "entries": [
+                        "Starting at 3rd level, you can cast the {@spell gust of wind} spell with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 2nd level or higher.",
+                        "Intelligence, Wisdom, or Charisma is your spellcasting ability for when you cast {@spell gust of wind} with this trait (choose when you select this race)."
+                    ]
+                }
+            ]
+        },
+        {
+			"name": "Aasimar",
+			"source": "MateriaSourceOfTruth",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 30,
+			"age": {
+				"max": 180
+			},
+			"darkvision": 60,
+			"resist": [
+				"necrotic",
+				"radiant"
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"light#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Celestial Resistance",
+					"entries": [
+						"You have resistance to necrotic damage and radiant damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Healing Hands",
+					"entries": [
+						"As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Light Bearer",
+					"entries": [
+						"You know the {@spell light} cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Celestial Revelation",
+					"entries": [
+						"When you reach 3rd level, choose one of the revelation options below. Thereafter, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of that revelation. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation below, you can't use it again until you finish a long rest.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Necrotic Shroud",
+									"entry": "Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+								},
+								{
+									"type": "item",
+									"name": "Radiant Consumption",
+									"entry": "Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus (you do not hurt yourself with this damage)."
+								},
+								{
+									"type": "item",
+									"name": "Radiant Soul",
+									"entry": "Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+								}
+							],
+							"style": "list-hang-notitle"
+						}
+					]
+				}
+			]
+		},
+        {
+			"name": "Bugbear",
+			"source": "MateriaSourceOfTruth",
+			"creatureTypes": [
+				"humanoid"
+			],
+			"creatureTypeTags": [
+				"goblinoid"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"traitTags": [
+				"Powerful Build"
+			],
+			"skillProficiencies": [
+				{
+					"stealth": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Creature Type",
+					"entries": [
+						"You are a Humanoid. You are also considered a goblinoid for any prerequisite or effect that requires you to be a goblinoid."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Long-Limbed",
+					"entries": [
+						"When you make a melee attack on your turn, your reach for it is 5 feet greater than normal."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Powerful Build",
+					"entries": [
+						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sneaky",
+					"entries": [
+						"You are proficient in the {@skill Stealth} skill. In addition, without squeezing, you can move through and stop in a space large enough for a Small creature."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Surprise Attack",
+					"entries": [
+						"If you hit a creature with an attack roll, the creature takes an extra {@damage 2d6} damage if it hasn't taken a turn yet in the current combat."
+					]
+				}
+			]
+		},
+        {
+			"name": "Dragonborn (Draconblood)",
+			"source": "MateriaSourceOfTruth",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+            "darkvision": 60,
+			"ability": [
+				{
+					"int": 2,
+					"cha": 1
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Draconic Ancestry",
+					"entries": [
+						"You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.",
+						{
+							"type": "table",
+							"caption": "Draconic Ancestry",
+							"colLabels": [
+								"Dragon",
+								"Damage Type",
+								"Breath Weapon"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-3 text-center",
+								"col-6"
+							],
+							"rows": [
+								[
+									"Black",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Blue",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Brass",
+									"Fire",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Bronze",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Copper",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Gold",
+									"Fire",
+									"15 ft. cone (Dex. save)"
+								],
+								[
+									"Green",
+									"Poison",
+									"15 ft. cone (Con. save)"
+								],
+								[
+									"Red",
+									"Fire",
+									"15 ft. cone (Dex. save)"
+								],
+								[
+									"Silver",
+									"Cold",
+									"15 ft. cone (Con. save)"
+								],
+								[
+									"White",
+									"Cold",
+									"15 ft. cone (Con. save)"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Breath Weapon",
+					"entries": [
+                        " When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Charisma modifier + your proficiency bonus. A creature takes {@dice 1d10} damage on a failed save, and half as much damage on a successful one. The damage increases to {@dice 2d10} at 5th level, {@dice 3d10} at 11th level, and {@dice 4d10} at 17th level."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Retractable Claws",
+					"entries": [
+						"Your claws are natural weapons, which can be used to make unarmed strikes. Extending or retracting If you hit with them, you deal slashing damage equal to {@dice 1d4} + your Strength modifier, instead of the normal bludgeoning damage for an unarmed strike."
+					]
+				},
+                {
+                    "type": "entries",
+                    "name": "Forceful Presence",
+                    "entries": [
+                        "You can use your understanding of creative diplomacy or intimidation to guide a conversation in your favor. When you make a Charisma ({@skill Intimidation} or {@skill Persuasion}) check, you can do so with advantage. Once you use this trait, you can't do so again until you finish a short or long rest."
+                    ]
+                }
+			]
+		},
+        {
+			"name": "Dragonborn (Ravinite)",
+			"source": "MateriaSourceOfTruth",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+            "darkvision": 60,
+			"ability": [
+				{
+					"str": 2,
+					"cha": 1
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Draconic Ancestry",
+					"entries": [
+						"You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.",
+						{
+							"type": "table",
+							"caption": "Draconic Ancestry",
+							"colLabels": [
+								"Dragon",
+								"Damage Type",
+								"Breath Weapon"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-3 text-center",
+								"col-6"
+							],
+							"rows": [
+								[
+									"Black",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Blue",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Brass",
+									"Fire",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Bronze",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Copper",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Gold",
+									"Fire",
+									"15 ft. cone (Dex. save)"
+								],
+								[
+									"Green",
+									"Poison",
+									"15 ft. cone (Con. save)"
+								],
+								[
+									"Red",
+									"Fire",
+									"15 ft. cone (Dex. save)"
+								],
+								[
+									"Silver",
+									"Cold",
+									"15 ft. cone (Con. save)"
+								],
+								[
+									"White",
+									"Cold",
+									"15 ft. cone (Con. save)"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Breath Weapon",
+					"entries": [
+                        " When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@dice 1d10} damage on a failed save, and half as much damage on a successful one. The damage increases to {@dice 2d10} at 5th level, {@dice 3d10} at 11th level, and {@dice 4d10} at 17th level."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Retractable Claws",
+					"entries": [
+						"Your claws are natural weapons, which can be used to make unarmed strikes. Extending or retracting If you hit with them, you deal slashing damage equal to {@dice 1d4} + your Strength modifier, instead of the normal bludgeoning damage for an unarmed strike."
+					]
+				},
+                {
+                    "type": "entries",
+                    "name": "Vengeful Assault",
+                    "entries": [
+                        "When you take damage from a creature in range of a weapon you are wielding or your Retractable Claws, you can use your reaction to make an attack with the weapon or your claws against that creature. Once you use this trait, you can't do so again until you finish a short or long rest."
+                    ]
+                }
+			]
+		},
+        {
+			"name": "Dragonborn (Scalebearer)",
+			"source": "MateriaSourceOfTruth",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+            "darkvision": 60,
+			"ability": [
+				{
+					"str": 2,
+					"cha": 1
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+            "resist": [
+				{
+					"choose": {
+						"from": [
+							"fire",
+							"lightning",
+							"acid",
+							"cold",
+                            "poison"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"name": "Draconic Ancestry",
+					"entries": [
+						"You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.",
+						{
+							"type": "table",
+							"caption": "Draconic Ancestry",
+							"colLabels": [
+								"Dragon",
+								"Damage Type",
+								"Breath Weapon"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-3 text-center",
+								"col-6"
+							],
+							"rows": [
+								[
+									"Black",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Blue",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Brass",
+									"Fire",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Bronze",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Copper",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Gold",
+									"Fire",
+									"15 ft. cone (Dex. save)"
+								],
+								[
+									"Green",
+									"Poison",
+									"15 ft. cone (Con. save)"
+								],
+								[
+									"Red",
+									"Fire",
+									"15 ft. cone (Dex. save)"
+								],
+								[
+									"Silver",
+									"Cold",
+									"15 ft. cone (Con. save)"
+								],
+								[
+									"White",
+									"Cold",
+									"15 ft. cone (Con. save)"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Breath Weapon",
+					"entries": [
+                        " When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@dice 1d10} damage on a failed save, and half as much damage on a successful one. The damage increases to {@dice 2d10} at 5th level, {@dice 3d10} at 11th level, and {@dice 4d10} at 17th level."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Retractable Claws",
+					"entries": [
+						"Your claws are natural weapons, which can be used to make unarmed strikes. Extending or retracting If you hit with them, you deal slashing damage equal to {@dice 1d4} + your Strength modifier, instead of the normal bludgeoning damage for an unarmed strike."
+					]
+				},
+                {
+					"type": "entries",
+					"name": "Damage Resistance",
+					"entries": [
+						"You have resistance to the damage type associated with your Draconic Ancestry."
+					]
+				}
+			]
+		},
+        {
+			"name": "Featherfolk (Kenku)",
+			"source": "MateriaSourceOfTruth",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 30,
+			"skillProficiencies": [
+				{
+					"choose": {
+                        "count": 2,
+                        "from": [
+                            "acrobatics",
+                            "deception",
+                            "stealth",
+                            "sleight of hand"
+                        ]
+                    }
+				}
+			],
+            "languageProficiencies": [
+                {
+                    "any": 2
+                }
+            ],
+			"entries": [
+                {
+                    "type": "entries",
+                    "name": "Age",
+                    "entries": [
+                        "Featherfolk have shorter lifespans than humans. They reach maturity at about 12 years old and can live to 60."
+                    ]
+                },
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Featherfolk are typically 5 feet tall and weigh between 80 and 120 pounds. Your size is Medium, or Small. (You choose the size when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Expert Forgery",
+					"entries": [
+						"You can duplicate other creatures' handwriting and craftwork. You have advantage on all checks made to produce forgeries or duplicates of existing objects."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Kenku Training",
+					"entries": [
+						"You are proficient in your choice of two of the following skills: {@skill Acrobatics}, {@skill Deception}, {@skill Stealth}, and {@skill Sleight of Hand}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mimicry",
+					"entries": [
+						"You can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom ({@skill Insight}) check opposed by your Charisma ({@skill Deception}) check."
+					]
+				}
+			]
+		},
+        {
+			"name": "Featherfolk (Tengu)",
+			"source": "MateriaSourceOfTruth",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 30,
+            "languageProficiencies": [
+                {
+                    "any": 3
+                }
+            ],
+			"entries": [
+                {
+                    "type": "entries",
+                    "name": "Age",
+                    "entries": [
+                        "Featherfolk have shorter lifespans than humans. They reach maturity at about 12 years old and can live to 60."
+                    ]
+                },
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Featherfolk are typically 5 feet tall and weigh between 80 and 120 pounds. Your size is Medium, or Small. (You choose the size when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Glide",
+					"entries": [
+                        "All tengu pine and wish for the ability to fly, but their avian nature does help them when falling back to earth. While {@condition conscious}, you take no fall damage from a drop 5 x your level feet. When falling, a tengu may moving 5 feet laterally for every 20 feet they fall. You cannot use Glide if you are wearing heavy armor."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Razor Sharp Beak",
+					"entries": [
+						" Your beak is a natural weapon, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to {@dice 1d6} + your Strength modifier or Dexterity modifier (You choose this when you select this race), instead of the bludgeoning damage normal for an unarmed strike."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Scrivener",
+					"entries": [
+						"You can read and write 3 languages of your choice. Additionally, you have advantage on all checks made to decipher codes and unknown languages."
+					]
+				}
+			]
+		},
+        {
+			"name": "Genasi (Air)",
+			"source": "MateriaSourceOfTruth",
+			"speed": 35,
+			"resist": [
+				"lightning"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+                        "3": [
+                            "levitate"
+                        ]
+					},
+					"ability": "con",
+                    "known": {
+						"1": [
+							"gust#c"
+						]
+					}
+				}
+			],
+			"entries": [
+                {
+					"type": "entries",
+					"name": "Unending Breath",
+					"entries": [
+						"You can hold your breath indefinitely while you're not {@condition incapacitated}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lightning Resistance",
+					"entries": [
+						"You have resistance to lightning damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mingle with the Wind",
+					"entries": [
+						"You know the {@spell shocking grasp} cantrip. Starting at 3rd level, you can cast the {@spell feather fall} spell with this trait, without requiring a material component. Starting 5th level, you can also cast the {@spell levitate} spell with this trait, without requiring a material component. Once you cast {@spell feather fall} or {@spell levitate} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+					]
+				}
+			]
+		},
+        {
+			"name": "Genasi (Earth)",
+			"source": "MateriaSourceOfTruth",
+            "resist": [
+                "poison"
+            ],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": [
+							"pass without trace"
+						]
+					},
+					"ability": "con",
+					"known": {
+						"1": [
+							"mold earth#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Earth Walk",
+					"entries": [
+						"You can move across {@quickref difficult terrain||3} made of earth, mud, sand, or stone without expending extra movement."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Children with Stone",
+					"entries": [
+						"You know the {@spell mold earth} cantrip.  Once you reach 3rd level, you can cast the {@spell pass without trace} spell once with this trait as a 2nd-level spell, and you regain the ability to cast it this way when you finish a long rest.  Constitution is your spellcasting ability for these spells."
+					]
+				},
+                {
+                    "type": "entries",
+                    "name": "Poison Resistance",
+                    "entries": [
+                        "You have advantage on saving throws against poison, and you have resistance against poison damage."
+                    ]
+                }
+			]
+		},
+        {
+			"name": "Genasi (Fire)",
+			"source": "MateriaSourceOfTruth",
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": [
+							"pyrotechnics"
+						]
+					},
+					"ability": "con",
+					"known": {
+						"1": [
+							"control flames#c"
+						]
+					}
+				}
+			],
+			"entries": [
+                {
+					"type": "entries",
+					"name": "Fire Resistance",
+					"entries": [
+						"You have resistance to fire damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Reach to the Blaze",
+					"entries": [
+						"You know the {@spell control flames} cantrip. Once you reach 3rd level, you can cast the {@spell pyrotechnics} spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
+					]
+				}
+			]
+		},
+        {
+			"name": "Halfling (Tallfellow)",
+			"source": "MateriaSourceOfTruth",
+            "size": [
+				"S"
+			],
+			"speed": 25,
+			"ability": [
+				{
+                    "dex": 2,
+					"str": 1
+				}
+			],
+            "languageProficiencies": [
+				{
+					"common": true,
+					"halfling": true
+				}
+			],
+			"entries": [
+                {
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+					]
+				},
+				{
+					"name": "Lucky",
+					"entries": [
+						"When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"You have advantage on saving throws against being {@condition frightened}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Halfling Nimbleness",
+					"entries": [
+						"You can move through the space of any creature that is of a size larger than yours."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Brawny",
+					"entries": [
+						"Tallfellows are an average of 1 foot taller and 15 pounds heavier than their other Halfling-kin. Due to your larger stature you do not suffer from disadvantage on attack rolls with weapons with the heavy property because of your Small size."
+					],
+					"type": "entries"
+				}
+			]
+		},
+        {
+			"name": "Half-Orc (Orrok)",
+			"source": "MateriaSourceOfTruth",
+			"size": [
+				"M"
+			],
+            "creatureTypes": [
+                "humanoid"
+            ],
+			"speed": 30,
+			"ability": [
+				{
+					"str": 2,
+					"con": 1
+				}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"skillProficiencies": [
+				{
+					"intimidation": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"orc": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Menacing",
+					"entries": [
+						"You gain proficiency in the {@skill Intimidation} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Relentless Endurance",
+					"entries": [
+						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Savage Attacks",
+					"entries": [
+						"When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script."
+					],
+					"type": "entries"
+				}
+			]
+		},
+        {
+			"name": "Hill Dwarf",
+			"source": "MateriaSourceOfTruth",
+			"speed": 30,
+			"ability": [
+				{
+					"con": 2,
+                    "wis": 1
+				}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Tool Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"dwarvish": true
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"battleaxe|phb": true,
+					"handaxe|phb": true,
+					"light hammer|phb": true,
+					"warhammer|phb": true
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet.  Your speed is not reduced by wearing heavy armor."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"You have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You also have resistance to poison damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dwarven Combat Training",
+					"entries": [
+						"You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Tool Proficiency",
+					"entries": [
+						"You gain proficiency with the artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
+					],
+					"type": "entries"
+				}
+			]
+		},
+        {
+			"name": "Kobold",
+			"source": "MateriaSourceOfTruth",
+			"page": 30,
+			"size": [
+				"S"
+			],
+
+            "ability": [
+                {
+                    "dex": 1,
+                    "int": 1,
+                    "choose": {
+                        "amount": 1,
+                        "from": [
+                            "dex",
+                            "int"
+                        ]
+                    }
+                }
+            ],
+			"speed": 30,
+			"darkvision": 60,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"investigation",
+							"medicine",
+							"sleight of hand",
+							"survival"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Sorcerer",
+								"count": 1
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Draconic Cry",
+					"entries": [
+						"As a bonus action, you let out a cry at your enemies within 10 feet of you. Until the start of your next turn, you and your allies have advantage on attack rolls against any of those enemies who could hear you. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				},
+                {
+                    "type": "entries",
+                    "name": "Fidgety Hands",
+                    "entries": [
+                        "Your small hands are quick and nimble, allowing them to get into places they shouldn't or perform movements of fine motor skills.  Your bare hands are considered to be bothe tinkerer's tools and thieves' tools and you are considered proficient in both without requiring either tools."
+                    ]
+                },
+				{
+					"type": "entries",
+					"name": "Kobold Legacy",
+					"entries": [
+						"Kobold's connections to dragons can manifest in unpredictable ways in an individual kobold. Choose one of the following legacy options for your kobold.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Craftiness",
+									"entry": "You have proficiency in one of the following skills of your choice: {@skill Arcana}, {@skill Investigation}, {@skill Medicine}, {@skill Sleight of Hand}, or {@skill Survival}."
+								},
+								{
+									"type": "item",
+									"name": "Defiance",
+									"entry": "You have advantage on saving throws to avoid or end the {@condition frightened} condition on yourself."
+								},
+								{
+									"type": "item",
+									"name": "Draconic Sorcery",
+									"entry": "You know one {@filter cantrip of your choice from the sorcerer spell list|spells|level=0|class=Sorcerer}. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race)."
+								}
+							],
+							"style": "list-hang-notitle"
+						}
+					]
+				}
+			],
+			"_versions": [
+				{
+					"name": "Kobold; Craftiness",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Kobold Legacy",
+							"items": {
+								"name": "Kobold Legacy (Craftiness)",
+								"type": "entries",
+								"entries": [
+									"You have proficiency in one of the following skills of your choice: {@skill Arcana}, {@skill Investigation}, {@skill Medicine}, {@skill Sleight of Hand}, or {@skill Survival}."
+								]
+							}
+						}
+					},
+					"additionalSpells": null
+				},
+				{
+					"name": "Kobold; Defiance",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Kobold Legacy",
+							"items": {
+								"name": "Kobold Legacy (Defiance)",
+								"type": "entries",
+								"entries": [
+									"You have advantage on saving throws to avoid or end the {@condition frightened} condition on yourself."
+								]
+							}
+						}
+					},
+					"skillProficiencies": null,
+					"additionalSpells": null
+				},
+				{
+					"name": "Kobold; Draconic Sorcery",
+					"source": "MPMM",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "Kobold Legacy",
+							"items": {
+								"name": "Kobold Legacy (Draconic Sorcery)",
+								"type": "entries",
+								"entries": [
+									"You know one {@filter cantrip of your choice from the sorcerer spell list|spells|level=0|class=Sorcerer}. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race)."
+								]
+							}
+						}
+					},
+					"skillProficiencies": null
+				}
+			]
+		},
+        {
+			"name": "Leonin",
+			"source": "MateriaSourceOfTruth",
+			"size": [
+				"M"
+			],
+			"speed": 35,
+			"ability": [
+				{
+					"str": 1,
+					"con": 2
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 66,
+				"heightMod": "2d10",
+				"baseWeight": 180,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"athletics",
+							"intimidation",
+							"perception",
+							"survival"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Leonin mature and age at about the same rate as humans."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Leonin tend toward good alignments. Leonin who are focused on the pride lean toward lawful good."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Leonin are typically over 6 feet tall, with some standing over 7 feet. Your size is Medium."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fierce Claws",
+					"entries": [
+						"Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you can deal slashing damage equal to {@damage 1d6} + your Strength or Dexterity modifier (You choose this when you select this race), instead of the bludgeoning damage normal for an unarmed strike.",
+                        "In addition, you can drag or carry a creature you have {@condition grappled} with your claws without reducing your speed as long as the creature is the same size or smaller than you."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Hunter's Instincts",
+					"entries": [
+						"You have proficiency in one of the following skills of your choice: {@skill Athletics}, {@skill Intimidation}, {@skill Perception}, or {@skill Survival}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Daunting Roar",
+					"entries": [
+						"As a bonus action, you can let out an especially menacing roar. Creatures of your choice within 10 feet of you that can hear you must succeed on a Wisdom saving throw or become {@condition frightened} of you until the end of your next turn. The DC of the save equals 8 + your proficiency bonus + your Constitution modifier. Once you use this trait, you can't use it again until you finish a short or long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					],
+					"type": "entries"
+				}
+			]
+		},
+        {
+			"name": "Lizardfolk",
+			"source": "MateriaSourceOfTruth",
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"swim": true
+			},
+			"traitTags": [
+				"Natural Armor",
+				"Natural Weapon"
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"animal handling",
+							"medicine",
+							"nature",
+							"perception",
+							"stealth",
+							"survival"
+						],
+						"count": 2
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bite",
+					"entries": [
+						"You have a fanged maw that you can use to make unarmed strikes. When you hit with it, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hold Breath",
+					"entries": [
+						"You can hold your breath for up to 15 minutes at a time."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hungry Jaws",
+					"entries": [
+						"You can throw yourself into a feeding frenzy. As a bonus action, you can make a special attack with your Bite. If the attack hits, it deals its normal damage, and you gain temporary hit points equal to your character level. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+                        "If this special attack misses this trait is not expended."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Natural Armor",
+					"entries": [
+						"You have tough, scaly skin. When you aren't wearing armor, your base AC is 13 + Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Nature's Intuition",
+					"entries": [
+						"Thanks to your mystical connection to nature, you gain proficiency with two of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}."
+					]
+				}
+			]
+		},
+        {
+			"name": "Loxodon",
+			"source": "MateriaSourceOfTruth",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"con": 2,
+					"wis": 1
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 79,
+				"heightMod": "2d10",
+				"baseWeight": 295,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 450
+			},
+			"traitTags": [
+				"Natural Armor",
+				"Powerful Build"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Loxodons physically mature at the same rate as humans, but they live about 450 years. They highly value the weight of wisdom and experience and are considered young until they reach the age of 60."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Most loxodons are lawful, believing in the value of a peaceful, ordered life. They also tend toward good."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Loxodons stand between 7 and 8 feet tall. Their massive bodies weigh between 300 and 400 pounds. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Powerful Build",
+					"entries": [
+						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Loxodon Serenity",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Natural Armor",
+					"entries": [
+						"You have thick, leathery skin. When you aren't wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.",
+						{
+							"type": "inset",
+							"name": "Tip: AC Calculations Don't Stack",
+							"entries": [
+								"When the game gives you more than one way to calculate your Armor Class, you can use only one of them. You choose the one to use. For example, if you have the loxodon's Natural Armor trait and the monk's Unarmored Defense feature, you don't mix them together. Instead, you choose which one determines your AC."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trunk",
+					"entries": [
+						"You can grasp things with your trunk, and you can use it as a snorkel. It has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to that list of options.",
+						"Your trunk can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Keen Smell",
+					"entries": [
+						"Thanks to your sensitive trunk, you have advantage on Wisdom ({@skill Perception}), Wisdom ({@skill Survival}), and Intelligence ({@skill Investigation}) checks that involve smell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				}
+			]
+		},
+        {
+			"name": "Minotaur",
+			"source": "MateriaSourceOfTruth",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Horns",
+					"entries": [
+						"You have horns that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Goring Rush",
+					"entries": [
+						"Immediately after you take the {@action Dash} action on your turn and move at least 20 feet, you can make one melee attack with your Horns as a bonus action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hammering Horns",
+					"entries": [
+						"Immediately after you hit a creature with a melee attack as part of the {@action Attack} action on your turn, you can use a bonus action to attempt to push that target with your horns. The target must be within 5 feet of you and no more than one size larger than you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you can push it up to 10 feet away from you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Labyrinthine Recall",
+					"entries": [
+						"You always know which direction is north, and you have advantage on any Wisdom ({@skill Survival}) check you make to navigate or track."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Powerful Build",
+					"entries": [
+						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+					]
+				}
+			]
+		},
+        {
+			"name": "Tiefling",
+			"source": "PHB",
+			"page": 42,
+			"srd": true,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"cha": 2,
+					"int": 1
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 57,
+				"heightMod": "2d8",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 20,
+				"max": 100
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"infernal": true
+				}
+			],
+			"resist": [
+				"fire"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"hellish rebuke#2"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"darkness"
+								]
+							}
+						}
+					},
+					"ability": "cha",
+					"known": {
+						"1": [
+							"thaumaturgy#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Tieflings mature at the same rate as humans but live a few years longer."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Tieflings are about the same size and build as humans. Your size is Medium."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Hellish Resistance",
+					"entries": [
+						"You have resistance to fire damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Infernal Legacy",
+					"entries": [
+						"You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can also cast the {@spell darkness} spell once with this trait and regain the ability to do so when you finish a long rest."
+					],
+					"type": "entries"
+				},
+                {
+                    "name": "Legacy of Blood",
+                    "entries": [
+                        "when you choose this race, you select one of the various Legacy options which impart unique spell-like abilities.  Intelligence, Wisdom, or Charisma is your spellcasting ability for it when you cast any spell granted by your chosen legacy."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Legacy of Avernus",
+                    "entries": [
+                        "You know the {@spell thaumaturgy} cantrip.  When you reach 3rd level, you can cast the {@spell searing smite} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest.  When you reach 5th level, you can cast the {@spell branding smite} spell once with this trait and regain the ability to do so when you finish a long rest."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Legacy of Cania",
+                    "entries": [
+                        "You know the {@spell mage hand} cantrip.  When you reach 3rd level, you can cast the {@spell burning hands} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest.  When you reach 5th level, you can cast the {@spell flame blade} spell once with this trait and regain the ability to do so when you finish a long rest."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Legacy of Dis",
+                    "entries": [
+                        "You know the {@spell thaumaturgy} cantrip.  When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest.  When you reach 5th level, you can cast the {@spell detect thoughts} spell once with this trait and regain the ability to do so when you finish a long rest."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Legacy of Maladomini",
+                    "entries": [
+                        "You know the {@spell thaumaturgy} cantrip.  When you reach 3rd level, you can cast the {@spell ray of sickness} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest.  When you reach 5th level, you can cast the {@spell crown of madness} spell once with this trait and regain the ability to do so when you finish a long rest."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Legacy of Malbolge",
+                    "entries": [
+                        "You know the {@spell minor illusion} cantrip.  When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest.  When you reach 5th level, you can cast the {@spell invisibility} spell once with this trait and regain the ability to do so when you finish a long rest."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Legacy of Minauros",
+                    "entries": [
+                        "You know the {@spell mage hand} cantrip.  When you reach 3rd level, you can cast the {@spell tenser's floating disk} spell once with this trait and regain the ability to do so when you finish a long rest.  When you reach 5th level, you can cast the {@spell arcane lock} spell once with this trait and regain the ability to do so when you finish a long rest."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Legacy of Phlegethos",
+                    "entries": [
+                        "You know the {@spell friends} cantrip.  When you reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest.  When you reach 5th level, you can cast the {@spell suggestion} spell once with this trait and regain the ability to do so when you finish a long rest."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Legacy of Stygia",
+                    "entries": [
+                        "You know the {@spell ray of frost} cantrip.  When you reach 3rd level, you can cast the {@spell armor of Agathys} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest.  When you reach 5th level, you can cast the {@spell darkness} spell once with this trait and regain the ability to do so when you finish a long rest."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Devil's Tongue",
+                    "entries": [
+                        "You know the {@spell vicious mockery} cantrip.  When you reach the 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest.  When you reach 5th level, you can cast the {@spell enthrall} spell once with this trait and regain the ability to do so when you finish a long rest."
+                    ]
+                },
+                {
+                    "name": "Winged Legacy",
+                    "entries": [
+                        "You have bat-like wings sprouting from your shoulder blades.  You have a flying speed of 30 feet while you are not wearing heavy armor."
+                    ],
+                    "type": "entries"
+                },
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					],
+					"type": "entries"
+				}
+			]
+		},
+        {
+			"name": "Tortle",
+			"source": "MateriaSourceOfTruth",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 30,
+			"traitTags": [
+				"Natural Armor",
+				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"animal handling",
+							"medicine",
+							"nature",
+							"perception",
+							"stealth",
+							"survival"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Claws",
+					"entries": [
+						"You have claws that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength or Dexterity modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hold Breath",
+					"entries": [
+						"You can hold your breath for up to 1 hour."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Natural Armor",
+					"entries": [
+						"Your shell provides you a base AC of 17 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Nature's Intuition",
+					"entries": [
+						"Thanks to your mystical connection to nature, you gain proficiency with one of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shell Defense",
+					"entries": [
+						"You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to your AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are {@condition prone}, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell."
+					]
+				},
+                {
+                    "type": "entries",
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and one other language of your choice."
+                    ]
+                }
+			]
+		}
     ]
 }
