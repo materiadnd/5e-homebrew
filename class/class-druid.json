@@ -5,7 +5,7 @@
 			{
 				"json": "MateriaSourceOfTruth",
 				"abbreviation": "Materia",
-				"full": "Materia Source of Truth - Cleric",
+				"full": "Materia Source of Truth - Druid",
 				"authors": [
                     "Adam Owczarek"
                 ],
@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659623421
+        "dateLastModified": 1659625712
 	},
 	"class": [
 		{
