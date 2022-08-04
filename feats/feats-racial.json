@@ -1,0 +1,508 @@
+
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "MateriaSourceOfTruth",
+				"abbreviation": "Materia",
+				"full": "Materia Source of Truth - Racial Feats",
+				"authors": [
+                    "Adam Owczarek"
+                ],
+				"convertedBy": [
+                    "diddlypow"
+                ],
+                "targetSchema": "1.0.0",
+                "version": "1.0.0"
+			}
+		],
+        "dateAdded": 0,
+        "dateLastModified": 1659590267
+	},
+    "feat": [
+   		{
+			"name": "Bountiful Luck",
+			"source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Halfling"
+                        }
+                    ]
+                }
+            ],
+			"entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                               "When an ally you can see within 30 feet of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die. The ally must use the new roll.",
+                               "When you use this ability, you can't use your Lucky racial trait before the end of your next turn." 
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "entries": [
+                               "You are required to forgo two of your three feature selections to select Bountiful Luck" 
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dragon Fear",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Dragonborn"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "Instead of exhaling destructive energy, you can expend a use of your Breath Weapon trait to roar, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier). A target automatically succeeds on the save if it can't hear or see you. On a failed save, a target becomes frightened of you for 1 minute. If the frightened target takes any damage, it can repeat the saving throw, ending the effect on itself on a success."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dragon Hide",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Dragonborn"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "Your scales harden. While you aren't wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Drow Magic",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Elf",
+                            "subrace": "Drow"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "You learn more of the magic typical of dark elves. You learn the {@spell detect magic} spell and can cast it at will, without expending a spell slot. If you select this feature a second time, you also learn {@spell levitate} and {@spell dispel magic}, each of which you can cast once without expending a spell slot. You regain the ability to cast those two spells in this way when you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is your choice of Intelligence, Wisdom, or Charisma."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dwarven Fortitude",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Dwarf",
+                            "subrace": "Gray"
+                        },
+                        {
+                            "name": "Dwarf",
+                            "subrace": "Hill"
+                        },
+                        {
+                            "name": "Dwarf",
+                            "subrace": "Mountain"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "Whenever you take the {@action Dodge} action in combat, you can spend one Hit Die to heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1)."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Elven Accuracy",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Elf"
+                        },
+                        {
+                            "name": "Half-Elf"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "Whenever you have advantage on an attack roll using Dexterity, Intelligence, Wisdom, or Charisma, you can reroll one of the dice once."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fade Away",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Gnome"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "Immediately after you take damage, you can use a reaction to magically become invisible until the end of your next turn or until you attack, deal damage, or force someone to make a saving throw. Once you use this ability, you can't do so again until you finish a short or long rest. If you select this feature a second time, roll a d6 at the beginning of each of your turns after using Fade Away, on a roll of 6, you may use this feature again."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fey Teleport",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Elf",
+                            "subrace": "High"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "You learn the {@spell misty step} spell and can cast it once without expending a spell slot. You regain the ability to cast it in this way when you finish a short or long rest. If you select this feature a second time, roll a d6 at the beginning of each of your turns after using {@spell misty step}, on a roll of 6, you may use this feature again. Intelligence is your spellcasting ability for this spell."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Guerilla Attack",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Bugbear"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "The extra damage from your Suprise Attack feature increases at 5th level (3d6), at 9th level (4d6), at 13th level (5d6), and at 17th level (6d6)."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Infernal Constitution",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Tiefling"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "You have resistance to cold damage and poison damage. You have advantage on saving throws against being poisoned."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Inner Bellows",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Dragonborn"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "Your breath weapon recharges on a 5-6 and reguardless of heritage you can choose the space of your Breath Weapon to be a 5 by 30 ft. line or 15 ft. cone each time you use the feature."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Orcish Fury",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Orc"
+                        },
+                        {
+                            "name": "Half-Orc"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "When you hit with an attack using a simple or martial weapon, you can roll one of the weapon's damage dice an additional time and add it as extra damage of the weapon's damage type. You can use this ability a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Orcish Resilience",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Orc"
+                        },
+                        {
+                            "name": "Half-Orc"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "Immediately after you use your Relentless Endurance trait, you can use your reaction to make one weapon attack. If you hit you deal extra damage equal to your level."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Powerful Strike",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "feature": [
+                        {
+                            "name": "Powerful Build"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "Whenever you have advantage on weapon attacks and both dice you rolled would have hit your target, your weapon attacks score a critical hit if either dice is a roll of 19 or 20. If you select this feature a second time, your weapon attacks score a critical hit if either dice is a roll of 18 or 20."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Second Chance",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Halfling"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "When a creature you can see hits you with an attack roll, you can use your reaction to force that creature to reroll. Once you use this ability, you can't use it again until you roll initiative at the start of combat or until you finish a short or long rest."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Squat Nimbleness",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Dwarf"
+                        }
+                    ],
+                    "other": "Small race"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "Increase your walking speed by 5 feet, and you gain proficiency in the {@skill Acrobatics} or {@skill Athletics} skill (your choice)."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "If you select this feature a second time, you have advantage on any Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check you make to escape from being {@condition grappled}."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wood Elf Magic",
+            "source": "MateriaSourceOfTruth",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Elf",
+                            "subrace": "Wood"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "You learn the magic of the primeval woods, which are revered and protected by your people. You learn one druid cantrip of your choice, and your choice of either the {@spell longstrider} or {@spell pass without trace} spell which you can cast once without expending a spell slot. Once you cast it in this way, you can't cast it in this way again until you finish a long rest. The spell's spellcasting ability is your choice of Intelligence, Wisdom, or Charisma."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "If you select this feature a second time, you learn both {@spell longstrider} and {@spell pass without trace} spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. You can also cast this spell using spell slots you have of the appropriate level. The spell's spellcasting ability is your choice of Intelligence, Wisdom, or Charisma."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

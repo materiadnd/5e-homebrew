@@ -1,3 +1,5 @@
 {
+    "artificer": "class-artificer.json",
+    "barbarian": "class-barbarian.json",
     "warlord": "class-warlord.json"
 }
