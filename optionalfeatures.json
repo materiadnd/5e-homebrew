@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659681420
+        "dateLastModified": 1659722587
 	},
 	"optionalfeature": [
 		{
@@ -352,7 +352,6 @@
                         "Additionally, when you take the {@action Attack} action, you can forgo one of your own attacks to allow your familiar to make one attack with its reaction."
                     ]
                 },
-				"Additionally, when you take the {@action Attack} action, you can forgo one of your own attacks to allow your familiar to use its reaction to make one attack of its own.",
                 {
                     "type": "entries",
                     "name": "Enduring Chains",
