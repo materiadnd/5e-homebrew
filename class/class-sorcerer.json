@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659668166
+        "dateLastModified": 1659682145
 	},
 	"class": [
 		{
@@ -1342,11 +1342,11 @@
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Careful Spell"
+							"optionalfeature": "Careful Spell|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Distant Spell"
+							"optionalfeature": "Distant Spell|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -1354,7 +1354,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Extended Spell"
+							"optionalfeature": "Extended Spell|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
