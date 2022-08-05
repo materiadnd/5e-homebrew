@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659668166
+        "dateLastModified": 1659712936
 	},
 	"class": [
 		{
@@ -1232,19 +1232,19 @@
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Pact of the Chain"
+							"optionalfeature": "Pact of the Chain|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Pact of the Blade"
+							"optionalfeature": "Pact of the Blade|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Pact of the Tome"
+							"optionalfeature": "Pact of the Tome|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Pact of the Talisman|TCE"
+							"optionalfeature": "Pact of the Talisman|MateriaSourceOfTruth"
 						}
 					]
 				}
