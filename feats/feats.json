@@ -46,7 +46,7 @@
                             "type": "entries",
                             "name": "Armored Stealth",
                             "entries": [
-                                "Wearing medium or heavy armor which you are proficient in doesn't impose disadvantage on your Dexterity (Stealth) checks."
+                                "Wearing medium or heavy armor which you are proficient in doesn't impose disadvantage on your Dexterity ({@skill Stealth}) checks."
                             ]
                         },
                         {

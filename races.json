@@ -268,12 +268,7 @@
 			],
 			"speed": 30,
             "darkvision": 60,
-			"ability": [
-				{
-					"int": 2,
-					"cha": 1
-				}
-			],
+			"lineage": "VRGR",
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -399,12 +394,7 @@
 			],
 			"speed": 30,
             "darkvision": 60,
-			"ability": [
-				{
-					"str": 2,
-					"cha": 1
-				}
-			],
+			"lineage": "VRGR",
 			"languageProficiencies": [
 				{
 					"common": true,
