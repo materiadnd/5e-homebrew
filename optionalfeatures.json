@@ -1,0 +1,984 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "MateriaSourceOfTruth",
+				"abbreviation": "Materia",
+				"full": "Materia Source of Truth - Optional Features",
+				"authors": [
+                    "Adam Owczarek"
+                ],
+				"convertedBy": [
+                    "diddlypow"
+                ],
+                "targetSchema": "1.0.0",
+                "version": "1.0.0"
+			}
+		],
+        "dateAdded": 0,
+        "dateLastModified": 1659681420
+	},
+	"optionalfeature": [
+		{
+			"name": "Archery - Improved",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"FS:F",
+				"FS:R"
+			],
+			"entries": [
+				"You gain a +2 bonus to attack rolls you make with ranged weapons. If you begin your turn within 5 feet of an enemy, your movement on your turn does not provoke attacks of opportunity from that enemy."
+			]
+		},
+		{
+			"name": "Defense - Improved",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"FS:F",
+				"FS:P",
+				"FS:R"
+			],
+			"entries": [
+				"While you are wearing armor, you gain a +2 bonus to AC."
+			]
+		},
+		{
+			"name": "Dueling - Improved",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"FS:F",
+				"FS:B",
+				"FS:P",
+				"FS:R"
+			],
+			"entries": [
+				"When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon. If that weapon has the versatile property you can roll the weapons damage as if you were wielding it with two hands."
+			]
+		},
+		{
+			"name": "Great Weapon Fighting - Improved",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"FS:F",
+				"FS:P"
+			],
+			"entries": [
+				"When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you treat the die as rolling its maximum possible result."
+			]
+		},
+		{
+			"name": "Protection - Improved",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"FS:F",
+				"FS:P"
+			],
+			"entries": [
+				"When a creature you can see attacks a target other than you that is within 5 feet of you, you impose disadvantage on the attack roll. You must be wielding a shield."
+			]
+		},
+		{
+			"name": "Two-Weapon Fighting - Improved",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"FS:F",
+				"FS:B",
+				"FS:R"
+			],
+			"entries": [
+				"When you engage in two-weapon fighting, you can add your ability modifier to the damage of any bonus action attacks. You gain a +1 bonus to AC when holding a weapon in each hand."
+			]
+		},
+		{
+			"name": "Disarming Attack",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the superiority die to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands in the space of your choice within 10 feet of the enemy."
+			]
+		},
+		{
+			"name": "Evasive Footwork",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until the beginning of your next turn."
+			]
+		},
+		{
+			"name": "Feinting Attack",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"You can expend one superiority die on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll."
+			]
+		},
+		{
+			"name": "Lunging Attack",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet until the beginning of your next turn. On your first hit with that weapon before the beginning of your next turn, add the superiority die to the attack's damage roll."
+			]
+		},
+		{
+			"name": "Parry",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Strength modifier or Dexterity modifier (your choice)."
+			]
+		},
+		{
+			"name": "Pushing Attack",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is one size category Larger than you or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you."
+			]
+		},
+		{
+			"name": "Rally",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Strength or Dexterity modifier (your choice)."
+			]
+		},
+		{
+			"name": "Sweeping Attack",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"On your turn, when you reduce a creature to 0 hit points with a melee weapon, you can expend one superiority die to attempt to damage another creature. Choose another creature within reach of your melee weapon (without moving). You may make a single weapon attack against the creature, if the attack hits, add your superiority die to the damage roll."
+			]
+		},
+		{
+			"name": "Trip Attack",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is one size category Larger than you or smaller, it must make a Strength saving throw. On a failed save, you knock the target {@condition prone} and its movement speed is reduced by 10 feet until the end of its next turn."
+			]
+		},
+		{
+			"name": "Careful Spell",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"name": "Sorcery Points"
+			},
+			"entries": [
+				"When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell and take no damage if they normally would."
+			]
+		},
+		{
+			"name": "Distant Spell",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"name": "Sorcery Points"
+			},
+			"entries": [
+                "When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell to a minimum of 30 feet.",
+                "When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.",
+                "If you cast any spell that includes a teleport, you can spend 1 sorcery point to double the maximum range of teleportation."
+			]
+		},
+		{
+			"name": "Extended Spell",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"name": "Sorcery Points"
+			},
+			"entries": [
+				"When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to increase its duration.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "If the duration of the spell is 1 minute, it is extended to 10 minutes."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "If the duration of the spell is 10 minutes, it is extended to 1 hour."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "If the duration of the spell is 1 hour, it is extended to 8 hours."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "entries": [
+                                "If the duration of the spell is 8 hours or greater, it is extended to 24 hours."
+                            ]
+                        }
+                    ]
+                },
+                "Extended spell cannot extend the duration of a spell to over 24 hours."
+			]
+		},
+		{
+			"name": "Pact of the Blade",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"PB"
+			],
+			"entries": [
+				"You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it, when you attack with that weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage roll. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+				"Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.",
+				"You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
+			]
+		},
+		{
+			"name": "Pact of the Blade",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"PB"
+			],
+			"entries": [
+				"You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+				"Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.",
+				"You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.",
+                {
+                    "type": "entries",
+                    "name": "Thirsting Strike",
+                    "entries": [
+                        "At 5th level in warlock, you can attack with your pact weapon twice, instead of once, whenever you take the {@action Attack} action on your turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Eldritch Skirmisher",
+                    "entries": [
+                        "At 9th level in warlock, when a creature you can see makes an attack against you, you may use your reaction to add your proficiency bonus to your Armor Class and you may immediately make a weapon attack against that target with your Pact Weapon. If the attack you make is a ranged attack, you ignore the disadvantage imposed for the creature being within 5 feet of you."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Patron's Ferver",
+                    "entries": [
+                        "At 17th level in warlock, while you are concentrating on a spell your pact weapon attacks score a critical hit on a roll of 18-20 and you can attack with your pact weapon three times, instead of twice, whenever you take the {@action Attack} action on your turn. Furthermore, after scoring a critical hit with your pact weapon you can cast any spell with a casting time of one action as a bonus action on that same turn."
+                    ]
+                }
+			]
+		},
+		{
+			"name": "Pact of the Chain",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"PB"
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"ritual": [
+								"find familiar"
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				"You learn the {@spell find familiar} spell and can cast it as a ritual. The spell doesn't count against your number of spells known.",
+				"When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: {@creature imp}, {@creature pseudodragon}, {@creature quasit}, {@creature sprite}, or others as introduced in Volo's Guide to Everything.  If you choose the psuedodragon or any appropriate familiar that does not have the ability to turn invisible may choose to do the following as an action:",
+                {
+                    "type": "entries",
+                    "name": "Invisibility",
+                    "entries": [
+                        "The familiar magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the familiar wears or carries is invisible with it.",
+                        "Additionally, when you take the {@action Attack} action, you can forgo one of your own attacks to allow your familiar to make one attack with its reaction."
+                    ]
+                },
+				"Additionally, when you take the {@action Attack} action, you can forgo one of your own attacks to allow your familiar to use its reaction to make one attack of its own.",
+                {
+                    "type": "entries",
+                    "name": "Enduring Chains",
+                    "entries": [
+                        "At 5th level in warlock, your familiar appears with more hit points than normal: your Charsima modifier (minimum of 1) extra hit points per Hit Die it has."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Linked Invocations",
+                    "entries": [
+                        "At 9th level in warlock, your familiar learns half of your Eldritch Invocation options. If the invocation has a prerequestite of any kind, then your familiar cannot learn it. If the invocation grants the ability to cast spells then the familiar can only learn those that have a range of Self."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Chains of Concentration",
+                    "entries": [
+                        "At 17th level in warlock, if your familiar is within 100 feet it is able to concentrate on a spell that you would cast. The spell uses the spell slot, spell save DC, spell attack bonus, and spellcasting ability as if you were the caster, but is otherwise treated as if familiar casts the spell. Both you and the familiar can concentrate on different spells."
+                    ]
+                }
+			]
+		},
+		{
+			"name": "Pact of the Tome",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"PB"
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0",
+								"count": 3
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three {@filter cantrips|spells|level=0} from any class's spell list. The cantrips do not need to be from the same spell list. While the book is on your person, you can cast those cantrips at will. They don't count against your number of cantrips known. Any cantrip you cast with this feature is considered a warlock cantrip for you. If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.",
+                {
+                    "type": "entries",
+                    "name": "Ostensible Knowledge",
+                    "entries": [
+                        "At 5th level, becoming {@condition incapcitated} by any other means besides falling {@condition unconscious} does not break your concentration (see chapter 10 of the Player's Handbook for more information on Concentration)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Transient Rite",
+                    "entries": [
+                        "Starting at 9th level in warlock, your patron bestows upon you the key to unlock superior magical prowess at the cost of your own vitality.",
+                        "You can perform an 1-hour ritual, which can be done over a short rest, to gain an additional warlock pact magic spell slot. When you use this feature, your maximum hit points are reduced by an amount equal to five times the level of the spell slot to a maximum of 5th level. The spell slot granted by this feature may only be used once, you do not regain it after a short rest.",
+                        "If it's not used, the spell slot is lost after a long rest. Your maximum hit points are restored after a long rest. You may use this feature once per long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Nexus of Arcanum",
+                    "entries": [
+                        "Upon reaching 17th level in warlock, choose one spell from any spell list of 6th, 7th, 8th, or 9th level. The chosen spell counts as a Warlock spell for you. You may cast that spell at its lowest level by expending the use of your Mystic Arcanum of the same level."
+                    ]
+                }
+			]
+		},
+        {
+			"name": "Pact of the Talisman",
+			"source": "MateriaSourceOfTruth",
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"PB"
+			],
+			"entries": [
+				"Your patron gives you an amulet, a talisman that can aid the wearer when the need is great.  The talisman magically resizes to comfortably fit around the wearer's neck. When the wearer fails an ability check, they can add a {@dice d4} to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest.",
+				"If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die.",
+                {
+                    "type": "entries",
+                    "name": "Agenda ???",
+                    "entries": [
+                        "At 5th level in warlock, if the wearer of your talisman is a creature other than you and they are within 1 mile of you and on the same plane of existance as you, you can communicate with them telepathically, even if you do not share a language. Additionally, as an action, you can see through your their eyes and hear what they hears until the start of your next turn, gaining the benefits of any special senses that they have. During this time, you are deaf and blind with regard to your own senses."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Revelation ???",
+                    "entries": [
+                        "Starting at 9th level in warlock, if the wearer of your talisman is a creature other than you, they can cast any warlock spell you know through the talismen. The spell is of the same level as your pact spell slot, and uses your spell save DC, spell attack bonus, and spellcasting ability as if you are the caster, but is otherwise treated as if they cast the spell. Casting a spell in this way does not use your Pact Spell Slot. You may use this feature once per long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fane ???",
+                    "entries": [
+                        "Upon reaching 17th level in warlock, increase the dice rolled by your talisman features and invocations to {@dice 2d4} and the number of uses is equal to double your proficiency bonus. Additionally, if the wearer of your talisman is a creature other than you, when you would regain a pact magic spell slot through your Eldritch Conduit, you can instead choose to have them regain expended spell slots to recover. The spell slots can have a combined level that is equal to 5th-level. You may use this feature once per long rest.",
+                        "For example, they can recover up to 5 levels worth of spell slots. They can recover either a 5th-level spell slot, a 4th-level and 1st-level spell slot, five 1st-level spell slots or other combinations."
+                    ]
+                }
+			]
+		},
+		{
+			"name": "Armor of Shadows",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"You are constantly surrounded by a coating of shadow.  Your AC is equal to 13 + your Dexterity modifier if you are not wearing armor, and you have advantage on Dexterity ({@skill Stealth}) checks."
+			]
+		},
+		{
+			"name": "Ascendant Step",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You may levitate up or down as part of your regular movement. While levitating, you can move any direction other than up or down only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows you to move as if you were climbing."
+			]
+		},
+		{
+			"name": "Beast Speech",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"You can understand the language of beasts, and they understand your speech. You gain advantage on any Charisma checks when dealing with beasts."
+			]
+		},
+		{
+			"name": "Beguiling Influence",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"persuasion": true
+				}
+			],
+			"entries": [
+				"You gain proficiency in the {@skill Deception} and {@skill Persuasion} skills.  If you already have proficiency in either of these skills, you gain expertise in that skill."
+			]
+		},
+		{
+			"name": "Bewitching Whispers",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"Whenever a target is {@condition charmed} by you, you may give it a verbal command on your turn as an action, if the target can hear you, it must make a Wisdom saving throw or follow your instructions if it can while it is still {@condition charmed}.",
+                "A target isn't compelled to take actions that obviously will cause it harm, such as jump into a fire or attack itself. It will however follow commands that put it in dangerous situations, such as attack a dangerous enemy."
+			]
+		},
+		{
+			"name": "Chains of Carceri",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Chain",
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You can bind a creature that you can see within 60 feet in magical chains of force as an action. When you do so, the target must make a Strength saving throw against your spell DC. If they fail, they are {@condition restrained}. If they fail the initial Strength saving throw then they are {@condition paralyzed} until the end of your next turn. On their turn they, if they are not {@condition paralyzed}, may use their action to attempt to free themselves from the chains by making a Strength saving throw. The chains disappear when the creature breaks free, after one minute has passed, or when you use Chains of Carceri again."
+			]
+		},
+		{
+			"name": "Dreadful Word",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"Your words can shatter the minds of other creatures. As an action, you may speak a dreadful word to a target that can hear you. When you do so, they must make a Wisdom save against your spell DC. If they fail, they act as if under a {@spell confusion} spell for one minute. At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends."
+			]
+		},
+		{
+			"name": "Eldritch Sight",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"You can see the presence of magic within 30 feet of you. If you see magic in this way, you can see a faint aura around any visible creature or object in the area that bears magic, by using your action, you learn its school of magic, if any.",
+                "Eldritch Sight cannot penetrate a barrier you cannot see through."
+			]
+		},
+		{
+			"name": "Eldritch Smite",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Blade",
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"Once per turn when you hit a creature with your pact weapon, you can expend a a spell slot to deal an extra {@damage 1d8} for damage to the target, plus another {@damage 1d8} per level of the spell slot, to a maximum of {@damage 5d8}.",
+                "Alternatively, if you expend a warlock spell slot to deal an extra {@damage 2d8} force damage to the target, plus another {@damage 1d8} per level of the spell slot to a maximum of {@damage 6d8}, and you can knock the target {@condition prone} if it is Huge or smaller."
+			]
+		},
+		{
+			"name": "Far Scribe",
+			"source": "MateriaSourceOfTruth",
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"pact": "Tome"
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"sending"
+						]
+					}
+				}
+			],
+			"entries": [
+                "A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can contain a number of names equal to your proficiency bonus.",
+                "You can cast the {@spell sending} spell, targeting a creature whose name is on the page, without using a spell slot and without using material components. To do so, you must write the message on the page. The target hears the message in their mind, and if the target replies, their message appears on the page, rather than in your mind. The writing disappears after 1 minute.",
+                "As an action, you can magically erase a name on the page by touching it."
+			]
+		},
+		{
+			"name": "Fiendish Vigor",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"As an action, you may provide yourself temporary hit points equal to your proficiency bonus + your Charisma modifier."
+			]
+		},
+		{
+			"name": "Grasp of Hadar",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"eldritch blast#c"
+					]
+				}
+			],
+			"entries": [
+				"Once on each of your turns when you hit a creature with your {@spell eldritch blast}, that is no more than two size categories Larger than you or smaller, you can move that creature in a straight line 10 feet closer to you."
+			]
+		},
+		{
+			"name": "Mask of Many Faces",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"As an action, you make yourself--including your clothing, armor, weapons, and other belongings on your person--look different until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.",
+                "The changes wrought by this invocation fail to hold up to physical inspection. For example, if you use this invocation to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this invocation to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.",
+                "To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence ({@skill Investigation}) check against your spell save DC."
+			]
+		},
+		{
+			"name": "Master of Myriad Forms",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You assume a different form. As an action, choose one of the following options, the effects of which last until you use your action to dismiss it or choose a different option.",
+                {
+                    "type": "entries",
+                    "name": "Aquatic Adaptation",
+                    "entries": [
+                        "You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Change Appearance",
+                    "entries": [
+                        "You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. You can use your action to change your appearance in this way again."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Natural Weapons",
+                    "entries": [
+                        "You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal {@damage 1d6} bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. You may use your Charisma modifier for the attack and damage roll. Finally, the natural weapon is considered magic for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+                    ]
+                }
+			]
+		},
+		{
+			"name": "Minions of Chaos",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You utter words of chaos that bring an elemental spirit into the plain of existane you are currently on. That spirits takes the form of an elemental being as if casted by the {@spell conjure elemental} spell. You cannot do so again until you finish a long rest.",
+                "If at any point you are to lose concentration on controling the elemental summoned by this invocation, you can use your Action on your turns to inflict {@damage 1d4} points of piercing or slashing damage to yourself with a dagger or other piercing or slashing weapon. Using this blood you form a circle and attempt to regain control of the elemental spirit. Make a spell casting check with the DC equal to 10 + the CR of the elemental you summoned."
+			]
+		},
+		{
+			"name": "Mire the Mind",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+                "As an action, you alter time around a creature of your choice you can see within 60 feet. The target must succeed on a Wisdom saving throw or be affected by this invocation for one minute.",
+                "An affected target's speed is halved, it takes a −2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. If the creature attempts to cast a spell with a casting time of 1 action, roll a {@dice d20}. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it cannot, the spell is wasted.",
+                "A creature affected by this invocation makes another Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+			]
+		},
+		{
+			"name": "Misty Visions",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+                "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 5-foot cube. The image appears at a spot you can see and lasts for one minute. The image is purely visual; it isn't accompanied by sound, smell, or other sensory effects.",
+                "You can use your action to cause the image to move to any spot you can see. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking.",
+                "Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image.",
+                "The image lasts until you dismiss it as an action, or create another image with this invocation."
+			]
+		},
+		{
+			"name": "Otherworldly Leap",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"Your jump distance is tripled, in addition you may touch a creature as an action. The creature's jump distance is tripled and their jumping distance is not reduced for making a standing long or high jumps for one minute or until you use this ability again."
+			]
+		},
+		{
+			"name": "Repelling Blast",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"eldritch blast#c"
+					]
+				}
+			],
+			"entries": [
+				"When you hit a creature with your {@spell eldritch blast}, that is no more than two size categories Larger than you or smaller, you can push the creature up to 10 feet away from you in a straight line."
+			]
+		},
+		{
+			"name": "Sculptor of Flesh",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"This invocation transforms a willing creature that you touch into a new form. The transformation requires one minute to complete.",
+                "The transformation lasts for a duration of one hour, until you dismiss the invocation, use the invocation again, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating) to a maximum challenge rating of 1.",
+                "The target's game statistics are replaced by the statistics of the beast, but they retain their alignment, personality, and Intelligence, Wisdom, and Charisma scores. They also retain all of their skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as the target and the bonus in its stat block is higher than the target, use the creature’s bonus. If the creature has any legendary or lair actions, they can’t use them.",
+                "The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious.",
+                "The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech.",
+                "The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment."
+			]
+		},
+		{
+			"name": "Shroud of Shadow",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"As an action, a creature you touch becomes {@condition invisible} for up to 1 hour. Anything the target is wearing or carrying is {@condition invisible} as long as it is on the target's person. The spell ends for a target that attacks or casts a spell, or if you use this invocation again."
+			]
+		},
+		{
+			"name": "Sign of Ill Omen",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"As an action, you touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for one minute or until you use this ability again. When you use this invocation, choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.",
+                "While the target is cursed, your attacks and spells deal an extra {@damage 1d8} necrotic damage to the target.",
+                "A {@spell remove curse} spell ends this effect."
+			]
+		},
+		{
+			"name": "Thief of Five Fates",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"As an action, a creature of your choice that you can see within 30 feet must make a Charisma saving throw. For the next minute, whenever a target that fails this saving throw makes an attack roll or a saving throw, the target must roll a {@dice d4} and subtract the number rolled from the attack roll or saving throw."
+			]
+		},
+		{
+			"name": "Trickster's Escape",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"As an action, you touch a willing creature. For the next hour, the target's movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target's speed nor cause the target to be {@condition paralyzed} or {@condition restrained}.",
+                "The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target's movement or attacks.",
+                "You regain the ability to do so when you finish a long rest."
+			]
+		},
+		{
+			"name": "Undying Servitude",
+			"source": "MateriaSourceOfTruth",
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"This invocation creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. You imbue the target with a foul mimicry of life as if by the {@spell animate dead} spell.",
+                "Once you do so, you cannot cast it in this way again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Visions of Distant Realms",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"As an action, you create an invisible sensor within one mile in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for one minute or until you choose to dismiss it, and it can't be attacked or otherwise interacted with.",
+                "When you use this ability, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.",
+                "A creature that can see the sensor (such as a creature benefiting from see invisibility or truesight) sees a luminous, intangible orb about the size of your fist."
+			]
+		},
+		{
+			"name": "Whispers of the Grave",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"As an action, you grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can't be undead. The invocation fails if the corpse was the target of this invocation within the last 10 days.",
+                "Over the next 10 minutes, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, but as part of this invocation the corpse recognizes you as someone near and dear to it in life. This should aid you in getting less cryptic answers from it, but does not guarantee you will get the answers you seek.",
+                "This invocation does not return the creature's soul to its body, only its animating spirit. Thus, the corpse can't learn new information, does not comprehend anything that has happened since it died, and can't speculate about future events."
+			]
+		}
+	]
+}

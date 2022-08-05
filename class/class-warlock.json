@@ -1299,7 +1299,7 @@
 			"classSource": "MateriaSourceOfTruth",
 			"level": 5,
 			"entries": [
-				"At 5th level in warlock, you can attack with your pact weapon twice, instead of once, whenever you take the {@spell Attack} action on your turn."
+				"At 5th level in warlock, you receive an additional benefit from your pact boon."
 			]
 		},
 		{
@@ -1340,7 +1340,7 @@
 			"classSource": "MateriaSourceOfTruth",
 			"level": 9,
 			"entries": [
-				"At 9th level in warlock, when a creature you can see makes an attack against you, you may use your reaction to add your proficiency bonus to your Armor Class and you may immediately make a weapon attack against that target with your Pact Weapon. If the attack you make is a ranged attack, you ignore the disadvantage imposed for the creature being within 5 feet of you."
+				"At 9th level in warlock, you receive an additional benefit from your pact boon."
 			]
 		},
 		{
@@ -1458,7 +1458,7 @@
 			"classSource": "MateriaSourceOfTruth",
 			"level": 17,
 			"entries": [
-				"At 17th level in warlock, while you are concentrating on a spell your pact weapon attacks score a critical hit on a roll of 18-20 and you can attack with your pact weapon three times, instead of twice, whenever you take the {@action Attack} action on your turn. Furthermore, after scoring a critical hit with your pact weapon you can cast any spell with a casting time of one action as a bonus action on that same turn."
+				"At 17th level in warlock, you receive an additional benefit from your pact boon."
 			]
 		},
 		{

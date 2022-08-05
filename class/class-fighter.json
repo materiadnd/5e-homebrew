@@ -41,6 +41,19 @@
 					"progression": {
 						"1": 1
 					}
+				},
+				{
+					"name": "Maneuvers",
+					"featureType": [
+						"MV:B"
+					],
+					"progression": {
+						"2": 1,
+						"4": 3,
+						"7": 5,
+						"10": 7,
+						"15": 9
+					}
 				}
 			],
 			"startingProficiencies": {
@@ -1130,7 +1143,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Disarming Attack"
+							"optionalfeature": "Disarming Attack|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -1138,11 +1151,11 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Evasive Footwork"
+							"optionalfeature": "Evasive Footwork|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Feinting Attack"
+							"optionalfeature": "Feinting Attack|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -1150,7 +1163,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Lunging Attack"
+							"optionalfeature": "Lunging Attack|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -1162,7 +1175,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Parry"
+							"optionalfeature": "Parry|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -1170,11 +1183,11 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Pushing Attack"
+							"optionalfeature": "Pushing Attack|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Rally"
+							"optionalfeature": "Rally|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -1182,11 +1195,11 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Sweeping Attack"
+							"optionalfeature": "Sweeping Attack|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Trip Attack"
+							"optionalfeature": "Trip Attack|MateriaSourceOfTruth"
 						}
 					]
 				}
@@ -1470,27 +1483,27 @@
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Archery"
+							"optionalfeature": "Archery - Improved|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Defense"
+							"optionalfeature": "Defense - Improved|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Dueling"
+							"optionalfeature": "Dueling - Improved|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Great Weapon Fighting"
+							"optionalfeature": "Great Weapon Fighting - Improved|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Protection"
+							"optionalfeature": "Protection - Improved|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Two-Weapon Fighting"
+							"optionalfeature": "Two-Weapon Fighting - Improved|MateriaSourceOfTruth"
 						},
 						{
 							"type": "refOptionalfeature",
