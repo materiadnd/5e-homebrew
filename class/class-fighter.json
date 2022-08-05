@@ -1504,26 +1504,6 @@
 						{
 							"type": "refOptionalfeature",
 							"optionalfeature": "Two-Weapon Fighting - Improved|MateriaSourceOfTruth"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Blind Fighting|TCE"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Interception|TCE"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Superior Technique|TCE"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Thrown Weapon Fighting|TCE"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Unarmed Fighting|TCE"
 						}
 					]
                 }
