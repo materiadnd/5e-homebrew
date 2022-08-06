@@ -2691,7 +2691,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell bane}, {@spell false life|MateriaSourceOfTruth}"
+							"{@spell bane}, {@spell false life}"
 						],
 						[
 							"3rd",
@@ -2869,11 +2869,11 @@
 						],
 						[
 							"5th",
-							"{@spell mass healing word|MateriaSourceOfTruth}, {@spell slow}"
+							"{@spell mass healing word}, {@spell slow}"
 						],
 						[
 							"7th",
-							"{@spell compulsion}, {@spell locate creature|MateriaSourceOfTruth}"
+							"{@spell compulsion}, {@spell locate creature}"
 						],
 						[
 							"9th",
@@ -3200,7 +3200,7 @@
 						],
 						[
 							"3rd",
-							"{@spell pass without trace}, {@spell shadow blade}"
+							"{@spell pass without trace}, {@spell shadow blade|XGE}"
 						],
 						[
 							"5th",
@@ -3208,11 +3208,11 @@
 						],
 						[
 							"7th",
-							"{@spell evard's black tentacles|MateriaSourceOfTruth}, {@spell shadow of moil}"
+							"{@spell evard's black tentacles|MateriaSourceOfTruth}, {@spell shadow of moil|XGE}"
 						],
 						[
 							"9th",
-							"{@spell danse macabre}, {@spell seeming}"
+							"{@spell danse macabre|XGE}, {@spell seeming}"
 						]
 					]
 				}
@@ -3352,19 +3352,19 @@
 						],
 						[
 							"3rd",
-							"{@spell gust of wind}, {@spell warding wind}"
+							"{@spell gust of wind}, {@spell warding wind|XGE}"
 						],
 						[
 							"5th",
-							"{@spell call lightning|MateriaSourceOfTruth}, {@spell thunderstep}"
+							"{@spell call lightning|MateriaSourceOfTruth}, {@spell thunder step|XGE}"
 						],
 						[
 							"7th",
-							"{@spell freedom of movement}, {@spell storm sphere}"
+							"{@spell freedom of movement}, {@spell storm sphere|XGE}"
 						],
 						[
 							"9th",
-							"{@spell control weather}, {@spell control winds}"
+							"{@spell control weather}, {@spell control winds|MateriaSourceOfTruth}"
 						]
 					]
 				}

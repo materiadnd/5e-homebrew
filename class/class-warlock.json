@@ -2032,7 +2032,7 @@
 								],
 								[
 									"4th",
-									"{@spell control water}, {@spell guaridan of faith} (appears as a tentacle)"
+									"{@spell control water}, {@spell guardian of faith} (appears as a tentacle)"
 								],
 								[
 									"5th",
@@ -2237,10 +2237,10 @@
                                 [
                                     "cantrip",
                                     "{@spell resistance|MateriaSourceOfTruth}",
-                                    "{@spell mold earth}",
-                                    "{@spell gust}",
-                                    "{@spell control flames}",
-                                    "{@spell shape water}"
+                                    "{@spell mold earth|XGE}",
+                                    "{@spell gust|XGE}",
+                                    "{@spell control flames|XGE}",
+                                    "{@spell shape water|XGE}"
                                 ],
 								[
 									"1st",
