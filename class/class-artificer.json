@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 1659566259,
-        "dateLastModified": 1659566259
+        "dateLastModified": 1659769545
 	},
 	"class": [
 		{
@@ -746,7 +746,7 @@
 						],
 						"9": [
 							"aura of vitality",
-							"conjure barrage"
+							"conjure barrage|"
 						],
 						"13": [
 							"aura of purity",
@@ -1167,23 +1167,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell healing word}, {@spell ray of sickness}"
+							"{@spell healing word}, {@spell ray of sickness|MateriaSourceOfTruth}"
 						],
 						[
 							"5th",
-							"{@spell flaming sphere}, {@spell Melf's acid arrow}"
+							"{@spell flaming sphere}, {@spell acid arrow|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",
-							"{@spell gaseous form}, {@spell mass healing word}"
+							"{@spell gaseous form|MateriaSourceOfTruth}, {@spell mass healing word}"
 						],
 						[
 							"13th",
-							"{@spell blight}, {@spell death ward}"
+							"{@spell blight|MateriaSourceOfTruth}, {@spell death ward|MateriaSourceOfTruth}"
 						],
 						[
 							"17th",
-							"{@spell cloudkill}, {@spell raise dead}"
+							"{@spell cloudkill|MateriaSourceOfTruth}, {@spell raise dead}"
 						]
 					]
 				}
@@ -1674,7 +1674,7 @@
 						],
 						[
 							"13th",
-							"{@spell ice storm}, {@spell wall of fire}"
+							"{@spell ice storm|MateriaSourceOfTruth}, {@spell wall of fire}"
 						],
 						[
 							"17th",
@@ -1871,11 +1871,11 @@
 						],
 						[
 							"5th",
-							"{@spell branding smite}, {@spell warding bond}"
+							"{@spell branding smite|MateriaSourceOfTruth}, {@spell warding bond|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",
-							"{@spell aura of vitality}, {@spell conjure barrage}"
+							"{@spell aura of vitality}, {@spell conjure barrage|MateriaSourceOfTruth}"
 						],
 						[
 							"13th",
@@ -1883,7 +1883,7 @@
 						],
 						[
 							"17th",
-							"{@spell banishing smite}, {@spell mass cure wounds}"
+							"{@spell banishing smite}, {@spell mass cure wounds|MateriaSourceOfTruth}"
 						]
 					]
 				}

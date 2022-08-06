@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659592777
+        "dateLastModified": 1659769545
 	},
 	"class": [
 		{
@@ -1553,15 +1553,15 @@
                         ],
                         [
                             "3rd",
-                            "{@spell conjure barrage}, {@spell haste}"
+                            "{@spell conjure barrage|MateriaSourceOfTruth}, {@spell haste}"
                         ],
                         [
                             "4th",
-                            "{@spell death ward}, {@spell fire shield}"
+                            "{@spell death ward|MateriaSourceOfTruth}, {@spell fire shield}"
                         ],
                         [
                             "5th",
-                            "{@spell destructive wave}, {@spell swift quiver}"
+                            "{@spell destructive wave}, {@spell swift quiver|MateriaSourceOfTruth}"
                         ]
                     ]
                 }

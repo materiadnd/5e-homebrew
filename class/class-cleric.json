@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659599370
+        "dateLastModified": 1659769545
 	},
 	"class": [
 		{
@@ -1766,23 +1766,23 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell false life}, {@spell ray of sickness}"
+							"{@spell false life}, {@spell ray of sickness|MateriaSourceOfTruth}"
 						],
 						[
 							"3rd",
-							"{@spell blindness/deafness}, {@spell ray of enfeeblement}"
+							"{@spell blindness/deafness}, {@spell ray of enfeeblement|MateriaSourceOfTruth}"
 						],
 						[
 							"5th",
-							"{@spell animate dead}, {@spell vampiric touch}"
+							"{@spell animate dead}, {@spell vampiric touch|MateriaSourceOfTruth}"
 						],
 						[
 							"7th",
-							"{@spell blight}, {@spell death ward}"
+							"{@spell blight|MateriaSourceOfTruth}, {@spell death ward|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",
-							"{@spell antilife shell}, {@spell cloudkill}"
+							"{@spell antilife shell}, {@spell cloudkill|MateriaSourceOfTruth}"
 						]
 					]
 				},
@@ -1920,7 +1920,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell command}, {@spell identify}"
+							"{@spell command}, {@spell identify|MateriaSourceOfTruth}"
 						],
 						[
 							"3rd",
@@ -1932,11 +1932,11 @@
 						],
 						[
 							"7th",
-							"{@spell arcane eye}, {@spell confusion}"
+							"{@spell arcane eye}, {@spell confusion|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",
-							"{@spell legend lore}, {@spell scrying}"
+							"{@spell legend lore|MateriaSourceOfTruth}, {@spell scrying}"
 						]
 					]
 				},
@@ -2101,7 +2101,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell bless}, {@spell cure wounds}"
+							"{@spell bless}, {@spell cure wounds|MateriaSourceOfTruth}"
 						],
 						[
 							"3rd",
@@ -2113,11 +2113,11 @@
 						],
 						[
 							"7th",
-							"{@spell death ward}, {@spell guardian of faith}"
+							"{@spell death ward|MateriaSourceOfTruth}, {@spell guardian of faith}"
 						],
 						[
 							"9th",
-							"{@spell mass cure wounds}, {@spell raise dead}"
+							"{@spell mass cure wounds|MateriaSourceOfTruth}, {@spell raise dead}"
 						]
 					]
 				},
@@ -2261,7 +2261,7 @@
 						],
 						[
 							"5th",
-							"{@spell daylight}, {@spell fireball}"
+							"{@spell daylight|MateriaSourceOfTruth}, {@spell fireball}"
 						],
 						[
 							"7th",
@@ -2411,7 +2411,7 @@
 						],
 						[
 							"3rd",
-							"{@spell barkskin}, {@spell spike growth}"
+							"{@spell barkskin|MateriaSourceOfTruth}, {@spell spike growth}"
 						],
 						[
 							"5th",
@@ -2419,7 +2419,7 @@
 						],
 						[
 							"7th",
-							"{@spell dominate beast}, {@spell grasping vine}"
+							"{@spell dominate beast}, {@spell grasping vine|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",
@@ -2568,7 +2568,7 @@
 						],
 						[
 							"5th",
-							"{@spell call lightning}, {@spell lightning bolt}"
+							"{@spell call lightning|MateriaSourceOfTruth}, {@spell lightning bolt}"
 						],
 						[
 							"7th",
@@ -2715,7 +2715,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell charm person}, {@spell disguise self}"
+							"{@spell charm person|MateriaSourceOfTruth}, {@spell disguise self}"
 						],
 						[
 							"3rd",
@@ -2731,7 +2731,7 @@
 						],
 						[
 							"9th",
-							"{@spell dominate person}, {@spell modify memory}"
+							"{@spell dominate person|MateriaSourceOfTruth}, {@spell modify memory}"
 						]
 					]
 				},
@@ -2855,7 +2855,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell divine favor}, {@spell shield of faith}"
+							"{@spell divine favor|MateriaSourceOfTruth}, {@spell shield of faith}"
 						],
 						[
 							"3rd",
@@ -2867,7 +2867,7 @@
 						],
 						[
 							"7th",
-							"{@spell freedom of movement}, {@spell stoneskin}"
+							"{@spell freedom of movement}, {@spell stoneskin|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",
@@ -3019,7 +3019,7 @@
 						],
 						[
 							"5th",
-							"{@spell dispel magic}, {@spell magic circle}"
+							"{@spell dispel magic}, {@spell magic circle|MateriaSourceOfTruth}"
 						],
 						[
 							"7th",
@@ -3190,7 +3190,7 @@
 						],
 						[
 							"3rd",
-							"{@spell hold person}, {@spell zone of truth}"
+							"{@spell hold person}, {@spell zone of truth|MateriaSourceOfTruth}"
 						],
 						[
 							"5th",
@@ -3202,7 +3202,7 @@
 						],
 						[
 							"9th",
-							"{@spell commune}, {@spell dominate person}"
+							"{@spell commune}, {@spell dominate person|MateriaSourceOfTruth}"
 						]
 					]
 				},
@@ -3397,7 +3397,7 @@
 								],
 								[
 									"3rd",
-									"{@spell aid}, {@spell warding bond}"
+									"{@spell aid}, {@spell warding bond|MateriaSourceOfTruth}"
 								],
 								[
 									"5th",
@@ -3791,7 +3791,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell identify}, {@spell searing smite}"
+							"{@spell identify|MateriaSourceOfTruth}, {@spell searing smite}"
 						],
 						[
 							"3rd",
@@ -3799,7 +3799,7 @@
 						],
 						[
 							"5th",
-							"{@spell elemental weapon}, {@spell protection from energy}"
+							"{@spell elemental weapon|MateriaSourceOfTruth}, {@spell protection from energy|MateriaSourceOfTruth}"
 						],
 						[
 							"7th",
@@ -3807,7 +3807,7 @@
 						],
 						[
 							"9th",
-							"{@spell animate objects}, {@spell creation}"
+							"{@spell animate objects}, {@spell creation|MateriaSourceOfTruth}"
 						]
 					]
 				},
@@ -3962,15 +3962,15 @@
 						],
 						[
 							"3rd",
-							"{@spell gentle repose}, {@spell ray of enfeeblement}"
+							"{@spell gentle repose|MateriaSourceOfTruth}, {@spell ray of enfeeblement|MateriaSourceOfTruth}"
 						],
 						[
 							"5th",
-							"{@spell revivify}, {@spell vampiric touch}"
+							"{@spell revivify}, {@spell vampiric touch|MateriaSourceOfTruth}"
 						],
 						[
 							"7th",
-							"{@spell blight}, {@spell death ward}"
+							"{@spell blight|MateriaSourceOfTruth}, {@spell death ward|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",

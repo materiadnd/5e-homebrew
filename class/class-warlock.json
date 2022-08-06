@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659712936
+        "dateLastModified": 1659769545
 	},
 	"class": [
 		{
@@ -451,7 +451,7 @@
 									"type": "entries",
 									"name": "Quick Build",
 									"entries": [
-										"You can make a warlock quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the {@background charlatan} background. Third, choose the {@spell eldritch blast} and {@spell chill touch} cantrips, along with the 1st-level spells {@spell charm person} and {@spell witch bolt}."
+										"You can make a warlock quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the {@background charlatan} background. Third, choose the {@spell eldritch blast} and {@spell spectral hand|MateriaSourceOfTruth} cantrips, along with the 1st-level spells {@spell charm person|MateriaSourceOfTruth} and {@spell witch bolt|MateriaSourceOfTruth}."
 									]
 								}
 							]
@@ -1163,7 +1163,7 @@
 					"name": "Spell Slots",
 					"entries": [
 						"The Warlock table shows how many spell slots you have to cast your {@filter warlock spells|spells|class=warlock} of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.",
-						"For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell {@spell witch bolt}, you must spend one of those slots, and you cast it as a 3rd-level spell."
+						"For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell {@spell witch bolt|MateriaSourceOfTruth}, you must spend one of those slots, and you cast it as a 3rd-level spell."
 					]
 				},
 				{
@@ -1513,7 +1513,7 @@
 							"rows": [
                                 [
                                     "cantrip",
-                                    "{@spell guidance}, {@spell vicious mockery}"
+                                    "{@spell guidance}, {@spell vicious mockery|MateriaSourceOfTruth}"
                                 ],
 								[
 									"1st",
@@ -1533,7 +1533,7 @@
 								],
 								[
 									"5th",
-									"{@spell dominate person}, {@spell seeming}"
+									"{@spell dominate person|MateriaSourceOfTruth}, {@spell seeming}"
 								]
 							]
 						}
@@ -1650,7 +1650,7 @@
 								],
 								[
 									"5th",
-									"{@spell flame strike}, {@spell hallow}"
+									"{@spell flame strike|MateriaSourceOfTruth}, {@spell hallow|MateriaSourceOfTruth}"
 								]
 							]
 						}
@@ -1766,7 +1766,7 @@
 								],
 								[
 									"5th",
-									"{@spell dominate person}, {@spell telekinesis}"
+									"{@spell dominate person|MateriaSourceOfTruth}, {@spell telekinesis}"
 								]
 							]
 						}
@@ -1816,7 +1816,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Upon reaching 10th level, you learn the spell {@spell Evard's black tentacles} and when casting the spell you can designate any number of creatures you can see to be unaffected by it. It counts as a warlock spell for you, but it does not count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest."
+				"Upon reaching 10th level, you learn the spell {@spell Evard's black tentacles|MateriaSourceOfTruth} and when casting the spell you can designate any number of creatures you can see to be unaffected by it. It counts as a warlock spell for you, but it does not count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest."
 			]
 		},
 		{
@@ -1892,11 +1892,11 @@
 								],
 								[
 									"4th",
-									"{@spell aura of life}, {@spell death ward}"
+									"{@spell aura of life}, {@spell death ward|MateriaSourceOfTruth}"
 								],
 								[
 									"5th",
-									"{@spell contagion}, {@spell legend lore}"
+									"{@spell contagion|MateriaSourceOfTruth}, {@spell legend lore|MateriaSourceOfTruth}"
 								]
 							]
 						}
@@ -2122,7 +2122,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Fathomless feature}",
-				"You learn the spell {@spell Evard's black tentacles}. It counts as a warlock spell for you, but it doesn't count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.",
+				"You learn the spell {@spell Evard's black tentacles|MateriaSourceOfTruth}. It counts as a warlock spell for you, but it doesn't count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.",
 				"Whenever you cast this spell, your patron's magic bolsters you, granting you a number of temporary hit points equal to your warlock level. Moreover, damage can't break your concentration on this spell."
 			]
 		},
@@ -2247,7 +2247,7 @@
 									"{@spell detect evil and good}",
 									"{@spell sanctuary}",
 									"{@spell thunderwave}",
-									"{@spell burning hands}",
+									"{@spell burning hands|MateriaSourceOfTruth}",
 									"{@spell fog cloud}"
 								],
 								[
@@ -2268,7 +2268,7 @@
 								],
 								[
 									"4th",
-									"{@spell phantasmal killer}",
+									"{@spell phantasmal killer|MateriaSourceOfTruth}",
 									"{@spell stone shape}",
 									"{@spell greater invisibility}",
 									"{@spell fire shield}",
@@ -2462,11 +2462,11 @@
 								],
 								[
 									"4th",
-									"{@spell death ward}, {@spell greater invisibility}"
+									"{@spell death ward|MateriaSourceOfTruth}, {@spell greater invisibility}"
 								],
 								[
 									"5th",
-									"{@spell antilife shell}, {@spell cloudkill}"
+									"{@spell antilife shell}, {@spell cloudkill|MateriaSourceOfTruth}"
 								]
 							]
 						}
@@ -2592,7 +2592,7 @@
                                 ],
 								[
 									"1st",
-									"{@spell cure wounds}, {@spell guiding bolt}"
+									"{@spell cure wounds|MateriaSourceOfTruth}, {@spell guiding bolt}"
 								],
 								[
 									"2nd",
@@ -2600,7 +2600,7 @@
 								],
 								[
 									"3rd",
-									"{@spell daylight}, {@spell revivify}"
+									"{@spell daylight|MateriaSourceOfTruth}, {@spell revivify}"
 								],
 								[
 									"4th",
@@ -2731,15 +2731,15 @@
 								],
 								[
 									"2nd",
-									"{@spell blur}, {@spell branding smite}"
+									"{@spell blur}, {@spell branding smite|MateriaSourceOfTruth}"
 								],
 								[
 									"3rd",
-									"{@spell blink}, {@spell elemental weapon}"
+									"{@spell blink}, {@spell elemental weapon|MateriaSourceOfTruth}"
 								],
 								[
 									"4th",
-									"{@spell phantasmal killer}, {@spell staggering smite}"
+									"{@spell phantasmal killer|MateriaSourceOfTruth}, {@spell staggering smite}"
 								],
 								[
 									"5th",

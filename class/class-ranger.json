@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659652080
+        "dateLastModified": 1659769545
 	},
 	"class": [
 		{
@@ -2038,7 +2038,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell charm person}"
+							"{@spell charm person|MateriaSourceOfTruth}"
 						],
 						[
 							"5th",
@@ -2275,7 +2275,7 @@
 						],
 						[
 							"9th",
-							"{@spell gaseous form}"
+							"{@spell gaseous form|MateriaSourceOfTruth}"
 						],
 						[
 							"13th",
@@ -2283,7 +2283,7 @@
 						],
 						[
 							"17th",
-							"{@spell insect plague}"
+							"{@spell insect plague|MateriaSourceOfTruth}"
 						]
 					]
 				}
@@ -2543,7 +2543,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell protection from evil and good}"
+							"{@spell protection from evil and good|MateriaSourceOfTruth}"
 						],
 						[
 							"5th",
@@ -2683,11 +2683,11 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell protection from evil and good}"
+							"{@spell protection from evil and good|MateriaSourceOfTruth}"
 						],
 						[
 							"5th",
-							"{@spell zone of truth}"
+							"{@spell zone of truth|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",

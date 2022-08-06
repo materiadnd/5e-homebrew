@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659682145
+        "dateLastModified": 1659769545
 	},
 	"class": [
 		{
@@ -625,7 +625,7 @@
 									"type": "entries",
 									"name": "Quick Build",
 									"entries": [
-										"You can make a sorcerer quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the hermit background. Third, choose the {@spell light}, {@spell prestidigitation}, {@spell ray of frost}, and {@spell shocking grasp} cantrips, along with the 1st-level spells {@spell shield} and {@spell magic missile}."
+										"You can make a sorcerer quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the hermit background. Third, choose the {@spell light}, {@spell prestidigitation}, {@spell ray of frost}, and {@spell shocking grasp|MateriaSourceOfTruth} cantrips, along with the 1st-level spells {@spell shield} and {@spell magic missile}."
 									]
 								}
 							]
@@ -1203,7 +1203,7 @@
 					"name": "Spell Slots",
 					"entries": [
 						"The Sorcerer table shows how many spell slots you have to cast your {@filter sorcerer spells|spells|class=sorcerer} of 1st level and higher. To cast one of these sorcerer spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-						"For example, if you know the 1st-level spell {@spell burning hands} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell burning hands} using either slot."
+						"For example, if you know the 1st-level spell {@spell burning hands|MateriaSourceOfTruth} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell burning hands|MateriaSourceOfTruth} using either slot."
 					]
 				},
 				{
@@ -1654,7 +1654,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell chromatic orb}, {@spell identify|MateriaSourceOfTruth}"
+							"{@spell chromatic orb|MateriaSourceOfTruth}, {@spell identify|MateriaSourceOfTruth}"
 						],
 						[
 							"3rd",
@@ -1670,7 +1670,7 @@
 						],
 						[
 							"9th",
-							"{@spell circle of power}, {@spell legend lore}"
+							"{@spell circle of power}, {@spell legend lore|MateriaSourceOfTruth}"
 						]
 					]
 				}
@@ -1949,7 +1949,7 @@
 						],
 						[
 							"13-14",
-							"You cast {@spell confusion} centered on yourself."
+							"You cast {@spell confusion|MateriaSourceOfTruth} centered on yourself."
 						],
 						[
 							"15-16",
@@ -2256,7 +2256,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell arms of Hadar}, {@spell dissonant whispers}, {@spell mind sliver|tce}"
+							"{@spell arms of Hadar|MateriaSourceOfTruth}, {@spell dissonant whispers}, {@spell mind sliver|tce}"
 						],
 						[
 							"3rd",
@@ -2264,11 +2264,11 @@
 						],
 						[
 							"5th",
-							"{@spell hunger of Hadar}, {@spell sending}"
+							"{@spell hunger of Hadar|MateriaSourceOfTruth}, {@spell sending}"
 						],
 						[
 							"7th",
-							"{@spell Evard's black tentacles}, {@spell summon aberration|TCE}"
+							"{@spell Evard's black tentacles|MateriaSourceOfTruth}, {@spell summon aberration|TCE}"
 						],
 						[
 							"9th",
@@ -2407,7 +2407,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell alarm}, {@spell protection from evil and good}"
+							"{@spell alarm}, {@spell protection from evil and good|MateriaSourceOfTruth}"
 						],
 						[
 							"3rd",
@@ -2415,7 +2415,7 @@
 						],
 						[
 							"5th",
-							"{@spell dispel magic}, {@spell protection from energy}"
+							"{@spell dispel magic}, {@spell protection from energy|MateriaSourceOfTruth}"
 						],
 						[
 							"7th",
@@ -2597,7 +2597,7 @@
 						],
 						[
 							"5th",
-							"{@spell dispel magic}, {@spell magic circle}"
+							"{@spell dispel magic}, {@spell magic circle|MateriaSourceOfTruth}"
 						],
 						[
 							"7th",
@@ -2657,7 +2657,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell identify}, {@spell searing smite}"
+							"{@spell identify|MateriaSourceOfTruth}, {@spell searing smite|MateriaSourceOfTruth}"
 						],
 						[
 							"3rd",
@@ -2665,7 +2665,7 @@
 						],
 						[
 							"5th",
-							"{@spell elemental weapon}, {@spell protection from energy}"
+							"{@spell elemental weapon|MateriaSourceOfTruth}, {@spell protection from energy|MateriaSourceOfTruth}"
 						],
 						[
 							"7th",
@@ -2673,7 +2673,7 @@
 						],
 						[
 							"9th",
-							"{@spell animate objects}, {@spell creation}"
+							"{@spell animate objects}, {@spell creation|MateriaSourceOfTruth}"
 						]
 					]
 				},
@@ -2695,7 +2695,7 @@
 						],
 						[
 							"3rd",
-							"{@spell gentle repose}, {@spell ray of enfeeblement|MateriaSourceOfTruth}"
+							"{@spell gentle repose|MateriaSourceOfTruth}, {@spell ray of enfeeblement|MateriaSourceOfTruth}"
 						],
 						[
 							"5th",
@@ -2703,7 +2703,7 @@
 						],
 						[
 							"7th",
-							"{@spell blight|MateriaSourceOfTruth}, {@spell death ward}"
+							"{@spell blight|MateriaSourceOfTruth}, {@spell death ward|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",
@@ -2741,7 +2741,7 @@
 						],
 						[
 							"9th",
-							"{@spell legend lore}, {@spell scrying}"
+							"{@spell legend lore|MateriaSourceOfTruth}, {@spell scrying}"
 						]
 					]
 				},
@@ -2771,7 +2771,7 @@
 						],
 						[
 							"7th",
-							"{@spell death ward}, {@spell guardian of faith}"
+							"{@spell death ward|MateriaSourceOfTruth}, {@spell guardian of faith}"
 						],
 						[
 							"9th",
@@ -2831,7 +2831,7 @@
 						],
 						[
 							"3rd",
-							"{@spell barkskin}, {@spell spike growth}"
+							"{@spell barkskin|MateriaSourceOfTruth}, {@spell spike growth}"
 						],
 						[
 							"5th",
@@ -2865,7 +2865,7 @@
 						],
 						[
 							"3rd",
-							"{@spell hold person}, {@spell zone of truth}"
+							"{@spell hold person}, {@spell zone of truth|MateriaSourceOfTruth}"
 						],
 						[
 							"5th",
@@ -2877,7 +2877,7 @@
 						],
 						[
 							"9th",
-							"{@spell commune}, {@spell dominate person}"
+							"{@spell commune}, {@spell dominate person|MateriaSourceOfTruth}"
 						]
 					]
 				},
@@ -2899,7 +2899,7 @@
 						],
 						[
 							"3rd",
-							"{@spell aid}, {@spell warding bond}"
+							"{@spell aid}, {@spell warding bond|MateriaSourceOfTruth}"
 						],
 						[
 							"5th",
@@ -2963,7 +2963,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell charm person}, {@spell disguise self}"
+							"{@spell charm person|MateriaSourceOfTruth}, {@spell disguise self}"
 						],
 						[
 							"3rd",
@@ -2979,7 +2979,7 @@
 						],
 						[
 							"9th",
-							"{@spell dominate person}, {@spell modify memory}"
+							"{@spell dominate person|MateriaSourceOfTruth}, {@spell modify memory}"
 						]
 					]
 				},
@@ -3204,11 +3204,11 @@
 						],
 						[
 							"5th",
-							"{@spell gaseous form}, {@spell phantom steed}"
+							"{@spell gaseous form|MateriaSourceOfTruth}, {@spell phantom steed}"
 						],
 						[
 							"7th",
-							"{@spell evard's black tentacles}, {@spell shadow of moil}"
+							"{@spell evard's black tentacles|MateriaSourceOfTruth}, {@spell shadow of moil}"
 						],
 						[
 							"9th",
@@ -3356,7 +3356,7 @@
 						],
 						[
 							"5th",
-							"{@spell call lightning}, {@spell thunderstep}"
+							"{@spell call lightning|MateriaSourceOfTruth}, {@spell thunderstep}"
 						],
 						[
 							"7th",
