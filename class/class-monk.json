@@ -1868,7 +1868,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting when you choose this tradition at 3rd leve, you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast {@spell darkness}, {@spell darkvision}, {@spell pass without trace}, or {@spell silence}, without providing material components. Additionally, you gain the {@spell minor illusion} cantrip if you don't already know it.",
+				"Starting when you choose this tradition at 3rd level, you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast {@spell darkness}, {@spell darkvision}, {@spell pass without trace}, or {@spell silence}, without providing material components. Additionally, you gain the {@spell minor illusion} cantrip if you don't already know it.",
                 "Furthermore, once per turn, you can deal extra damage to one creature you hit with an attack made by the {@action Attack} action or opportunity attack if you have advantage on the attack roll.  The attack must use an unarmed strike or a monk weapon (as listed under Martial Arts)",
                 "You do not need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't {@condition incapacitated}, and you don't have disadvantage on the attack roll or if you are concentrating on a spell you cast using your Shadow Arts",
                 "The size of these sneak dice equals your Martial Arts die on the Monk Table.  At 3rd level, you deal {@damage 2d4} bonus damage.  The bonus damage becomes {@damage 3d6} at 5th level of monk, {@damage 4d8} at 11th level of monk, and {@damage 5d10} at 17th level of monk."
