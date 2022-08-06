@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659748856
+        "dateLastModified": 1659748951
 	},
     "race": [
         {
@@ -1197,20 +1197,7 @@
 			"size": [
 				"S"
 			],
-
-            "ability": [
-                {
-                    "dex": 1,
-                    "int": 1,
-                    "choose": {
-                        "amount": 1,
-                        "from": [
-                            "dex",
-                            "int"
-                        ]
-                    }
-                }
-            ],
+			"lineage": "VRGR",
 			"speed": 30,
 			"darkvision": 60,
 			"skillProficiencies": [
@@ -1361,12 +1348,7 @@
 				"M"
 			],
 			"speed": 35,
-			"ability": [
-				{
-					"str": 1,
-					"con": 2
-				}
-			],
+			"lineage": "VRGR",
 			"heightAndWeight": {
 				"baseHeight": 66,
 				"heightMod": "2d10",
