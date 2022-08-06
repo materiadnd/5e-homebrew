@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659543190
+        "dateLastModified": 1659748856
 	},
     "race": [
         {
@@ -520,12 +520,7 @@
 			],
 			"speed": 30,
             "darkvision": 60,
-			"ability": [
-				{
-					"str": 2,
-					"cha": 1
-				}
-			],
+			"lineage": "VRGR",
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -966,12 +961,7 @@
 				"S"
 			],
 			"speed": 25,
-			"ability": [
-				{
-                    "dex": 2,
-					"str": 1
-				}
-			],
+			"lineage": "VRGR",
             "languageProficiencies": [
 				{
 					"common": true,
@@ -1040,12 +1030,7 @@
                 "humanoid"
             ],
 			"speed": 30,
-			"ability": [
-				{
-					"str": 2,
-					"con": 1
-				}
-			],
+			"lineage": "VRGR",
 			"darkvision": 60,
 			"traitTags": [
 				"Uncommon Race"
@@ -1117,12 +1102,7 @@
 			"name": "Hill Dwarf",
 			"source": "MateriaSourceOfTruth",
 			"speed": 30,
-			"ability": [
-				{
-					"con": 2,
-                    "wis": 1
-				}
-			],
+			"lineage": "VRGR",
 			"darkvision": 60,
 			"traitTags": [
 				"Tool Proficiency"
@@ -1569,12 +1549,7 @@
 				"M"
 			],
 			"speed": 30,
-			"ability": [
-				{
-					"con": 2,
-					"wis": 1
-				}
-			],
+			"lineage": "VRGR",
 			"heightAndWeight": {
 				"baseHeight": 79,
 				"heightMod": "2d10",
@@ -1727,12 +1702,7 @@
 				"M"
 			],
 			"speed": 30,
-			"ability": [
-				{
-					"cha": 2,
-					"int": 1
-				}
-			],
+			"lineage": "VRGR",
 			"heightAndWeight": {
 				"baseHeight": 57,
 				"heightMod": "2d8",
