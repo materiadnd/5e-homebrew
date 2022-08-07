@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659769545
+        "dateLastModified": 1659830980
 	},
 	"class": [
 		{
@@ -1300,7 +1300,7 @@
 			"classSource": "MateriaSourceOfTruth",
 			"level": 15,
 			"entries": [
-				"At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water, and you reduce any level of exhaustion you have by 1 when completing a short rest."
+				"At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water, and you reduce any level of {@condition exhaustion} you have by 1 when completing a short rest."
 			]
 		},
 		{

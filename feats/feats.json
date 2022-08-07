@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659550536 
+        "dateLastModified": 1659830980
 	},
     "feat": [
    		{
@@ -718,7 +718,7 @@
                             "type": "entries",
                             "name": "Lance Charge",
                             "entries": [
-                                "If your mount moves at least 10 feet towards an enemy on your turn and you use the attack action to attack that enemy with a lance, you can choose to forgo your proficiency modifier to the attack roll. If the attack hits, you add twice your proficiency modifier to the damage. If you hit with your initial attack and have the extra attack feature, you may forgo your second attack and the hit is considered a critical hit and the enemy is knocked prone if they are no larger than your mount."
+                                "If your mount moves at least 10 feet towards an enemy on your turn and you use the attack action to attack that enemy with a lance, you can choose to forgo your proficiency modifier to the attack roll. If the attack hits, you add twice your proficiency modifier to the damage. If you hit with your initial attack and have the extra attack feature, you may forgo your second attack and the hit is considered a critical hit and the enemy is knocked {@condition prone} if they are no larger than your mount."
                             ]
                         },
                         {
@@ -757,7 +757,7 @@
                                     "type": "entries",
                                     "name": "??",
                                     "entries": [
-                                        "You can use Wisdom (Animal Handling) instead of Wisdom (Medicine) to stabilize your mount that has been reduced to 0 hp. Your prof is like dwarven stonecunning. If you succeed on the check, the beast then regains 1 hit point and can spend a number of hit die equal to your prof bonus to further regain hit points."
+                                        "You can use Wisdom ({@skill Animal Handling}) instead of Wisdom ({@skill Medicine}) to stabilize your mount that has been reduced to 0 hp. Your prof is like dwarven stonecunning. If you succeed on the check, the beast then regains 1 hit point and can spend a number of hit die equal to your prof bonus to further regain hit points."
                                     ]
                                 },
                                 {
@@ -832,7 +832,7 @@
                             "type": "entries",
                             "name": "Fast Firing",
                             "entries": [
-                                "When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a one handed ranged weapon or thrown weapon that you are holding or may draw as part of the bonus action."
+                                "When you use the {@action Attack} action and attack with a one-handed weapon, you can use a bonus action to attack with a one handed ranged weapon or thrown weapon that you are holding or may draw as part of the bonus action."
                             ]
                         },
                         {
@@ -967,7 +967,7 @@
                                     "type": "entries",
                                     "name": "??",
                                     "entries": [
-                                        "Creature's you have grappled have disadvantage on attack rolls."
+                                        "Creature's you have {@condition grappled} have disadvantage on attack rolls."
                                     ]
                                 },
                                 {
@@ -988,21 +988,21 @@
                                     "type": "entries",
                                     "name": "??",
                                     "entries": [
-                                        "If aoo hits triggered by target standing from prone, you CAN knock them prone again if they are no more than one size category larger than you or smaller"
+                                        "If aoo hits triggered by target standing from {@condition prone}, you CAN knock them {@condition prone} again if they are no more than one size category larger than you or smaller"
                                     ]
                                 },
                                 {
                                     "type": "entries",
                                     "name": "??",
                                     "entries": [
-                                        "The area in a 10 foot radius around you is considered difficult terrain for creatures of your choice, creatures immune to being frightened are not affected by this feature."
+                                        "The area in a 10 foot radius around you is considered difficult terrain for creatures of your choice, creatures immune to being {@condition frightened} are not affected by this feature."
                                     ]
                                 },
                                 {
                                     "type": "entries",
                                     "name": "??",
                                     "entries": [
-                                        "You can drag or carry a creature you have grappled without reducing your speed as long as the creature is the same size or smaller than you."
+                                        "You can drag or carry a creature you have {@condition grappled} without reducing your speed as long as the creature is the same size or smaller than you."
                                     ]
                                 }
                             ]
@@ -1104,7 +1104,7 @@
                             "type": "entries",
                             "name": "Arcane Intellect",
                             "entries": [
-                                "You understand the nature of magic, allowing you to identify spells when cast by a spellcaster. If you perceive a spell being cast, the spell's effect, or both, you can make an Intelligence (Arcana) check to identify the spell being cast. The DC equals 15 + the spell's level. If you select this feature a second time, you make the roll with advantage."
+                                "You understand the nature of magic, allowing you to identify spells when cast by a spellcaster. If you perceive a spell being cast, the spell's effect, or both, you can make an Intelligence ({@skill Arcana}) check to identify the spell being cast. The DC equals 15 + the spell's level. If you select this feature a second time, you make the roll with advantage."
                             ]
                         },
                         {
@@ -1118,7 +1118,7 @@
                             "type": "entries",
                             "name": "Lip Reader",
                             "entries": [
-                                "If you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips. In addition, you can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked."
+                                "If you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips. In addition, you can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom ({@skill Insight}) check contested by your Charisma ({@skill Deception}) check allows a listener to determine that the effect is faked."
                             ]
                         },
                         {
@@ -1150,7 +1150,7 @@
                                     "type": "entries",
                                     "name": "Social Whit",
                                     "entries": [
-                                        "Whenever you make a Charisma Deception, Intimitation or Pursadtion check, you may substitie your Intelligence score if it is higher."
+                                        "Whenever you make a Charisma ({@skill Deception}, {@skill Intimidation}, or {@skill Persuasion}) check, you may substitute your Intelligence score if it is higher."
                                     ]
                                 },
                                 {
@@ -1282,7 +1282,7 @@
                             "type": "entries",
                             "name": "Alert Traveller",
                             "entries": [
-                                "Traveling at a fast pace doesn't impose the normal −5 penalty on your passive Wisdom (Perception) score."
+                                "Traveling at a fast pace doesn't impose the normal −5 penalty on your passive Wisdom ({@skill Perception}) score."
                             ]
                         },
                         {
@@ -1303,14 +1303,14 @@
                             "type": "entries",
                             "name": "See in the Shadows",
                             "entries": [
-                                "Dim light doesn't impose disadvantage on your Wisdom (Perception) checks relying on sight. If you select this feature a second time, you may see in darkness as if you had darkvision (60 feet), or if you already have darkvision, the range is increased by 30 feet."
+                                "Dim light doesn't impose disadvantage on your Wisdom ({@skill Perception}) checks relying on sight. If you select this feature a second time, you may see in darkness as if you had darkvision (60 feet), or if you already have darkvision, the range is increased by 30 feet."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Sharp Hearing",
                             "entries": [
-                                "You have advantage on Wisdom (Perception) checks relying on sound."
+                                "You have advantage on Wisdom ({@skill Perception}) checks relying on sound."
                             ]
                         },
                         {
@@ -1510,7 +1510,7 @@
                                     "type": "entries",
                                     "name": "??",
                                     "entries": [
-                                        "When you are grappled, you can use your action to reverse the grapple. Make a grapple check against the creature. If you succeed, you are no longer considered grappled and the creature that was grappling you becomes grappled by you if it is your size or smaller."
+                                        "When you are {@condition grappled}, you can use your action to reverse the grapple. Make a grapple check against the creature. If you succeed, you are no longer considered {@condition grappled} and the creature that was grappling you becomes {@condition grappled} by you if it is your size or smaller."
                                     ]
                                 },
                                 {
@@ -1558,7 +1558,7 @@
                                     "type": "entries",
                                     "name": "?? (from Poisoner)",
                                     "entries": [
-                                        "You gain proficiency with the poisoner's kit if you don't already have it. With one hour of work using apoisoner's kit and expending 50gp worth of materials, you can create a number of doses of potent poison equal to your proficiency bonus. Once applied to a weapon or piece of ammunition, this poison retains its potency for 1 minute or until you hit with the weapon or ammunition. When a creature takes damage from the coated weapon or ammunition, that creature must succeed on a DC 14 Constitution saving throw or take 2d8 poison damage and become poisoned until the end of your next turn."
+                                        "You gain proficiency with the poisoner's kit if you don't already have it. With one hour of work using apoisoner's kit and expending 50gp worth of materials, you can create a number of doses of potent poison equal to your proficiency bonus. Once applied to a weapon or piece of ammunition, this poison retains its potency for 1 minute or until you hit with the weapon or ammunition. When a creature takes damage from the coated weapon or ammunition, that creature must succeed on a DC 14 Constitution saving throw or take {@damage 2d8} poison damage and become {@condition poisoned} until the end of your next turn."
                                     ]
                                 }
                             ]
@@ -1595,7 +1595,7 @@
                             "type": "entries",
                             "name": "Hardy",
                             "entries": [
-                                "You do not suffer exhaustion when you fall to 0 Hit Points. If you select this feature a second time, you may recover up to two levels of exhaustion on a long rest."
+                                "You do not suffer {@condition exhaustion} when you fall to 0 Hit Points. If you select this feature a second time, you may recover up to two levels of {@condition exhaustion} on a long rest."
                             ]
                         },
                         {
@@ -1739,14 +1739,14 @@
                             "type": "entries",
                             "name": "Shielded Position",
                             "entries": [
-                                "If you are not incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets you, and if that effect would inflict half damage on a successful saving throw, you can use your reaction to take no damage instead if you succeed on the saving throw. If you select this option a second time, you take only half damage if you fail the saving throw."
+                                "If you are not {@condition incapacitated}, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets you, and if that effect would inflict half damage on a successful saving throw, you can use your reaction to take no damage instead if you succeed on the saving throw. If you select this option a second time, you take only half damage if you fail the saving throw."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Shield Shove",
                             "entries": [
-                                "You can use a bonus action to try to shove a creature within 5 feet of you with your shield. If you select this option a second time, you may, with a successful shove, both push the creature 5 feet and knock them prone."
+                                "You can use a bonus action to try to shove a creature within 5 feet of you with your shield. If you select this option a second time, you may, with a successful shove, both push the creature 5 feet and knock them {@condition prone}."
                             ]
                         },
                         {

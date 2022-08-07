@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659773326
+        "dateLastModified": 1659830980
 	},
 	"class": [
 		{
@@ -2486,7 +2486,7 @@
 					"items": [
 						"Your game statistics are replaced by the statistics of the beast or plant, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores.",
 						"You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.",
-						"When you transform, you assume the creature's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious.",
+						"When you transform, you assume the creature's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked {@condition unconscious}.",
                         "You can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your Wild Shape form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you've already cast.",
 						"You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.",
 						"You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
@@ -3189,7 +3189,7 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"Starting at 2nd level, you are surrounded by invisible, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal {@damage 1d4} necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to {@dice 1d6} at 6th level, {@dice 1d8} at 10th level, and {@dice 1d10} at 14th level."
+				"Starting at 2nd level, you are surrounded by {@condition invisible}, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal {@damage 1d4} necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to {@dice 1d6} at 6th level, {@dice 1d8} at 10th level, and {@dice 1d10} at 14th level."
 			]
 		},
 		{
@@ -3618,7 +3618,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, home can be wherever you are. During a short or long rest, you can invoke the shadowy power of the Gloaming Court to help guard your respite. At the start of the rest, you touch a point in space, and an invisible, 30-foot-radius sphere of magic appears, centered on that point. Total cover blocks the sphere.",
+				"At 6th level, home can be wherever you are. During a short or long rest, you can invoke the shadowy power of the Gloaming Court to help guard your respite. At the start of the rest, you touch a point in space, and an {@condition invisible}, 30-foot-radius sphere of magic appears, centered on that point. Total cover blocks the sphere.",
 				"While within the sphere, you and your allies gain a +5 bonus to Dexterity ({@skill Stealth}) and Wisdom ({@skill Perception}) checks, and any light from open flames in the sphere (a campfire, torches, or the like) isn't visible outside it.",
 				"The sphere vanishes at the end of the rest or when you leave the sphere."
 			]

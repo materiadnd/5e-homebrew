@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 1657676716,
-        "dateLastModified": 1657676716
+        "dateLastModified": 1659830980
 	},
     "class": [
         {
@@ -434,7 +434,7 @@
                             "name": "General's Bearing",
                             "entries": [
                                 "When a creature with one of your Merit dice placed on it is reduced to 0 hit points, you can choose to maintain {@status concentration|phb} on it for use on your next turn. Before the end of your next turn, if you hit another creature with a weapon attack, you may choose to place a Merit die on them as through your Strike Like Iron without expending an additional Merit die.",
-                                "Additionally, while you concentrate on your Strike Like Iron, creatures of your choice that start their turn within 10 feet of you benefit from your Veteran Scars until the start of their next turn as long as you are not incapacitated."
+                                "Additionally, while you concentrate on your Strike Like Iron, creatures of your choice that start their turn within 10 feet of you benefit from your Veteran Scars until the start of their next turn as long as you are not {@condition incapacitated}."
                             ]
                         },
                         {
@@ -746,7 +746,7 @@
             "header": 2,
             "entries": [
                 "Beginning at 6th level, you move towards glory. While you are wearing medium or heavy armor you can use your Charisma modifier in place of your Dexterity modifier when rolling initiative.",
-                "Additionally, standing from prone, mounting and dismounting a creature only costs you 5 feet of movement, rather than half your speed."
+                "Additionally, standing from {@condition prone}, mounting and dismounting a creature only costs you 5 feet of movement, rather than half your speed."
             ]
         },
         {
@@ -772,7 +772,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "At 14th level, those who you command cannot be ignored. As a reaction when you or a creature you can see within 30 feet of you is reduced to 0 hit points and is not killed outright, you can spend a Merit die to allow them to drop to 1 hit point instead and they can immediately spend a number of their Hit Dice up to your Charisma modifier (minimum of 1) to regain hit points. If they are prone they can immediately rise to their feet (costing no movement).",
+                "At 14th level, those who you command cannot be ignored. As a reaction when you or a creature you can see within 30 feet of you is reduced to 0 hit points and is not killed outright, you can spend a Merit die to allow them to drop to 1 hit point instead and they can immediately spend a number of their Hit Dice up to your Charisma modifier (minimum of 1) to regain hit points. If they are {@condition prone} they can immediately rise to their feet (costing no movement).",
                 "Alternatively, if that ally takes damage that would outright kill them, you can spend your reaction to instead reduce them to 0 hit points. That ally has disadvantage on death saving throws until stabilized or dead.",
                 "Once a creature benefits from this feature, they cannot benefit from it again until they complete a long rest."
             ]
@@ -812,7 +812,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Starting at 6th level, you have come to recognize the flow of battle is malleable. Your Moment of Courage allows the target to use their reaction to immediately rise to their feet if prone (costing no movement) and they can take the {@action Disengage} action moving up to half their current speed."
+                "Starting at 6th level, you have come to recognize the flow of battle is malleable. Your Moment of Courage allows the target to use their reaction to immediately rise to their feet if {@condition prone} (costing no movement) and they can take the {@action Disengage} action moving up to half their current speed."
             ]
         },
         {
@@ -1096,7 +1096,7 @@
             "header": 2,
             "entries": [
                 "Starting at 6th level, you guide the hand of magic. The target of your Spotter's Order can cast a cantrip at their target, rather than making a weapon attack. The cantrip must have a casting time of 1 action and must target only one creature.",
-                "Moreover, when you take the Attack action you can cast one of your cantrips in place of one of those attacks."
+                "Moreover, when you take the {@action Attack} action you can cast one of your cantrips in place of one of those attacks."
             ]
         },
         {

@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659773326
+        "dateLastModified": 1659830980
 	},
 	"class": [
 		{
@@ -1963,7 +1963,7 @@
 			"header": 2,
 			"entries": [
 				"Upon reaching 10th level, you are immune to disease, poison damage, and the {@condition poisoned} condition.",
-                "You can hold your breath indefinitely and you don't require food, water, or sleep. However, you suffer exhaustion if you do not rest and benefit from finishing short and long rests as usual.",
+                "You can hold your breath indefinitely and you don't require food, water, or sleep. However, you suffer {@condition exhaustion} if you do not rest and benefit from finishing short and long rests as usual.",
                 "In addition, if you put a severed body part of yours back in place when you expend a Hit Dice to restore hit points, the part reattaches. (At your DM's discretion you may regrow destroyed portions such as nonmagical blindness caused by injuries to your eyes)",
                 "Furthermore, you age at a slower rate. For every 10 years that pass, your body ages only 1 year, and you are immune to being magically aged."
 			]
@@ -1980,7 +1980,7 @@
 			"entries": [
                 "Once you reach 14th level, you learn the {@spell raise dead} spell. Which counts as warlock spell for you, but does not count against your number of warlock spells known.",
                 "If you have half of your hit points or less at the start of your turn, you regain hit points equal to either your Constitution modifier or Charisma modifier (your choice).",
-                "You do not gain this benefit if you are unconscious, or have 0 hit points.",
+                "You do not gain this benefit if you are {@condition unconscious}, or have 0 hit points.",
                 "Lastly, if you die, your patreon will bring you back to life. They can cast {@spell raise dead} targeting only you from their realm across any distance, requiring no components. Once you come back to life in this way, you cannot do so again for 30 days (one month). [In Materia this is 33 days]"
 			]
 		},

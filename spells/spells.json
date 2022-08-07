@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659543190
+        "dateLastModified": 1659830980
 	},
     "spell": [
         {
@@ -115,7 +115,7 @@
                 }
             ],
             "entries": [
-                "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it. The verbal component of this spell may be slipped into casual conversation. A successful Wisdom (Insight) check contested by your Charisma (Deception) check (made with advantage) allows a listener to determine that a spell has been cast."
+                "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it. The verbal component of this spell may be slipped into casual conversation. A successful Wisdom ({@skill Insight}) check contested by your Charisma ({@skill Deception}) check (made with advantage) allows a listener to determine that a spell has been cast."
             ],
             "classes": {
                 "fromClassList": [
@@ -1459,7 +1459,7 @@
             ],
             "entries": [
                 "You write on parchment, paper, or some other suitable writing material and imbue it with a potent illusion that lasts for the duration.",
-                "To you and any creatures you designate when you cast the spell, the writing appears normal, written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing is invisible. Alternatively, you can cause the writing to appear to be an entirely different message, written in a different hand and language, though the language must be one you know.",
+                "To you and any creatures you designate when you cast the spell, the writing appears normal, written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing is {@status invisible|phb}. Alternatively, you can cause the writing to appear to be an entirely different message, written in a different hand and language, though the language must be one you know.",
                 "Should the spell be dispelled, the original script and the illusion both disappear.",
                 "A creature with {@sense truesight} can read the hidden message."
             ],
@@ -2266,7 +2266,7 @@
                 }
             ],
             "entries": [
-                "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra {@dice 2d8} radiant damage to the target, which becomes visible if it is {@status invisible}, and the target sheds dim light in a 5-foot radius and can't become {@status invisible|phb} until the spell ends."
+                "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra {@dice 2d8} radiant damage to the target, which becomes visible if it is {@status invisible|phb}, and the target sheds dim light in a 5-foot radius and can't become {@status invisible|phb} until the spell ends."
             ],
             "entriesHigherLevel": [
                 {
@@ -2916,7 +2916,7 @@
                 }
             ],
             "entries": [
-                "You reach into the mind of one creature that you can see within range. Alternatively, you can utter a creature's name. If the named target is within range, it becomes the spell's target even if you can't see it. If the named target isn't within range, the spell dissipates without effect. The target must make a Wisdom saving throw, taking {@dice 3d8} psychic damage on a failed save, or half as much damage on a successful one. On a failed save, you also always know the target's location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target cannot become hidden from you, and if it's {@condition invisible}, it gains no benefit from that condition against you."
+                "You reach into the mind of one creature that you can see within range. Alternatively, you can utter a creature's name. If the named target is within range, it becomes the spell's target even if you can't see it. If the named target isn't within range, the spell dissipates without effect. The target must make a Wisdom saving throw, taking {@dice 3d8} psychic damage on a failed save, or half as much damage on a successful one. On a failed save, you also always know the target's location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target cannot become hidden from you, and if it's {@status invisible|phb}, it gains no benefit from that condition against you."
             ],
             "entriesHigherLevel": [
                 {
@@ -3964,7 +3964,7 @@
             ],
             "entries": [
                 "When you cast this spell, you inscribe a glyph that later unleashes a magical effect. You inscribe it either on a surface (such as a table or a section of floor or wall) or within an object that can be closed (such as a book, a scroll, or a treasure chest) to conceal the glyph. The glyph can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.",
-                "The glyph is nearly invisible and requires a successful Intelligence (Investigation) check against your spell save DC to be found.",
+                "The glyph is nearly {@status invisible|phb} and requires a successful Intelligence ({@skill Investigation}) check against your spell save DC to be found.",
                 "You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or standing on the glyph, removing another object covering the glyph, approaching within a certain distance of the glyph, or manipulating the object on which the glyph is inscribed. For glyphs inscribed within an object, the most common triggers include opening that object, approaching within a certain distance of the object, or seeing or reading the glyph. Once a glyph is triggered, this spell ends.",
                 "You can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics (such as height or weight), creature kind (for example, the ward could be set to affect aberrations or drow), or alignment. You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password.",
                 "When you inscribe the glyph, choose explosive runes or a spell glyph.",
@@ -6693,7 +6693,7 @@
 			],
 			"entries": [
 				"Tendrils of inky darkness reaches out from you, touching creatures you can see within range to drain life from them. A creature of your choice within range must make a Dexterity saving throw. On a failed save, the target takes {@damage 4d8} plus your spellcasting modifier, or half as much on a successful one. Until the spell ends, you can target a creature within range on each of your turns as an action. The spell ends early if you use your action to do anything else.",
-				"Whenever the spell deals damage to a target, you regain hit points equal to half the amount of necrotic damage the target takes. Alternatively, if you can reduce the hit points regain by 20 to reduce your current exhaustion by 1 instead."
+				"Whenever the spell deals damage to a target, you regain hit points equal to half the amount of necrotic damage the target takes. Alternatively, if you can reduce the hit points regain by 20 to reduce your current {@condition exhaustion} by 1 instead."
 			],
 			"entriesHigherLevel": [
 				{
@@ -8487,7 +8487,7 @@
             "ritual": true
         },
         "entries": [
-            "You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an invisible mark on its surface and invisibly inscribes the name of the item on the gemstone you use as the material component. Each time you cast this spell, you must use a different gemstone.",
+            "You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an {@status invisible|phb} mark on its surface and invisibly inscribes the name of the item on the gemstone you use as the material component. Each time you cast this spell, you must use a different gemstone.",
             "At any time thereafter, you can use your action to speak the item's name and crush the sapphire. The item instantly appears in your hand regardless of physical or planar distances, and the spell ends.",
             "If another creature is holding or carrying the item, crushing the sapphire doesn't transport the item to you, but instead you learn who the creature possessing the object is and roughly where that creature is located at that moment.",
             "{@spell Dispel magic} or a similar effect successfully applied to the sapphire ends this spell's effect."
@@ -9774,7 +9774,7 @@
                 "type": "entries",
                 "name": "Eyes of the Dead",
                 "entries": [
-                    "You can use an action to name a place the creature saw in life, which creates an invisible sensor somewhere in that place if it is on the plane of existence you're currently on. The sensor remains for as long as you concentrate, up to 10 minutes (as if you were concentrating on a spell). You receive visual and auditory information from the sensor as if you were in its space using your senses."
+                    "You can use an action to name a place the creature saw in life, which creates an {@status invisible|phb} sensor somewhere in that place if it is on the plane of existence you're currently on. The sensor remains for as long as you concentrate, up to 10 minutes (as if you were concentrating on a spell). You receive visual and auditory information from the sensor as if you were in its space using your senses."
                 ]
             },
             "A creature that can see the sensor (such as one using {@spell see invisibility} or {@sense truesight}) sees a translucent image of the tormented humanoid whose soul you caged."
