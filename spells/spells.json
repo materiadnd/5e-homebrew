@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659975771
+        "dateLastModified": 1659976497
 	},
     "spell": [
         {
@@ -416,7 +416,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "This spell's damage increases by 1d8 when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+                        "This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
                     ]
                 }
             ],
@@ -3002,7 +3002,7 @@
                         ["1", "The smell of apple pie fills the air, and each creature in the cube must succeed on a Wisdom saving throw or become {@condition charmed} by you until the start of your next turn. A {@condition charmed} creature regards you and your companions as friendly acquaintances."],
                         ["2", "Bouquets of flowers appear all around, and each creature in the cube must succeed on a Dexterity saving throw or be {@condition blinded} until the start of your next turn as the flowers spray water in their faces."],
                         ["3", "Each creature in the cube must succeed on a Wisdom saving throw or begin giggling until the start of your next turn. A giggling creature is {@condition incapacitated} and uses all its movement at the start of its turn to move in a random direction."],
-                        ["4", "Drops of molasses hover in the cube, making it @{quickref difficult terrain||3} until the start of your next turn."]
+                        ["4", "Drops of molasses hover in the cube, making it {@quickref difficult terrain||3} until the start of your next turn."]
                     ]
                 }
             ],

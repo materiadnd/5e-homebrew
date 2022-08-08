@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659769545
+        "dateLastModified": 1659976497
 	},
 	"class": [
 		{
@@ -1302,7 +1302,7 @@
 			"level": 20,
 			"entries": [
 				"At 20th level, you become an unparalleled hunter of your enemies. When you take the {@action Attack} action on your turn, you can attack a number of times equal to your Wisdom modifier.  You can use this feature a number of times equal to your Wisdom modifier.  You regain any expended uses when you finish a long rest.",
-                "Additionally, you regain 1 expended use of Foe Slayer each time you roll a 20 on the d20 roll for a weapon attack."
+                "Additionally, you regain 1 expended use of Foe Slayer each time you roll a 20 on the {@dice d20} roll for a weapon attack."
 			]
 		}
 	],

@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659830980
+        "dateLastModified": 1659976497
 	},
     "feat": [
    		{
@@ -806,7 +806,7 @@
                             "type": "entries",
                             "name": "Telekinetic Reprisal. (from Gift of the Gem Dragon)",
                             "entries": [
-                                "When you take damage from a creature that is within 10 feet of you, you can use your reaction to emanate telekinetic energy. The creature that dealt damage to you must make a Strength saving throw (DC equals 8 + your proficiency bonus + the ability modifier of the score increased by this feat). On a failed save, the creature takes 2d8 force damage and is pushed up to 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                                "When you take damage from a creature that is within 10 feet of you, you can use your reaction to emanate telekinetic energy. The creature that dealt damage to you must make a Strength saving throw (DC equals 8 + your proficiency bonus + the ability modifier of the score increased by this feat). On a failed save, the creature takes {@damage 2d8} force damage and is pushed up to 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
                             ]
                         }
                     ]
@@ -1261,7 +1261,7 @@
                                     "type": "entries",
                                     "name": "??",
                                     "entries": [
-                                        "Close Quarter Fighting... 2 pointer, lets you make an unarmed strike for 1d4+ str or dex which can be replaced by natural weapons if you have them"
+                                        "Close Quarter Fighting... 2 pointer, lets you make an unarmed strike for {@dice 1d4}+ str or dex which can be replaced by natural weapons if you have them"
                                     ]
                                 }
                             ]
@@ -1377,14 +1377,14 @@
                             "type": "entries",
                             "name": "Doctor",
                             "entries": [
-                                "As an action, you can spend one use of a healer's kit to tend to a creature and restore 1d6 + 4 hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest."
+                                "As an action, you can spend one use of a healer's kit to tend to a creature and restore {@dice 1d6} + 4 hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Fortunate",
                             "entries": [
-                                "You have a luck point. Whenever you make an attack roll, an ability check, or a saving throw, you can spend the luck point to roll an additional d20. You can choose to spend your luck point after you roll the die, but before the outcome is determined. You choose whether to use your roll or the initial result. You can also spend your luck point when an attack roll is made against you. Roll a d20, and then choose whether the attack uses the attacker’s roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled. You regain your expended luck point when you finish a long rest. You may select this feature more than once."
+                                "You have a luck point. Whenever you make an attack roll, an ability check, or a saving throw, you can spend the luck point to roll an additional {@dice d20}. You can choose to spend your luck point after you roll the die, but before the outcome is determined. You choose whether to use your roll or the initial result. You can also spend your luck point when an attack roll is made against you. Roll a {@dice d20}, and then choose whether the attack uses the attacker’s roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled. You regain your expended luck point when you finish a long rest. You may select this feature more than once."
                             ]
                         },
                         {
@@ -1450,7 +1450,7 @@
                                     "type": "entries",
                                     "name": "?? (from Chef, combined two)",
                                     "entries": [
-                                        "You gain proficiency with cook's utensils if you don't already have it. Additionally, as part of a short rest, you can cook special food, provided you have ingredients and cook's utensils on hand. you can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra 1d8 hit points."
+                                        "You gain proficiency with cook's utensils if you don't already have it. Additionally, as part of a short rest, you can cook special food, provided you have ingredients and cook's utensils on hand. you can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra {@dice 1d8} hit points."
                                     ]
                                 },
                                 {
@@ -1478,7 +1478,7 @@
                             "type": "entries",
                             "name": "Combat Tactician",
                             "entries": [
-                                "You learn a maneuver of your choice from among those available to the Battle Master Archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice). You gain one superiority die, which is a d6 (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuver. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest. You may select this feature more than once, each additional selection provides one additional maneuver known and d6 superiority die."
+                                "You learn a maneuver of your choice from among those available to the Battle Master Archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice). You gain one superiority die, which is a {@dice d6} (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuver. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest. You may select this feature more than once, each additional selection provides one additional maneuver known and d6 superiority die."
                             ]
                         },
                         {
@@ -1588,7 +1588,7 @@
                             "type": "entries",
                             "name": "Durable",
                             "entries": [
-                                "When you spend Hit Dice to recover Hit Points, instead of rolling, you heal the maximum possible result. For example, if a Cleric (d8) spends 2 Hit Dice on healing, they automatically regain 16 Hit Points plus their modifier for Con on both dice."
+                                "When you spend Hit Dice to recover Hit Points, instead of rolling, you heal the maximum possible result. For example, if a Cleric ({@dice d8}) spends 2 Hit Dice on healing, they automatically regain 16 Hit Points plus their modifier for Con on both dice."
                             ]
                         },
                         {
@@ -1685,7 +1685,7 @@
                             "type": "entries",
                             "name": "Pommel Strike",
                             "entries": [
-                                "When you take the attack action and make all attacks with a melee weapon you are holding in two hands with the benefit of your proficiency modifier, you can use a bonus action to make a melee attack with another part of the weapon. This attack uses the same ability modifier as the primary attack. The weapon’s damage die for this attack is a d4, and it deals bludgeoning damage."
+                                "When you take the attack action and make all attacks with a melee weapon you are holding in two hands with the benefit of your proficiency modifier, you can use a bonus action to make a melee attack with another part of the weapon. This attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a {@dice d4}, and it deals bludgeoning damage."
                             ]
                         },
                         {
