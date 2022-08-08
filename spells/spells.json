@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659830980
+        "dateLastModified": 1659975771
 	},
     "spell": [
         {
@@ -1459,7 +1459,7 @@
             ],
             "entries": [
                 "You write on parchment, paper, or some other suitable writing material and imbue it with a potent illusion that lasts for the duration.",
-                "To you and any creatures you designate when you cast the spell, the writing appears normal, written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing is {@status invisible|phb}. Alternatively, you can cause the writing to appear to be an entirely different message, written in a different hand and language, though the language must be one you know.",
+                "To you and any creatures you designate when you cast the spell, the writing appears normal, written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing is invisible Alternatively, you can cause the writing to appear to be an entirely different message, written in a different hand and language, though the language must be one you know.",
                 "Should the spell be dispelled, the original script and the illusion both disappear.",
                 "A creature with {@sense truesight} can read the hidden message."
             ],
@@ -1512,7 +1512,7 @@
                 }
             ],
             "entries": [
-                "You touch a creature. The creature's jump distance is tripled until the spell ends and their jumping distance is not reduced for making a standing long or high jumps."
+                "You touch a creature. The creature's {@book jump distance|phb|8|Jumping} is tripled until the spell ends and their jumping distance is not reduced for making a standing long or high jumps."
             ],
             "classes": {
                 "fromClassList": [
@@ -1855,7 +1855,7 @@
                 }
             ],
             "entries": [
-                "You magically distract the triggering creature and turn its momentary uncertainty into encouragement for another creature. The triggering creature must reroll the d20 and use the lower roll.",
+                "You magically distract the triggering creature and turn its momentary uncertainty into encouragement for another creature. The triggering creature must reroll the {@dice d20} and use the lower roll.",
                 "You can then choose a different creature you can see within range (you can choose yourself). The chosen creature has advantage on the next attack roll, ability check, or saving throw it makes within 1 minute. A creature can be empowered by only one use of this spell at a time."
             ],
             "classes": {
@@ -2855,7 +2855,7 @@
             },
             "duration": [
                 {
-                    "type": "special",
+                    "type": "permanent",
                     "ends": [
                         "dispel"
                     ]
@@ -3964,7 +3964,7 @@
             ],
             "entries": [
                 "When you cast this spell, you inscribe a glyph that later unleashes a magical effect. You inscribe it either on a surface (such as a table or a section of floor or wall) or within an object that can be closed (such as a book, a scroll, or a treasure chest) to conceal the glyph. The glyph can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.",
-                "The glyph is nearly {@status invisible|phb} and requires a successful Intelligence ({@skill Investigation}) check against your spell save DC to be found.",
+                "The glyph is nearly invisible and requires a successful Intelligence ({@skill Investigation}) check against your spell save DC to be found.",
                 "You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or standing on the glyph, removing another object covering the glyph, approaching within a certain distance of the glyph, or manipulating the object on which the glyph is inscribed. For glyphs inscribed within an object, the most common triggers include opening that object, approaching within a certain distance of the object, or seeing or reading the glyph. Once a glyph is triggered, this spell ends.",
                 "You can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics (such as height or weight), creature kind (for example, the ward could be set to affect aberrations or drow), or alignment. You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password.",
                 "When you inscribe the glyph, choose explosive runes or a spell glyph.",
@@ -4765,7 +4765,7 @@
             ],
             "entries": [
                 "This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature of your choice in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.",
-                "An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.",
+                "An affected target can't take reactions and must roll a {@dice d10} at the start of each of its turns to determine its behavior for that turn.",
                 {
                     "type": "table",
                     "caption": "Confusion Behavior",
@@ -8487,7 +8487,7 @@
             "ritual": true
         },
         "entries": [
-            "You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an {@status invisible|phb} mark on its surface and invisibly inscribes the name of the item on the gemstone you use as the material component. Each time you cast this spell, you must use a different gemstone.",
+            "You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an invisible mark on its surface and invisibly inscribes the name of the item on the gemstone you use as the material component. Each time you cast this spell, you must use a different gemstone.",
             "At any time thereafter, you can use your action to speak the item's name and crush the sapphire. The item instantly appears in your hand regardless of physical or planar distances, and the spell ends.",
             "If another creature is holding or carrying the item, crushing the sapphire doesn't transport the item to you, but instead you learn who the creature possessing the object is and roughly where that creature is located at that moment.",
             "{@spell Dispel magic} or a similar effect successfully applied to the sapphire ends this spell's effect."
