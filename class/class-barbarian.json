@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 1659584412,
-        "dateLastModified": 1663541157
+        "dateLastModified": 1663541272
 	},
 	"class": [
 		{
@@ -293,7 +293,7 @@
 				"Ability Score Improvement|Barbarian|MateriaSourceOfTruth|12",
 				"Brutal Critical (2 dice)|Barbarian|MateriaSourceOfTruth|13",
 				{
-					"classFeature": "Path feature|Barbarian|MateriaSourceOfTruth|14",
+					"classFeature": "Path Feature|Barbarian|MateriaSourceOfTruth|14",
 					"gainSubclassFeature": true
 				},
 				"Persistent Rage|Barbarian|MateriaSourceOfTruth|15",
@@ -894,7 +894,7 @@
 			]
 		},
 		{
-			"name": "Path feature",
+			"name": "Path Feature",
 			"source": "MateriaSourceOfTruth",
 			"className": "Barbarian",
 			"classSource": "MateriaSourceOfTruth",
@@ -937,7 +937,7 @@
 			]
 		},
 		{
-			"name": "Path feature",
+			"name": "Path Feature",
 			"source": "MateriaSourceOfTruth",
 			"className": "Barbarian",
 			"classSource": "MateriaSourceOfTruth",
