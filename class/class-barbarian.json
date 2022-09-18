@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 1659584412,
-        "dateLastModified": 1659584412
+        "dateLastModified": 1663541157
 	},
 	"class": [
 		{
@@ -60,7 +60,7 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a {@item greataxe|phb} or (b) any {@filter martial melee weapon|items|source=phb|category=basic|type=martial weapon;melee weapon=sand}",
+					"(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a @{item shield|phb} or (b) two {@filter martial melee weapons|items|source=phb|category=basic|type=martial weapon}",
 					"(a) two {@item handaxe|phb|handaxes} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
 					"An {@item explorer's pack|phb}, and four {@item javelin|phb|javelins}"
 				],
@@ -286,7 +286,7 @@
 				"Ability Score Improvement|Barbarian|MateriaSourceOfTruth|8",
 				"Brutal Critical (1 die)|Barbarian|MateriaSourceOfTruth|9",
 				{
-					"classFeature": "Path feature|Barbarian|MateriaSourceOfTruth|10",
+					"classFeature": "Path Feature|Barbarian|MateriaSourceOfTruth|10",
 					"gainSubclassFeature": true
 				},
 				"Relentless Rage|Barbarian|MateriaSourceOfTruth|11",
@@ -745,7 +745,7 @@
 					"type": "list",
 					"items": [
 						"You have advantage on Strength checks and Strength saving throws.",
-						"When you make a melee weapon attack using Strength, you gain a +2 bonus to the damage roll. This bonus increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.",
+						"When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.",
 						"You have resistance to bludgeoning, piercing, and slashing damage."
 					]
 				},
@@ -888,7 +888,7 @@
 			"classSource": "MateriaSourceOfTruth",
 			"level": 9,
 			"entries": [
-				"Beginning at 9th level, your melee weapon attacks score a critical hit on a roll of 19 or 20.  Furthermor, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.",
+				"Beginning at 9th level, your melee weapon attacks score a critical hit on a roll of 19 or 20.  Furthermore, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.",
 				"This increases to two additional dice at 13th level and three additional dice at 17th level.",
                 "Lastly, if you are raging you increase the damage of a critical hit with a melee weapon further by an amount equal to your Rage Damage, as shown on the Rage Damage column of the Barbarian table, per additional dice rolled."
 			]
