@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659976497
+        "dateLastModified": 1684625282
 	},
     "spell": [
         {
@@ -77,10 +77,79 @@
 						},
 						"subclass": {
 							"name": "Arcane Archer",
+							"shortName": "Arcane Archer",
 							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature Domain",
+							"shortName": "Nature",
+							"source": "PHB"
 						}
 					}
 				]
+            },
+            "races": [
+                {
+                    "name": "Fairy",
+                    "source": "MPMM"
+                }
+            ]
+        },
+        {
+            "name": "Encode Thoughts",
+            "source": "MateriaSourceOfTruth",
+            "level": 0,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 8
+                    }
+                }
+            ],
+            "entries": [
+                "Putting a finger to your head, you pull a memory, an idea, or a message from your mind and transform it into a tangible string of glowing energy called a thought strand, which persists for the duration or until you cast this spell again. The thought strand appears in an unoccupied space within 5 feet of you as a Tiny, weightless, semisolid object that can be held and carried like a ribbon. It is otherwise stationary.",
+                "If you cast this spell while {@status concentration||concentrating} on a spell or an ability that allows you to read or manipulate the thoughts of others (such as {@spell detect thoughts} or {@spell modify memory}), you can transform the thoughts or memories you read, rather than your own, into a thought strand.",
+                "Casting this spell while holding a thought strand allows you to instantly receive whatever memory, idea, or message the thought strand contains. (Casting {@spell detect thoughts} on the strand has the same effect.)"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
             }
         },
         {
@@ -129,6 +198,515 @@
                     },
                     {
                         "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcana Domain",
+                            "shortName": "Arcana",
+                            "source": "SCAG"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "optionalfeatures": [
+                {
+                    "name": "Pact of the Tome",
+                    "source": "PHB",
+                    "featureType": [
+                        "PB"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Infestation",
+            "source": "XGE",
+            "page": 158,
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a living flea"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You cause a cloud of mites, fleas, and other parasites to appear momentarily on one creature you can see within range. The target must succeed on a Constitution saving throw, or it takes {@damage 1d6} poison damage, has disadvantage on the next concentration check it makes before the start of its next turn, and moves 5 feet in a random direction if it can move and its speed is at least 5 feet. Roll a {@dice d4} for the direction: 1, north; 2, south; 3, east; or 4, west. This movement doesn't provoke opportunity attacks, and if the direction rolled is blocked, the target doesn't move.",
+                "The spell causes disadvantage on the next 2 concentration checks when you reach 5th level and deals an additional d6 damage ({@damage 2d6}), the next 3 concentration checks at 11th level and deals an additional d6 damage ({@damage 3d6}), and the next 6 concentration checks at 17th level and deals an additional d4 damage ({@damage 4d6})."
+            ],
+            "scalingLevelDice": {
+                "label": "poison damage",
+                "scaling": {
+                    "1": "1d6",
+                    "5": "2d6",
+                    "11": "3d6",
+                    "17": "4d6"
+                }
+            },
+            "damageInflict": [
+                "poison"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SCL",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Nature Domain",
+                            "shortName": "Nature",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcana Domain",
+                            "shortName": "Arcana",
+                            "source": "SCAG"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of the Land",
+                            "shortName": "Land",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            },
+            "optionalfeatures": [
+                {
+                    "name": "Druidic Warrior",
+                    "source": "TCE",
+                    "featureType": [
+                        "FS:R"
+                    ]
+                },
+                {
+                    "name": "Pact of the Tome",
+                    "source": "PHB",
+                    "featureType": [
+                        "PB"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lightning Lure",
+            "source": "MateriaSourceOfTruth",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 15
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take {@damage 1d8} lightning damage if it is within 5 feet of you.",
+                "This spell's range and pull distance are increased by an additional 5 feet and damage increases by {@dice 1d8} at 5th ({@damage 2d8}, 20 foot range, 15 foot pull), 11th ({@damage 3d8}, 25 foot range, 20 foot pull), and 17th level ({@damage 4d8}, 30 foot range, 25 foot pull)."
+            ],
+            "scalingLevelDice": {
+                "label": "lightning damage",
+                "scaling": {
+                    "1": "1d8",
+                    "5": "2d8",
+                    "11": "3d8",
+                    "17": "4d8"
+                }
+            },
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "miscTags": [
+                "FMV",
+                "SCL",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB",
+                        "definedInSource": "SCAG"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB",
+                        "definedInSource": "SCAG"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB",
+                        "definedInSource": "SCAG"
+                    }
+                ],
+                "fromClassListVariant": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcana Domain",
+                            "shortName": "Arcana",
+                            "source": "SCAG"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Martial Burst",
+            "source": "MateriaSourceOfTruth",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "a melee weapon worth at least 1 sp"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You create a momentary circle of semi-physical echoes of a melee weapon you are holding that sweep around you. All other creatures within 5 feet of you must succeed on a Dexterity saving throw or take the weapon die in force damage.",
+                "This spell's damage increases when you reach higher levels.  At 5th level, the damage is increased by {@dice 1d6}.  This extra damage increases at 11th level ({@damage 2d6}) and 17th level ({@damage 3d6})."
+            ],
+            "scalingLevelDice": {
+                "label": "force damage",
+                "scaling": {
+                    "5": "1d6",
+                    "11": "2d6",
+                    "17": "3d6"
+                }
+            },
+            "damageInflict": [
+                "force"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB",
+                        "definedInSource": "SCAG"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB",
+                        "definedInSource": "SCAG"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB",
+                        "definedInSource": "SCAG"
+                    }
+                ],
+                "fromClassListVariant": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcana Domain",
+                            "shortName": "Arcana",
+                            "source": "SCAG"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Minor Divination",
+            "source": "MateriaSourceOfTruth",
+            "level": 0,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You gain a glimpse of the present reality around you.  Choose one of the following effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You determine which way is North",
+                        "You discern which plane of existence you are on",
+                        "You determine the link between an object you touch and its significant counterpart.  For example, if the object is a key, you learn what the key unlocks.  If the lock is within 30 feet of you, you learn its exact location.  Otherwise, you only learn a vague description of the lock's location, as in \"a treasure chest amongst a shipwreck\" or \"a sealed spell tome\"",
+                        "You gain a glimpse of who last wore a specific piece of jewelry or clothing, or who last wielded a particular weapon you touch.  If the object had never been worn or wielded, you see who created it instead.",
+                        "You discern whether smoething is out of place with an object or part of a structure (such as a wall or door) that you can touch.  If the object is under the effects of magic, or if it is hiding a secret of any kind, you sense that something is strange about it.  You do not discern the particulars."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
                         "source": "PHB"
                     },
                     {
@@ -209,6 +787,89 @@
             }
         },
         {
+            "name": "Primal Savagery",
+            "source": "MateriaSourceOfTruth",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You channel primal magic to cause your teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make a melee spell attack against one creature within your reach. On a hit, the target takes {@damage 1d10} acid damage and if the creature's speed is reduced in any way its speed is reduced to 0 until the end of its next turn. After you make the attack, your teeth or fingernails return to normal.",
+                "The spell's damage increases by {@dice 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10})."
+            ],
+            "scalingLevelDice": {
+                "label": "acid damage",
+                "scaling": {
+                    "1": "1d10",
+                    "5": "2d10",
+                    "11": "3d10",
+                    "17": "4d10"
+                }
+            },
+            "damageInflict": [
+                "acid"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Nature Domain",
+                            "shortName": "Nature",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of the Land",
+                            "shortName": "Land",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
             "name": "Produce Flame",
             "source": "MateriaSourceOfTruth",
             "level": 0,
@@ -252,6 +913,15 @@
                     ]
                 }
             ],
+            "scalingLevelDice": {
+                "label": "fire damage",
+                "scaling": {
+                    "1": "1d10",
+                    "5": "2d10",
+                    "11": "3d10",
+                    "17": "4d10"
+                }
+            },
             "damageInflict": [
                 "fire"
             ],
@@ -318,6 +988,75 @@
             }
         },
         {
+            "name": "Sapping Sting",
+            "source": "MateriaSourceOfTruth",
+            "level": 0,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You sap the vitality of one creature you can see in range. The target must succeed on a Constitution saving throw or take {@damage 1d4} necrotic damage and fall {@condition prone}.",
+                "This spell's damage increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
+            ],
+            "scalingLevelDice": {
+                "label": "necrotic damage",
+                "scaling": {
+                    "1": "1d4",
+                    "5": "2d4",
+                    "11": "3d4",
+                    "17": "4d4"
+                }
+            },
+            "damageInflict": [
+                "necrotic"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SCL",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Shocking Grasp",
             "source": "MateriaSourceOfTruth",
             "level": 0,
@@ -355,6 +1094,15 @@
                     ]
                 }
             ],
+            "scalingLevelDice": {
+                "label": "lightning damage",
+                "scaling": {
+                    "1": "1d8",
+                    "5": "2d8",
+                    "11": "3d8",
+                    "17": "4d8"
+                }
+            },
             "savingThrow": [
                 "dexterity"
             ],
@@ -445,11 +1193,203 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Spores",
+							"name": "Circle of Spores",
+                            "shortName": "Sports",
 							"source": "TCE"
 						}
 					}
 				]
+            }
+        },
+        {
+            "name": "Threads of Fate",
+            "source": "MateriaSourceOfTruth",
+            "level": 0,
+            "school": "D",
+            "time":[
+                {"number": 1,
+                "unit": "action"}
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a length of thread"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You reach out towards one creature you can see within range, and wrench on the ethereal threads that some call fate. The target must suceed on a Charisma saving throw or take {@damage 1d8} radiant damage. If the target is affected by any condition, it instead takes {@damage 1d12} radiant damage"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "This spell's damage increases by one die when you reach 5th level ({@dice 2d8} or {@dice 2d12}), 11th level ({@dice 3d8} or {@dice 3d12}), and 17th level ({@dice 4d8} or {@dice 4d12})."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Thunderclap",
+            "source": "MateriaSourceOfTruth",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You create a burst of thunderous sound that can be heard up to 100 feet away. Each creature within range, other than you, must make a Constitution saving throw or take {@damage 1d8} thunder damage and be {@condition deafened} until the beginning of your next turn.",
+                "The spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+            ],
+            "scalingLevelDice": {
+                "label": "thunder damage",
+                "scaling": {
+                    "1": "1d8",
+                    "5": "2d8",
+                    "11": "3d8",
+                    "17": "4d8"
+                }
+            },
+            "damageInflict": [
+                "thunder"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Nature Domain",
+                            "shortName": "Nature",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcana Domain",
+                            "shortName": "Arcana",
+                            "source": "SCAG"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of the Land",
+                            "shortName": "Land",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -564,6 +1504,144 @@
             }
         },
         {
+            "name": "Wristpocket",
+            "source": "MateriaSourceOfTruth",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You flick your wrist, causing one object in your hand to vanish. The object, which only you can be holding and can weigh no more than 5 pounds, is transported to an extradimensional space, where it remains for the duration.",
+                "Until the spell ends, you can use your action to summon the object to your free hand, and you can use your action to return the object to the extradimensional space. An object still in the pocket plane when the spell ends appears in your space, at your feet."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Word of Radiance",
+            "source": "MateriaSourceOfTruth",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "components": {
+                "v": true,
+                "m": "a holy symbol"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take {@damage 1d6} radiant damage.",
+                "Starting at 5th level, you cannot choose more than your proficiency modifier number of creatures beyond 5 feet.",
+                "The spell's range is increased by 5 feet and damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}, 10 feet), 11th level ({@damage 3d6}, 15 feet), and 17th level ({@damage 4d6}, 20 feet)."
+            ],
+            "scalingLevelDice": {
+                "label": "radiant damage",
+                "scaling": {
+                    "1": "1d6",
+                    "5": "2d6",
+                    "11": "3d6",
+                    "17": "4d6"
+                }
+            },
+            "damageInflict": [
+                "radiant"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SCL",
+                "SGT"
+            ],
+            "areaTags": [
+                "MT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
             "name": "Arms of Hadar",
             "source": "MateriaSourceOfTruth",
             "level": 1,
@@ -625,6 +1703,72 @@
                             "name": "Aberrant Mind",
                             "source": "TCE"
                         }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Beast Bond",
+            "source": "MateriaSourceOfTruth",
+            "level": 1,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a bit of fur wrapped in a cloth"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You establish a telepathic link with one beast you touch that is friendly to you or {@condition charmed} by you. The spell fails if the beast's Intelligence score is 4 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet of you that you can see."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the duration is up to 1 hour.",
+                        "When you cast this spell using a spell slot of 3rd level or higher, the duration is up to 8 hours.",
+                        "When you cast this spell using a spell slot of 4th level or higher, the duration is up to 24 hours.",
+                        "When you cast this spell using a spell slot of 5th level or higher, the duration does not require concentration."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "charmed"
+            ],
+            "affectsCreatureType": [
+                "beast"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
                     }
                 ]
             }
@@ -693,7 +1837,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Light",
+							"name": "Light Domain",
+                            "shortName": "Light",
 							"source": "PHB"
 						}
 					},
@@ -724,7 +1869,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Wildfire",
+                            "name": "Circle of Wildfire",
+							"shortName": "Wildfire",
 							"source": "TCE"
 						}
 					},
@@ -734,7 +1880,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Four Elements",
+                            "name": "Way of the Four Elements",
+							"shortName": "Four Elements",
 							"source": "PHB"
 						}
 					},
@@ -744,13 +1891,106 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Sun Soul",
+							"name": "Way of the Sun Soul",
+							"shortName": "Sun Soul",
 							"source": "XGE"
 						}
 					}
 				]
             }
         },
+        {
+			"name": "Catapult",
+			"source": "MateriaSourceOfTruth",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Choose one object weighing 1 to 5 pounds within range that isn't being worn or carried. The object flies in a straight line up to 90 feet in a direction you choose before falling to the ground, stopping early if it impacts against a solid surface. If the object would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the object strikes the target and stops moving. When the object strikes something, the object and what it strikes each take {@damage 3d8} bludgeoning damage.",
+                "If you use this spell on objects that might deal various damage, such as vials of acid or a handful of knives, their damage is dealt in addition to the spell's."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the maximum weight of objects that you can target with this spell increases by 5 pounds, and the damage increases by {@scaledamage 3d8|1-9|1d8}, for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
+			],
+			"areaTags": [
+				"ST"
+			],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+		},
         {
             "name": "Charm Person",
             "source": "MateriaSourceOfTruth",
