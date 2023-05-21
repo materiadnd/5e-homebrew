@@ -2960,6 +2960,120 @@
             }
         },
         {
+            "name": "Find Familiar",
+            "source": "MateriaSourceOfTruth",
+            "level": 1,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "hour"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "10 gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier",
+                    "cost": 1000,
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "entries": [
+                "You gain the service of an otherworldly spirit, which manifests as a little animal in an unoccupied space of your choice within range.  This creature uses the  {@creature Otherworldly Familiar|Materia} stat block.  If you already have a familiar from this spell, that familiar transforms into a new one but retains its memories; you do not get a second familiar.",
+                "Whenever you cast the spell, choose the familiar's creature type:  Celestial, Fey, or Fiend.  Also choose an environment:  Air, Land, or Water.  The familiar resembles a Tiny animal of your choice - such as an owl, cat, or a frog - that is native to the chosen environment.  Bot choices - creature type and environment - determine certain traits in the stat block.",
+                {
+                    "type": "entries",
+                    "name": "Combat",
+                    "entries": [
+                        "The familiar is an ally to you and your companions.  In combat, it shares your initiative and acts during your turn.  It obeys your commands (no action required by you), but the familiar cannot attack unless you use your reaction on its turn to command it to do so."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Disappearance of the Familiar",
+                    "entries": [
+                        "The familiar disappears if it drops to 0 hit points, if you dismiss it as a bonus action, or if you die.  When it disappears, it leaves behind anything it was wearing or carrying.  If you cast the spell again, you decide wheter you summon the familiar that disappeared or a different one."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Pocket Dimension",
+                    "entries": [
+                        "As an action, you can temporarily dismiss the familiar into a pocket dimension.  As an action while it is temporarily dismissed, you can cause it to reappear in the same space as you.  Whenever the familiar is sent into the pocket dimension, it leaves anything it was wearing or carrying behind in its space."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Remote Viewing",
+                    "entries": [
+                        "As an action, you can see through your familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has.  During this time, you are {@condition deafened} and {@condition blinded} with regard to your own senses."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, use the higher level where the spell's level appears in the stat block."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "PRM",
+                "SGT",
+                "SMN"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
             "name": "Frost Fingers",
             "source": "MateriaSourceOfTruth",
             "level": 1,

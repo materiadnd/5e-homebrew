@@ -1,0 +1,123 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "MateriaSourceOfTruth",
+				"abbreviation": "Materia",
+				"full": "Materia Source of Truth - Bestiary",
+				"authors": [
+                    "Adam Owczarek"
+                ],
+				"convertedBy": [
+                    "diddlypow"
+                ],
+                "targetSchema": "1.0.0",
+                "version": "1.0.0"
+			}
+		],
+        "dateAdded": 0,
+        "dateLastModified": 1684630887
+	},
+    "monster": [
+        {
+            "name": "Otherworldly Familiar",
+            "source": "MateriaSourceOfTruth",
+            "summonedBySpell": "Find Familiar|MateriaSourceOfTruth",
+            "summonedBySpellLevel": 1,
+            "size": [
+                "T"
+            ],
+            "type": {
+                "type": "fiend"
+            },
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "10 + the level of the spell (natural armor) + 2 (land and water only)"
+                }
+            ],
+            "hp": {
+                "special": "2 + 2 for each spell level above 1st (the familiar has a number of Hit Dice [d4s] equal to the level of the spell)"
+            },
+            "speed": {
+                "walk": 30,
+                "climb": {
+                    "number": 30,
+                    "condition": "(land only)"
+                },
+                "fly": {
+                    "number": 30,
+                    "condition": "(air only)"
+                },
+                "swim": {
+                    "number": 30,
+                    "condition": "(water only)"
+                }
+            },
+            "str": 3,
+            "dex": 14,
+            "con": 10,
+            "int": 10,
+            "wis": 14,
+            "cha": 8,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 17,
+            "languages": [
+                "telepathy 120ft. (only between you and the familiar)",
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Amphibious (Water only)",
+                    "entries": [
+                        "The familiar can breathe air and water."
+                    ]
+                },
+                {
+                    "name": "Extradimensional Escape (Recharges after a Long Rest)",
+                    "entries": [
+                        "When the familiar would drop to 0 hit points, it instead drops to 1 hit point and vanishes into an extradimensional space, leaving behind anything it was wearing or carrying.  It remains there for 1 hour or until you summon it as a Magic action, and then it appears in your space."
+                    ]
+                },
+                {
+                    "name": "Flyby (Air only)",
+                    "entries": [
+                        "The familiar does not provoke opportunity attacks when it flies out of an enemy's reach."
+                    ]
+                },
+                {
+                    "name": "Keen Senses",
+                    "entries": [
+                        "The familiar has advantage on all Wisdom (Perception) checks."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Otherworldly Scratch",
+                    "entries": [
+                        "{@atk mw} your spell attack modifier to hit, reach 5 ft., one target.  {@h} {@damage 1 + summonSpellLevel} radiant damage (Celestial), psychic damage (Fey), or necrotic damage (Fiend)."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Deliver Spell",
+                    "entries": [
+                        "When you cast a spell with a range of touch, the familiar can deliver the spell with its touch.  To do so, the familiar must be within 120 feet of you."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "hasToken": true
+        }
+    ]
+}
