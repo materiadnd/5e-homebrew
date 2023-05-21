@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1684629789
+        "dateLastModified": 1684632102
 	},
     "spell": [
         {
@@ -2995,7 +2995,7 @@
                 "ritual": true
             },
             "entries": [
-                "You gain the service of an otherworldly spirit, which manifests as a little animal in an unoccupied space of your choice within range.  This creature uses the  {@creature Otherworldly Familiar|Materia} stat block.  If you already have a familiar from this spell, that familiar transforms into a new one but retains its memories; you do not get a second familiar.",
+                "You gain the service of an otherworldly spirit, which manifests as a little animal in an unoccupied space of your choice within range.  This creature uses the  {@creature Otherworldly Familiar|MateriaSourceOfTruth} stat block.  If you already have a familiar from this spell, that familiar transforms into a new one but retains its memories; you do not get a second familiar.",
                 "Whenever you cast the spell, choose the familiar's creature type:  Celestial, Fey, or Fiend.  Also choose an environment:  Air, Land, or Water.  The familiar resembles a Tiny animal of your choice - such as an owl, cat, or a frog - that is native to the chosen environment.  Bot choices - creature type and environment - determine certain traits in the stat block.",
                 {
                     "type": "entries",
