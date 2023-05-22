@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1684709899
+        "dateLastModified": 1684769351
 	},
     "monster": [
         {
@@ -945,6 +945,363 @@
                 "frightened",
                 "paralyzed",
                 "poisoned"
+            ]
+        },
+        {
+            "name": "Aberrant Spirit",
+            "source": "MateriaSourceOfTruth",
+            "summonedBySpell": "Summon Aberration|MateriaSourceOfTruth",
+            "summonedBySpellLevel": 4,
+            "size": [
+                "M"
+            ],
+            "type": "aberration",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "special": "11 + the level of the spell (natural armor)"
+                }
+            ],
+            "hp": {
+                "special": "40 + 10 for each spell level above 4th (the abberation has a number of Hit Die [d8s] equal to your spell level)"
+            },
+            "speed": {
+                "walk": 30,
+                "fly": {
+                    "number": 30,
+                    "condition": "(beholderkin only; hover)"
+                },
+                "canHover": true
+            },
+            "str": 16,
+            "dex": 10,
+            "con": 15,
+            "int": 16,
+            "wis": 10,
+            "cha": 6,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 10,
+            "immune": [
+                "psychic"
+            ],
+            "conditionImmune": [
+                "prone (Beholderkin only)",
+                "weaken"
+            ],
+            "languages": [
+                "Deep Speech",
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Regeneration (Slaad Only)",
+                    "entries": [
+                        "The aberration regains PB hit points at the start of its turn if it has at least 1 hit point."
+                    ]
+                },
+                {
+                    "name": "Whispering Aura (Star Spawn Only)",
+                    "entries": [
+                        "At the start of each of the aberration's turns, each creature within 5 feet of the aberration must succeed on a Wisdom saving throw against your spell save DC or become {@condition dazed} until the start of the aberration's next turn, provided that the aberration is not {@condition incapacitated}."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The aberration makes a number of attacks equal to half this spell's level (rounded down)."
+                    ]
+                },
+                {
+                    "name": "Eye Ray (Beholderkin Only)",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 150 ft., one creature. {@h}{@damage 1d8 + 3 + summonSpellLevel} psychic damage."
+                    ]
+                },
+                {
+                    "name": "Claws (Slaad Only)",
+                    "entries": [
+                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d10 + 3 + summonSpellLevel} magical slashing damage. If the target is a creature, it can't regain hit points until the start of the aberration's next turn."
+                    ]
+                },
+                {
+                    "name": "Psychic Slam (Star Spawn Only)",
+                    "entries": [
+                        "{@atk ms} {@hitYourSpellAttack} to hit, reach 5 ft., one creature. {@h}{@damage 1d8 + 3 + summonSpellLevel} psychic damage."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Regeneration"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "DS"
+            ],
+            "damageTags": [
+                "S",
+                "Y"
+            ],
+            "miscTags": [
+                "MW"
+            ]
+        },
+        {
+            "name": "Construct Spirit",
+            "source": "MateriaSourceOfTruth",
+            "summonedBySpell": "Summon Construct|MateriaSourceOfTruth",
+            "summonedBySpellLevel": 4,
+            "size": [
+                "M"
+            ],
+            "type": "construct",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "special": "14 + the level of the spell (natural armor)"
+                }
+            ],
+            "hp": {
+                "special": "40 + 15 for each spell level above 4th (the construct has a number of Hit Die [d8s] equal to your spell level)"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 18,
+            "dex": 10,
+            "con": 18,
+            "int": 14,
+            "wis": 11,
+            "cha": 5,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 10,
+            "resist": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "exhaustion",
+                "frightened",
+                "incapacitated",
+                "paralyzed",
+                "petrified",
+                "poisoned"
+            ],
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "trait": [
+                {
+                    "name": "Heated Body (Metal Only)",
+                    "entries": [
+                        "A creature that touches the construct or hits it with a melee attack while within 5 feet of it takes {@damage 1d10} fire or radiant damage (your choice)."
+                    ]
+                },
+                {
+                    "name": "Stony Lethargy (Stone Only)",
+                    "entries": [
+                        "When a creature the construct can see starts its turn within 10 feet of the construct, the construct can force it to make a Charisma saving throw against your spell save DC. On a failed save, the target can't use reactions and its speed is halved until the start of its next turn."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The construct makes a number of attacks equal to half this spell's level (rounded down)."
+                    ]
+                },
+                {
+                    "name": "Slam",
+                    "entries": [
+                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d8 + 4 + summonSpellLevel} force damage."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Berserk Lashing (Clay Only)",
+                    "entries": [
+                        "When the construct takes damage, it makes a slam attack against a random creature within 5 feet of it. If no creature is within reach, the construct moves up to half its speed toward an enemy it can see, without provoking opportunity attacks."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "damageTags": [
+                "B",
+                "F"
+            ],
+            "miscTags": [
+                "MW"
+            ]
+        },
+        {
+            "name": "Elemental Spirit",
+            "source": "MateriaSourceOfTruth",
+            "summonedBySpell": "Summon Elemental|MateriaSourceOfTruth",
+            "summonedBySpellLevel": 4,
+            "size": [
+                "M"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "special": "11 + the level of the spell (natural armor)"
+                }
+            ],
+            "hp": {
+                "special": "50 + 10 for each spell level above 4th (+5 additional for each spell level above 4th, Earth only) (the elemental has a number of Hit Die [d8s] equal to your spell level)"
+            },
+            "speed": {
+                "walk": 40,
+                "fly": {
+                    "number": 40,
+                    "condition": "(air only hover)"
+                },
+                "burrow": {
+                    "number": 40,
+                    "condition": "(earth only)"
+                },
+                "swim": {
+                    "number": 40,
+                    "condition": "(water only)"
+                },
+                "canHover": true
+            },
+            "str": 18,
+            "dex": 15,
+            "con": 17,
+            "int": 4,
+            "wis": 10,
+            "cha": 16,
+            "senses": [
+                "darkvision 60 ft.",
+                "tremorsense 60 ft. (Earth only)"
+            ],
+            "passive": 10,
+            "resist": [
+                {
+                    "resist": [
+                        "lightning",
+                        "thunder"
+                    ],
+                    "cond": true,
+                    "note": "(Air only)"
+                },
+                {
+                    "resist": [
+                        "piercing",
+                        "slashing"
+                    ],
+                    "cond": true,
+                    "note": "(Earth only)"
+                },
+                {
+                    "resist": [
+                        "acid"
+                    ],
+                    "cond": true,
+                    "note": "(Water only)"
+                }
+            ],
+            "immune": [
+                "poison",
+                {
+                    "immune": [
+                        "fire"
+                    ],
+                    "cond": true,
+                    "note": "(Fire only)"
+                }
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "unconscious"
+            ],
+            "languages": [
+                "Primordial",
+                "understands the languages you speak"
+            ],
+            "trait": [
+                {
+                    "name": "Amorphous Form (Air, Fire, and Water Only)",
+                    "entries": [
+                        "The elemental can move through a space as narrow as 1 inch wide without squeezing."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The elemental makes a number of attacks equal to half this spell's level (rounded down)."
+                    ]
+                },
+                {
+                    "name": "Slam",
+                    "entries": [
+                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d10 + 4 + summonSpellLevel} magical bludgeoning damage (Air, Earth, and Water only) or fire damage (Fire only)."
+                    ]
+                }
+            ],
+            "bnous": [
+                {
+                    "name": "Blazing Speed (Fire only)",
+                    "entries": [
+                        "The elemental can {@action Dash} as a bonus action as long as it is not in water."
+                    ]
+                },
+                {
+                    "name": "Slip Stream (Water only)",
+                    "entries": [
+                        "The elemental can {@action Dash} as a bonus action as long as it is in or on water."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Amorphous"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "P"
+            ],
+            "damageTags": [
+                "B",
+                "F"
+            ],
+            "miscTags": [
+                "MW"
             ]
         }
     ]

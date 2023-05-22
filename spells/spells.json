@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1684705413
+        "dateLastModified": 1684769351
 	},
     "spell": [
         {
@@ -11123,6 +11123,231 @@
             }
         },
         {
+            "name": "Aura of Life",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't be reduced, and standing from {@condition prone} does not provoke an attack of opportunity. In addition, a nonhostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
+                    ]
+                }
+            ],
+            "damageResist": [
+                "necrotic"
+            ],
+            "miscTags": [
+                "HL"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    }
+                ],
+                "fromClassListVariant": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Twilight Domain",
+                            "shortName": "Twilight",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of Wildfire",
+                            "shortName": "Wildfire",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Undying",
+                            "shortName": "Undying",
+                            "source": "SCAG"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Aura of Purity",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Purifying energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) can't become diseased, has resistance to poison damage, and has advantage on saving throws against effects that cause any of the following conditions: {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition paralyzed}, {@condition poisoned}, and {@condition stunned}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 9th level or higher, it grants a duration that does not require concentration."
+                    ]
+                }
+            ],
+            "damageResist": [
+                "poison"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    }
+                ],
+                "fromClassListVariant": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Battle Smith",
+                            "shortName": "Battle Smith",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Peace Domain",
+                            "shortName": "Peace",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the Watchers",
+                            "shortName": "Watchers",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
             "name": "Blight",
             "source": "MateriaSourceOfTruth",
             "level": 4,
@@ -11194,7 +11419,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death",
+							"name": "Death Domain",
+							"shortName": "Death",
 							"source": "DMG"
 						}
 					},
@@ -11204,7 +11430,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave",
+							"name": "Grave Domain",
+							"shortName": "Grave",
 							"source": "XGE"
 						}
 					},
@@ -11214,7 +11441,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Land",
+							"name": "Circle of the Land",
+							"shortName": "Land",
 							"source": "PHB",
 							"subSubclass": "Desert"
 						}
@@ -11226,6 +11454,7 @@
 						},
 						"subclass": {
 							"name": "Oathbreaker",
+							"shortName": "Oathbreaker",
 							"source": "DMG"
 						}
 					},
@@ -11235,7 +11464,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Spores",
+							"name": "Circle of Spores",
+							"shortName": "Spores",
 							"source": "TCE"
 						}
 					},
@@ -11246,6 +11476,7 @@
 						},
 						"subclass": {
 							"name": "Alchemist",
+							"shortName": "Alchemist",
 							"source": "TCE"
 						}
 					},
@@ -11255,7 +11486,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Land",
+							"name": "Circle of the Land",
+							"shortName": "Land",
 							"source": "PHB"
 						}
 					}
@@ -11332,6 +11564,124 @@
                     {
                         "name": "Wizard",
                         "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Compulsion",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be {@condition charmed}. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that that is relative to you for each creature (given it is possible for the creature to do so; you cannot request a flightless humanoid to move vertically into the air). Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves. After moving in this way, it can make another Wisdom saving throw to try to end the effect.",
+                "A target isn't compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the range of this spell increases by 30 feet for each slot level above 4th.",
+                        "When you cast this spell using a spell slot of 9th level or higher, the range of this spell is 300 feet instead."
+                    ]
+                }
+
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "miscTags": [
+                "SGT",
+                "UBA"
+            ],
+            "areaTags": [
+                "MT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Order Domain",
+                            "shortName": "Order",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of Glory",
+                            "shortName": "Glory",
+                            "source": "TCE"
+                        }
                     }
                 ]
             }
@@ -11430,10 +11780,33 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Knowledge",
+							"name": "Knowledge Domain",
+							"shortName": "Knowledge",
 							"source": "PHB"
 						}
 					},
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    },
 					{
 						"class": {
 							"name": "Paladin",
@@ -11441,6 +11814,7 @@
 						},
 						"subclass": {
 							"name": "Oathbreaker",
+							"shortName": "Oathbreaker",
 							"source": "DMG"
 						}
 					},
@@ -11450,7 +11824,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Spores",
+							"name": "Circle of Spores",
+							"shortName": "Spores",
 							"source": "TCE"
 						}
 					}
@@ -11511,7 +11886,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death",
+							"name": "Death Domain",
+							"shortName": "Death",
 							"source": "DMG"
 						}
 					},
@@ -11521,7 +11897,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Life",
+							"name": "Life Domain",
+							"shortName": "Life",
 							"source": "PHB"
 						}
 					},
@@ -11532,6 +11909,7 @@
 						},
 						"subclass": {
 							"name": "Undying",
+							"shortName": "Undying",
 							"source": "SCAG"
 						}
 					},
@@ -11541,7 +11919,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave",
+							"name": "Grave Domain",
+							"shortName": "Grave",
 							"source": "XGE"
 						}
 					},
@@ -11552,6 +11931,7 @@
 						},
 						"subclass": {
 							"name": "Alchemist",
+							"shortName": "Alchemist",
 							"source": "TCE"
 						}
 					},
@@ -11562,6 +11942,7 @@
 						},
 						"subclass": {
 							"name": "Undead",
+							"shortName": "Undead",
 							"source": "VRGR"
 						}
 					}
@@ -11633,6 +12014,30 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
                 ]
             }
         },
@@ -11695,9 +12100,32 @@
 						},
 						"subclass": {
 							"name": "Great Old One",
+							"shortName": "Great Old One",
 							"source": "PHB"
 						}
 					},
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    },
 					{
 						"class": {
 							"name": "Sorcerer",
@@ -11705,6 +12133,7 @@
 						},
 						"subclass": {
 							"name": "Aberrant Mind",
+							"shortName": "Aberrant Mind",
 							"source": "TCE"
 						}
 					},
@@ -11715,6 +12144,7 @@
 						},
 						"subclass": {
 							"name": "Fathomless",
+							"shortName": "Fathomless",
 							"source": "TCE"
 						}
 					}
@@ -11781,11 +12211,243 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Nature",
+							"name": "Nature Domain",
+							"shortName": "Nature",
 							"source": "PHB"
 						}
 					}
 				]
+            }
+        },
+        {
+            "name": "Gravity Sinkhole",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a black marble"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A 20-foot-radius sphere of crushing force forms at a point you can see within range and tugs at the creatures there. Each creature in the sphere must make a Constitution saving throw. On a failed save, the creature takes {@damage 5d12} force damage and is pulled in a straight line toward the center of the sphere, ending in an unoccupied space as close to the center as possible (even if that space is in the air). On a successful save, the creature takes half as much damage and isn't pulled.",
+                "A creature that is pulled by this spell cannot {@action Dash}, {@action Disengage}, {@action Dodge}, or stand from {@condition prone} until the end of their next turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 5d12|4-9|1d12} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Greater Invisibility",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You or a creature you touch becomes {@condition invisible} until the spell ends. Anything the target is wearing or carrying is {@condition invisible} as long as it is on the target's person."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "invisible"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Armorer",
+                            "shortName": "Armorer",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Twilight Domain",
+                            "shortName": "Twilight",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of the Land",
+                            "shortName": "Land",
+                            "source": "PHB",
+                            "subSubclass": "Underdark"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Ranger",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Gloom Stalker",
+                            "shortName": "Gloom Stalker",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Archfey",
+                            "shortName": "Archfey",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Genie",
+                            "shortName": "Genie",
+                            "source": "TCE",
+                            "subSubclass": "Djinni"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Undead",
+                            "shortName": "Undead",
+                            "source": "VRGR"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -11858,7 +12520,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Land",
+							"name": "Circle of the Land",
+							"shortName": "Land",
 							"source": "PHB",
 							"subSubclass": "Arctic"
 						}
@@ -11869,7 +12532,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ancients",
+							"name": "Oath of the Ancients",
+							"shortName": "Ancients",
 							"source": "PHB"
 						}
 					},
@@ -11880,6 +12544,7 @@
 						},
 						"subclass": {
 							"name": "Artillerist",
+							"shortName": "Artillerist",
 							"source": "TCE"
 						}
 					},
@@ -11889,11 +12554,217 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Land",
+							"name": "Circle of the Land",
+							"shortName": "Land",
 							"source": "PHB"
 						}
-					}
+					},
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
 				]
+            }
+        },
+        {
+            "name": "Leomund's Secret Chest",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "an exquisite chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth at least 2,500 gp, and a Tiny replica made from the same materials worth at least 50 gp",
+                    "cost": 250000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You hide a chest, and all its contents, on the Ethereal Herebetween. You must touch the chest and the miniature replica that serves as a material component for the spell. The chest can contain up to 12 cubic feet of nonliving material (3 feet by 2 feet by 2 feet).",
+                "While the chest remains on the Ethereal Herebetween, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Herebetween by using an action and touching both the chest and the replica.",
+                "After 66 days, there is a cumulative {@chance 5|||Effect ends!|Effect continues} chance per day that the spell's effect ends. This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest is on the Ethereal Herebetween, it is lost."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the chest can contain an addition 1 foot by 1 foot by 1 foot for each spell slot above 4th.  When you cast this spell again to prevent the effect from ending, you must use the same spell level to maintain the chest's size."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "PRM"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "UAArtificer"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcana Domain",
+                            "shortName": "Arcana",
+                            "source": "SCAG"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Mordenkainen's Faithful Hound",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a tiny silver whistle"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 8
+                    }
+                }
+            ],
+            "entries": [
+                "You conjure a phantom guardian (commonly a watchdog), that cannot move, in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it.",
+                "The guardian is {@condition invisible} to all creatures except you and can't be harmed. When a Small or larger creature comes within 30 feet of it without first speaking the password that you specify when you cast this spell, the guardian starts barking loudly. The guardian sees {@condition invisible} creatures and can see into the Ethereal Plane. It ignores illusions.",
+                "At the start of each of your turns, the guardian attempts to strike one creature within 5 feet of it that is hostile to you. The guardian's attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals {@damage 4d8} force damage."
+            ],
+            "damageInflict": [
+                "piercing"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "UAArtificer"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -11960,7 +12831,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Hexblade",
+							"name": "The Hexblade",
+							"shortName": "Hexblade",
 							"source": "XGE"
 						}
 					},
@@ -11970,10 +12842,33 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Genie",
+							"name": "The Genie",
+							"shortName": "Genie",
 							"source": "TCE"
 						}
-					}
+					},
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
 				],
 				"fromClassListVariant": [
 					{
@@ -12052,6 +12947,189 @@
                         "name": "Wizard",
                         "source": "PHB"
                     }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Shadow of Moil",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "an undead eyeball encased in a gem worth at least 150 gp",
+                    "cost": 15000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Flame-like shadows wreathe your body until the spell ends, causing you to become heavily obscured to others. The shadows turn dim light within 10 feet of you into darkness, and bright light in the same area to dim light.",
+                "Until the spell ends, you have resistance to radiant damage. In addition, whenever a creature within a number of feet equal to 5 times your Proficiency Bonus of you hits you with an attack, the shadows lash out at that creature, dealing it {@damage 2d8} plus your spellcasting ability modifier necrotic damage."
+            ],
+            "damageResist": [
+                "radiant"
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "miscTags": [
+                "OBS"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Sickening Radiance",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Dim, greenish light spreads within a 30-foot-radius sphere centered on a point you choose within range. The light spreads around corners, and it lasts until the spell ends.",
+                "When a creature moves into the spell's area for the first time on a turn or starts its turn there, that creature must succeed on a Constitution saving throw or take {@damage 4d10} radiant damage, and it suffers one level of {@condition exhaustion} and emits a dim, greenish light in a 5-foot radius. This light makes it impossible for the creature to benefit from being {@condition invisible}. The light and any levels of {@condition exhaustion} caused by this spell go away when the spell ends."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@damage 1d10} for each slot level above 4th.",
+                        "When you cast this spell using a spell slot of 9th level or higher, the spell no longer requires your concentration to maintain."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "conditionInflict": [
+                "exhaustion"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
                 ]
             }
         },
@@ -12063,7 +13141,8 @@
             "time": [
                 {
                     "number": 1,
-                    "unit": "bonus"
+                    "unit": "bonus",
+                    "condition": "which you take immediately after hitting a target with a weapon or an unarmed strike"
                 }
             ],
             "range": {
@@ -12086,7 +13165,7 @@
                 }
             ],
             "entries": [
-                "The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon pierces both body and mind, and the attack deals an extra {@dice 4d8} psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on attack rolls and ability checks, and can't take reactions, until the end of its next turn."
+                "As you hit a creature with a weapon attack or unarmed strike, your strike pierces both body and mind, and the attack deals an extra {@dice 4d8} plus your spellcasting ability modifier psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on attack rolls and ability checks, and can't take reactions, until the end of its next turn."
             ],
             "entriesHigherLevel": [
                 {
@@ -12109,8 +13188,169 @@
                         "name": "Paladin",
                         "source": "PHB"
                     }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    }
                 ]
             }
+        },
+        {
+            "name": "Stone Shape",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "soft clay, which must be worked into roughly the desired shape of the stone object"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a large rock into a weapon, idol, or coffer, or make a small passage through a wall, as long as the wall is less than 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the stone object can be Large size or smaller, and any dimension or thickness of the wall cannot exceed 10 feet."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "OBJ"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of the Land",
+                            "shortName": "Land",
+                            "source": "PHB",
+                            "subSubclass": "Mountain"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of the Land",
+                            "shortName": "Land",
+                            "source": "PHB",
+                            "subSubclass": "Underdark"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Genie",
+                            "shortName": "Genie",
+                            "source": "TCE",
+                            "subSubclass": "Dao"
+                        }
+                    }
+                ]
+            },
+            "races": [
+                {
+                    "name": "Human (Mark of Making)",
+                    "source": "ERLW",
+                    "baseName": "Human",
+                    "baseSource": "PHB"
+                }
+            ],
+            "backgrounds": [
+                {
+                    "name": "Lorehold Student",
+                    "source": "SCC"
+                }
+            ]
         },
         {
             "name": "Stoneskin",
@@ -12182,7 +13422,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "War",
+							"name": "War Domain",
+							"shortName": "War",
 							"source": "PHB"
 						}
 					},
@@ -12192,7 +13433,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Land",
+							"name": "Circle of the Land",
+							"shortName": "Land",
 							"source": "PHB"
 						}
 					},
@@ -12202,7 +13444,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ancients",
+							"name": "Oath of the Ancients",
+							"shortName": "Ancients",
 							"source": "PHB"
 						}
 					},
@@ -12212,7 +13455,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Oath of Conquest",
+							"shortName": "Conquest",
 							"source": "XGE"
 						}
 					},
@@ -12222,7 +13466,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Redemption",
+							"name": "Oath of Redemption",
+							"shortName": "Redemption",
 							"source": "XGE"
 						}
 					},
@@ -12232,7 +13477,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Four Elements",
+							"name": "Way of the Four Elements",
+							"shortName": "Four Elements",
 							"source": "PHB"
 						}
 					},
@@ -12242,7 +13488,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Land",
+							"name": "Circle of the Land",
+							"shortName": "Land",
 							"source": "PHB",
 							"subSubclass": "Mountain"
 						}
@@ -12251,7 +13498,109 @@
             }
         },
         {
-            "name": "Summon Greater Demon",
+            "name": "Storm Sphere",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "A 20-foot-radius sphere of whirling air springs into existence, centered on a point you choose within range. The sphere remains for the spell's duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take {@damage 2d8} magical bludgeoning damage. The sphere's space is {@quickref difficult terrain||3}.",
+                "Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes {@damage 4d8} lightning damage.",
+                "Creatures within 30 feet of the sphere have disadvantage on Wisdom ({@skill Perception}) checks made to listen."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage for each of its effects increases by {@scaledamage 2d8;4d8|4-9|1d8} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "bludgeoning",
+                "lightning"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "miscTags": [
+                "DFT",
+                "UBA"
+            ],
+            "areaTags": [
+                "ST",
+                "S"
+            ],
+            "hasFluffImages": true,
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Summon Aberration",
             "source": "MateriaSourceOfTruth",
             "level": 4,
             "school": "C",
@@ -12264,52 +13613,306 @@
             "range": {
                 "type": "point",
                 "distance": {
-                    "amount": 60,
-                    "type": "feet"
+                    "type": "feet",
+                    "amount": 90
                 }
             },
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a vial of blood from an unwilling humanoid"
+                "m": {
+                    "text": "a pickled tentacle and an eyeball in a platinum-inlaid vial worth at least 200 gp",
+                    "cost": 20000
+                }
             },
             "duration": [
                 {
-                    "concentration": true,
                     "type": "timed",
                     "duration": {
-                        "amount": 1,
-                        "type": "hour"
-                    }
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
                 }
             ],
             "entries": [
-                "You utter foul words, summoning one demon from the chaos of the Abyss. You choose the demon's type, which must be {@filter one of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|tag=demon|miscellaneous=!swarm}, such as a {@creature shadow demon} or a {@creature barlgura}. The demon appears in an unoccupied space you can see within range, and the demon disappears when it drops to 0 hit points or when the spell ends.",
-                "Roll initiative for the demon, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach that has attacked it.",
-                "At the end of each of the demon's turns, it makes a Charisma saving throw. The demon has disadvantage on this saving throw if you say its true name. On a failed save, the demon continues to obey you. On a successful save, your control of the demon ends for the rest of the duration, and the demon spends its turns pursuing and attacking the nearest non-demons to the best of its ability. If you stop concentrating on the spell before it reaches its full duration, an uncontrolled demon doesn't disappear for {@dice 1d6} rounds if it still has hit points.",
-                "As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demon cannot cross the circle or harm it, and it can't target anyone within it. Using the material component in this manner consumes it when the spell ends."
+                "You call forth an aberrant spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the {@creature Aberrant Spirit|MateriaSourceOfTruth} stat block. When you cast the spell, choose Beholderkin, Slaad, or Star Spawn. The creature resembles an aberration of that kind, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
+                "The creature is an ally to you and your companions. In combat, the beast acts during your turn. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge} action and uses its move to avoid danger."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the challenge rating increases by 2 for each slot level above 4th."
+                        "When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the stat block.",
+                        "When you cast this spell using a slot of 9th level or higher, it grants a duration that does not require concentration."
                     ]
                 }
             ],
-            "savingThrow": [
-                "charisma"
+            "miscTags": [
+                "SGT",
+                "SMN"
+            ],
+            "classes": {
+                "fromClassListVariant": [
+                    {
+                        "name": "Warlock",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Aberrant Mind",
+                            "shortName": "Aberrant Mind",
+                            "source": "TCE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Summon Construct",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "an ornate stone and metal lockbox worth at least 200 gp",
+                    "cost": 20000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You call forth the spirit of a construct. It manifests in an unoccupied space that you can see within range. This corporeal form uses the {@creature Construct Spirit|MateriaSourceOfTruth} stat block. When you cast the spell, choose a material: Clay, Metal, or Stone. The creature resembles a golem or a modron (your choice) made of the chosen material, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
+                "The creature is an ally to you and your companions. In combat, the beast acts during your turn. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge} action and uses its move to avoid danger."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the stat block.",
+                        "When you cast this spell using a spell slot of 9th level or higher, it grants a duration that does not require concentration."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SGT",
+                "SMN"
             ],
             "classes": {
                 "fromClassList": [
                     {
-                        "name": "Warlock",
-                        "source": "PHB"
+                        "name": "Artificer",
+                        "source": "TCE"
+                    }
+                ],
+                "fromClassListVariant": [
+                    {
+                        "name": "Wizard",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Clockwork Soul",
+                            "shortName": "Clockwork Soul",
+                            "source": "TCE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Summon Elemental",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "air, a pebble, ash, and water inside a gold-inlaid vial worth at least 200 gp",
+                    "cost": 20000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You call forth an elemental spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the {@creature Elemental Spirit|TCE} stat block. When you cast the spell, choose an element: Air, Earth, Fire, or Water. The creature resembles a bipedal form wreathed in the chosen element, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
+                "The creature is an ally to you and your companions. In combat, the beast acts during your turn. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge} action and uses its move to avoid danger."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the stat block.",
+                        "When you cast this spell using a spell slot of 9th level or higher, it grants a duration that does not require concentration."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SGT",
+                "SMN"
+            ],
+            "classes": {
+                "fromClassListVariant": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
                     },
                     {
                         "name": "Wizard",
-                        "source": "PHB"
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Fathomless",
+                            "shortName": "Fathomless",
+                            "source": "TCE"
+                        }
                     }
                 ]
             }
@@ -12369,6 +13972,184 @@
                     {
                         "name": "Wizard",
                         "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Wall of Fire",
+            "source": "MateriaSourceOfTruth",
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a small piece of phosphorus"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.",
+                "When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 5d8} fire damage, or half as much damage on a successful save.",
+                "One side of the wall, selected by you when you cast this spell, deals {@damage 5d8} fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 5d8|4-9|1d8} for each slot level above 4th.",
+                        "When you cast this spell using a spell slot of 6th level or higher, the duration is increased to up to 10 minutes.",
+                        "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "W"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Artillerist",
+                            "shortName": "Artillerist",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Light Domain",
+                            "shortName": "Light",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Forge Domain",
+                            "shortName": "Forge",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Fiend",
+                            "shortName": "Fiend",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Celestial",
+                            "shortName": "Celestial",
+                            "source": "XGE"
+                        }
                     }
                 ]
             }
@@ -12437,6 +14218,30 @@
                     {
                         "name": "Wizard",
                         "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Eldritch Knight",
+                            "shortName": "Eldritch Knight",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Rogue",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Arcane Trickster",
+                            "shortName": "Arcane Trickster",
+                            "source": "PHB"
+                        }
                     }
                 ]
             }
