@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1684769351
+        "dateLastModified": 1684789575
 	},
     "spell": [
         {
@@ -14247,6 +14247,316 @@
             }
         },
         {
+            "name": "Banishing Smite",
+            "source": "MateriaSourceOfTruth",
+            "level": 5,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus",
+                    "condition": "which you take immediately after hitting a target with a weapon or an unarmed strike"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "As you hit a creature with a weapon attack or unarmed strike, your strike crackles with force, and the attack deals an extra {@damage 5d10} force damage to the target.",
+                "Additionally, if this attack reduces the target to 50 hit points or fewer, you banish it. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is {@condition incapacitated}. It remains there until the end of your next turn or until the spell ends if you choose to maintain concentration on this spell, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the extra damage increases by {@damage 1d10} for each slot level above 5th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "conditionInflict": [
+                "incapacitated"
+            ],
+            "miscTags": [
+                "AAD"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Battle Smith",
+                            "shortName": "Battle Smith",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Chaos Burst",
+            "source": "MateriaSourceOfTruth",
+            "level": 5,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 120,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You choose a point within range and cause wobbling chaotic energy to explode there.  Each creature in a 20 foot radius sphere centered on that point must make a Charisma saving throw.  A target takes {@damage 6d8} damage and is subject to the effect determined by the Chaotic Implications table, or half as much on a successful one and avoids the effect from the Chaotic Implications table.",
+                "Choose one of the d8s.  The number rolled on that die determines the spell's damage type, as shown below:",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "{@dice d8}",
+                        "Damage Type"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 1
+                                }
+                            },
+                            "Acid"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 2
+                                }
+                            },
+                            "Cold"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 3
+                                }
+                            },
+                            "Fire"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 4
+                                }
+                            },
+                            "Force"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 5
+                                }
+                            },
+                            "Lightning"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 6
+                                }
+                            },
+                            "Poison"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 7
+                                }
+                            },
+                            "Psychic"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 8
+                                }
+                            },
+                            "Thunder"
+                        ]
+                    ]
+                },
+                "Choose a different one of the d8s.  The number rolled on that die determines the Chaotic Implications that affect creatures that fail their saving throw, as shown below.",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "{@dice d8}",
+                        "Chaotic Implications"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 1
+                                }
+                            },
+                            "The target's grasp on reality is shaken; they are {@condition blinded} and {@condition deafened} to their surroundings while they navigate utterly lots in a wobbling world only they can perceive until the spell ends.  Whenever the target takes damage it can make a Charisma saving throw to attempt to end this spell."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 2
+                                }
+                            },
+                            "The target is {@condition dazed} and any attempt it makes to teleport or to leave its current plane by any mean fails until the spell ends."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 3
+                                }
+                            },
+                            "You become {@condition invisible} to the target until the spell ends."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 4
+                                }
+                            },
+                            "You become {@condition petrified}, however instead of becoming {@condition incapacitated}, you {@condition possessed||possess} one of the targets until the spell ends.  When the spell ends, you are no longer {@condition petrified} at the end of your next turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 5
+                                }
+                            },
+                            "The target is {@condition weakened} until the spell ends."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 6
+                                }
+                            },
+                            "The creature's size category is reduced by up to two; down to a minimum size of Tiny.  The target deals only half damage with weapon attacks and unarmed strikes until the spell ends."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 7
+                                }
+                            },
+                            "The creature is magically fixed in place and must make a Strength check against your spell save DC as an action to move.  On a success, the creature can move up to 10 feet."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 8
+                                }
+                            },
+                            "The target loses any condition and damage immunities but has resistance to those damage types until the end of its next turn.  Then the spell ends."
+                        ]
+                    ]
+                },
+                "Whatever the effect from the Chaotic Implications table, it lasts up to 1 minute, unless stated otherwise.  At the end of each of its turns, the target can make another Charisma saving throw.  On a success, the spell ends on the target."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, each target takes {@damage 1d8} extra damage of the type rolled for each slot level above 1st."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
 			"name": "Cloudkill",
 			"source": "MateriaSourceOfTruth",
 			"level": 5,
@@ -14279,7 +14589,7 @@
 				}
 			],
 			"entries": [
-				"You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured.",
+				"You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is {@quickref Vision and Light|PHB|2||heavily obscured}.",
 				"When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes {@damage 5d8} poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don't need to breathe.",
 				"The fog moves 10 feet in the direction of your choice at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings."
 			],
@@ -14316,7 +14626,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death",
+							"name": "Death Domain",
+							"shortName": "Death",
 							"source": "DMG"
 						}
 					},
@@ -14326,7 +14637,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Land",
+							"name": "Circle of the Land",
+							"shortName": "Land",
 							"source": "PHB",
 							"subSubclass": "Underdark"
 						}
@@ -14337,7 +14649,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Oath of Conquest",
+							"shortName": "Conquest",
 							"source": "XGE"
 						}
 					},
@@ -14347,7 +14660,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Spores",
+							"name": "Circle of Spores",
+							"shortName": "Spores",
 							"source": "TCE"
 						}
 					},
@@ -14358,6 +14672,7 @@
 						},
 						"subclass": {
 							"name": "Alchemist",
+							"shortName": "Alchemist",
 							"source": "TCE"
 						}
 					},
@@ -14367,7 +14682,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Land",
+							"name": "Circle of the Land",
+							"shortName": "Land",
 							"source": "PHB"
 						}
 					},
@@ -14377,13 +14693,363 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Undead",
+							"name": "The Undead",
+							"shortName": "Undead",
 							"source": "VRGR"
 						}
 					}
 				]
 			}
 		},
+        {
+            "name": "Commune",
+            "source": "MateriaSourceOfTruth",
+            "level": 5,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "incense and a vial of holy or unholy water"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "entries": [
+                "You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question.",
+                "Divine beings aren't necessarily omniscient, so you might receive \"unclear\" as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the DM might offer a short phrase as an answer instead.",
+                "If you cast the spell two or more times before finishing your next long rest, there is a cumulative {@chance 25|||No answer!|Answer} chance for each casting after the first that you get no answer. The DM makes this roll in secret."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th or 7th level, you can ask one additional question for a total of four.",
+                        "When you cast this spell using a spell slot of 8th level or higher, you can ask one additional question for a total of five."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Cleric",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Order Domain",
+                            "shortName": "Order",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of Devotion",
+                            "shortName": "Devotion",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of Glory",
+                            "shortName": "Glory",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Commune with Nature",
+            "source": "MateriaSourceOfTruth",
+            "level": 5,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "entries": [
+                "You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in dungeons and towns.",
+                "You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:",
+                {
+                    "type": "list",
+                    "items": [
+                        "terrain and bodies of water",
+                        "prevalent plants, minerals, animals, or peoples",
+                        "powerful creatures in the area (dragons in their lairs are protected from this spell)",
+                        "influence from other planes of existence",
+                        "buildings"
+                    ]
+                },
+                "For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the spell's reach increases by 1 mile, or 100 feet underground, for each slot level above 5th."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Barbarian",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Path of the Totem Warrior",
+                            "shortName": "Totem Warrior",
+                            "source": "PHB"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of the Land",
+                            "shortName": "Land",
+                            "source": "PHB",
+                            "subSubclass": "Arctic"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of the Land",
+                            "shortName": "Land",
+                            "source": "PHB",
+                            "subSubclass": "Forest"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Oath of the Ancients",
+                            "shortName": "Ancients",
+                            "source": "PHB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Cone of Cold",
+            "source": "MateriaSourceOfTruth",
+            "level": 5,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "cone",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a small crystal or glass cone"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes {@damage 8d8} cold damage on a failed save, or half as much damage on a successful one.",
+                "A creature killed by this spell becomes a frozen statue until it thaws.",
+                "The cold freezes nonmagical liquids in the area that are not being worn or carried."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 8d8|5-9|1d8} for each slot level above 5th.",
+                        "When you cast this spell using a spell slot of 9th level or higher, the spell produces a 150-foot cone instead."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "N"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ],
+                "fromClassListVariant": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "TCE"
+                        },
+                        "subclass": {
+                            "name": "Artillerist",
+                            "shortName": "Artillerist",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Druid",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Circle of the Land",
+                            "shortName": "Land",
+                            "source": "PHB",
+                            "subSubclass": "Arctic"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Hexblade",
+                            "shortName": "Hexblade",
+                            "source": "XGE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Fathomless",
+                            "shortName": "Fathomless",
+                            "source": "TCE"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "The Genie",
+                            "shortName": "Genie",
+                            "source": "TCE",
+                            "subSubclass": "Marid"
+                        }
+                    }
+                ]
+            }
+        },
         {
 			"name": "Contagion",
 			"source": "MateriaSourceOfTruth",
@@ -14497,6 +15163,7 @@
 						},
 						"subclass": {
 							"name": "Oathbreaker",
+							"shortName": "Oathbreaker",
 							"source": "DMG"
 						}
 					},
@@ -14506,7 +15173,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Undying",
+							"name": "The Undying",
+							"shortName": "Undying",
 							"source": "SCAG"
 						}
 					},
@@ -14516,7 +15184,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Spores",
+							"name": "Circle of Spores",
+							"shortName": "Spores",
 							"source": "TCE"
 						}
 					}
@@ -14561,21 +15230,21 @@
 					"type": "entries",
 					"name": "Gusts",
 					"entries": [
-						"A wind picks up within the cube, continually blowing in a horizontal direction you designate. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged attacks that pass through it or that are made against targets within the cube have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved, and speaking is made more difficult. If a creature attempts to cast a spell with a verbal component or utter a command word (as if to {@action use an object}) then they must succeed a Constitution check against your Spell Save DC. On a failure, they are unable to speak as they are buffeted by the strong winds."
+						"A wind picks up within the cube, continually blowing in a horizontal direction you designate. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged attacks that enter or leave the cube or pass through it have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved, and speaking is made more difficult. If a creature attempts to cast a spell with a verbal component or utter a command word (as if to {@action use an object}) then they must succeed a Constitution check against your Spell Save DC. On a failure, they are unable to speak as they are buffeted by the strong winds."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Downdraft",
 					"entries": [
-						"You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked {@condition prone}. Creatures that end a fall within the cube take double damage from the fall."
+						"You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked {@condition prone}. Creatures that end a fall within the cube take double damage from the fall.  When a creature in the cube makes a vertical jump, the creature can only jump up half the normal height."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Updraft",
 					"entries": [
-						"You cause a sustained updraft within the cube, rising upward from the cube's bottom side. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal."
+						"You cause a sustained updraft within the cube, rising upward from the cube's bottom side. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to a number of additional feet equal to 5 times your spellcastin modifier higher than normal."
 					]
 				}
 			],
@@ -14611,6 +15280,125 @@
 				]
 			}
 		},
+        {
+            "name": "Conjure Volley",
+            "source": "MateriaSourceOfTruth",
+            "level": 5,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "one piece of ammunition or one thrown weapon"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You fire a piece of ammunition from a ranged weapon or throw a weapon into the air and choose a point within range. Hundreds of duplicates of the ammunition or weapon fall in a volley from above and then disappear. Each creature of your choice in a 40-foot-radius, 20-foot-high cylinder centered on that point must make a Dexterity saving throw. A creature takes {@damage 8d8} damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the ammunition or weapon, and if the ammunition or weapon used has additional effects they apply to each creature in the area."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@damage 1d8} for each slot level above 5th."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "Y"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Contact Other Plane",
+            "source": "MateriaSourceOfTruth",
+            "level": 5,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "entries": [
+                "You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take {@damage 6d6} psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A {@spell remove curse} spell at 5th level or higher, or a {@spell greater restoration} spell cast on you ends this effect.",
+                "On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question honestly with short phrases but can use one word if the answer is clear, such as \"yes,\" \"no,\" \"maybe,\" \"never,\" \"irrelevant,\" or \"unclear\" (if the entity doesn't know the answer to the question)."
+            ],
+            "entriesHigherLevel":[
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th or higher, you reduce the Intelligence saving throw DC you must make by 2 for each slot level above 5th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
         {
 			"name": "Creation",
 			"source": "MateriaSourceOfTruth",
@@ -14709,7 +15497,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge",
+							"name": "Forge Domain",
+							"shortName": "Forge",
 							"source": "XGE"
 						}
 					},
@@ -14719,13 +15508,79 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Genie",
+							"name": "The Genie",
+							"shortName": "Genie",
 							"source": "TCE"
 						}
 					}
 				]
 			}
 		},
+        {
+            "name": "Danse Macabre",
+            "source": "MateriaSourceOfTruth",
+            "level": 5,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Threads of dark power leap from your fingers to pierce up to five Small or Medium corpses you can see within range. Each corpse immediately stands up and becomes undead. The animated target uses the {@creature Undead Creature|MateriaSourceOfTruth} stat block, and it gains a bonus to its attack and damage rolls equal to your spellcasting ability modifier.",
+                "You can use a bonus action to mentally command the creatures you make with this spell, issuing the same command to all of them. To receive the command, a creature must be within 60 feet of you. You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a chamber or passageway against your foes. If you issue no commands, the creatures do nothing except defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.",
+                "The creatures are under your control until the spell ends, after which they become inanimate once more."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, you animate up to two additional corpses for each slot level above 5th."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SGT",
+                "SMN",
+                "UBA"
+            ],
+            "hasFluffImages": true,
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
         {
 			"name": "Dawn",
 			"source": "MateriaSourceOfTruth",
@@ -14834,14 +15689,14 @@
 					"type": "entries",
 					"name": "Break Enchantment",
 					"entries": [
-						"As your action, you touch a creature you can reach that is {@condition charmed}, {@condition frightened}, or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer {@condition charmed}, {@condition frightened}, or possessed by such creatures and is immune to further attempts to {@condition charmed|charm}, {@condition frightened|frighten}, or possess them for the duration of the spell."
+						"As your action, you touch a creature you can reach that is {@condition charmed}, {@condition frightened}, or possessed by an aberration, a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer {@condition charmed}, {@condition frightened}, or possessed by such creatures and is immune to further attempts to {@condition charmed|charm}, {@condition frightened|frighten}, or possess them for the duration of the spell."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Dismissal",
 					"entries": [
-						"As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild."
+						"As your action, make a melee spell attack against an aberration, a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Unformed Maze, and fey are sent to the Feybinds."
 					]
 				}
 			],
@@ -14858,7 +15713,20 @@
 						"name": "Paladin",
 						"source": "PHB"
 					}
-				]
+				],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
 			}
 		},
         {
@@ -14935,6 +15803,7 @@
 						},
 						"subclass": {
 							"name": "Trickery",
+							"shortName": "Trickery Domain",
 							"source": "PHB"
 						}
 					},
@@ -14945,6 +15814,7 @@
 						},
 						"subclass": {
 							"name": "Oathbreaker",
+							"shortName": "Oathbreaker",
 							"source": "DMG"
 						}
 					},
@@ -14954,7 +15824,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Archfey",
+							"name": "The Archfey",
+							"shortName": "Archfey",
 							"source": "PHB"
 						}
 					},
@@ -14964,7 +15835,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Great Old One",
+							"name": "The Great Old One",
+							"shortName": "Great Old One",
 							"source": "PHB"
 						}
 					},
@@ -14974,7 +15846,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Oath of Conquest",
+							"shortName": "Conquest",
 							"source": "XGE"
 						}
 					},
@@ -14984,7 +15857,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Order",
+							"name": "Order Domain",
+							"shortName": "Order",
 							"source": "TCE"
 						}
 					}
@@ -15022,7 +15896,8 @@
 			"entries": [
 				"This spell shapes a creature's dreams. Choose a creature known to you as the target of this spell. The target must be on the same plane of existence as you. Creatures that don't sleep, such as elves, can't be contacted by this spell. You, or a willing creature you touch, enters a trance state, acting as a messenger. While in the trance, the messenger is aware of his or her surroundings, but can't take actions or move.",
 				"If the target is asleep, the messenger establishes telepathic contact with the target and appears in the target's dreams and can converse with the target as long as it remains asleep, through the duration of the spell. The messenger can also shape the environment of the dream, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the effect of the spell early. The target recalls the dream perfectly upon waking. If the target is awake when you cast the spell, the messenger knows it, and can either end the trance (and the spell) or wait for the target to fall asleep, at which point the messenger appears in the target's dreams.",
-				"You can make the messenger appear monstrous and terrifying to the target. If you do, the messenger can create horrible images of the target being injured or destroyed and can deliver up to {@damage 5d6} psychic damage to the target each round. Once the target takes {@damage 10d6} damage this way, they may make a Wisdom saving throw. On a successful save, the target wakes up and the spell ends, on a failed save, the messenger may continue delivering damage this way with the target making a new saving throw after each {@damage 10d6} psychic damage delivered. If the target reaches 0 hp, the spell ends. Should the target suffer damage from this spell, it prevents the target from gaining any benefit from that rest.  A target of a dream spell cannot be targeted by a second dream spell for the duration."
+				"You can make the messenger appear monstrous and terrifying to the target. If you do, the messenger can create horrible images of the target being injured or destroyed and can deliver up to {@damage 5d6} psychic damage to the target each round. Once the target takes {@damage 10d6} damage this way, they may make a Wisdom saving throw. On a successful save, the target wakes up and the spell ends, on a failed save, the messenger may continue delivering damage this way with the target making a new saving throw after each {@damage 10d6} psychic damage delivered. If the target reaches 0 hp, the spell ends. Should the target suffer damage from this spell, it prevents the target from gaining any benefit from that rest.",
+                "A target of a dream spell cannot be targeted by a second dream spell for the duration."
 			],
 			"damageInflict": [
 				"psychic"
@@ -15052,7 +15927,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Land",
+							"name": "Circle of the Land",
+							"shortName": "Land",
 							"source": "PHB",
 							"subSubclass": "Grassland"
 						}
@@ -15063,7 +15939,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Land",
+							"name": "Circle of the Land",
+							"shortName": "Land",
 							"source": "PHB"
 						}
 					}
@@ -15259,7 +16136,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Light",
+							"name": "Light Domain",
+							"shortName": "Light",
 							"source": "PHB"
 						}
 					},
@@ -15269,7 +16147,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "War",
+							"name": "War Domain",
+							"shortName": "War",
 							"source": "PHB"
 						}
 					},
@@ -15279,7 +16158,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Devotion",
+							"name": "Oath of Devotion",
+							"shortName": "Devotion",
 							"source": "PHB"
 						}
 					},
@@ -15289,7 +16169,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Fiend",
+							"name": "The Fiend",
+							"shortName": "Fiend",
 							"source": "PHB"
 						}
 					},
@@ -15299,7 +16180,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Celestial",
+							"name": "The Celestial",
+							"shortName": "Celestial",
 							"source": "XGE"
 						}
 					},
@@ -15309,7 +16191,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Glory",
+							"name": "Oath of Glory",
+							"shortName": "Glory",
 							"source": "TCE"
 						}
 					},
@@ -15319,7 +16202,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Genie",
+							"name": "The Genie",
+							"shortName": "Genie",
 							"source": "TCE",
 							"subSubclass": "Efreeti"
 						}
@@ -15330,7 +16214,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Wildfire",
+							"name": "Circle of Wildfire",
+							"shortName": "Wildfire",
 							"source": "TCE"
 						}
 					}
@@ -15417,8 +16302,151 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Crown",
+                        "name": "Oath of the Crown",
+                        "shortName": "Crown",
                         "source": "SCAG"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                }
+            ]
+        }
+       },
+       {
+        "name": "Greater Restoration",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "A",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "diamond dust worth at least 100 gp, which the spell consumes",
+                "cost": 10000,
+                "consume": true
+            }
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's {@condition exhaustion} level by one, or end one of the following effects on the target:",
+            {
+                "type": "list",
+                "items": [
+                    "One effect that {@condition charmed}, {@condition petrified}, {@condition possessed}, or {@condition weakened} the target",
+                    "One curse, including the target's attunement to a cursed magic item",
+                    "Any reduction to one of the target's ability scores",
+                    "One effect reducing the target's hit point maximum"
+                ]
+            }
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th or 7th level the range is increased to 30 feet instead.",
+                    "When you cast this spell using a spell slot of 8th level or higher, the range is increased to 60 feet instead."
+                ]
+            }
+
+        ],
+        "areaTags": [
+            "ST"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Artificer",
+                    "source": "TCE"
+                }
+            ],
+            "fromClassListVariant": [
+                {
+                    "name": "Ranger",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Peace Domain",
+                        "shortName": "Peace",
+                        "source": "TCE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Clockwork Soul",
+                        "shortName": "Clockwork Soul",
+                        "source": "TCE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "The Celestial",
+                        "shortName": "Celestial",
+                        "source": "XGE"
                     }
                 }
             ]
@@ -15559,8 +16587,20 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Fiend",
+                        "name": "The Fiend",
+                        "shortName": "Fiend",
                         "source": "PHB"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
                     }
                 }
             ]
@@ -15601,6 +16641,15 @@
             "You imbue a weapon you touch with holy power. Until the spell ends, the weapon emits bright light in a 30-foot radius and dim light for an additional 30 feet. In addition, weapon attacks made with it deal an extra {@damage 2d8} radiant damage on a hit. If the weapon isn't already a magic weapon, it becomes one for the duration. When a creature takes the {@action Attack} action with the weapon, they may attack twice with the weapon on their turn if they would normally attack one time.",
             "As a bonus action on your turn, you can dismiss this spell and cause the weapon to emit a burst of radiance. Each creature of your choice that you can see within 30 feet of the weapon must make a Constitution saving throw. On a failed save, a creature takes {@damage 4d8} radiant damage, and it is {@condition blinded} for 1 minute. On a successful save, a creature takes half as much damage and isn't {@condition blinded}. At the end of each of its turns, a {@condition blinded} creature can make a Constitution saving throw, ending the effect on itself on a success."
         ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, it grants a duration that does not require concentration."
+                ]
+            }
+        ],
         "damageInflict": [
             "radiant"
         ],
@@ -15619,6 +16668,19 @@
                 {
                     "name": "Paladin",
                     "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
                 }
             ]
         }
@@ -15723,14 +16785,15 @@
         ],
         "entries": [
             "Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphere's area is {@quickref difficult terrain||3}.",
-            "When the area appears, each creature in it must make a Constitution saving throw. A creature takes {@damage 4d10} piercing damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.  You may use your action to end the spell at any time before the duration expires."
+            "When the area appears, each creature in it must make a Constitution saving throw. A creature takes {@damage 4d10} magical piercing damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.  You may use your action to end the spell at any time before the duration expires."
         ],
         "entriesHigherLevel": [
             {
                 "type": "entries",
                 "name": "At Higher Levels",
                 "entries": [
-                    "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 4d10|5-9|1d10} for each slot level above 5th."
+                    "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 4d10|5-9|1d10} for each slot level above 5th.",
+                    "When you cast this spell using a spell slot of 8th level or higher, any craeture that takes damage from this spell is also {@condition poisoned} until the end of its next turn."
                 ]
             }
         ],
@@ -15762,7 +16825,8 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Nature",
+                        "name": "Nature Domain",
+                        "shortName": "Nature",
                         "source": "PHB"
                     }
                 },
@@ -15772,7 +16836,8 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Tempest",
+                        "name": "Tempest Domain",
+                        "shortName": "Tempest",
                         "source": "PHB"
                     }
                 },
@@ -15782,7 +16847,8 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Land",
+                        "name": "Circle of the Land",
+                        "shortName": "Land",
                         "source": "PHB",
                         "subSubclass": "Desert"
                     }
@@ -15793,7 +16859,8 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Land",
+                        "name": "Circle of the Land",
+                        "shortName": "Land",
                         "source": "PHB",
                         "subSubclass": "Forest"
                     }
@@ -15804,7 +16871,8 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Land",
+                        "name": "Circle of the Land",
+                        "shortName": "Land",
                         "source": "PHB",
                         "subSubclass": "Grassland"
                     }
@@ -15815,7 +16883,8 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Land",
+                        "name": "Circle of the Land",
+                        "shortName": "Land",
                         "source": "PHB",
                         "subSubclass": "Swamp"
                     }
@@ -15826,7 +16895,8 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Land",
+                        "name": "Circle of the Land",
+                        "shortName": "Land",
                         "source": "PHB",
                         "subSubclass": "Underdark"
                     }
@@ -15838,6 +16908,7 @@
                     },
                     "subclass": {
                         "name": "Swarmkeeper",
+                        "shortName": "Swarmkeeper",
                         "source": "TCE"
                     }
                 }
@@ -15904,7 +16975,8 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Knowledge",
+                        "name": "Knowledge Domain",
+                        "shortName": "Knowledge",
                         "source": "PHB"
                     }
                 },
@@ -15914,20 +16986,24 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Undying",
+                        "name": "The Undying",
+                        "shortName": "Undying",
                         "source": "SCAG"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
                     }
                 }
             ]
-        },
-        "races": [
-            {
-                "name": "Half-Elf (Mark of Detection)",
-                "source": "ERLW",
-                "baseName": "Half-Elf",
-                "baseSource": "PHB"
-            }
-        ]
+        }
     },
     {
         "name": "Maelstrom",
@@ -16045,7 +17121,8 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Life",
+                        "name": "Life Domain",
+                        "shortName": "Life",
                         "source": "PHB"
                     }
                 },
@@ -16056,6 +17133,7 @@
                     },
                     "subclass": {
                         "name": "Battle Smith",
+                        "shortName": "Battle Smith",
                         "source": "TCE"
                     }
                 },
@@ -16065,8 +17143,20 @@
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Wildfire",
+                        "name": "Circle of Wildfire",
+                        "shortName": "Wildfire",
                         "source": "TCE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
                     }
                 }
             ]
@@ -16147,6 +17237,90 @@
         }
     },
     {
+        "name": "Passwall",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 30
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "a pinch of sesame seeds"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 1
+                }
+            }
+        ],
+        "entries": [
+            "A passage appears at a point of your choice that you can see on a wooden, plaster, or stone (or other substance at your DM's discretion) surface (such as a wall, a ceiling, or a floor) within range, and lasts for the duration. You choose the opening's dimensions: up to 5 feet wide, 8 feet tall, and 20 feet deep. The passage creates no instability in a structure surrounding it.",
+            "When the opening disappears, any creatures or objects still in the passage created by the spell are safely ejected to an unoccupied space nearest to the surface on which you cast the spell."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, the height and width increase by 3 feet, and the breadth increases by 5 feet for each slot level above 5th",
+                    "When you cast this spell using a spell slot of 9th level or higher, you can make an opening in a {@spell wall of force} or {@spell forcecage} with this spell's original dimensions for 1 minute."
+                ]
+            }
+        ],
+        "miscTags": [
+            "OBJ",
+            "SGT"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    "subclass": {
+                        "name": "Armorer",
+                        "shortName": "Armorer",
+                        "source": "TCE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Circle of the Land",
+                        "shortName": "Land",
+                        "source": "PHB",
+                        "subSubclass": "Mountain"
+                    }
+                }
+            ]
+        }
+    },
+    {
         "name": "Planar Binding",
         "source": "MateriaSourceOfTruth",
         "level": 5,
@@ -16183,7 +17357,7 @@
             }
         ],
         "entries": [
-            "With this spell, you attempt to bind a {@filter celestial|bestiary|type=celestial|miscellaneous=!swarm}, an {@filter elemental|bestiary|type=elemental|miscellaneous=!swarm}, a {@filter fey|bestiary|type=fey|miscellaneous=!swarm}, or a {@filter fiend|bestiary|type=fiend|miscellaneous=!swarm} to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of an inverted {@spell magic circle} in order to keep it trapped while this spell is cast.) At the completion of the casting, the target must make a Charisma saving throw. On a failed save, it is bound to serve you for the duration. If the creature was summoned or created by another spell, that spell's duration is replaced by the duration of this spell.",
+            "With this spell, you attempt to bind an {@filter aberration|bestiary|type=aberration|miscellaneous=!swarm}, a {@filter celestial|bestiary|type=celestial|miscellaneous=!swarm}, an {@filter elemental|bestiary|type=elemental|miscellaneous=!swarm}, a {@filter fey|bestiary|type=fey|miscellaneous=!swarm}, a {@filter fiend|bestiary|type=fiend|miscellaneous=!swarm}, or an {@filter undead|bestiary|type=undead|miscellaneous=!swarm} to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of an inverted {@spell magic circle} in order to keep it trapped while this spell is cast.) At the completion of the casting, the target must make a Charisma saving throw. On a failed save, it is bound to serve you for the duration. If the creature was summoned or created by another spell, that spell's duration is replaced by the duration of this spell.",
             "A bound creature must follow your instructions to the best of its ability. You might command the creature to accompany you on an adventure, to guard a location, or to deliver a message. The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives. If the creature carries out your instructions completely before the spell ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane of existence, it returns to the place where you bound it and remains there until the spell ends."
         ],
         "entriesHigherLevel": [
@@ -16225,16 +17399,18 @@
                     },
                     "subclass": {
                         "name": "Arcana",
+                        "shortName": "Arcana Domain",
                         "source": "SCAG"
                     }
                 },
                 {
                     "class": {
-                        "name": "Ranger",
+                        "name": "Sorcerer",
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Monster Slayer",
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
                         "source": "XGE"
                     }
                 }
@@ -16244,6 +17420,293 @@
                     "name": "Warlock",
                     "source": "PHB",
                     "definedInSource": "TCE"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Raise Dead",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "N",
+        "time": [
+            {
+                "number": 10,
+                "unit": "minute"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "a diamond worth at least 500 gp, which the spell consumes",
+                "cost": 50000,
+                "consume": true
+            }
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.",
+            "This spell also neutralizes any poisons and cures nonmagical diseases that affected the creature at the time it died. This spell doesn't, however, remove magical diseases, curses, or similar effects; if these aren't first removed prior to casting the spell, they take effect when the creature returns to life. The spell can't return an undead creature to life.",
+            "This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival—its head, for instance—the spell automatically fails.",
+            "Coming back from the dead is an ordeal. The target takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, the penalty to all attacks, saving throws and ability checks is reduced by 1 for each slot level above 5th."
+                ]
+            }
+        ],
+        "affectsCreatureType": [
+            "aberration",
+            "beast",
+            "celestial",
+            "construct",
+            "dragon",
+            "elemental",
+            "fey",
+            "fiend",
+            "giant",
+            "humanoid",
+            "monstrosity",
+            "ooze",
+            "plant"
+        ],
+        "miscTags": [
+            "HL"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Paladin",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    "subclass": {
+                        "name": "Alchemist",
+                        "shortName": "Alchemist",
+                        "source": "TCE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Life Domain",
+                        "shortName": "Life",
+                        "source": "PHB"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Grave Domain",
+                        "shortName": "Grave",
+                        "source": "XGE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Rary's Telepathic Bond",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "D",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 30
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "pieces of eggshell from two different kinds of creatures"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 1
+                }
+            }
+        ],
+        "meta": {
+            "ritual": true
+        },
+        "entries": [
+            "You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren't affected by this spell.",
+            "Until the spell ends, the targets can communicate telepathically through the bond whether or not they have a common language. The communication is possible over any distance, though it can't extend to other planes of existence."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 7th level or 8th level, the duration of the spell is 4 hours instead.",
+                    "When you cast this spell using a spell slot of 9th level, the duration of the spell is 12 hours instead."
+                ]
+            }
+        ],
+        "areaTags": [
+            "MT"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromClassListVariant": [
+                {
+                    "name": "Bard",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Peace Domain",
+                        "shortName": "Peace",
+                        "source": "TCE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Aberrant Mind",
+                        "shortName": "Aberrant Mind",
+                        "source": "TCE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Lunar Sorcery",
+                        "shortName": "Lunar",
+                        "source": "DSotDQ",
+                        "subSubclass": "Crescent Moon"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Reincarnate",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "hour"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "rare oils and unguents worth at least 1,000 gp, which the spell consumes",
+                "cost": 100000,
+                "consume": true
+            }
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body. If the target's soul isn't free or willing to do so, the spell fails.",
+            "The magic fashions a new body for the creature to inhabit, which likely causes the creature's race to change. The DM rolls a {@dice d100} and consults the alphabetic listing of species to determine what form the creature takes when restored to life, or the DM chooses a form.  If rolling, whatever remaining numbers are not associated with a species, then it is treated as the humanoid's species upon death",
+            "The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly."
+        ],
+        "affectsCreatureType": [
+            "humanoid"
+        ],
+        "miscTags": [
+            "HL",
+            "RO"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB"
                 }
             ]
         }
@@ -16375,6 +17838,160 @@
         }
     },
     {
+        "name": "Summon Celestial",
+        "source": "MateriaSourceOfTruth",
+        "school": "C",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 90
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "a golden reliquary worth at least 500 gp",
+                "cost": 50000
+            }
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "You call forth a celestial spirit. It manifests in an angelic form in an unoccupied space that you can see within range. This corporeal form uses the {@creature Celestial Spirit|MateriaSourceOfTruth} stat block. When you cast the spell, choose Avenger, Defender, or Venerator. Your choice determines the creature's attack in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
+            "The creature is an ally to you and your companions. In combat, the beast acts during your turn. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge} action and uses its move to avoid danger."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell's level appears in the stat block.",
+                    "When you cast this spell using a spell slot of 9th level or higher, it grants a duration taht does not require concentration."
+                ]
+            }
+        ],
+        "miscTags": [
+            "SGT",
+            "SMN"
+        ],
+        "classes": {
+            "fromClassListVariant": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                },
+                {
+                    "name": "Paladin",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Summon Draconic Spirit",
+        "source": "MateriaSourceOfTruth",
+        "school": "C",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 90
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "an object with the image of a dragon engraved on it, worth at least 500 gp",
+                "cost": 50000
+            }
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "You call forth a {@creature draconic spirit|FTD}. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Draconic Spirit stat block. When you cast this spell, choose a family of dragon: chromatic, gem, or metallic. The creature resembles a dragon of the chosen family, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.",
+            "The creature is an ally to you and your companions. In combat, the beast acts during your turn. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge} action and uses its move to avoid danger."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell's level appears in the stat block.",
+                    "When you cast this spell using a spell slot of 9th level or higher, it grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "savingThrow": [
+            "dexterity"
+        ],
+        "miscTags": [
+            "SGT",
+            "SMN"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
         "name": "Swift Quiver",
         "source": "MateriaSourceOfTruth",
         "level": 5,
@@ -16406,14 +18023,299 @@
             }
         ],
         "entries": [
-            "You transmute your quiver so it produces an endless supply of nonmagical ammunition, which seems to leap into your hand when you reach for it.",
-            "When you cast the spell, and as a bonus action on each of your subsequent turns, you may make two attacks with a weapon that uses ammunition from the quiver. Each time you make such a ranged attack, your quiver magically replaces the piece of ammunition you used with a similar piece of nonmagical ammunition. Any pieces of ammunition created by this spell disintegrate when the spell ends. If the quiver leaves your possession, the spell ends."
+            "You transmute your quiver so it produces an endless supply of magical ammunition, which seems to leap into your hand when you reach for it.",
+            "When you cast the spell, and as a bonus action on each of your subsequent turns, you may make two attacks with a weapon that uses ammunition from the quiver. Each time you make such a ranged attack, your quiver magically replaces the piece of ammunition you used with a similar piece of magical ammunition. Any pieces of ammunition created by this spell disintegrate when the spell ends. If the quiver leaves your possession, the spell ends."
         ],
         "classes": {
             "fromClassList": [
                 {
                     "name": "Ranger",
                     "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Synaptic Static",
+        "source": "MateriaSourceOfTruth",
+        "school": "E",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 120
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "You choose a point within range and cause psychic energy to explode there. Each creature in a 20-foot-radius sphere centered on that point must make an Intelligence saving throw. A creature with an Intelligence score of 2 or lower can't be affected by this spell. A target takes {@damage 8d6} psychic damage on a failed save, or half as much damage on a successful one.",
+            "After a failed save, a target has muddled thoughts for 1 minute. During that time, it rolls a {@dice d6} and subtracts the number rolled from all its attack rolls and ability checks, as well as its Constitution saving throws to maintain {@status concentration}. The target can make an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@damage 1d6} for each slot level above 5th.",
+                    "When you cast this spell using a spell slot of 9th level or higher, a creature instead rolls a {@dice 1d12} and subtracts the number from all attack rolls and ability checks, as well as its Constitution saving throws to maintain concentration."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "psychic"
+        ],
+        "savingThrow": [
+            "intelligence",
+            "constitution"
+        ],
+        "areaTags": [
+            "S"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Telekinesis",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 10
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell, and as your action each round for the duration, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.",
+            {
+                "type": "entries",
+                "name": "Creature",
+                "entries": [
+                    "You can try to move a Huge or smaller creature. Make an ability check with your spellcasting ability contested by the creature's Strength check. If you win the contest, you move the creature up to 30 feet in any direction, including upward but not beyond the range of this spell. Until the end of your next turn, the creature is {@condition restrained} in your telekinetic grip. A creature lifted upward is suspended in mid-air.",
+                    "On subsequent rounds, you can use your action to attempt to maintain your telekinetic grip on the creature by repeating the contest."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Object",
+                "entries": [
+                    "You can try to move an object that weighs up to 1,000 pounds. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction, but not beyond the range of this spell.",
+                    "If the object is worn or carried by a creature, you must make an ability check with your spellcasting ability contested by that creature's Strength check. If you succeed, you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell.",
+                    "You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial."
+                ]
+            }
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, it grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "conditionInflict": [
+            "restrained"
+        ],
+        "abilityCheck": [
+            "strength"
+        ],
+        "miscTags": [
+            "FMV",
+            "OBJ",
+            "SGT"
+        ],
+        "areaTags": [
+            "ST"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Aberrant Mind",
+                        "shortName": "Aberrant Mind",
+                        "source": "TCE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "The Great Old One",
+                        "shortName": "Great Old One",
+                        "source": "PHB"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Teleportation Circle",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "C",
+        "time": [
+            {
+                "number": 1,
+                "unit": "minute"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 10
+            }
+        },
+        "components": {
+            "v": true,
+            "m": {
+                "text": "rare chalks and inks infused with precious gems worth 50 gp, which the spell consumes",
+                "cost": 5000,
+                "consume": true
+            }
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "round",
+                    "amount": 1
+                }
+            }
+        ],
+        "entries": [
+            "As you cast the spell, you draw a 10-foot-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. A shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied.",
+            "Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence—a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this spell, you learn the sigil sequences for two destinations on the Material Plane, determined by the DM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.",
+            "You can create a permanent teleportation circle by casting this spell in the same location every day for one year. You need not use the circle to teleport when you cast the spell in this way."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 8th level, it counts as 10 days for the purpose of making this effect permanent.",
+                    "When you cast this spell using a spell slot of 9th level or higher, it counts as 30 days for the purpose of making this effect permanent."
+                ]
+            }
+        ],
+        "miscTags": [
+            "PRM",
+            "TP"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromClassListVariant": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Horizon Walker",
+                        "shortName": "Horizon Walker",
+                        "source": "XGE"
+                    }
                 }
             ]
         }
@@ -16466,15 +18368,303 @@
             "charisma"
         ],
         "classes": {
+            "fromClassList": [
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Transmute Rock",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 120
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "clay and water"
+        },
+        "duration": [
+            {
+                "type": "permanent",
+                "ends": [
+                    "dispel"
+                ]
+            }
+        ],
+        "entries": [
+            "You choose an area of stone or mud that you can see that fits within a 40-foot cube and is within range, and choose one of the following effects.",
+            {
+                "type": "entries",
+                "name": "Transmute Rock to Mud",
+                "entries": [
+                    "Nonmagical rock of any sort in the area becomes an equal volume of thick, flowing mud that remains for the spell's duration."
+                ]
+            },
+            "The ground in the spell's area becomes muddy enough that creatures can sink into it. Each foot that a creature moves through the mud costs 4 feet of movement, and any creature on the ground when you cast the spell must make a Strength saving throw. A creature must also make the saving throw when it moves into the area for the first time on a turn or ends its turn there. On a failed save, a creature sinks into the mud and is {@condition restrained}, though it can use an action to end the {@condition restrained} condition on itself by pulling itself free of the mud.",
+            "If you cast the spell on a ceiling, the mud falls (or on a wall, the mud could come surging down). Any creature under the mud when it falls must make a Dexterity saving throw. A creature takes {@damage 4d8} magical bludgeoning damage on a failed save, or half as much damage on a successful one.",
+            {
+                "type": "entries",
+                "name": "Transmute Mud to Rock",
+                "entries": [
+                    "Nonmagical mud or quicksand in the area no more than 10 feet deep transforms into soft stone for the spell's duration. Any creature in the mud when it transforms must make a Dexterity saving throw. On a successful save, a creature is shunted safely to the surface in an unoccupied space. On a failed save, a creature becomes {@condition restrained} by the rock. A {@condition restrained} creature, or another creature within reach, can use an action to try to break the rock by succeeding on a DC 20 Strength check or by dealing damage to it. The rock has AC 15 and 25 hit points, and it is immune to poison and psychic damage."
+                ]
+            }
+        ],
+        "damageImmune": [
+            "poison",
+            "psychic"
+        ],
+        "damageInflict": [
+            "bludgeoning"
+        ],
+        "conditionInflict": [
+            "restrained"
+        ],
+        "savingThrow": [
+            "strength",
+            "dexterity"
+        ],
+        "abilityCheck": [
+            "strength"
+        ],
+        "miscTags": [
+            "SGT"
+        ],
+        "areaTags": [
+            "C"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Artificer",
+                    "source": "TCE"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Tree Stride",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "C",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "self"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.",
+            "You can use this transportation ability once per round for the duration. You must end each turn outside a tree."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 7th or higher, the duration is increased to up to 10 minutes.",
+                    "When you cast this spell using a spell slot of 9th level or higher, it grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "miscTags": [
+            "TP"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Ranger",
+                    "source": "PHB"
+                }
+            ],
             "fromSubclass": [
                 {
                     "class": {
-                        "name": "Wizard",
+                        "name": "Cleric",
                         "source": "PHB"
                     },
                     "subclass": {
-                        "name": "Chronurgy",
-                        "source": "EGW"
+                        "name": "Nature Domain",
+                        "shortName": "Nature",
+                        "source": "PHB"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Circle of the Land",
+                        "shortName": "Land",
+                        "source": "PHB",
+                        "subSubclass": "Forest"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Oath of the Ancients",
+                        "shortName": "Ancients",
+                        "source": "PHB"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Wall of Force",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 120
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "a pinch of powder made by crushing a clear gemstone"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 10
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice which side).",
+            "Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by {@spell dispel magic}. A {@spell disintegrate} spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane, blocking ethereal travel through the wall."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, it grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "damageImmune": [
+            "force"
+        ],
+        "areaTags": [
+            "W"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    "subclass": {
+                        "name": "Armorer",
+                        "shortName": "Armorer",
+                        "source": "TCE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    "subclass": {
+                        "name": "Artillerist",
+                        "shortName": "Artillerist",
+                        "source": "TCE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Oath of Redemption",
+                        "shortName": "Redemption",
+                        "source": "XGE"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Clockwork Soul",
+                        "shortName": "Clockwork Soul",
+                        "source": "TCE"
                     }
                 }
             ]
@@ -16524,7 +18714,8 @@
                 "type": "entries",
                 "name": "At Higher Levels",
                 "entries": [
-                    "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 4d8|5-9|1d8} for each slot level above 5th."
+                    "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 4d8|5-9|1d8} for each slot level above 5th.",
+                    "When you cast this spell using a spell slot of 9th level or higher, it grants a duration that does not require concentration."
                 ]
             }
         ],
@@ -16549,6 +18740,237 @@
                 },
                 {
                     "name": "Wizard",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Wall of Stone",
+        "source": "MateriaSourceOfTruth",
+        "level": 5,
+        "school": "C",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 120
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "a small block of granite"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 10
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.",
+            "If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall.",
+            "The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.",
+            "If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on.",
+            "The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM's discretion.",
+            "If you maintain your {@status concentration} on this spell for its whole duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration, and the wall becomes permanent upon casting (if you choose)."
+                ]
+            }
+        ],
+        "savingThrow": [
+            "dexterity"
+        ],
+        "miscTags": [
+            "OBJ",
+            "PRM"
+        ],
+        "areaTags": [
+            "W"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Artificer",
+                    "source": "TCE"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Circle of the Land",
+                        "shortName": "Land",
+                        "source": "PHB",
+                        "subSubclass": "Desert"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Circle of the Land",
+                        "shortName": "Land",
+                        "source": "PHB",
+                        "subSubclass": "Mountain"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "The Genie",
+                        "shortName": "Genie",
+                        "source": "TCE",
+                        "subSubclass": "Dao"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Wrath of Nature",
+        "source": "MateriaSourceOfTruth",
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 120
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "You call out to the spirits of nature to rouse them against your enemies. Choose a point you can see within range. The spirits cause trees, rocks, and grasses in a 60-foot cube centered on that point to become animated until the spell ends.",
+            {
+                "type": "entries",
+                "name": "Grasses and Undergrowth",
+                "entries": [
+                    "Any area of ground in the cube that is covered by grass or undergrowth is {@quickref difficult terrain||3} for your enemies."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Trees",
+                "entries": [
+                    "At the start of each of your turns, each of your enemies within 10 feet of any tree in the cube must succeed on a Dexterity saving throw or take {@damage 4d6} magical slashing damage from whipping branches."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Roots and Vines",
+                "entries": [
+                    "At the end of each of your turns, one creature of your choice that is on the ground in the cube must succeed on a Strength saving throw or become {@condition restrained} until the spell ends. A {@condition restrained} creature can use an action to make a Strength ({@skill Athletics}) check against your spell save DC, ending the effect on itself on a success."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Rocks",
+                "entries": [
+                    "As a bonus action on your turn, you can cause a loose rock in the cube to launch at a creature you can see in the cube. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} nonmagical bludgeoning damage, and it must succeed on a Strength saving throw or fall {@condition prone}."
+                ]
+            }
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@damage 1d6} for Trees and {@damage 1d8} for Rocks for each slot level above 5th.",
+                    "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "bludgeoning",
+            "slashing"
+        ],
+        "conditionInflict": [
+            "prone",
+            "restrained"
+        ],
+        "spellAttack": [
+            "R"
+        ],
+        "savingThrow": [
+            "dexterity",
+            "strength"
+        ],
+        "abilityCheck": [
+            "strength"
+        ],
+        "miscTags": [
+            "DFT",
+            "SGT",
+            "UBA"
+        ],
+        "areaTags": [
+            "ST",
+            "C"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Ranger",
                     "source": "PHB"
                 }
             ]
