@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1684789575
+        "dateLastModified": 1685173847
 	},
     "monster": [
         {
@@ -65,6 +65,9 @@
             "cha": 8,
             "senses": [
                 "darkvision 60 ft."
+            ],
+            "conditionImmune": [
+                
             ],
             "passive": 17,
             "languages": [
@@ -1326,10 +1329,7 @@
             },
             "speed": {
                 "walk": 30,
-                "fly": {
-                    "number": 60,
-                    "condition": "(venerator only)"
-                }
+                "fly": 60
             },
             "str": 16,
             "dex": 14,
@@ -1347,7 +1347,8 @@
             ],
             "conditionImmune": [
                 "charmed",
-                "frightened"
+                "frightened",
+                "possessed"
             ],
             "languages": [
                 "Celestial",
@@ -1393,9 +1394,9 @@
                     ]
                 },
                 {
-                    "name": "Radiant Strike (Defender Only)",
+                    "name": "Radiant Strike (Venerator and Defender Only)",
                     "entries": [
-                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d10 + 3 + summonSpellLevel} radiant damage, and the celestial can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains {@dice 1d10} temporary hit points."
+                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d10 + 3 + summonSpellLevel} radiant damage, and the celestial (Defender only) :can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains {@dice 1d10} temporary hit points."
                     ]
                 },
                 {
