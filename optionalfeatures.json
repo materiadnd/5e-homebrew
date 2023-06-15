@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659722587
+        "dateLastModified": 1686815912
 	},
 	"optionalfeature": [
 		{
@@ -65,6 +65,17 @@
 			],
 			"entries": [
 				"When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you treat the die as rolling its maximum possible result."
+			]
+		},
+		{
+			"name": "Interception",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"FS:F",
+				"FS:P"
+			],
+			"entries": [
+				"When a creature you can see hits a target, other than you with an attack and that target is within your reach, you can use your reaction to reduce the damage the target takes by {@dice 1d10} + your proficiency bonus (to a minimum of 0 damage). You must be wielding a {@item shield|phb} or a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} to use this reaction."
 			]
 		},
 		{
@@ -276,18 +287,6 @@
                     ]
                 },
                 "Extended spell cannot extend the duration of a spell to over 24 hours."
-			]
-		},
-		{
-			"name": "Pact of the Blade",
-			"source": "MateriaSourceOfTruth",
-			"featureType": [
-				"PB"
-			],
-			"entries": [
-				"You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it, when you attack with that weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage roll. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
-				"Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.",
-				"You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
 			]
 		},
 		{
@@ -792,7 +791,7 @@
 				}
 			],
 			"entries": [
-				"Your jump distance is tripled, in addition you may touch a creature as an action. The creature's jump distance is tripled and their jumping distance is not reduced for making a standing long or high jumps for one minute or until you use this ability again."
+				"Your {@book jump distance|phb|8|Jumping} is tripled, in addition you may touch a creature as an action. The creature's {@book jump distance|phb|8|Jumping} is tripled and their {@book jump distance|phb|8|Jumping} is not reduced for making a standing long or high jumps for one minute or until you use this ability again."
 			]
 		},
 		{
