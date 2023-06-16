@@ -1010,7 +1010,7 @@
                 {
                     "name": "Whispering Aura (Star Spawn Only)",
                     "entries": [
-                        "At the start of each of the aberration's turns, each creature within 5 feet of the aberration must succeed on a Wisdom saving throw against your spell save DC or become {@condition dazed} until the start of the aberration's next turn, provided that the aberration is not {@condition incapacitated}."
+                        "At the start of each of the aberration's turns, each creature within 5 feet of the aberration must succeed on a Wisdom saving throw against your spell save DC or become {@condition dazed|MateriaSourceOfTruth} until the start of the aberration's next turn, provided that the aberration is not {@condition incapacitated}."
                     ]
                 }
             ],

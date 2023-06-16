@@ -1038,7 +1038,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of {@condition exhaustion}."
+				"Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of {@condition exhaustion|MateriaSourceOfTruth}."
 			]
 		},
 		{
@@ -1185,7 +1185,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, when you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object\u2014an amulet or similar adornment\u2014that incorporates fur or feathers, claws, teeth, or bones of the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thick-skinned, or if your totem is the eagle, your eyes turn bright yellow.",
+				"At 3rd level, when you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object\u2014an amulet or similar adornment\u2014that incorporates fur or feathers, claws, teeth, or bones, plants or earth of the totem animal or from the totemic location. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thick-skinned, or if your totem is the eagle, your eyes turn bright yellow, or if you have a mountain totem spirit, you might have craggy knuckles and brow.",
 				"Your totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.",
 				{
 					"type": "options",
@@ -1320,7 +1320,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, you can cast the {@spell commune with nature} spell, but only as a ritual. When you do so, a spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears to you to convey the information you seek."
+				"At 10th level, you can cast the {@spell commune with nature} spell, but only as a ritual. When you do so, a spiritual version of one of the animals or manifestations of nature you chose for Totem Spirit or Aspect of the Totem appears to you to convey the information you seek."
 			]
 		},
 		{
@@ -1356,8 +1356,8 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 14,
 			"entries": [
-				"While you are raging, you can use a bonus action on your turn to knock a Large or smaller creature {@condition prone} when you hit it with a melee weapon attack.",
-                "If your size is greater than Large then you can knock a creature of one size larger than you or smaller {@condition prone} when you hit it with a melee weapon attack."
+				"While you are raging, you can use a bonus action on your turn to knock a Large or smaller creature {@condition prone|MateriaSourceOfTruth} when you hit it with a melee weapon attack.",
+                "If your size is greater than Large then you can knock a creature of one size larger than you or smaller {@condition prone|MateriaSourceOfTruth} when you hit it with a melee weapon attack."
 			]
 		},
 		{
@@ -2110,7 +2110,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 14,
 			"entries": [
-				"While you are raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature.  That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked {@condition prone} and take bludgeoning damage equal to {@dice 1d12} + your Strength modifier."
+				"While you are raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature.  That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked {@condition prone|MateriaSourceOfTruth} and take bludgeoning damage equal to {@dice 1d12} + your Strength modifier."
 			]
 		},
 		{
@@ -2230,7 +2230,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 14,
 			"entries": [
-				"When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked {@condition prone}, as if struck by a wave."
+				"When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked {@condition prone|MateriaSourceOfTruth}, as if struck by a wave."
 			]
 		},
 		{

@@ -1015,7 +1015,7 @@
                 }
             ],
             "entries": [
-                "You sap the vitality of one creature you can see in range. The target must succeed on a Constitution saving throw or take {@damage 1d4} necrotic damage and fall {@condition prone}.",
+                "You sap the vitality of one creature you can see in range. The target must succeed on a Constitution saving throw or take {@damage 1d4} necrotic damage and fall {@condition prone|MateriaSourceOfTruth}.",
                 "This spell's damage increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
             ],
             "scalingLevelDice": {
@@ -2811,7 +2811,7 @@
                 }
             ],
             "entries": [
-                "You cause a tremor in the ground within range. Each creature other than you in that area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 2d6} bludgeoning damage and is knocked {@condition prone}. If the ground in that area is loose earth or stone, it becomes {@quickref difficult terrain||3} until cleared, with each 5-foot-diameter portion requiring at least 1 minute to clear by hand by a Large or smaller creature, or half as much time by a larger creature."
+                "You cause a tremor in the ground within range. Each creature other than you in that area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 2d6} bludgeoning damage and is knocked {@condition prone|MateriaSourceOfTruth}. If the ground in that area is loose earth or stone, it becomes {@quickref difficult terrain||3} until cleared, with each 5-foot-diameter portion requiring at least 1 minute to clear by hand by a Large or smaller creature, or half as much time by a larger creature."
             ],
             "entriesHigherLevel": [
                 {
@@ -2819,7 +2819,7 @@
                     "name": "At Higher Levels",
                     "entries": [
                         "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d6|1-9|1d6} for each slot level above 1st.",
-                        "When you cast this spell using a spell slot of 6th level or higher, a creatuer that is knocked {@condition prone} by this spell is also {@condition stunned} until the start of your next turn."
+                        "When you cast this spell using a spell slot of 6th level or higher, a creatuer that is knocked {@condition prone|MateriaSourceOfTruth} by this spell is also {@condition stunned} until the start of your next turn."
                     ]
                 }
             ],
@@ -3804,7 +3804,7 @@
             ],
             "entries": [
                 "Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.",
-                "The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also cannot be {@condition charmed}, {@condition frightened}, or possessed by them. If the target is already {@condition charmed}, {@condition frightened}, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect."
+                "The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also cannot be {@condition charmed}, {@condition frightened}, or {@condition possessed|MateriaSourceOfTruth} by them. If the target is already {@condition charmed}, {@condition frightened}, or {@condition possessed|MateriaSourceOfTruth} by such a creature, the target has advantage on any new saving throw against the relevant effect."
             ],
             "entriesHigherLevel": [
                 {
@@ -4345,7 +4345,7 @@
                 }
             ],
             "entries": [
-                "As you hit with a melee weapon attack or unarmed strike, your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra {@dice 1d8} plus your spellcasting ability modifier thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be knocked {@condition prone}, and if you choose, is knocked 10 feet away from you."
+                "As you hit with a melee weapon attack or unarmed strike, your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra {@dice 1d8} plus your spellcasting ability modifier thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be knocked {@condition prone|MateriaSourceOfTruth}, and if you choose, is knocked 10 feet away from you."
             ],
             "entriesHigherLevel": [
                 {
@@ -8295,7 +8295,7 @@
                                     "exact": 2
                                 }
                             },
-                            "The target is {@condition dazed}, and any attempt it makes to teleport or to leave its current plane by any means fails until the spell ends."
+                            "The target is {@condition dazed|MateriaSourceOfTruth}, and any attempt it makes to teleport or to leave its current plane by any means fails until the spell ends."
                         ],
                         [
                             {
@@ -8313,7 +8313,7 @@
                                     "exact": 4
                                 }
                             },
-                            "You become {@condition petrified}, however instead of becoming {@condition incapacitated}, you {@condition possessed||possess} your target until the spell ends.  When the spell ends, you cease to be {@condition petrified} at the end of your next turn."
+                            "You become {@condition petrified}, however instead of becoming {@condition incapacitated}, you {@condition possessed|MateriaSourceOfTruth|possess} your target until the spell ends.  When the spell ends, you cease to be {@condition petrified} at the end of your next turn."
                         ],
                         [
                             {
@@ -8322,7 +8322,7 @@
                                     "exact": 5
                                 }
                             },
-                            "The target is {@condition weakened} until the spell ends."
+                            "The target is {@condition weakened|MateriaSourceOfTruth} until the spell ends."
                         ],
                         [
                             {
@@ -8567,7 +8567,7 @@
                 }
             ],
             "entries": [
-                "Choose a creature that you can see within range.  The target must succeed on a Charisma saving throw or be {@condition weakened} for the duration.  At the end of each of its turns, the target can make another Charisma saving throw.  On a success, the spell ends on the target."
+                "Choose a creature that you can see within range.  The target must succeed on a Charisma saving throw or be {@condition weakened|MateriaSourceOfTruth} for the duration.  At the end of each of its turns, the target can make another Charisma saving throw.  On a success, the spell ends on the target."
             ],
             "entriesHigherLevel": [
                 {
@@ -8947,7 +8947,7 @@
                 }
             ],
             "entries": [
-                "Choose a point you can see on the ground within range. A fountain of churned earth and stone erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity saving throw. A creature takes {@damage 3d12} bludgeoning damage on a failed save and is {@condition dazed} until the end of their next turn, or half as much damage on a successful one and is not {@condition dazed}. Additionally, the ground in that area becomes {@quickref difficult terrain||3} until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand by a Large or smaller creature, or half as much time by a larger creature."
+                "Choose a point you can see on the ground within range. A fountain of churned earth and stone erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity saving throw. A creature takes {@damage 3d12} bludgeoning damage on a failed save and is {@condition dazed|MateriaSourceOfTruth} until the end of their next turn, or half as much damage on a successful one and is not {@condition dazed|MateriaSourceOfTruth}. Additionally, the ground in that area becomes {@quickref difficult terrain||3} until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand by a Large or smaller creature, or half as much time by a larger creature."
             ],
             "entriesHigherLevel": [
                 {
@@ -9670,7 +9670,7 @@
                     "items": [
                         "The creature can't willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.",
                         "The creature has disadvantage on attack rolls against targets within the cylinder.",
-                        "Targets within the cylinder can't be {@condition charmed}, {@condition frightened}, or possessed by the creature."
+                        "Targets within the cylinder can't be {@condition charmed}, {@condition frightened}, or {@condition possessed|MateriaSourceOfTruth} by the creature."
                     ]
                 },
                 "When you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it."
@@ -9906,7 +9906,7 @@
                 }
             ],
             "entries": [
-                "As you hit with a weapon attack or unarmed strike, your strike delivers immense force, and the attack deals an extra (@dice 3d8} plus your spellcasting ability modifier force damage to the target.  The damage dealt is considered siege damage for the purpose of damaging objects.  Additionally, the target must succeed on a Constitution saving throw or be {@condition dazed} until the end of its next turn."
+                "As you hit with a weapon attack or unarmed strike, your strike delivers immense force, and the attack deals an extra (@dice 3d8} plus your spellcasting ability modifier force damage to the target.  The damage dealt is considered siege damage for the purpose of damaging objects.  Additionally, the target must succeed on a Constitution saving throw or be {@condition dazed|MateriaSourceOfTruth} until the end of its next turn."
             ],
             "entriesHigherLevel": [
                 {
@@ -10783,7 +10783,7 @@
                 }
             ],
             "entries": [
-                "You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 4d8} bludgeoning damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it, and then it vanishes."
+                "You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 4d8} bludgeoning damage and is knocked {@condition prone|MateriaSourceOfTruth}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone|MateriaSourceOfTruth}. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it, and then it vanishes."
             ],
             "entriesHigherLevel": [
                 {
@@ -11154,7 +11154,7 @@
                 }
             ],
             "entries": [
-                "Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't be reduced, and standing from {@condition prone} does not provoke an attack of opportunity. In addition, a nonhostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points."
+                "Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't be reduced, and standing from {@condition prone|MateriaSourceOfTruth} does not provoke an attack of opportunity. In addition, a nonhostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points."
             ],
             "entriesHigherLevel": [
                 {
@@ -11375,7 +11375,7 @@
                 }
             ],
             "entries": [
-                "Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes {@dice 8d8} necrotic damage and suffers one level of {@condition exhaustion} on a failed save, on a successful save the target does not suffer {@condition exhaustion} and takes half damage. This spell has no effect on undead or constructs.",
+                "Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes {@dice 8d8} necrotic damage and suffers one level of {@condition exhaustion|MateriaSourceOfTruth} on a failed save, on a successful save the target does not suffer {@condition exhaustion|MateriaSourceOfTruth} and takes half damage. This spell has no effect on undead or constructs.",
                 "If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it. If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies."
             ],
             "entriesHigherLevel": [
@@ -12184,7 +12184,7 @@
                 }
             ],
             "entries": [
-                "You conjure a vine that sprouts from the ground in an unoccupied space of your choice that you can see within range. When you cast this spell, you can direct the vine to lash out at a creature within 30 feet of it that you can see. That creature must succeed on a Dexterity saving throw or be pulled 20 feet directly toward the vine and your choice of knocking it {@condition prone}, or not.",
+                "You conjure a vine that sprouts from the ground in an unoccupied space of your choice that you can see within range. When you cast this spell, you can direct the vine to lash out at a creature within 30 feet of it that you can see. That creature must succeed on a Dexterity saving throw or be pulled 20 feet directly toward the vine and your choice of knocking it {@condition prone|MateriaSourceOfTruth}, or not.",
                 "Until the spell ends, you can direct the vine to lash out at the same creature or another one as a bonus action on each of your turns."
             ],
             "savingThrow": [
@@ -12249,7 +12249,7 @@
             ],
             "entries": [
                 "A 20-foot-radius sphere of crushing force forms at a point you can see within range and tugs at the creatures there. Each creature in the sphere must make a Constitution saving throw. On a failed save, the creature takes {@damage 5d12} force damage and is pulled in a straight line toward the center of the sphere, ending in an unoccupied space as close to the center as possible (even if that space is in the air). On a successful save, the creature takes half as much damage and isn't pulled.",
-                "A creature that is pulled by this spell cannot {@action Dash}, {@action Disengage}, {@action Dodge}, or stand from {@condition prone} until the end of their next turn."
+                "A creature that is pulled by this spell cannot {@action Dash}, {@action Disengage}, {@action Dodge}, or stand from {@condition prone|MateriaSourceOfTruth} until the end of their next turn."
             ],
             "entriesHigherLevel": [
                 {
@@ -13068,7 +13068,7 @@
             ],
             "entries": [
                 "Dim, greenish light spreads within a 30-foot-radius sphere centered on a point you choose within range. The light spreads around corners, and it lasts until the spell ends.",
-                "When a creature moves into the spell's area for the first time on a turn or starts its turn there, that creature must succeed on a Constitution saving throw or take {@damage 4d10} radiant damage, and it suffers one level of {@condition exhaustion} and emits a dim, greenish light in a 5-foot radius. This light makes it impossible for the creature to benefit from being {@condition invisible}. The light and any levels of {@condition exhaustion} caused by this spell go away when the spell ends."
+                "When a creature moves into the spell's area for the first time on a turn or starts its turn there, that creature must succeed on a Constitution saving throw or take {@damage 4d10} radiant damage, and it suffers one level of {@condition exhaustion|MateriaSourceOfTruth} and emits a dim, greenish light in a 5-foot radius. This light makes it impossible for the creature to benefit from being {@condition invisible}. The light and any levels of {@condition exhaustion|MateriaSourceOfTruth} caused by this spell go away when the spell ends."
             ],
             "entriesHigherLevel": [
                 {
@@ -14185,9 +14185,9 @@
             "entries": [
                 "You conjure up a sphere of water with a 5-foot radius at a point you can see within range. The sphere can hover but no more than 10 feet off the ground. The sphere remains for the spell's duration.",
                 "Any creature in the sphere's space must make a Strength saving throw. On a successful save, a creature is ejected from that space to the nearest unoccupied space of the creature's choice outside the sphere. A Huge or larger creature succeeds on the saving throw automatically, and a Large or smaller creature can choose to fail it. On a failed save, a creature is {@condition restrained} by the sphere and is engulfed by the water. At the end of each of its turns, a {@condition restrained} target can repeat the saving throw, ending the effect on itself on a success.",
-                "The sphere can restrain as many as four Medium or smaller creatures or one Large creature. If the sphere restrains a creature that causes it to exceed this capacity, a random creature that was already {@condition restrained} by the sphere falls out of it and lands {@condition prone} in a space within 5 feet of it.",
+                "The sphere can restrain as many as four Medium or smaller creatures or one Large creature. If the sphere restrains a creature that causes it to exceed this capacity, a random creature that was already {@condition restrained} by the sphere falls out of it and lands {@condition prone|MateriaSourceOfTruth} in a space within 5 feet of it.",
                 "As an action, you can move the sphere up to 30 feet in a straight line. If it moves over a pit, a cliff, or other drop-off, it safely descends until it is hovering 10 feet above the ground. Any creature {@condition restrained} by the sphere moves with it. You can ram the sphere into creatures, forcing them to make the saving throw.",
-                "When the spell ends, the sphere falls to the ground and extinguishes all normal flames within 30 feet of it. Any creature {@condition restrained} by the sphere is knocked {@condition prone} in the space where it falls. The water then vanishes."
+                "When the spell ends, the sphere falls to the ground and extinguishes all normal flames within 30 feet of it. Any creature {@condition restrained} by the sphere is knocked {@condition prone|MateriaSourceOfTruth} in the space where it falls. The water then vanishes."
             ],
             "entriesHigherLevel": [
                 {
@@ -14475,7 +14475,7 @@
                                     "exact": 2
                                 }
                             },
-                            "The target is {@condition dazed} and any attempt it makes to teleport or to leave its current plane by any mean fails until the spell ends."
+                            "The target is {@condition dazed|MateriaSourceOfTruth} and any attempt it makes to teleport or to leave its current plane by any mean fails until the spell ends."
                         ],
                         [
                             {
@@ -14493,7 +14493,7 @@
                                     "exact": 4
                                 }
                             },
-                            "You become {@condition petrified}, however instead of becoming {@condition incapacitated}, you {@condition possessed||possess} one of the targets until the spell ends.  When the spell ends, you are no longer {@condition petrified} at the end of your next turn."
+                            "You become {@condition petrified}, however instead of becoming {@condition incapacitated}, you {@condition possessed|MateriaSourceOfTruth|possess} one of the targets until the spell ends.  When the spell ends, you are no longer {@condition petrified} at the end of your next turn."
                         ],
                         [
                             {
@@ -14502,7 +14502,7 @@
                                     "exact": 5
                                 }
                             },
-                            "The target is {@condition weakened} until the spell ends."
+                            "The target is {@condition weakened|MateriaSourceOfTruth} until the spell ends."
                         ],
                         [
                             {
@@ -15095,7 +15095,7 @@
 					"type": "entries",
 					"name": "Filth Fever",
 					"entries": [
-						"A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength. Additionally, if they move more than 10 feet in a turn they must succeed a Strength saving throw against your spell DC or they fall {@condition prone}."
+						"A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength. Additionally, if they move more than 10 feet in a turn they must succeed a Strength saving throw against your spell DC or they fall {@condition prone|MateriaSourceOfTruth}."
 					]
 				},
 				{
@@ -15237,7 +15237,7 @@
 					"type": "entries",
 					"name": "Downdraft",
 					"entries": [
-						"You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked {@condition prone}. Creatures that end a fall within the cube take double damage from the fall.  When a creature in the cube makes a vertical jump, the creature can only jump up half the normal height."
+						"You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked {@condition prone|MateriaSourceOfTruth}. Creatures that end a fall within the cube take double damage from the fall.  When a creature in the cube makes a vertical jump, the creature can only jump up half the normal height."
 					]
 				},
 				{
@@ -15683,13 +15683,13 @@
 				}
 			],
 			"entries": [
-				"Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, aberrations, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you and you also can't be {@condition charmed}, {@condition frightened}, or possessed by them.",
+				"Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, aberrations, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you and you also can't be {@condition charmed}, {@condition frightened}, or {@condition possessed|MateriaSourceOfTruth} by them.",
 				"At any time during the spells duration you may use either of the following abilities",
 				{
 					"type": "entries",
 					"name": "Break Enchantment",
 					"entries": [
-						"As your action, you touch a creature you can reach that is {@condition charmed}, {@condition frightened}, or possessed by an aberration, a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer {@condition charmed}, {@condition frightened}, or possessed by such creatures and is immune to further attempts to {@condition charmed|charm}, {@condition frightened|frighten}, or possess them for the duration of the spell."
+						"As your action, you touch a creature you can reach that is {@condition charmed}, {@condition frightened}, or {@condition possessed|MateriaSourceOfTruth} by an aberration, a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer {@condition charmed}, {@condition frightened}, or {@condition possessed|MateriaSourceOfTruth} by such creatures and is immune to further attempts to {@condition charmed|charm}, {@condition frightened|frighten}, or {@condition possessed|MateriaSourceOfTruth|possess} them for the duration of the spell."
 					]
 				},
 				{
@@ -15981,7 +15981,7 @@
 			],
 			"entries": [
 				"Tendrils of inky darkness reaches out from you, touching creatures you can see within range to drain life from them. A creature of your choice within range must make a Dexterity saving throw. On a failed save, the target takes {@damage 4d8} plus your spellcasting modifier, or half as much on a successful one. Until the spell ends, you can target a creature within range on each of your turns as an action. The spell ends early if you use your action to do anything else.",
-				"Whenever the spell deals damage to a target, you regain hit points equal to half the amount of necrotic damage the target takes. Alternatively, if you can reduce the hit points regain by 20 to reduce your current {@condition exhaustion} by 1 instead."
+				"Whenever the spell deals damage to a target, you regain hit points equal to half the amount of necrotic damage the target takes. Alternatively, if you can reduce the hit points regain by 20 to reduce your current {@condition exhaustion|MateriaSourceOfTruth} by 1 instead."
 			],
 			"entriesHigherLevel": [
 				{
@@ -16353,11 +16353,11 @@
             }
         ],
         "entries": [
-            "You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's {@condition exhaustion} level by one, or end one of the following effects on the target:",
+            "You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's {@condition exhaustion|MateriaSourceOfTruth} level by one, or end one of the following effects on the target:",
             {
                 "type": "list",
                 "items": [
-                    "One effect that {@condition charmed}, {@condition petrified}, {@condition possessed}, or {@condition weakened} the target",
+                    "One effect that {@condition charmed}, {@condition petrified}, {@condition possessed|MateriaSourceOfTruth}, or {@condition weakened|MateriaSourceOfTruth} the target",
                     "One curse, including the target's attunement to a cursed magic item",
                     "Any reduction to one of the target's ability scores",
                     "One effect reducing the target's hit point maximum"
@@ -16488,7 +16488,7 @@
         ],
         "entries": [
             "You touch a point and infuse an area around it with holy (or unholy) power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect a hallow spell. The affected area is subject to the following effects.",
-            "First, aberrations, celestials, elementals, fey, fiends, and undead can't enter the area, nor can such creatures charm, frighten, or possess creatures within it. Any creature {@condition charmed}, {@condition frightened}, or possessed by such a creature is no longer {@condition charmed}, {@condition frightened}, or possessed upon entering the area. You can exclude one or more of those types of creatures from this effect.",
+            "First, aberrations, celestials, elementals, fey, fiends, and undead can't enter the area, nor can such creatures charm, frighten, or possess creatures within it. Any creature {@condition charmed}, {@condition frightened}, or {@condition possessed|MateriaSourceOfTruth} by such a creature is no longer {@condition charmed}, {@condition frightened}, or {@condition possessed|MateriaSourceOfTruth} upon entering the area. You can exclude one or more of those types of creatures from this effect.",
             "Second, you can bind an extra effect to the area. Choose the effect from the following list, or choose an effect offered by the DM. Some of these effects apply to creatures in the area; you can designate whether the effect applies to all creatures, creatures that follow a specific deity or leader, or creatures of a specific sort, such as orcs or trolls. When a creature that would be affected enters the spell's area for the first time on a turn or starts its turn there, it can make a Charisma saving throw. On a success, the creature ignores the extra effect until it leaves the area.",
             {
                 "type": "entries",
@@ -18924,7 +18924,7 @@
                 "type": "entries",
                 "name": "Rocks",
                 "entries": [
-                    "As a bonus action on your turn, you can cause a loose rock in the cube to launch at a creature you can see in the cube. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} nonmagical bludgeoning damage, and it must succeed on a Strength saving throw or fall {@condition prone}."
+                    "As a bonus action on your turn, you can cause a loose rock in the cube to launch at a creature you can see in the cube. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} nonmagical bludgeoning damage, and it must succeed on a Strength saving throw or fall {@condition prone|MateriaSourceOfTruth}."
                 ]
             }
         ],
@@ -19987,8 +19987,8 @@
                 "type": "list",
                 "items": [
                     "You are immune to poison damage and have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
-                    "You are immune to disease, being {@condition poisoned} or {@condition petrified} and cannot be knocked {@condition prone} unless you allow it",
-                    "When you take the {@action Attack} action, you can replace one of your attacks to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked {@condition prone}.",
+                    "You are immune to disease, being {@condition poisoned} or {@condition petrified} and cannot be knocked {@condition prone|MateriaSourceOfTruth} unless you allow it",
+                    "When you take the {@action Attack} action, you can replace one of your attacks to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked {@condition prone|MateriaSourceOfTruth}.",
                     "You can move across {@quickref difficult terrain||3} made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it. If you end your movement there the duration of the spell is reduced by 1 minute each time.  If you run out of the spell's duration, you are ejected to the nearest unoccupied space, this spell ends, and you are {@condition stunned} until the end of your next turn."
                 ]
             }
@@ -20753,7 +20753,7 @@
                     "You can attack twice, instead of once, when you take the {@action Attack} action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks."
                 ]
             },
-            "Immediately after the spell ends, you must succeed on a DC 15 Constitution saving throw, still benefiting from the proficiency granted by this spell, or suffer one level of {@condition exhaustion}."
+            "Immediately after the spell ends, you must succeed on a DC 15 Constitution saving throw, still benefiting from the proficiency granted by this spell, or suffer one level of {@condition exhaustion|MateriaSourceOfTruth}."
         ],
         "entriesHigherLevel": [
             {

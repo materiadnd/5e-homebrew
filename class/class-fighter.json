@@ -2755,7 +2755,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Starting at 15th level, you can run down your foes, whether you're mounted or not. If you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked {@condition prone}. You can use this feature only once on each of your turns."
+				"Starting at 15th level, you can run down your foes, whether you're mounted or not. If you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked {@condition prone|MateriaSourceOfTruth}. You can use this feature only once on each of your turns."
 			]
 		},
 		{
@@ -2935,7 +2935,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 7,
 			"entries": [
-				"When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, and if the target is one size category Larger than you or smaller, you can knock the target {@condition prone} or move it up to 10 feet in any direction horizontally."
+				"When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, and if the target is one size category Larger than you or smaller, you can knock the target {@condition prone|MateriaSourceOfTruth} or move it up to 10 feet in any direction horizontally."
 			]
 		}
 	]

@@ -215,7 +215,7 @@
 				"name": "Superiority Dice"
 			},
 			"entries": [
-				"When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is one size category Larger than you or smaller, it must make a Strength saving throw. On a failed save, you knock the target {@condition prone} and its movement speed is reduced by 10 feet until the end of its next turn."
+				"When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is one size category Larger than you or smaller, it must make a Strength saving throw. On a failed save, you knock the target {@condition prone|MateriaSourceOfTruth} and its movement speed is reduced by 10 feet until the end of its next turn."
 			]
 		},
 		{
@@ -602,7 +602,7 @@
 			],
 			"entries": [
 				"Once per turn when you hit a creature with your pact weapon, you can expend a a spell slot to deal an extra {@damage 1d8} for damage to the target, plus another {@damage 1d8} per level of the spell slot, to a maximum of {@damage 5d8}.",
-                "Alternatively, if you expend a warlock spell slot to deal an extra {@damage 2d8} force damage to the target, plus another {@damage 1d8} per level of the spell slot to a maximum of {@damage 6d8}, and you can knock the target {@condition prone} if it is Huge or smaller."
+                "Alternatively, if you expend a warlock spell slot to deal an extra {@damage 2d8} force damage to the target, plus another {@damage 1d8} per level of the spell slot to a maximum of {@damage 6d8}, and you can knock the target {@condition prone|MateriaSourceOfTruth} if it is Huge or smaller."
 			]
 		},
 		{

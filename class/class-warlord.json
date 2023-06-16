@@ -215,8 +215,9 @@
             "classSource": "MateriaSourceOfTruth",
             "level": 1,
             "entries": [
-                "Starting at 1st level, your attacks help to point out the flaws in an enemy's defenses. Once per turn when you hit with a weapon attack, you can expend a Merit die and place it on the target for up to 1 minute or until your {@status concentration|phb} ends (as if you were concentrating on a spell). If a creature misses with an attack roll against the target you hit they can roll this Merit die, and on a 6 or higher the attack instead hits, regardless of the original roll. You may only have one Merit die placed in this way at a time.",
-                "If an attack hits as a result of your Strike like Iron the Merit die on the target is consumed and your {@status concentration|phb} ends."
+                "Starting at 1st level, your attacks help to point out the flaws in an enemy's defenses. Once per turn when you hit with a weapon attack, you can expend a Merit die and place it on the target. This die lasts until you finish a short or long rest or the target is reduced to 0 hit points.",
+                "If a creature misses with an attack roll against the target you hit they can roll this Merit die, and on a 6 or higher the attack instad hits, regardless of the original roll.  You may only have one Merit die placed in this way on a creature at a time.",
+                "If an attack hits as a result of your Strike like Iron the Merit die on the target is consumed."
             ]
         },
         {
@@ -236,7 +237,7 @@
             "classSource": "MateriaSourceOfTruth",
             "level": 2,
             "entries": [
-                "At 2nd level, you choose one of four archetypes that expresses your leadership style: Battlefront Marshal, Icon of Victory, Tactician, or Warbrave. All are detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+                "At 2nd level, you choose one of four archetypes that expresses your leadership style: Battlefront Marshal, Icon of Victory, Magus Chief, Tactician, or Warbrave. All are detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
             ]
         },
         {
@@ -259,10 +260,6 @@
                         },
                         {
                             "type": "refOptionalfeature",
-                            "optionalfeature": "Blind Fighting|UAClassFeatureVariants"
-                        },
-                        {
-                            "type": "refOptionalfeature",
                             "optionalfeature": "Defense"
                         },
                         {
@@ -275,23 +272,11 @@
                         },
                         {
                             "type": "refOptionalfeature",
-                            "optionalfeature": "Interception|UAClassFeatureVariants"
-                        },
-                        {
-                            "type": "refOptionalfeature",
                             "optionalfeature": "Protection"
                         },
                         {
                             "type": "refOptionalfeature",
-                            "optionalfeature": "Thrown Weapon Fighting|UAClassFeatureVariants"
-                        },
-                        {
-                            "type": "refOptionalfeature",
                             "optionalfeature": "Two-Weapon Fighting"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-                            "optionalfeature": "Unarmed Fighting|UAClassFeatureVariants"
                         },
                         {
 							"type": "refOptionalfeature",
@@ -329,9 +314,7 @@
             "className": "Warlord",
             "classSource": "MateriaSourceOfTruth",
             "level": 3,
-            "isClassFeatureVariant": true,
             "entries": [
-                "{@i 3rd-level {@variantrule optional class features|tce|optional warlord feature}}",
                 "As you strive for excellence you harness your potential as a capable leader. When you have no Merit die remaining, you can use your bonus action to regain a number of Merit die equal to your proficiency bonus.",
                 "You cannot use this feature again until you finish a long rest."
             ]
@@ -355,7 +338,7 @@
             "classSource": "MateriaSourceOfTruth",
             "level": 4,
             "entries": [
-                "Beginning at 4th level, rest does not interfere with your desire to achieve your goals. You and any allies that can see or hear you within 60 feet are able to take a short rest, needing only 10 minutes to do so. At the end of this rest, any creature that benefits from this rest can reduce their {@condition exhaustion} by one level.",
+                "Beginning at 4th level, rest does not interfere with your desire to achieve your goals. You and any allies that can see or hear you within 60 feet are able to take a short rest, needing only 10 minutes to do so. At the end of this rest, any creature that benefits from this rest can reduce their {@condition exhaustion|MateriaSourceOfTruth} by one level.",
                 "Additionally, you can restore a number of spent Hit Dice equal to twice your proficiency bonus, divided as you choose among any number of creatures that took part in this rest. Hit Dice gained as a result of your Respite can be spent immediately at the end of this short rest.",
                 "You cannot use this feature again until you finish a long rest."
             ]
@@ -377,7 +360,7 @@
             "classSource": "MateriaSourceOfTruth",
             "level": 6,
             "entries": [
-                "Starting at 6th level, you can now use your Spotter's Order as a bonus action."
+                "Starting at 6th level, you can now use your Spotter's Order as an action, bonus action, or both."
             ]
         },
         {
@@ -421,21 +404,23 @@
                             "type": "entries",
                             "name": "Cry Havoc",
                             "entries": [
-                                "When a creature hits as a result of your Spotter's Order they deal extra damage equal to your Charisma modifier (minimum of 0) and you can expend a Merit die to place it on their target as if through your Strike like Iron. You must have a Merit die available to be placed in this way. Merit dice placed in this way do not require your {@status concentration|phb} to be maintained."
+                                "When a creature hits as a result of your Spotter's Order they deal extra damage equal to your Charisma modifier (minimum of 1) and you can expend a Merit die to place it on their target as if through your Strike like Iron. You must have a Merit die available to be placed in this way.",
+                                "Additionally, the target of your Spotter's Order can move up to their speed as part of their reaction gaining a bonus to their AC equal to your Charisma modifier (minimum of 1)."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Daedalus",
                             "entries": [
-                                "When a creature within 30 feet of you hits as a result of your Strike like Iron you can use your reaction to make a weapon attack. The attack must be made within range of your weapon. If you hit with this attack you deal extra damage equal to your Charisma modifier (minimum of 0)."
+                                "When a creature within 30 feet of you hits as a result of your Strike like Iron you can use your reaction to make a weapon attack or unarmed strike. The attack must be made within range of your weapon or unarmed strike.  Your weapon attacks and unarmed strikes score a critical hit on a roll of 19 or 20 as part of this reaction.  If you hit with this attack you deal extra damage equal to your Charisma modifier (minimum of 1)."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Feed the Pack",
                             "entries": [
-                                "When a 6 or higher is rolled on one of your Merit die, you gain an additional attack that can be used on your turn when you take the {@action Attack} action. You can have a maximum number of additional attacks equal to your proficiency bonus, and you cannot gain one while at your maximum. You may only use one additional attack per turn. You lose these additional attacks after 1 minute if you do not use them.",
+                                "When a 6 or higher is rolled on one of your Merit die, you gain an additional attack that can be used on your turn when you take the {@action Attack} action. You can have a maximum number of additional attacks equal to your proficiency bonus, and you cannot gain one while at your maximum.",
+                                "You may only use one additional attack per turn. This benefit lasts until you finish a short or long rest.",
                                 "Additionally, yourself and up to your proficiency bonus number of creatures that complete a Respite gain temporary hit points equal to half your warlord level + your Charisma modifier if this is your chosen Command Style at the end of the rest."
                             ]
                         },
@@ -443,23 +428,31 @@
                             "type": "entries",
                             "name": "General's Bearing",
                             "entries": [
-                                "When a creature with one of your Merit dice placed on it is reduced to 0 hit points, you can choose to maintain {@status concentration|phb} on it for use on your next turn. Before the end of your next turn, if you hit another creature with a weapon attack, you may choose to place a Merit die on them as through your Strike Like Iron without expending an additional Merit die.",
-                                "Additionally, while you concentrate on your Strike Like Iron, creatures of your choice that start their turn within 10 feet of you benefit from your Veteran Scars until the start of their next turn as long as you are not {@condition incapacitated}."
+                                "When a creature with one of your Merit dice placed on it is reduced to 0 hit points, you can choose to move that Merit die onto another hostile creature you can see within 30 feet of you (no action required).",
+                                "Additionally, starting at 9th level, when you use your Spotter's Order the target ally creature benefits from your Veteran Scars feature until the end of their next turn as long as you are not incapacitated."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Grudge Keeper",
                             "entries": [
-                                "You have advantage on {@status concentration|phb} checks to maintain your Strike Like Iron.",
-                                "Additionally, if you lose {@status concentration|phb} on your Strike like Iron as a result of taking damage from a creature, you can use your reaction to move up to your speed toward an enemy of your choice that you can see or hear. If you end your movement within reach of your melee weapon you can make one weapon attack as part of the same reaction. You must end this move closer to the enemy than you started."
+                                "When an attack hits as a result of your Strike Like Iron, you deal bonus damage equal to your Merit die for each weapon attack or unarmed strike before the end of your next turn.",
+                                "Once per turn, when a creature is hit as a result of your Spotter's Order you may move up to your speed toward this creature as a part of this action.  You must end this move closer to the creature than you started.  This creature cannot Dash or Disengage until the start of your next turn."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Paramount",
+                            "entries": [
+                                "Any of your warlord features that require a threshold to be met when rolling your Merit die has that thershold reduced by one.",
+                                "Additionally, your Veteran Scars now also applies to ability checks made to avoid or end a condition as well as saving throws."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Pile It On",
                             "entries": [
-                                "When using your Strike Like Iron, you can place a number of Merit dice on the target up to your Charisma modifier (minimum of 1).",
+                                "When using your Strike Like Iron, you can place a number of Merit dice on the target up to your Charisma modifier (minimum of 1).  You must have a Merit die available for each one placed in this way.",
                                 "If an enemy creature you can see takes the {@action Dash} or {@action Disengage} action, you can use your reaction to command an ally to make an attack on the enemy creature per your Spotter's Order."
                             ]
                         },
@@ -474,8 +467,7 @@
                             "type": "entries",
                             "name": "Strength of the Host",
                             "entries": [
-                                "When an allied creature you can see or hear within 30 feet of you uses their reaction, you can spend your reaction to allow that creature to take an additional reaction before the start of their next turn.",
-                                "Additionally, the target of your Spotter's Order can move up to their speed as part of their reaction."
+                                "When an allied creature you can see or hear within 30 feet of you uses their reaction, you can spend your reaction to allow that creature to take an additional reaction before the start of their next turn.  If a d20 roll is part of the reaction your ally takes then they increase the result by your Charisma modifier (minimum of 1)."
                             ]
                         },
                         {
@@ -526,8 +518,8 @@
             "classSource": "MateriaSourceOfTruth",
             "level": 10,
             "entries": [
-                "Once you reach 10th level, your flair is shared amongst those who follow your command. When initiative is rolled a number of creatures of your choice equal to your Charisma modifier within 60 feet of you can use their reaction to take a bonus action.",
-                "Some examples might be a Barbarian's Rage, a Monk spending Ki Points for Patient Defense, a Sorcerer converting Sorcery Points, or a Bard giving a Bardic Inspiration",
+                "Once you reach 10th level, your flair is shared amongst those who follow your command. When initiative is rolled a number of creatures of your choice equal to your Charisma modifier (minimum of 1) within 60 feet of you can use their reaction to take a bonus action.",
+                "Some examples might be a Barbarian's Rage, a Monk spending Ki Points for Patient Defense, a Sorcerer converting Sorcery Points, a Bard giving a Bardic Inspiration, or a Wizard casting the Expeditious Retreat spell.",
                 "You cannot use this feature again until you finish a long rest or a Respite."
             ]
         },
@@ -612,9 +604,7 @@
             "className": "Warlord",
             "classSource": "MateriaSourceOfTruth",
             "level": 16,
-            "isClassFeatureVariant": true,
             "entries": [
-                "{@i 16th-level {@variantrule optional class features|tce|optional warlord feature}}",
                 "Achieving an end is always within reach. Your warlord features that normally have a range of 30 feet are increased to 60 feet."
             ]
         },
@@ -719,7 +709,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "At 10th level, you learn to harness your presence on the battlefield to inspire greatness from others. As a bonus action, you unleash a battle cry that sways the outcome of conflict. Up to ten other creatures of your choice within 60 feet of you that can hear you double their proficiency bonus until the start of your next turn.",
+                "At 10th level, you learn to harness your presence on the battlefield to inspire greatness from others. As a bonus action, you unleash a battle cry that sways the outcome of conflict. Up to twice your Charisma modifier (minimum of 2) other creatures of your choice within 60 feet of you that can hear you double their proficiency bonus until the start of your next turn.",
                 "Additionally, the creatures you chose can make attacks of opportunity against creatures that you move using your Tempered Hand.",
                 "Once you use this feature, you can't use it again until you finish a long rest."
             ]
@@ -776,7 +766,7 @@
             "header": 2,
             "entries": [
                 "Beginning at 6th level, you move towards glory. While you are wearing medium or heavy armor you can use your Charisma modifier in place of your Dexterity modifier when rolling initiative.",
-                "Additionally, standing from {@condition prone}, mounting and dismounting a creature only costs you 5 feet of movement, rather than half your speed."
+                "Additionally, standing from {@condition prone|MateriaSourceOfTruth}, mounting and dismounting a creature only costs you 5 feet of movement, rather than half your speed."
             ]
         },
         {
@@ -802,7 +792,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "At 14th level, those who you command cannot be ignored. As a reaction when you or a creature you can see within 30 feet of you is reduced to 0 hit points and is not killed outright, you can spend a Merit die to allow them to drop to 1 hit point instead and they can immediately spend a number of their Hit Dice up to your Charisma modifier (minimum of 1) to regain hit points. If they are {@condition prone} they can immediately rise to their feet (costing no movement).",
+                "At 14th level, those who you command cannot be ignored. As a reaction when you or a creature you can see within 30 feet of you is reduced to 0 hit points and is not killed outright, you can spend a Merit die to allow them to drop to 1 hit point instead and they can immediately spend a number of their Hit Dice up to your Charisma modifier (minimum of 1) to regain hit points. If they are {@condition prone|MateriaSourceOfTruth} they can immediately rise to their feet (costing no movement).",
                 "Alternatively, if that ally takes damage that would outright kill them, you can spend your reaction to instead reduce them to 0 hit points. That ally has disadvantage on death saving throws until stabilized or dead.",
                 "Once a creature benefits from this feature, they cannot benefit from it again until they complete a long rest."
             ]
@@ -842,7 +832,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Starting at 6th level, you have come to recognize the flow of battle is malleable. Your Moment of Courage allows the target to use their reaction to immediately rise to their feet if {@condition prone} (costing no movement) and they can take the {@action Disengage} action moving up to half their current speed."
+                "Starting at 6th level, you have come to recognize the flow of battle is malleable. Your Moment of Courage allows the target to use their reaction to immediately rise to their feet if {@condition prone|MateriaSourceOfTruth} (costing no movement) and they can take the {@action Disengage} action moving up to half their current speed."
             ]
         },
         {
@@ -1143,7 +1133,7 @@
             ]
         },
         {
-            "name": "Confluence of Focus",
+            "name": "Ensorcelled Confluence",
             "source": "MateriaSourceOfTruth",
             "className": "Warlord",
             "classSource": "MateriaSourceOfTruth",
@@ -1152,7 +1142,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "At 14th level, your prowess has converged into unmatched focus for you and your allies. You add your Charisma modifier to the damage you deal with any warlord cantrip or warlord spell.",
+                "At 14th level, your prowess has converged into unmatched focus for you and your allies. You add your Charisma modifier (minimum of 1) to the damage you deal with any warlord cantrip or warlord spell.",
                 "Additionally, the target of your Spotter's Order can cast a spell, rather than making a weapon attack. The spell must have a casting time of 1 action and must target only one creature."
             ]
         }
@@ -1226,7 +1216,7 @@
                 "Spellcasting Ability|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|2",
                 "Esoteric Order|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|6",
                 "Catechism of Magic|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|10",
-                "Confluence of Focus|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|14"
+                "Ensorcelled Confluence|Warlord|MateriaSourceOfTruth|Magus Chief|MateriaSourceOfTruth|14"
             ],
             "source": "MateriaSourceOfTruth",
             "shortName": "Magus Chief",

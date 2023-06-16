@@ -1174,7 +1174,7 @@
 					"name": "Tireless",
 					"entries": [
 						"As an action, you can give yourself a number of temporary hit points equal to {@dice 1d8} + your Wisdom modifier (minimum of 1 temporary hit point). You can use this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-						"In addition, whenever you finish a short rest, your {@condition exhaustion} level, if any, is decreased by 1."
+						"In addition, whenever you finish a short rest, your {@condition exhaustion|MateriaSourceOfTruth} level, if any, is decreased by 1."
 					]
 				}
 			]
@@ -1829,7 +1829,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"You are immune to the {@condition frightened} condition, and add your Wisdom modifier (minimum of 0) to ability checks and saving throws to avoid or escape being {@condition grappled}, {@condition restrained}, pushed, shoved, knocked {@condition prone}, or swallowed."
+				"You are immune to the {@condition frightened} condition, and add your Wisdom modifier (minimum of 0) to ability checks and saving throws to avoid or escape being {@condition grappled}, {@condition restrained}, pushed, shoved, knocked {@condition prone|MateriaSourceOfTruth}, or swallowed."
 			]
 		},
 		{
@@ -2320,7 +2320,7 @@
 					"type": "list",
 					"items": [
 						"The damage of Gathered Swarm increases to {@dice 1d8}.",
-						"If a creature fails its saving throw against being moved by Gathered Swarm, you can also cause the swarm to knock the creature {@condition prone}.",
+						"If a creature fails its saving throw against being moved by Gathered Swarm, you can also cause the swarm to knock the creature {@condition prone|MateriaSourceOfTruth}.",
 						"When you are moved by Gathered Swarm, it gives you half cover until the start of your next turn."
 					]
 				}

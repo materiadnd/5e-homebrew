@@ -1300,7 +1300,7 @@
 			"classSource": "MateriaSourceOfTruth",
 			"level": 15,
 			"entries": [
-				"At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water, and you reduce any level of {@condition exhaustion} you have by 1 when completing a short rest."
+				"At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water, and you reduce any level of {@condition exhaustion|MateriaSourceOfTruth} you have by 1 when completing a short rest."
 			]
 		},
 		{
@@ -1795,7 +1795,7 @@
 				{
 					"type": "list",
 					"items": [
-						"It must succeed on a Dexterity saving throw or be knocked {@condition prone}.",
+						"It must succeed on a Dexterity saving throw or be knocked {@condition prone|MateriaSourceOfTruth}.",
 						"It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.",
 						"It can't take reactions until the end of your next turn."
 					]
@@ -2596,7 +2596,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 6,
 			"entries": [
-				"When you're {@condition prone}, you can stand up by spending 5 feet of movement, rather than half your speed."
+				"When you're {@condition prone|MateriaSourceOfTruth}, you can stand up by spending 5 feet of movement, rather than half your speed."
 			]
 		},
 		{

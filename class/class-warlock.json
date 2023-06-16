@@ -1963,7 +1963,7 @@
 			"header": 2,
 			"entries": [
 				"Upon reaching 10th level, you are immune to disease, poison damage, and the {@condition poisoned} condition.",
-                "You can hold your breath indefinitely and you don't require food, water, or sleep. However, you suffer {@condition exhaustion} if you do not rest and benefit from finishing short and long rests as usual.",
+                "You can hold your breath indefinitely and you don't require food, water, or sleep. However, you suffer {@condition exhaustion|MateriaSourceOfTruth} if you do not rest and benefit from finishing short and long rests as usual.",
                 "In addition, if you put a severed body part of yours back in place when you expend a Hit Dice to restore hit points, the part reattaches. (At your DM's discretion you may regrow destroyed portions such as nonmagical blindness caused by injuries to your eyes)",
                 "Furthermore, you age at a slower rate. For every 10 years that pass, your body ages only 1 year, and you are immune to being magically aged."
 			]
@@ -2149,7 +2149,7 @@
                     "type": "entries",
                     "name": "Fury",
                     "entries": [
-                        "You can direct a barrage of spectral tentacles to issue forth and strike up to five creatures you can see within 30 feet of the manifestation point. Each target must make a Dexterity saving throw against your spell save DC. On a failed save, the creature takes {@damage 6d10} cold or lightning damage (your choice) and is knocked {@condition prone}. On a successful save, it takes half as much damage and is not knocked {@condition prone}. The tentacles then vanish."
+                        "You can direct a barrage of spectral tentacles to issue forth and strike up to five creatures you can see within 30 feet of the manifestation point. Each target must make a Dexterity saving throw against your spell save DC. On a failed save, the creature takes {@damage 6d10} cold or lightning damage (your choice) and is knocked {@condition prone|MateriaSourceOfTruth}. On a successful save, it takes half as much damage and is not knocked {@condition prone|MateriaSourceOfTruth}. The tentacles then vanish."
                     ]
                 },
                 {
@@ -2529,7 +2529,7 @@
 			"entries": [
 				"{@i 10th-level Undead feature}",
 				"Your connection to undeath and necrotic energy now saturates your body. You have resistance to necrotic damage. If you are transformed using your Form of Dread, you instead become immune to necrotic damage.",
-				"In addition, when you would be reduced to 0 hit points, you can use your reaction to drop to 1 hit point instead and cause your body to erupt with deathly energy. Each creature of your choice that is within 30 feet of you takes necrotic damage equal to {@damage 2d10} + your warlock level. You then gain 1 level of {@condition exhaustion}. Once you use this reaction, you can't do so again until you finish {@dice 1d4} long rests. You can reduce the number of long rests by 1 until you can negate death longer by expend one of your Mystic Arcanum."
+				"In addition, when you would be reduced to 0 hit points, you can use your reaction to drop to 1 hit point instead and cause your body to erupt with deathly energy. Each creature of your choice that is within 30 feet of you takes necrotic damage equal to {@damage 2d10} + your warlock level. You then gain 1 level of {@condition exhaustion|MateriaSourceOfTruth}. Once you use this reaction, you can't do so again until you finish {@dice 1d4} long rests. You can reduce the number of long rests by 1 until you can negate death longer by expend one of your Mystic Arcanum."
 			]
 		},
 		{

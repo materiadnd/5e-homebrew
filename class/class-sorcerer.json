@@ -1168,7 +1168,7 @@
 				"Beginning at level 1, a sorcerer does not require material components for their sorcerer spells. If you cast a sorcerer spell with a Material (M) component that is 50 gold (gp) in value or less, you do not need to provide that component.",
                 "Casting a sorcerer spell that has a costly Material (M) component requires more effort, while the sorcerer most supply the component, the value of said component is reduced by 50gp wether the component is consumed or not. If the costly Material (M) component is consumed then to cast such a sorcerer spell, you must use your bonus action to prepare yourself. When you do so, you may cast a sorcerer spell or begin casting a sorcerer spell which would otherwise have a costly component later in the same turn.",
                 "If the sorcerer spell requires a bonus action to cast, you may begin casting it on your following turn.",
-                "Furthermore, if the sorcerer can reduce to gold value required to cast the spell by spending their sorcerer Hit Die. Roll the spent Hit Die and add them together. You take force damage equal to the total and this damage cannot be reduced in any way and you suffer one level of {@condition exhaustion}. The amount of gp reduction to the costly Material (M) component required is increased by 10 x the damage taken in this way.",
+                "Furthermore, if the sorcerer can reduce to gold value required to cast the spell by spending their sorcerer Hit Die. Roll the spent Hit Die and add them together. You take force damage equal to the total and this damage cannot be reduced in any way and you suffer one level of {@condition exhaustion|MateriaSourceOfTruth}. The amount of gp reduction to the costly Material (M) component required is increased by 10 x the damage taken in this way.",
                 "For example,"
 			]
         },
@@ -1438,7 +1438,7 @@
 			"classSource": "MateriaSourceOfTruth",
 			"level": 5,
             "entries": [
-                "Once you reach 5th level, you can make a constitution saving throw against the level of {@condition exhaustion} that you would get for taking Hit Die damage when you Eschew Materials. The DC is equal to 10 + spell slot used to cast the spell. On a success you do not suffer a level of exhaustion."
+                "Once you reach 5th level, you can make a constitution saving throw against the level of {@condition exhaustion|MateriaSourceOfTruth} that you would get for taking Hit Die damage when you Eschew Materials. The DC is equal to 10 + spell slot used to cast the spell. On a success you do not suffer a level of exhaustion."
             ]
         },
 		{

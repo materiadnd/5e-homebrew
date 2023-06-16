@@ -1688,8 +1688,8 @@
 			"classSource": "MateriaSourceOfTruth",
 			"level": 13,
 			"entries": [
-				"Upon reaching 13th level, you have advantage on all saving throws to avoid or end the {@condition dazed}, {@condition exhausted}, and {@condition weakened} condition.",
-				"Additionally, you are immune to being {@condition possessed}."
+				"Upon reaching 13th level, you have advantage on all saving throws to avoid or end the {@condition dazed|MateriaSourceOfTruth}, {@condition exhaustion|MateriaSourceOfTruth|exhausted}, and {@condition weakened|MateriaSourceOfTruth} condition.",
+				"Additionally, you are immune to being {@condition possessed|MateriaSourceOfTruth}."
 			]
 		},
 		{
@@ -2238,7 +2238,7 @@
 					"type": "list",
 					"items": [
 						"You gain immunity to fire damage",
-						"You ignore the penalties to all d20 rolls and save DCs you cause as a result of being {@condition exhausted}",
+						"You ignore the penalties to all d20 rolls and save DCs you cause as a result of being {@condition exhaustion|MateriaSourceOfTruth|exhausted}",
 						"You have resistance to bludgeoning, piercing, and slashing damage."
 					]
 				}
@@ -2911,7 +2911,7 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"You cause the ground to shake in a position near you. Choose a 10 foot radius area of ground within 30 feet of you. Creatures in that area must make Dexterity saving throws against your spell DC. Creatures that fail their saving throw take {@damage 1d8} bludgeoning damage plus a number of d8's equal to half your Cleric level (rounded up), and are knocked {@condition prone}. Being knocked {@condition prone} in this way causes creatures to take damage as if they entered the area for the first time for spells like {@spell spirit guardians} or {@spell cloud of daggers}. Creatures that make their saving throw take half damage and are not knocked {@condition prone}. If the ground in that area is loose earth or stone, it becomes difficult terrain until cleared, with each 5-foot-diameter portion requiring at least 1 minute to clear by hand."
+				"You cause the ground to shake in a position near you. Choose a 10 foot radius area of ground within 30 feet of you. Creatures in that area must make Dexterity saving throws against your spell DC. Creatures that fail their saving throw take {@damage 1d8} bludgeoning damage plus a number of d8's equal to half your Cleric level (rounded up), and are knocked {@condition prone|MateriaSourceOfTruth}. Being knocked {@condition prone|MateriaSourceOfTruth} in this way causes creatures to take damage as if they entered the area for the first time for spells like {@spell spirit guardians} or {@spell cloud of daggers}. Creatures that make their saving throw take half damage and are not knocked {@condition prone|MateriaSourceOfTruth}. If the ground in that area is loose earth or stone, it becomes difficult terrain until cleared, with each 5-foot-diameter portion requiring at least 1 minute to clear by hand."
 			]
 		},
 		{
@@ -2952,7 +2952,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, your flesh takes on a wood like quality. You gain immunity to poison and the {@condition poisoned} condition, immunity to the {@condition dazed} condition, and any critical hit against you counts as a normal hit instead."
+				"At 17th level, your flesh takes on a wood like quality. You gain immunity to poison and the {@condition poisoned} condition, immunity to the {@condition dazed|MateriaSourceOfTruth} condition, and any critical hit against you counts as a normal hit instead."
 			]
 		},
 		{
@@ -3636,7 +3636,7 @@
 					"type": "list",
 					"items": [
 						"You grant it temporary hit points equal to {@dice 1d6} plus your cleric level.",
-						"You end one effect on it causing it to be {@condition charmed}, {@condition dazed}, or {@condition frightened}."
+						"You end one effect on it causing it to be {@condition charmed}, {@condition dazed|MateriaSourceOfTruth}, or {@condition frightened}."
 					]
 				}
 			]

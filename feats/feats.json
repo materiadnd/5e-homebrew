@@ -313,7 +313,7 @@
                             "type": "entries",
                             "name": "Nimble",
                             "entries": [
-                                "When you are {@condition prone}, standing up uses only 5 feet of your movement.  Climbing doesn't cost you extra movement, and you can make a running long or high jump after moving only 5 feet on foot, rather than 10 feet."
+                                "When you are {@condition prone|MateriaSourceOfTruth}, standing up uses only 5 feet of your movement.  Climbing doesn't cost you extra movement, and you can make a running long or high jump after moving only 5 feet on foot, rather than 10 feet."
                             ]
                         },
                         {
@@ -359,7 +359,7 @@
                                     "type": "entries",
                                     "name": "??",
                                     "entries": [
-                                        "Taking fall damage does not knock you {@condition prone}, unless you wish to"
+                                        "Taking fall damage does not knock you {@condition prone|MateriaSourceOfTruth}, unless you wish to"
                                     ]
                                 }
                             ]
@@ -718,7 +718,7 @@
                             "type": "entries",
                             "name": "Lance Charge",
                             "entries": [
-                                "If your mount moves at least 10 feet towards an enemy on your turn and you use the attack action to attack that enemy with a lance, you can choose to forgo your proficiency modifier to the attack roll. If the attack hits, you add twice your proficiency modifier to the damage. If you hit with your initial attack and have the extra attack feature, you may forgo your second attack and the hit is considered a critical hit and the enemy is knocked {@condition prone} if they are no larger than your mount."
+                                "If your mount moves at least 10 feet towards an enemy on your turn and you use the attack action to attack that enemy with a lance, you can choose to forgo your proficiency modifier to the attack roll. If the attack hits, you add twice your proficiency modifier to the damage. If you hit with your initial attack and have the extra attack feature, you may forgo your second attack and the hit is considered a critical hit and the enemy is knocked {@condition prone|MateriaSourceOfTruth} if they are no larger than your mount."
                             ]
                         },
                         {
@@ -935,14 +935,14 @@
                             "type": "entries",
                             "name": "Brutal Charge",
                             "entries": [
-                                "When you take the {@action Dash} action and end your movement within range of a target with a melee weapon you are holding, you may make the {@action attack} action as part of the same action. If you chose to {@action shove} a creature with the attack action gained as part of a Dash, you may choose to shove the creature up to 10 feet and knock them {@condition prone} with the same shove attack."
+                                "When you take the {@action Dash} action and end your movement within range of a target with a melee weapon you are holding, you may make the {@action attack} action as part of the same action. If you chose to {@action shove} a creature with the attack action gained as part of a Dash, you may choose to shove the creature up to 10 feet and knock them {@condition prone|MateriaSourceOfTruth} with the same shove attack."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Grappler",
                             "entries": [
-                                "You may use a bonus action to grapple an opponent that is {@condition prone}."
+                                "You may use a bonus action to grapple an opponent that is {@condition prone|MateriaSourceOfTruth}."
                             ]
                         },
                         {
@@ -988,7 +988,7 @@
                                     "type": "entries",
                                     "name": "??",
                                     "entries": [
-                                        "If aoo hits triggered by target standing from {@condition prone}, you CAN knock them {@condition prone} again if they are no more than one size category larger than you or smaller"
+                                        "If aoo hits triggered by target standing from {@condition prone|MateriaSourceOfTruth}, you CAN knock them {@condition prone|MateriaSourceOfTruth} again if they are no more than one size category larger than you or smaller"
                                     ]
                                 },
                                 {
@@ -1595,7 +1595,7 @@
                             "type": "entries",
                             "name": "Hardy",
                             "entries": [
-                                "You do not suffer {@condition exhaustion} when you fall to 0 Hit Points. If you select this feature a second time, you may recover up to two levels of {@condition exhaustion} on a long rest."
+                                "You do not suffer {@condition exhaustion|MateriaSourceOfTruth} when you fall to 0 Hit Points. If you select this feature a second time, you may recover up to two levels of {@condition exhaustion|MateriaSourceOfTruth} on a long rest."
                             ]
                         },
                         {
@@ -1746,7 +1746,7 @@
                             "type": "entries",
                             "name": "Shield Shove",
                             "entries": [
-                                "You can use a bonus action to try to shove a creature within 5 feet of you with your shield. If you select this option a second time, you may, with a successful shove, both push the creature 5 feet and knock them {@condition prone}."
+                                "You can use a bonus action to try to shove a creature within 5 feet of you with your shield. If you select this option a second time, you may, with a successful shove, both push the creature 5 feet and knock them {@condition prone|MateriaSourceOfTruth}."
                             ]
                         },
                         {
