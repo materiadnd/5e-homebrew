@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1659773326
+        "dateLastModified": 1686891522
 	},
 	"class": [
 		{
@@ -480,15 +480,21 @@
 					"classFeature": "Divine Domain feature|Cleric|MateriaSourceOfTruth|6",
 					"gainSubclassFeature": true
 				},
+				{
+					"classFeature": "Harness Divine Power|Cleric|MateriaSourceOfTruth|6",
+					"tableDisplayName": "Harness Divine Power (2/rest)"
+				},
 				"Ability Score Improvement|Cleric|MateriaSourceOfTruth|8",
 				"Destroy Undead (CR 1)|Cleric|MateriaSourceOfTruth|8",
 				{
 					"classFeature": "Divine Domain feature|Cleric|MateriaSourceOfTruth|8",
 					"gainSubclassFeature": true
 				},
+				"Rapture|Cleric|MateriaSourceOfTruth|9",
 				"Divine Intervention|Cleric|MateriaSourceOfTruth|10",
 				"Destroy Undead (CR 2)|Cleric|MateriaSourceOfTruth|11",
 				"Ability Score Improvement|Cleric|MateriaSourceOfTruth|12",
+				"Stalwart Faith|Cleric|MateriaSourceOfTruth|13",
 				"Destroy Undead (CR 3)|Cleric|MateriaSourceOfTruth|14",
 				"Ability Score Improvement|Cleric|MateriaSourceOfTruth|16",
 				"Destroy Undead (CR 4)|Cleric|MateriaSourceOfTruth|17",
@@ -499,6 +505,10 @@
 				{
 					"classFeature": "Channel Divinity|Cleric|MateriaSourceOfTruth|18",
 					"tableDisplayName": "Channel Divinity (3/rest)"
+				},
+				{
+					"classFeature": "Harness Divine Power|Cleric|MateriaSourceOfTruth|18",
+					"tableDisplayName": "Harness Divine Power (3/rest)"
 				},
 				"Ability Score Improvement|Cleric|MateriaSourceOfTruth|19",
 				"Divine Intervention Improvement|Cleric|MateriaSourceOfTruth|20"
@@ -844,7 +854,6 @@
 				"Impart Understanding|Cleric|MateriaSourceOfTruth|Knowledge|MateriaSourceOfTruth|2",
 				"Channel Divinity: Read Thoughts|Cleric|MateriaSourceOfTruth|Knowledge|MateriaSourceOfTruth|6",
 				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Knowledge|MateriaSourceOfTruth|8",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Knowledge|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
 				"Visions of the Past|Cleric|MateriaSourceOfTruth|Knowledge|MateriaSourceOfTruth|17"
 			]
 		},
@@ -884,8 +893,7 @@
 				"Life Domain|Cleric|MateriaSourceOfTruth|Life|MateriaSourceOfTruth|1",
 				"Channel Divinity: Preserve Life|Cleric|MateriaSourceOfTruth|Life|MateriaSourceOfTruth|2",
 				"Blessed Healer|Cleric|MateriaSourceOfTruth|Life|MateriaSourceOfTruth|6",
-				"Divine Strike|Cleric|MateriaSourceOfTruth|Life|MateriaSourceOfTruth|8",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Life|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Life|MateriaSourceOfTruth|8",
 				"Supreme Healing|Cleric|MateriaSourceOfTruth|Life|MateriaSourceOfTruth|17"
 			]
 		},
@@ -931,7 +939,6 @@
 				"Channel Divinity: Radiance of the Dawn|Cleric|MateriaSourceOfTruth|Light|MateriaSourceOfTruth|2",
 				"Improved Flare|Cleric|MateriaSourceOfTruth|Light|MateriaSourceOfTruth|6",
 				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Light|MateriaSourceOfTruth|8",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Light|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
 				"Corona of Light|Cleric|MateriaSourceOfTruth|Light|MateriaSourceOfTruth|17"
 			]
 		},
@@ -980,7 +987,6 @@
 				"Nature Domain|Cleric|MateriaSourceOfTruth|Nature|MateriaSourceOfTruth|1",
 				"Channel Divinity: World Shaking|Cleric|MateriaSourceOfTruth|Nature|MateriaSourceOfTruth|2",
 				"Dampen Elements|Cleric|MateriaSourceOfTruth|Nature|MateriaSourceOfTruth|6",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Nature|MateriaSourceOfTruth|8",
 				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Nature|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
 				"Flesh of Wood|Cleric|MateriaSourceOfTruth|Nature|MateriaSourceOfTruth|17"
 			]
@@ -1021,7 +1027,6 @@
 				"Tempest Domain|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|1",
 				"Channel Divinity: Destructive Wrath|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|2",
 				"Thunderbolt Strike|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|6",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|8",
 				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
 				"Stormborn|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|17"
 			]
@@ -1062,8 +1067,7 @@
 				"Trickery Domain|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|1",
 				"Channel Divinity: Invoke Duplicity|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|2",
 				"Channel Divinity: Cloak of Shadows|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|6",
-				"Divine Strike|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|8",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|8",
 				"Improved Duplicity|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|17"
 			]
 		},
@@ -1103,7 +1107,6 @@
 				"War Domain|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|1",
 				"Channel Divinity: Guided Strike|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|2",
 				"War God's Blessing|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|6",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|8",
 				"Divine Empowerment|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
 				"Avatar of Battle|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|17"
 			]
@@ -1144,8 +1147,8 @@
 				"Death Domain|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|1",
 				"Channel Divinity: Touch of Death|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|2",
 				"Inescapable Destruction|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|6",
+				"Reaper Improved Cantrips|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|6",
 				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|8",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
 				"Improved Reaper|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|17"
 			]
 		},
@@ -1193,10 +1196,9 @@
 			],
 			"subclassFeatures": [
 				"Arcana Domain|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|1",
-				"Channel Divinity: Abjure the Extraplanar|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|2",
+				"Channel Divinity: Abjure the Explanar|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|2",
 				"Spell Breaker|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|6",
 				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|8",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
 				"Arcane Mastery|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|17"
 			]
 		},
@@ -1236,8 +1238,7 @@
 				"Forge Domain|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|1",
 				"Channel Divinity: Artisan's Blessing|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|2",
 				"Soul of the Forge|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|6",
-				"Divine Strike|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|8",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|8",
 				"Saint of Forge and Fire|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|17"
 			]
 		},
@@ -1282,8 +1283,7 @@
 				"Grave Domain|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|1",
 				"Channel Divinity: Path to the Grave|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|2",
 				"Sentinel at Death's Door|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|6",
-				"Potent Spellcasting|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|8",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
 				"Keeper of Souls|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|17"
 			]
 		},
@@ -1323,8 +1323,7 @@
 				"Order Domain|Cleric|MateriaSourceOfTruth|Order|MateriaSourceOfTruth|1",
 				"Channel Divinity: Order's Demand|Cleric|MateriaSourceOfTruth|Order|MateriaSourceOfTruth|2",
 				"Embodiment of the Law|Cleric|MateriaSourceOfTruth|Order|MateriaSourceOfTruth|6",
-				"Divine Strike|Cleric|MateriaSourceOfTruth|Order|MateriaSourceOfTruth|8",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Order|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Order|MateriaSourceOfTruth|8",
 				"Order's Wrath|Cleric|MateriaSourceOfTruth|Order|MateriaSourceOfTruth|17"
 			]
 		},
@@ -1364,8 +1363,7 @@
 				"Peace Domain|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|1",
 				"Channel Divinity: Balm of Peace|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|2",
 				"Protective Bond|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|6",
-				"Potent Spellcasting|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|8",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|8",
 				"Expansive Bond|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|17"
 			]
 		},
@@ -1405,8 +1403,7 @@
 				"Twilight Domain|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|1",
 				"Channel Divinity: Twilight Sanctuary|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|2",
 				"Steps of Night|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|6",
-				"Divine Strike|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|8",
-				"Blessed Strikes|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|8",
 				"Twilight Shroud|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|17"
 			]
 		}
@@ -1515,12 +1512,10 @@
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
 			"level": 2,
-			"isClassFeatureVariant": true,
 			"consumes": {
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"{@i 2nd-level cleric {@variantrule optional class features|tce|optional feature}}",
 				"You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 2nd level, once; 6th level, twice; and 18th level, thrice. You regain all expended uses when you finish a long rest."
 			]
 		},
@@ -1566,9 +1561,7 @@
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
 			"level": 4,
-			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 4th-level cleric {@variantrule optional class features|tce|optional feature}}",
 				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the {@filter cleric spell list|spells|level=0|class=Cleric}."
 			]
 		},
@@ -1590,6 +1583,16 @@
 			"level": 6,
 			"entries": [
 				"Beginning at 6th level, you can use your Channel Divinity twice between rests."
+			]
+		},
+		{
+			"name": "Harness Divine Power",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"level": 6,
+			"entries": [
+				"Beginning at 6th level, you can use your Harness Divine Power feature twice between rests."
 			]
 		},
 		{
@@ -1634,6 +1637,17 @@
 			]
 		},
 		{
+			"name": "Rapture",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"level": 9,
+			"entries": [
+				"Upon reaching 9th level, whenever you cast a cleric spell of first level or higher, you can expended a number of Hit Die equal to half of the spell slot used to regain hit points.  The total number of Hit Die expended by this feature cannot be more than your Wisdom modifier (minimum of 1).",
+				"Once you use this feature to expend a number of Hit Die equal to your Wisdom modifier (minimum of 1) you must finish a long rest in order to be able to use this feature again."
+			]
+		},
+		{
 			"name": "Divine Intervention",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
@@ -1641,7 +1655,7 @@
 			"level": 10,
 			"entries": [
 				"Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.",
-				"Imploring your deity's aid requires you to use your bonus action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your Cleric level, your deity intervenes. You may choose to have your DM choose the effect, alternately, you can choose the effect of any Cleric spell or spell available to your Domain of any level.",
+				"Imploring your deity's aid requires you to use your bonus action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your Cleric level plus your Wisdom modifier (minimum of 0), your deity intervenes. You may choose to have your DM choose the effect, alternately, you can choose the effect of any Cleric spell or spell available to your Domain of any level.",
                 "If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.",
 				"At 20th level, your call for intervention succeeds automatically, no roll required."
 			]
@@ -1665,6 +1679,17 @@
 			"entries": [
 				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Stalwart Faith",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"level": 13,
+			"entries": [
+				"Upon reaching 13th level, you have advantage on all saving throws to avoid or end the {@condition dazed}, {@condition exhausted}, and {@condition weakened} condition.",
+				"Additionally, you are immune to being {@condition possessed}."
 			]
 		},
 		{
@@ -1709,6 +1734,16 @@
 			]
 		},
 		{
+			"name": "Harness Divine Power",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"level": 18,
+			"entries": [
+				"Beginning at 18th level, you can use your Harness Divine Power feature three times between rests."
+			]
+		},
+		{
 			"name": "Channel Divinity",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
@@ -1750,8 +1785,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"entries": [
-				"The Death domain is concerned with the forces that cause death, as well as the negative energy that gives rise to undead creatures. Deities such as {@deity Chemosh|Dragonlance}, {@deity Myrkul}, and {@deity Wee Jas|Greyhawk} are patrons of necromancers, death knights, liches, mummy lords, and vampires. Gods of the Death domain also embody murder ({@deity Anubis|Egyptian}, {@deity Bhaal}, and Pyremius), pain ({@deity Iuz|Greyhawk} or {@deity Loviatar}), disease or poison ({@deity Incabulos|Greyhawk}, {@deity Talona}, or {@deity Morgion|Dragonlance}), and the underworld ({@deity Hades|Greek} and {@deity Hel|Norse}).",
-				"At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
+				"The Death domain is concerned with the forces that cause death, as well as the negative energy that gives rise to undead creatures.  Deities of this domain are patrons of necromancers, death knights, liches, mummy lords, and vampires.  Gods of the death domain also embody murder, pain, disease, or poison, and the underworld",
 				{
 					"type": "table",
 					"caption": "Death Domain Spells",
@@ -1840,6 +1874,19 @@
 			]
 		},
 		{
+			"name": "Reaper Improved Cantrips",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Death",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you can further increase the number of creatures targeted by your necromancy cantrips by expending a use of your Harness Divine Power (no action required) when casting.  Each use expended in this way increases the number of targets by one."
+			]
+		},
+		{
 			"name": "Inescapable Destruction",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
@@ -1850,22 +1897,7 @@
 			"header": 2,
 			"entries": [
 				"Starting at 6th level, the cleric's ability to channel negative energy becomes more potent. Necrotic damage dealt by the character's cleric spells and Channel Divinity options ignores resistance to necrotic damage.",
-                "Additionally, when you prepare your spells, you can prepare any necromancy spell or any spell the deals necrotic damage from any spell list of a level you are able to cast. Spells preapre in this way count as cleric spells for you."
-			]
-		},
-		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Death",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Empowerment feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
+                "Additionally, when you prepare your spells, you can prepare any necromancy spell or any spell the deals necrotic damage from any spell list of a level you are able to cast. Spells prepared in this way count as cleric spells for you."
 			]
 		},
 		{
@@ -1892,7 +1924,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, when the cleric casts a Necromancy spell of 1st through 5th-level that targets only one creature, the spell can instead target two creatures within range. If the spell consumes its material components, the cleric must provide them for each target."
+				"Starting at 17th level, when the cleric casts a Necromancy spell that targets only one creature, the spell can instead target two creatures within range. If the spell consumes its material components, the cleric must provide them for each target.",
+				"You can further increase the number of targets of your necromancy spells by expending a use of your Harness Divine Power (no action required) when casting.  Each use expended in this way increases the number of targets by one."
 			]
 		},
 		{
@@ -1904,7 +1937,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"entries": [
-				"The gods of knowledge\u2014including {@deity Oghma}, {@deity Boccob|Greyhawk}, {@deity Gilean|Dragonlance}, {@deity Aureon|Eberron}, and {@deity Thoth|Egyptian}\u2014value learning and understanding above all. Some teach that knowledge is to be gathered and shared in libraries and universities, or promote the practical knowledge of craft and invention. Some deities hoard knowledge and keep its secrets to themselves. And some promise their followers that they will gain tremendous power if they unlock the secrets of the multiverse. Followers of these gods study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can. Some gods of knowledge promote the practical knowledge of craft and invention, including smith deities like {@deity Gond}, {@deity Reorx|Dragonlance}, {@deity Onatar|Eberron}, {@deity Moradin|Nonhuman}, {@deity Hephaestus|Greek}, and {@deity Goibhniu|Celtic}.",
+				"The gods of knowledge value learning and understanding above all.  Some teach that knowledge is to be gathered and shared in libraries and universities, or promote the practical knowledge of craft and invention.  Some deities hoard knowledge and keep its secrets to themselves.  And some promise their followers that they will gain tremendous power if they unlock the secrets of the multiverse.  Followers of these gods study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can.  Some gods of knowledge promote the practical knowledge of craft and invention.",
 				"At each indicated cleric level, you add the listed spells to your spells prepared.",
 				{
 					"type": "table",
@@ -1956,7 +1989,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"At 1st level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}.",
+				"At 1st level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion} and you can use your Wisdom modifier in place of your Intelligence modifier with the chosen skills.",
 				"Your proficiency bonus is doubled for any ability check you make that uses either of those skills."
 			]
 		},
@@ -2007,21 +2040,6 @@
 				"As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can't use this feature on it again until you finish a long rest.",
 				"If the creature fails its save, you can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 60 feet of you. This effect lasts for 1 minute.",
 				"During that time, you can use your action to end this effect and cast the {@spell suggestion} spell on the creature without expending a spell slot. The target automatically fails its saving throw against the spell."
-			]
-		},
-		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Knowledge",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Empowerment feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
 			]
 		},
 		{
@@ -2085,7 +2103,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"entries": [
-				"The Life domain focuses on the vibrant positive energy\u2014one of the fundamental forces of the universe\u2014that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities (such as {@deity Chauntea}, {@deity Arawai|Eberron}, and {@deity Demeter|Greek}), sun gods (such as {@deity Lathander}, {@deity Pelor|Greyhawk}, and {@deity Re-Horakhty|Egyptian}), gods of healing or endurance (such as {@deity Ilmater}, {@deity Mishakal|Dragonlance}, {@deity Apollo|Greek}, and {@deity Diancecht|Celtic}), and gods of home and community (such as {@deity Hestia|Greek}, {@deity Hathor|Egyptian}, and {@deity Boldrei|Eberron}).",
+				"The Life domain focuses on the vibrant positive energy\u2014one of the fundamental forces of the universe\u2014that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods, gods of healing or endurance, and gods of home and community.  Their champions, such as Ao Prior, are the custodians of the many arnd are capable of turning the tides of battle in mere moments.",
 				"At each indicated cleric level, you add the listed spells to your spells prepared.",
 				{
 					"type": "table",
@@ -2113,11 +2131,11 @@
 						],
 						[
 							"7th",
-							"{@spell death ward|MateriaSourceOfTruth}, {@spell guardian of faith}"
+							"{@spell aura of life}, {@spell death ward|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",
-							"{@spell mass cure wounds|MateriaSourceOfTruth}, {@spell raise dead}"
+							"{@spell greater restoration}, {@spell mass cure wounds|MateriaSourceOfTruth}"
 						]
 					]
 				},
@@ -2154,7 +2172,8 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
+				"Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to your proficiency bonus.",
+				"The additional hit points to each creature cannot exceed your level in cleric."
 			]
 		},
 		{
@@ -2184,26 +2203,12 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell's level."
+				"Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to your proficiency bonus + the spell's level.",
+				"The additional hit points regained cannot exceed your level in cleric."
 			]
 		},
 		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Life",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Divine Strike",
+			"name": "Divine Empowerment",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
@@ -2212,7 +2217,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} radiant damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
+				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} radiant damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -2237,7 +2243,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"entries": [
-				"Gods of light\u2014including {@deity Helm}, {@deity Lathander}, {@deity Pholtus|Greyhawk}, {@deity Branchala|Dragonlance}, {@deity the Silver Flame|Eberron}, {@deity Belenus|Celtic}, {@deity Apollo|Greek}, and {@deity Re-Horakhty|Egyptian}\u2014promote the ideals of rebirth and renewal, truth, vigilance, and beauty, often using the symbol of the sun. Some of these gods are portrayed as the sun itself or as a charioteer who guides the sun across the sky. Others are tireless sentinels whose eyes pierce every shadow and see through every deception. Some are deities of beauty and artistry, who teach that art is a vehicle for the soul's improvement. Clerics of a god of light are enlightened souls infused with radiance and the power of their gods' discerning vision, charged with chasing away lies and burning away darkness.",
+				"Gods of light promote the ideals of rebirth and renewal, truth, vigilance, and beauty, often using the symbol of the sun.  Some of these gods are portrayed as the sun itself or as a charioteer who guides the sun across the sky.  Others are tireless sentinels whose eyes pierce every shadow and see through every deception.  Some are deities of beauty and artistry, who teach that art is a vehicle for the soul's improvement.  Clerics of a god of light are enlightened souls infused with radiance and the power of their gods' discerning vision, charged with chasing away lies and burning away darkness.",
 				"At each indicated cleric level, you add the listed spells to your spells prepared.",
 				{
 					"type": "table",
@@ -2253,7 +2259,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell burning hands}, {@spell faerie fire}"
+							"{@spell burning hands|MateriaSourceOfTruth}, {@spell faerie fire}"
 						],
 						[
 							"3rd",
@@ -2269,7 +2275,7 @@
 						],
 						[
 							"9th",
-							"{@spell flame strike}, {@spell scrying}"
+							"{@spell flame strike|MateriaSourceOfTruth}, {@spell scrying}"
 						]
 					]
 				},
@@ -2337,22 +2343,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, you can also use your Warding Flare feature when a creature that you can see within 30 feet of you attacks a creature other than you."
-			]
-		},
-		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Light",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Empowerment feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
+				"Starting at 6th level, you can also use your Warding Flare feature when a creature that you can see within 30 feet of you attacks a creature other than you.",
+				"Additionally, you can expend a use of your Harness Divine Power to regain all expended uses of your Warding Flare."
 			]
 		},
 		{
@@ -2391,7 +2383,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"entries": [
-				"Gods of nature are as varied as the natural world itself, from inscrutable gods of the deep forests (such as {@deity Silvanus}, {@deity Obad-Hai|Greyhawk}, {@deity Chislev|Dragonlance}, {@deity Balinor|Eberron}, and {@deity Pan|Greek}) to friendly deities associated with particular springs and groves (such as {@deity Eldath}). Druids revere nature as a whole and might serve one of these deities, practicing mysterious rites and reciting all-but-forgotten prayers in their own secret tongue. But many of these gods have clerics as well, champions who take a more active role in advancing the interests of a particular nature god. These clerics might hunt the evil monstrosities that despoil the woodlands, bless the harvest of the faithful, or wither the crops of those who anger their gods.",
+				"Gods of nature are as varied as the natural world itself, from inscrutable gods of the deep forests to friendly deities associated with particular springs and groves.  Druids revere nature as a whole and might serve one of these deities, practicing mysterious rites and reciting all-but-forgotten prayers in their own secret tongue.  But many of these gods have clerics as well, champions who take a more active role in advancing the interests of a particular nature god.  These clerics might hunt the evil monstrosities that despoil the woodlands, bless the harvest of the faithful, or wither the crops of those who anger their gods.",
 				"At each indicated cleric level, you add the listed spells to your spells prepared.",
 				{
 					"type": "table",
@@ -2430,10 +2422,6 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Acolyte of Nature|Cleric|MateriaSourceOfTruth|Nature|MateriaSourceOfTruth|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiency|Cleric|MateriaSourceOfTruth|Nature|MateriaSourceOfTruth|1"
 				}
 			]
 		},
@@ -2449,19 +2437,6 @@
 			"entries": [
 				"At 1st level, you may select an extra cantrip. You may select your cantrips from the Cleric or Druid spell lists. When you prepare your spells, you can prepare a number of spells from the Druid spell list of a level you are able to cast equal to twice your proficiency bonus. Spells prepare in this way count as cleric spells for you.",
                 "You also gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Nature}, or {@skill Survival}."
-			]
-		},
-		{
-			"name": "Bonus Proficiency",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Nature",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"Also at 1st level, you gain proficiency with heavy armor."
 			]
 		},
 		{
@@ -2490,22 +2465,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, when you or a creature within 30 feet of you takes acid, cold, fire, lightning, or thunder damage, you can use your reaction to grant resistance to the creature against that instance of the damage."
-			]
-		},
-		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Nature",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Empowerment feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
+				"Starting at 6th level, when you or a creature within 30 feet of you takes acid, cold, fire, lightning, or thunder damage, you can use your reaction to grant resistance to the creature against that instance of the damage.",
+				"Alternatively, you can extend this protection to a number of creatures equal to your Wisdom modifier (minimum of 1) by expending a use of your Harness Divine Power (no action required) as a part of this reaction."
 			]
 		},
 		{
@@ -2532,7 +2493,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, your flesh takes on a wood like quality. You gain immunity to poison and the {@condition poisoned} condition, and any critical hit against you counts as a normal hit instead."
+				"At 17th level, your flesh takes on a wood like quality. You gain immunity to poison and the {@condition poisoned} condition, immunity to the {@condition dazed} condition, and any critical hit against you counts as a normal hit instead."
 			]
 		},
 		{
@@ -2544,7 +2505,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"entries": [
-				"Gods whose portfolios include the Tempest domain\u2014including {@deity Talos}, {@deity Umberlee}, {@deity Kord|Greyhawk}, {@deity Zeboim|Dragonlance}, {@deity the Devourer|Eberron}, {@deity Zeus|Greek}, and {@deity Thor|Norse}\u2014govern storms, sea, and sky. They include gods of lightning and thunder, gods of earthquakes, some fire gods, and certain gods of violence, physical strength, and courage. In some pantheons, a god of this domain rules over other deities and is known for swift justice delivered by thunderbolts. In the pantheons of seafaring people, gods of this domain are ocean deities and the patrons of sailors. Tempest gods send their clerics to inspire fear in the common folk, either to keep those folk on the path of righteousness or to encourage them to offer sacrifices of propitiation to ward off divine wrath.",
+				"Gods whose portfolios include the Tempest domain govern storms, sea, and sky.  They include gods of lightning and thunder, gods of earthquakes, some fire gods, and certain gods of violence, physical strength, and courage.  In some pantheons, a god of this domain rules over other deities and is known for swift justice delivered by thunderbolts.  In the pantheons of seafaring people, gods of this domain are ocean deities and the patrons of sailors.  Tempest gods send their clerics to inspire fear in the common folks, either to keep those folk on the path of righteousness or to encourage them to offer sacrifices of propitiation to ward off divine wrath.",
 				"At each indicated cleric level, you add the listed spells to your spells prepared.",
 				{
 					"type": "table",
@@ -2648,21 +2609,6 @@
 			]
 		},
 		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Tempest",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Empowerment feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
 			"name": "Divine Empowerment",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
@@ -2699,7 +2645,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"entries": [
-				"Gods of trickery\u2014such as {@deity Tymora}, {@deity Beshaba}, {@deity Olidammara|Greyhawk}, {@deity the Traveler|Eberron}, {@deity Garl Glittergold|Nonhuman}, and {@deity Loki|Norse}\u2014are mischief-makers and instigators who stand as a constant challenge to the accepted order among both gods and mortals. They're patrons of thieves, scoundrels, gamblers, rebels, and liberators. Their clerics are a disruptive force in the world, puncturing pride, mocking tyrants, stealing from the rich, freeing captives, and flouting hollow traditions. They prefer subterfuge, pranks, deception, and theft rather than direct confrontation.",
+				"Gods of trickery are mischief-makers and instigators who stand as a constant challenge to the accepted order among both gods and mortals.  They're patrons of thieves, scoundrels, gamblers, rebels, and liberators.  Their clerics are a disruptive force in the world, puncturing pride, mocking tyrants, stealing from the rich, freeing captives, and flouting hollow traditions.  They prefer subterfuge, pranks, deception, and theft rather than direct confrontation.",
 				"At each indicated cleric level, you add the listed spells to your spells prepared.",
 				{
 					"type": "table",
@@ -2751,7 +2697,8 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Starting when you choose this domain at 1st level, you can use your action to touch a willing creature other than yourself to give it advantage on Dexterity ({@skill Stealth}) checks. This blessing lasts for 1 hour or until you use this feature again."
+				"Starting when you choose this domain at 1st level, you can use your action to touch a willing creature other than yourself to give it advantage on Dexterity ({@skill Stealth}) checks. This blessing lasts for 1 hour or until you use this feature again.",
+				"At 8th level in cleric, you can now target yourself with this feature."
 			]
 		},
 		{
@@ -2769,6 +2716,7 @@
 			"entries": [
 				"Starting at 2nd level, you can use your Channel Divinity to create an illusory duplicate of yourself.",
 				"As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.",
+				"As you gain levels in cleric you can create more illusions of yourself.  At 5th level you can create a second duplicate, At 11th level, you can create up to three duplicates.  Finally, at 17th level you can create up to four duplicates.",
 				"For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target."
 			]
 		},
@@ -2786,26 +2734,11 @@
 			},
 			"entries": [
 				"Starting at 6th level, you can use your Channel Divinity to vanish.",
-				"As an action, you become {@condition invisible} until the end of your next turn. You become visible if you attack or cast a spell."
+				"As an action, you become {@condition invisible} until the end of your next turn.  While {@condition invisible} in this way your movement speed is increased by a number of feet equal to 5 times your Wisdom modifier (minimum of 1). You become visible if you attack or cast a spell."
 			]
 		},
 		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Trickery",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Divine Strike",
+			"name": "Divine Empowerment",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
@@ -2814,7 +2747,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, you gain the ability to infuse your weapon strikes with poison\u2014a gift from your deity. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} poison damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+				"At 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
+				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -2827,7 +2761,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, you can create up to four duplicates of yourself, instead of one, when you use Invoke Duplicity. As a bonus action on your turn, you can move any number of them up to 30 feet, to a maximum range of 120 feet."
+				"At 17th level, you are no longer required to maintain concentration (as if you were concentrating on a spell) to maintain your illusory duplicates from Channel Divinity: Invoke Duplicity.",
+				"As a bonus action, while you are concentrating on a spell, you can move the point of origin to one of your duplicates, but you are the source of concentration for the spell.  If the illusory duplicate is the source of such a spell and it would take damage, you must succeed on a DC 10 Concentration check to maintain concentration."
 			]
 		},
 		{
@@ -2839,7 +2774,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"entries": [
-				"War has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. In either case, the gods of war watch over warriors and reward them for their great deeds. The clerics of such gods excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers. Gods of war include champions of honor and chivalry (such as {@deity Torm}, {@deity Heironeous|Greyhawk}, and {@deity Kiri-Jolith|Dragonlance}) as well as gods of destruction and pillage (such as {@deity Erythnul|Greyhawk}, {@deity the Fury|Eberron}, {@deity Gruumsh|Nonhuman}, and {@deity Ares|Greek}) and gods of conquest and domination (such as {@deity Bane}, {@deity Hextor|Greyhawk}, and {@deity Maglubiyet|Nonhuman}). Other war gods (such as {@deity Tempus}, {@deity Nike|Greek}, and {@deity Nuada|Celtic}) take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.",
+				"War has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. In either case, the gods of war watch over warriors and reward them for their great deeds. The clerics of such gods excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers. Gods of war include champions of honor and chivalry as well as gods of destruction and pillage and gods of conquest and domination.  Other war gods take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.",
 				"At each indicated cleric level, add the listed spells to your spells prepared.",
 				{
 					"type": "table",
@@ -2855,7 +2790,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell divine favor|MateriaSourceOfTruth}, {@spell shield of faith}"
+							"{@spell compelled duel}, {@spell divine favor|MateriaSourceOfTruth}"
 						],
 						[
 							"3rd",
@@ -2939,22 +2874,9 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, when you cast a Cleric spell of 1st level or higher, you may make a single weapon attack with a weapon you are holding as a part of that same action or bonus action."
-			]
-		},
-		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "War",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Empowerment feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
+				"At 6th level, when you cast a cleric spell of 1st level or higher with a casting time of one action or less, you may immediately make a single weapon attack with a weapon you are holding or unarmed strike as a part of that same action or bonusaction against a target within range of your weapon or unarmed strike.",
+				"Starting at 14th level, you may immediately make a single weapon attack with a weapon you are holding or unarmed strike as part of the same action or bonus action against a target within range of your weapon or unarmed strike with a cleric cantrip with a casting time of one action or less.",
+				"Alternatively, you can use your Harness Divine Power to regain all expended uses of your War Priest feature."
 			]
 		},
 		{
@@ -2982,7 +2904,7 @@
 			"header": 2,
 			"entries": [
 				"At 17th level, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.",
-                "Additionally, whenever you maintain concentration on a Cleric spell of 1st level or higher you are resistant to bludgeoning, piercing and slashing damage."
+                "Additionally, whenever you maintain concentration on a Cleric spell of 1st level or higher you are resistant to bludgeoning, piercing and slashing damage and gain temporary hit points equal to the spell's level plus your Wisdom modifier (minimum of 1) at the start of each turn while you maintain concentration."
 			]
 		},
 		{
@@ -2995,7 +2917,6 @@
 			"level": 1,
 			"entries": [
 				"Magic is an energy that suffuses the multiverse and that fuels both destruction and creation. Gods of the Arcana domain know the secrets and potential of magic intimately. For some of these gods, magical knowledge is a great responsibility that comes with a special understanding of the nature of reality. Other gods of Arcana see magic as pure power, to be used as its wielder sees fit.",
-				"The gods of this domain are often associated with knowledge, as learning and arcane power tend to go hand-in-hand. In the Realms, deities of this domain include {@deity Azuth|Faerûnian|SCAG} and {@deity Mystra|Faerûnian|SCAG}, as well as {@deity Corellon|Dawn War|DMG} Larethian of the elven pantheon. In other worlds, this domain includes {@deity Hecate|Greek}, {@deity Math Mathonwy|Celtic}, and {@deity Isis|Egyptian}; the triple moon gods of {@deity Solinari|Dragonlance}, {@deity Lunitari|Dragonlance}, and {@deity Nuitari|Dragonlance} of Krynn; and {@deity Boccob|Greyhawk}, {@deity Vecna|Greyhawk}, and {@deity Wee Jas|Greyhawk} of Greyhawk.",
 				"At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
 				{
 					"type": "table",
@@ -3047,12 +2968,12 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"When you choose this domain at 1st level, you gain proficiency in the {@skill Arcana} skill and you can add your Wisdom modifier to any {@skill Arcana} check you make. You gain two cantrips of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips.",
+				"When you choose this domain at 1st level, you gain proficiency in the {@skill Arcana} skill and you can add your Wisdom modifier to any {@skill Arcana} check you make.  If you already have this proficiency, you gain proficiency in one skill of your choice from the list of skills available to clerics at 1st level. You gain two cantrips of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips.",
                 "You also can prepare a number of spells from the Wizard spell list of a level you are able to cast equal to twice your proficiency bonus. Spells prepared in this way count as cleric spells for you. The level of these spells cannot exceed your Wisdom modifier."
 			]
 		},
 		{
-			"name": "Channel Divinity: Abjure the Extraplanar",
+			"name": "Channel Divinity: Abjure the Explanar",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
@@ -3067,7 +2988,7 @@
 				"Starting at 2nd level, you can use your Channel Divinity to abjure otherworldly creatures.",
 				"As an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provided that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
 				"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, then the creature can use the {@action Dodge} action.",
-				"After you reach 5th level, when a creature fails its saving throw against your Abjure the Extraplanar feature, the creature is banished for 1 minute (as in the {@spell banishment} spell, no concentration required) if it isn't on its plane of origin, and its challenge rating is at or below a certain threshold, as shown below.",
+				"After you reach 5th level, when a creature fails its saving throw against your Abjure the Explanar feature, the creature is banished for 1 minute (as in the {@spell banishment} spell, no concentration required) if it isn't on its plane of origin, and its challenge rating is at or below a certain threshold, as shown below.",
 				{
 					"type": "table",
 					"caption": "Arcane Banishment",
@@ -3118,21 +3039,6 @@
 			]
 		},
 		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Arcana",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Empowerment feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
 			"name": "Divine Empowerment",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
@@ -3168,9 +3074,8 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"entries": [
-				"The Order Domain represents discipline, as well as devotion to a society or an institution and strict obedience to the laws governing it. On Ravnica, the domain is favored by clerics of the Azorius Senate, who use it to maintain and enforce the law, and of the Orzhov Syndicate, who exploit law and order for their personal gain. On other worlds, gods who grant access to this domain include {@deity Bane}, {@deity Tyr}, {@deity Majere|Dragonlance}, {@deity Erathis|Dawn War|DMG}, {@deity Pholtus|Greyhawk}, {@deity Wee Jas|Greyhawk}, {@deity Aureon|Eberron}, {@deity Maglubiyet|Nonhuman}, {@deity Nuada|Celtic}, {@deity Athena|Greek}, {@deity Anubis|Egyptian}, {@deity Forseti|Norse}, and {@deity Asmodeus|Dawn War|DMG}.",
-				"The ideal of order is obedience to the law above all else, rather than to a specific individual or the passing influence of emotion or popular rule. Clerics of order are typically concerned with how things are done, rather than whether an action's results are just. Following the law and obeying its edicts is critical, especially when it benefits these clerics and their guilds or deities.",
-				"Law establishes hierarchies. Those selected by the law to lead must be obeyed. Those who obey must do so to the best of their ability. In this manner, law creates an intricate web of obligations that allows society to forge order and security in a chaotic multiverse.",
+				"The Order Domain represents discipline, as well as devotion to the laws that govern a society, an institution, or a philosophy.  Clerics of Order meditate on logic and justice as they serve their gods, examples of which appear in the Order Deities table.",
+				"Clerics of Order believe that well-crafted laws establish legitimate hierarchies, and those selected by law to lead must be obeyed.  Those who obey must do so to the best of their ability, and if those who lead fail to protect the law, they must be replaced.  In this manner, law weaves a web of obligations that create order and security in a chaotic multiverse.",
 				"At each indicated cleric level, you add the listed spells to your spells prepared.",
 				{
 					"type": "table",
@@ -3226,7 +3131,8 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"When you choose this domain at 1st level, you gain proficiency with heavy armor. You also gain proficiency in the {@skill Intimidation} or {@skill Persuasion} skill (your choice)."
+				"When you choose this domain at 1st level, you gain proficiency with heavy armor. You also gain proficiency in the {@skill Intimidation} or {@skill Persuasion} skill (your choice) and can use your Wisdom modifier instead of Charisma for the chosen skill.",
+				"If you already have both of these skill proficiencies, you gain proficiency in one skill of your choice from the list of skills available to clerics at 1st level."
 			]
 		},
 		{
@@ -3239,8 +3145,9 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Starting at 1st level, you can invoke the power of law to drive an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack against a creature of your choice that you can see.",
-				"If the spell targets more than one ally, you choose the ally who can make the attack."
+				"Starting at 1st level, you can invoke the power of law to drive an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack or unarmed strike against a creature of your choice that you can see.",
+				"If the spell targets more than one ally, you choose the ally who can make the attack.",
+				"Starting at 6th level, when an ally makes an attack with a reaction granted by your Voice of Authority, you may make a single weapon attack with a weapon you are holding or an unarmed strike as a part of any action you take until the end of your next turn."
 			]
 		},
 		{
@@ -3257,7 +3164,9 @@
 			},
 			"entries": [
 				"Starting at 2nd level, you can use your Channel Divinity to exert an intimidating presence over others.",
-				"As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be {@condition charmed} by you until the end of your next turn or until the {@condition charmed} creature takes any damage. You can also cause any of the {@condition charmed} creatures to drop what they are holding when they fail the saving throw."
+				"As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be {@condition charmed} by you until the end of your next turn or until the {@condition charmed} creature takes any damage. A creature {@condition charmed} in this way is friendly to you and other creatures of your choice. You can also cause any of the {@condition charmed} creatures to drop what they are holding when they fail the saving throw.",
+				"For each creature you charm with this Channel Divinity up to your Wisdom modifier (minimum of 1), you can make one weapon attack or unarmed strike as a bonus action.  This benefit lasts until you finish a short or long rest."
+
 			]
 		},
 		{
@@ -3272,26 +3181,12 @@
 			"entries": [
 				"At 6th level, you become remarkably adept at channeling magical energy to compel others.",
 				"If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action.",
-				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+				"After casting a spell like this, your next melee attack, ranged attack, or cleric cantrip deals bonus damage equal to half your cleric level until the start of your next turn",
+				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest, or you can expend a use ofyour Harness Divine Power to regain all expended uses of this feature."
 			]
 		},
 		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Order",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Divine Strike",
+			"name": "Divine Empowerment",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
@@ -3300,7 +3195,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} psychic damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip",
+				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} psychic damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -3313,7 +3209,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, enemies you designate for destruction wilt under the combined efforts of you and your allies. If you deal your Divine Strike damage to a creature on your turn, you can curse that creature until the start of your next turn. The next time one of your allies hits the cursed creature with an attack, the target also takes {@damage 2d8} psychic damage, and the curse ends. You can curse a creature in this way only once per turn."
+				"Starting at 17th level, enemies you designate for destruction wilt under the combined efforts of you and your allies. If you deal your Divine Empowerment damage to a creature on your turn, you can curse that creature until the start of your next turn. The next time one of your allies deals damage to the cursed creature, the target also takes {@damage 2d8} psychic damage, and the curse ends. You can curse a creature in this way only once per turn."
 			]
 		},
 		{
@@ -3327,52 +3223,6 @@
 			"entries": [
 				"The balm of peace thrives at the heart of healthy communities, between friendly nations, and in the souls of the kindhearted. The gods of peace inspire people of all sorts to resolve conflict and to stand up against those forces that try to prevent peace from flourishing. See the Peace Deities table for a list of some of the gods associated with this domain.",
 				"Clerics of the Peace Domain preside over the signing of treaties, and they are often asked to arbitrate in disputes. These clerics' blessings draw people together and help them shoulder one another's burdens, and the clerics' magic aids those who are driven to fight for the way of peace.",
-				{
-					"type": "table",
-					"caption": "Peace Deities",
-					"colLabels": [
-						"Example Deity",
-						"Pantheon"
-					],
-					"colStyles": [
-						"col-6 text-center",
-						"col-6 text-center"
-					],
-					"rows": [
-						[
-							"{@deity Angharradh|Elven|SCAG}",
-							"Elven"
-						],
-						[
-							"{@deity Berronar Truesilver|Dwarven|SCAG}",
-							"Dwarven"
-						],
-						[
-							"{@deity Boldrei|Eberron}",
-							"Eberron"
-						],
-						[
-							"{@deity Cyrrollalee|Halfling|SCAG}",
-							"Halfling"
-						],
-						[
-							"{@deity Eldath}",
-							"Forgotten Realms"
-						],
-						[
-							"Gaerdal",
-							"Ironhand Gnomish"
-						],
-						[
-							"{@deity Paladine|Dragonlance}",
-							"Dragonlance"
-						],
-						[
-							"{@deity Rao|Greyhawk}",
-							"Greyhawk"
-						]
-					]
-				},
 				{
 					"name": "Domain Spells",
 					"type": "entries",
@@ -3451,7 +3301,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 1st-level Peace Domain feature}",
-				"You gain proficiency in the {@skill Insight}, {@skill Performance}, or {@skill Persuasion} skill (your choice)."
+				"You gain proficiency in the {@skill Insight}, {@skill Performance}, or {@skill Persuasion} skill (your choice).  If you already have all these proficiencies, you gain proficiency in one skill of your choice from the list of skills available to clerics at 1st level."
 			]
 		},
 		{
@@ -3468,7 +3318,7 @@
 			},
 			"entries": [
 				"{@i 2nd-level Peace Domain feature}",
-				"You can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore a number of hit points to that creature equal to {@dice 2d6} + your Wisdom modifier (minimum of 1 hit point). A creature can receive this healing only once whenever you take this action."
+				"You can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore a number of hit points to that creature equal to twice your Wisdom modifier (minimum of 2 hit points). A creature can receive this healing only once whenever you take this action."
 			]
 		},
 		{
@@ -3486,22 +3336,7 @@
 			]
 		},
 		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Peace",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Potent Spellcasting feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Potent Spellcasting",
+			"name": "Divine Empowerment",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
@@ -3510,8 +3345,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"{@i 8th-level Peace Domain feature}",
-				"You add your Wisdom modifier to the damage you deal with any cleric cantrip."
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
+				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} radiant damage. When you reach 14th level, the extra damage on weapon attacks increases to 2d8."
 			]
 		},
 		{
@@ -3539,52 +3374,6 @@
 			"entries": [
 				"The twilit transition from light into darkness often brings calm and even joy, as the day's labors end and the hours of rest begin. The darkness can also bring terrors, but the gods of twilight guard against the horrors of the night.",
 				"Clerics who serve these deities-examples of which appear on the Twilight Deities table-bring comfort to those who seek rest and protect them by venturing into the encroaching darkness to ensure that the dark is a comfort, not a terror.",
-				{
-					"type": "table",
-					"caption": "Twilight Deities",
-					"colLabels": [
-						"Example Deity",
-						"Pantheon"
-					],
-					"colStyles": [
-						"col-6 text-center",
-						"col-6 text-center"
-					],
-					"rows": [
-						[
-							"{@deity Boldrei|Eberron}",
-							"Eberron"
-						],
-						[
-							"{@deity Celestian|Greyhawk}",
-							"Greyhawk"
-						],
-						[
-							"{@deity Dol Arrah|Eberron}",
-							"Eberron"
-						],
-						[
-							"{@deity Helm}",
-							"Forgotten Realms"
-						],
-						[
-							"{@deity Ilmater}",
-							"Forgotten Realms"
-						],
-						[
-							"{@deity Mishakal|Dragonlance}",
-							"Dragonlance"
-						],
-						[
-							"{@deity Selûne}",
-							"Forgotten Realms"
-						],
-						[
-							"{@deity Yondalla|Nonhuman}",
-							"Halfling"
-						]
-					]
-				},
 				{
 					"name": "Domain Spells",
 					"type": "entries",
@@ -3629,30 +3418,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|1"
-				},
-				{
-					"type": "refSubclassFeature",
 					"subclassFeature": "Eyes of Night|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|1"
 				},
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Vigilant Blessing|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|1"
 				}
-			]
-		},
-		{
-			"name": "Bonus Proficiencies",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Twilight",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"{@i 1st-level Twilight Domain feature}",
-				"You gain proficiency with martial weapons and heavy armor."
 			]
 		},
 		{
@@ -3666,8 +3437,10 @@
 			"header": 1,
 			"entries": [
 				"{@i 1st-level Twilight Domain feature}",
-				"You can see through the deepest gloom. You have {@sense darkvision} out to a range of 300 feet. In that radius, you can see in dim light as if it were bright light and in darkness as if it were dim light.",
-				"As an action, you can magically share the {@sense darkvision} of this feature with willing creatures you can see within 10 feet of you, up to a number of creatures equal to your Wisdom modifier (minimum of one creature). The shared {@sense darkvision} lasts for 1 hour. Once you share it, you can't do so again until you finish a long rest, unless you expend a spell slot of any level to share it again."
+				"You can see through the deepest gloom. You have {@sense darkvision} out to a range of your Wisdom modifier (minimum of 1) times 30 feet.  In that radius, you can see in dim light as if it were bright light and in darkness as if it were dim light.",
+				"As an action, you can magically share the {@sense darkvision} of this feature with willing creatures you can see within 10 feet of you, up to a number of creatures equal to your Wisdom modifier (minimum of one creature). The shared {@sense darkvision} lasts for 1 hour. Once you share it, you can't do so again until you finish a long rest.",
+				"Starting at 3rd level, you can expend a spell slot of 2nd level or higher to share it again."
+
 			]
 		},
 		{
@@ -3699,12 +3472,12 @@
 			"entries": [
 				"{@i 2nd-level Twilight Domain feature}",
 				"You can use your Channel Divinity to refresh your allies with soothing twilight.",
-				"As an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are {@condition incapacitated} or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:",
+				"As an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you lose your concentration (as if you were concentrating on a spell). Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:",
 				{
 					"type": "list",
 					"items": [
 						"You grant it temporary hit points equal to {@dice 1d6} plus your cleric level.",
-						"You end one effect on it causing it to be {@condition charmed} or {@condition frightened}."
+						"You end one effect on it causing it to be {@condition charmed}, {@condition dazed}, or {@condition frightened}."
 					]
 				}
 			]
@@ -3724,22 +3497,7 @@
 			]
 		},
 		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Twilight",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Divine Strike",
+			"name": "Divine Empowerment",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
@@ -3748,8 +3506,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"{@i 8th-level Twilight Domain feature}",
-				"You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} radiant damage. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
+				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} radiant damage.  When you reach 14th level, the extra damage on weapon attacks increases to 2d8."
 			]
 		},
 		{
@@ -3763,7 +3521,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 17th-level Twilight Domain feature}",
-				"The twilight that you summon offers a protective embrace: you and your allies have half cover while in the sphere created by your Twilight Sanctuary."
+				"The twilight that you summon offers a protective embrace: you and your allies have half cover while in the sphere created by your Twilight Sanctuary, and you are no longer required to maintain concentration (as if you were concentrating on a spell) on your Channel Divinity: Twilight Sanctuary."
 			]
 		},
 		{
@@ -3775,7 +3533,7 @@
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"entries": [
-				"The gods of the forge are patrons of artisans who work with metal, from a humble blacksmith who keeps a village in horseshoes and plow blades to the mighty elf artisan whose diamond-tipped arrows of mithral have felled demon lords. The gods of the forge teach that, with patience and hard work, even the most intractable metal can be transformed from a lump of ore to a beautifully wrought object. Clerics of these deities search for objects lost to the forces of darkness, liberate mines overrun by orcs, and uncover rare and wondrous materials necessary to create potent magic items. Followers of these gods take great pride in their work, and they are willing to craft and use heavy armor and powerful weapons to protect them. Deities of this domain include {@deity Gond}, {@deity Reorx|Dragonlance}, {@deity Onatar|Eberron}, {@deity Moradin|Nonhuman}, {@deity Hephaestus|Greek}, and {@deity Goibhniu|Celtic}.",
+				"The gods of the forge are patrons of artisans who work with metal, from a humble blacksmith who keeps a village in horseshoes and plow blades to the mighty elf artisan whose diamond-tipped arrows of mithral have felled demon lords. The gods of the forge teach that, with patience and hard work, even the most intractable metal can be transformed from a lump of ore to a beautifully wrought object. Clerics of these deities search for objects lost to the forces of darkness, liberate mines overrun by orcs, and uncover rare and wondrous materials necessary to create potent magic items. Followers of these gods take great pride in their work, and they are willing to craft and use heavy armor and powerful weapons to protect them.",
 				"At each indicated cleric level, add the listed spells to your spells prepared.",
 				{
 					"type": "table",
@@ -3791,7 +3549,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell identify|MateriaSourceOfTruth}, {@spell searing smite}"
+							"{@spell identify|MateriaSourceOfTruth}, {@spell searing smite|MateriaSourceOfTruth}"
 						],
 						[
 							"3rd",
@@ -3831,7 +3589,8 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"At 1st level, you gain the ability to imbue magic into a weapon or armor. At the end of a long rest, you can touch one nonmagical object that is a suit of armor or a simple or martial weapon. Until the end of your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it's armor or a +1 bonus to attack and damage rolls if it's a weapon.",
+				"At 1st level, you gain the ability to imbue magic into a weapon, shield, or armor. At the end of a long rest, you can touch one nonmagical object that is a suit of armor, shield, or a simple or martial weapon. Until the end of your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it's armor or a shield or a +1 bonus to attack and damage rolls if it's a weapon.",
+				"Alternatively, you can use your Harness Divine Power to imbue magic into a weapon, shield or armor in the same way during a short rest",
 				"Once you use this feature, you can't use it again until you finish a long rest."
 			]
 		},
@@ -3845,7 +3604,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"When you choose this domain at 1st level, you gain proficiency with heavy armor and {@item smith's tools|phb}."
+				"When you choose this domain at 1st level, you gain proficiency with heavy armor and {@item smith's tools|phb}.  You learn the {@spell mending} cantrip which does not count against the number of cleric cantrips you know."
 			]
 		},
 		{
@@ -3863,7 +3622,8 @@
 			"entries": [
 				"Starting at 2nd level, you can use your Channel Divinity to create simple items.",
 				"You conduct an hour-long ritual that crafts a nonmagical item that must include some metal: a simple or martial weapon, a suit of armor, ten pieces of ammunition, a set of tools, or another metal object (see chapter 5, \"Equipment,\" in the Player's Handbook for examples of these items). The creation is completed at the end of the hour, coalescing in an unoccupied space of your choice on a surface within 5 feet of you.",
-				"The thing you create can be something that is worth no more than 100 gp. As part of this ritual, you must lay out metal, which can include coins, with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual's end, magically forming even nonmetal parts of the creation. The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual."
+				"The thing you create can be something that is worth no more than 100 gp. As part of this ritual, you must lay out metal, which can include coins, with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual's end, magically forming even nonmetal parts of the creation.",
+				"The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual."
 			]
 		},
 		{
@@ -3881,28 +3641,14 @@
 					"type": "list",
 					"items": [
 						"You gain resistance to fire damage.",
-						"While wearing heavy armor, you gain a +1 bonus to AC."
+						"While wearing heavy armor, you gain a +1 bonus to AC.",
+						"Your {@spell mending} cantrip now has a casting time of one action.  Additionally, constructs or objects that have more than 0 hit points can spend up to your Wisdom modifier (minimum of 1) Hit Dice to regain hit points when they are the target of your {@spell mending} cantrip.  If the target does not normally have Hit Dice, they instead regain 1 hit point."
 					]
 				}
 			]
 		},
 		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Forge",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Divine Strike",
+			"name": "Divine Empowerment",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
@@ -3911,7 +3657,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, you gain the ability to infuse your weapon strikes with the fiery power of the forge. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} fire damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip",
+				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} fire damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -3929,7 +3676,8 @@
 					"type": "list",
 					"items": [
 						"You gain immunity to fire damage",
-						"While wearing heavy armor, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks."
+						"You ignore the penalties to all d20 rolls and save DCs you cause as a result of being {@condition exhausted}",
+						"You have resistance to bludgeoning, piercing, and slashing damage."
 					]
 				}
 			]
@@ -4012,7 +3760,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"At 1st level, you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 60 feet of you that isn't behind total cover and that isn't protected from divination magic. This sense doesn't tell you anything about a creature's capabilities or identity.",
+				"At 1st level, you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you are able to see {@condition invisible} undead and you know the location of any undead within 60 feet of you even through total cover, and that is not protected from divination magic. This sense doesn't tell you anything about a creature's capabilities or identity.",
 				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
 			]
 		},
@@ -4030,7 +3778,8 @@
 			},
 			"entries": [
 				"Starting at 2nd level, you can use your Channel Divinity to mark another creature's life force for termination.",
-				"As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the curse ends."
+				"As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your next turn. The next time you or an ally of yours deals damage to the cursed creature, the creature has vulnerability to all of the source's damage, and then the curse ends.",
+				"If the creature has immunity to the damage type, then it is treated as having resistance instead."
 			]
 		},
 		{
@@ -4043,27 +3792,14 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you gain the ability to impede death's progress. As a reaction when you or a creature you can see within 30 feet of you suffers a critical hit, you can turn that hit into a normal hit. Any effects triggered by a critical hit are canceled.",
-				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
+				"At 6th level, you gain the ability to impede death's progress.  When you cast your {@spell spare the dying} cantrip on a creature, they can spend a number of Hit Dice equal to your Wisdom modifier (minimum of 1) to regain hit points and are no longer {@condition unconscious}.",
+				"Additionally, As a reaction when you or a creature you can see within 30 feet of you suffers a critical hit, you can turn that hit into a normal hit. Any effects triggered by a critical hit are canceled.",
+				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.",
+				"Alternatively, you can use your Harness Divine Power to regain all expended uses of your Sentinel at Death's Door feature."
 			]
 		},
 		{
-			"name": "Blessed Strikes",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Grave",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Potent Spellcasting feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Potent Spellcasting",
+			"name": "Divine Empowerment",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
@@ -4072,7 +3808,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
+				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} necrotic damage.  When you reach 14th level, the extra damage on weapon attacks increases to {@damage 2d8}. "
 			]
 		},
 		{
@@ -4085,7 +3822,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you can seize a trace of vitality from a parting soul and use it to heal the living. When an enemy you can see dies within 60 feet of you, you or one creature of your choice that is within 60 feet of you regains hit points equal to the enemy's number of Hit Dice. You can use this feature only if you aren't {@condition incapacitated}. Once you use it, you can't do so again until the start of your next turn."
+				"Starting at 17th level, you can seize a trace of vitality from a parting soul and use it to heal the living. When an enemy you can see dies within 60 feet of you, you or one creature of your choice that is within 60 feet of you regains hit points equal to the enemy's number of Hit Dice.  If the enemy has more than 10 Hit Dice, then you can also end one condition on the chosen creature. You can use this feature only if you aren't {@condition incapacitated}. Once you use it, you can't do so again until the start of your next turn."
 			]
 		}
 	]
