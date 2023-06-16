@@ -817,6 +817,182 @@
 	],
 	"subclass": [
 		{
+			"name": "Arcana Domain",
+			"shortName": "Arcana",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Wizard",
+									"count": 2
+								}
+							]
+						}
+					},
+					"prepared": {
+						"1": [
+							"detect magic",
+							"magic missile"
+						],
+						"3": [
+							"silence",
+							"Nystul's magic aura"
+						],
+						"5": [
+							"dispel magic",
+							"magic circle|MateriaSourceOfTruth"
+						],
+						"7": [
+							"arcane eye",
+							"otiluke's resilient sphere"
+						],
+						"9": [
+							"telekinesis|MateriaSourceOfTruth",
+							"teleportation circle|MateriaSourceOfTruth"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Arcana Domain|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|1",
+				"Channel Divinity: Abjure the Explanar|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|2",
+				"Spell Breaker|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|6",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|8",
+				"Arcane Mastery|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|17"
+			]
+		},
+		{
+			"name": "Death Domain",
+			"shortName": "Death",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"false life",
+							"ray of sickness|MateriaSourceOfTruth"
+						],
+						"3": [
+							"blindness/deafness",
+							"ray of enfeeblement|MateriaSourceOfTruth"
+						],
+						"5": [
+							"animate dead|MateriaSourceOfTruth",
+							"vampiric touch|MateriaSourceOfTruth"
+						],
+						"7": [
+							"blight|MateriaSourceOfTruth",
+							"death ward|MateriaSourceOfTruth"
+						],
+						"9": [
+							"antilife shell",
+							"cloudkill|MateriaSourceOfTruth"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Death Domain|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|1",
+				"Channel Divinity: Touch of Death|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|2",
+				"Inescapable Destruction|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|6",
+				"Reaper Improved Cantrips|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|6",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|8",
+				"Improved Reaper|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|17"
+			]
+		},
+		{
+			"name": "Forge Domain",
+			"shortName": "Forge",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"identify|MateriaSourceOfTruth",
+							"searing smite|MateriaSourceOfTruth"
+						],
+						"3": [
+							"heat metal",
+							"magic weapon"
+						],
+						"5": [
+							"elemental weapon|MateriaSourceOfTruth",
+							"protection from energy|MateriaSourceOfTruth"
+						],
+						"7": [
+							"fabricate",
+							"wall of fire|MateriaSourceOfTruth"
+						],
+						"9": [
+							"animate objects",
+							"creation|MateriaSourceOfTruth"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Forge Domain|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|1",
+				"Channel Divinity: Artisan's Blessing|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|2",
+				"Soul of the Forge|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|6",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|8",
+				"Saint of Forge and Fire|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|17"
+			]
+		},
+		{
+			"name": "Grave Domain",
+			"shortName": "Grave",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"bane",
+							"false life"
+						],
+						"3": [
+							"gentle repose|MateriaSourceOfTruth",
+							"ray of enfeeblement|MateriaSourceOfTruth"
+						],
+						"5": [
+							"revivify",
+							"vampiric touch|MateriaSourceOfTruth"
+						],
+						"7": [
+							"blight|MateriaSourceOfTruth",
+							"death ward|MateriaSourceOfTruth"
+						],
+						"9": [
+							"antilife shell",
+							"raise dead|MateriaSourceOfTruth"
+						]
+					},
+					"known": {
+						"1": [
+							"spare the dying#c"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Grave Domain|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|1",
+				"Channel Divinity: Path to the Grave|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|2",
+				"Sentinel at Death's Door|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|6",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
+				"Keeper of Souls|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|17"
+			]
+		},
+		{
 			"name": "Knowledge Domain",
 			"shortName": "Knowledge",
 			"source": "MateriaSourceOfTruth",
@@ -827,7 +1003,7 @@
 					"prepared": {
 						"1": [
 							"command",
-							"identify"
+							"identify|MateriaSourceOfTruth"
 						],
 						"3": [
 							"augury",
@@ -839,10 +1015,10 @@
 						],
 						"7": [
 							"arcane eye",
-							"confusion"
+							"confusion|MateriaSourceOfTruth"
 						],
 						"9": [
-							"legend lore",
+							"legend lore|MateriaSourceOfTruth",
 							"scrying"
 						]
 					}
@@ -868,10 +1044,10 @@
 					"prepared": {
 						"1": [
 							"bless",
-							"cure wounds"
+							"cure wounds|MateriaSourceOfTruth"
 						],
 						"3": [
-							"lesser restoration",
+							"lesser restoration|MateriaSourceOfTruth",
 							"spiritual weapon"
 						],
 						"5": [
@@ -879,12 +1055,12 @@
 							"revivify"
 						],
 						"7": [
-							"death ward",
-							"guardian of faith"
+							"aura of life|MateriaSourceOfTruth",
+							"death ward|MateriaSourceOfTruth"
 						],
 						"9": [
-							"mass cure wounds",
-							"raise dead"
+							"greater restoration|MateriaSourceOfTruth",
+							"mass cure wounds|MateriaSourceOfTruth"
 						]
 					}
 				}
@@ -907,7 +1083,7 @@
 				{
 					"prepared": {
 						"1": [
-							"burning hands",
+							"burning hands|MateriaSourceOfTruth",
 							"faerie fire"
 						],
 						"3": [
@@ -915,15 +1091,15 @@
 							"scorching ray"
 						],
 						"5": [
-							"daylight",
+							"daylight|MateriaSourceOfTruth",
 							"fireball"
 						],
 						"7": [
 							"guardian of faith",
-							"wall of fire"
+							"wall of fire|MateriaSourceOfTruth"
 						],
 						"9": [
-							"flame strike",
+							"flame strike|MateriaSourceOfTruth",
 							"scrying"
 						]
 					},
@@ -992,302 +1168,6 @@
 			]
 		},
 		{
-			"name": "Tempest Domain",
-			"shortName": "Tempest",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"additionalSpells": [
-				{
-					"prepared": {
-						"1": [
-							"fog cloud",
-							"thunderwave"
-						],
-						"3": [
-							"gust of wind",
-							"shatter"
-						],
-						"5": [
-							"call lightning",
-							"lightning bolt"
-						],
-						"7": [
-							"control water",
-							"ice storm"
-						],
-						"9": [
-							"circle of power",
-							"destructive wave"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Tempest Domain|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|1",
-				"Channel Divinity: Destructive Wrath|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|2",
-				"Thunderbolt Strike|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|6",
-				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
-				"Stormborn|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|17"
-			]
-		},
-		{
-			"name": "Trickery Domain",
-			"shortName": "Trickery",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"additionalSpells": [
-				{
-					"prepared": {
-						"1": [
-							"charm person",
-							"disguise self"
-						],
-						"3": [
-							"mirror image",
-							"pass without trace"
-						],
-						"5": [
-							"blink",
-							"dispel magic"
-						],
-						"7": [
-							"dimension door",
-							"polymorph"
-						],
-						"9": [
-							"dominate person",
-							"modify memory"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Trickery Domain|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|1",
-				"Channel Divinity: Invoke Duplicity|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|2",
-				"Channel Divinity: Cloak of Shadows|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|6",
-				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|8",
-				"Improved Duplicity|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|17"
-			]
-		},
-		{
-			"name": "War Domain",
-			"shortName": "War",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"additionalSpells": [
-				{
-					"prepared": {
-						"1": [
-							"divine favor",
-							"shield of faith"
-						],
-						"3": [
-							"magic weapon",
-							"spiritual weapon"
-						],
-						"5": [
-							"crusader's mantle",
-							"spirit guardians"
-						],
-						"7": [
-							"freedom of movement",
-							"stoneskin"
-						],
-						"9": [
-							"circle of power",
-							"hold monster"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"War Domain|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|1",
-				"Channel Divinity: Guided Strike|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|2",
-				"War God's Blessing|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|6",
-				"Divine Empowerment|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
-				"Avatar of Battle|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|17"
-			]
-		},
-		{
-			"name": "Death Domain",
-			"shortName": "Death",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"additionalSpells": [
-				{
-					"prepared": {
-						"1": [
-							"false life",
-							"ray of sickness"
-						],
-						"3": [
-							"blindness/deafness",
-							"ray of enfeeblement"
-						],
-						"5": [
-							"animate dead",
-							"vampiric touch"
-						],
-						"7": [
-							"blight",
-							"death ward"
-						],
-						"9": [
-							"antilife shell",
-							"cloudkill"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Death Domain|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|1",
-				"Channel Divinity: Touch of Death|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|2",
-				"Inescapable Destruction|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|6",
-				"Reaper Improved Cantrips|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|6",
-				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|8",
-				"Improved Reaper|Cleric|MateriaSourceOfTruth|Death|MateriaSourceOfTruth|17"
-			]
-		},
-		{
-			"name": "Arcana Domain",
-			"shortName": "Arcana",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"additionalSpells": [
-				{
-					"known": {
-						"1": {
-							"_": [
-								{
-									"choose": "level=0|class=Wizard",
-									"count": 2
-								}
-							]
-						}
-					},
-					"prepared": {
-						"1": [
-							"detect magic",
-							"magic missile"
-						],
-						"3": [
-							"silence",
-							"Nystul's magic aura"
-						],
-						"5": [
-							"dispel magic",
-							"magic circle"
-						],
-						"7": [
-							"arcane eye",
-							"otiluke's resilient sphere"
-						],
-						"9": [
-							"telekinesis",
-							"teleportation circle"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Arcana Domain|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|1",
-				"Channel Divinity: Abjure the Explanar|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|2",
-				"Spell Breaker|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|6",
-				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|8",
-				"Arcane Mastery|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|17"
-			]
-		},
-		{
-			"name": "Forge Domain",
-			"shortName": "Forge",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"additionalSpells": [
-				{
-					"prepared": {
-						"1": [
-							"identify",
-							"searing smite"
-						],
-						"3": [
-							"heat metal",
-							"magic weapon"
-						],
-						"5": [
-							"elemental weapon",
-							"protection from energy"
-						],
-						"7": [
-							"fabricate",
-							"wall of fire"
-						],
-						"9": [
-							"animate objects",
-							"creation"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Forge Domain|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|1",
-				"Channel Divinity: Artisan's Blessing|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|2",
-				"Soul of the Forge|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|6",
-				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|8",
-				"Saint of Forge and Fire|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|17"
-			]
-		},
-		{
-			"name": "Grave Domain",
-			"shortName": "Grave",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"additionalSpells": [
-				{
-					"prepared": {
-						"1": [
-							"bane",
-							"false life"
-						],
-						"3": [
-							"gentle repose",
-							"ray of enfeeblement"
-						],
-						"5": [
-							"revivify",
-							"vampiric touch"
-						],
-						"7": [
-							"blight",
-							"death ward"
-						],
-						"9": [
-							"antilife shell",
-							"raise dead"
-						]
-					},
-					"known": {
-						"1": [
-							"spare the dying#c"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Grave Domain|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|1",
-				"Channel Divinity: Path to the Grave|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|2",
-				"Sentinel at Death's Door|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|6",
-				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
-				"Keeper of Souls|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|17"
-			]
-		},
-		{
 			"name": "Order Domain",
 			"shortName": "Order",
 			"source": "MateriaSourceOfTruth",
@@ -1302,19 +1182,19 @@
 						],
 						"3": [
 							"hold person",
-							"zone of truth"
+							"zone of truth|MateriaSourceOfTruth"
 						],
 						"5": [
 							"mass healing word",
 							"slow"
 						],
 						"7": [
-							"compulsion",
+							"compulsion|MateriaSourceOfTruth",
 							"locate creature"
 						],
 						"9": [
-							"commune",
-							"dominate person"
+							"commune|MateriaSourceOfTruth",
+							"dominate person|MateriaSourceOfTruth"
 						]
 					}
 				}
@@ -1342,19 +1222,19 @@
 						],
 						"3": [
 							"aid",
-							"warding bond"
+							"warding bond|MateriaSourceOfTruth"
 						],
 						"5": [
 							"beacon of hope",
 							"sending"
 						],
 						"7": [
-							"aura of purity",
+							"aura of purity|MateriaSourceOfTruth",
 							"Otiluke's resilient sphere"
 						],
 						"9": [
-							"greater restoration",
-							"Rary's telepathic bond"
+							"greater restoration|MateriaSourceOfTruth",
+							"Rary's telepathic bond|MateriaSourceOfTruth"
 						]
 					}
 				}
@@ -1365,6 +1245,86 @@
 				"Protective Bond|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|6",
 				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|8",
 				"Expansive Bond|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|17"
+			]
+		},
+		{
+			"name": "Tempest Domain",
+			"shortName": "Tempest",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"fog cloud",
+							"thunderwave"
+						],
+						"3": [
+							"gust of wind",
+							"shatter"
+						],
+						"5": [
+							"call lightning|MateriaSourceOfTruth",
+							"lightning bolt"
+						],
+						"7": [
+							"control water",
+							"ice storm|MateriaSourceOfTruth"
+						],
+						"9": [
+							"circle of power",
+							"destructive wave"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Tempest Domain|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|1",
+				"Channel Divinity: Destructive Wrath|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|2",
+				"Thunderbolt Strike|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|6",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
+				"Stormborn|Cleric|MateriaSourceOfTruth|Tempest|MateriaSourceOfTruth|17"
+			]
+		},
+		{
+			"name": "Trickery Domain",
+			"shortName": "Trickery",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"charm person|MateriaSourceOfTruth",
+							"disguise self"
+						],
+						"3": [
+							"mirror image",
+							"pass without trace"
+						],
+						"5": [
+							"blink",
+							"dispel magic"
+						],
+						"7": [
+							"dimension door",
+							"polymorph"
+						],
+						"9": [
+							"dominate person|MateriaSourceOfTruth",
+							"modify memory"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Trickery Domain|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|1",
+				"Channel Divinity: Invoke Duplicity|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|2",
+				"Channel Divinity: Cloak of Shadows|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|6",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|8",
+				"Improved Duplicity|Cleric|MateriaSourceOfTruth|Trickery|MateriaSourceOfTruth|17"
 			]
 		},
 		{
@@ -1382,15 +1342,15 @@
 						],
 						"3": [
 							"moonbeam",
-							"see invisibility"
+							"see invisibility|MateriaSourceOfTruth"
 						],
 						"5": [
 							"aura of vitality",
 							"Leomund's tiny hut"
 						],
 						"7": [
-							"aura of life",
-							"greater invisibility"
+							"aura of life|MateriaSourceOfTruth",
+							"greater invisibility|MateriaSourceOfTruth"
 						],
 						"9": [
 							"circle of power",
@@ -1405,6 +1365,46 @@
 				"Steps of Night|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|6",
 				"Divine Empowerment|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|8",
 				"Twilight Shroud|Cleric|MateriaSourceOfTruth|Twilight|MateriaSourceOfTruth|17"
+			]
+		},
+		{
+			"name": "War Domain",
+			"shortName": "War",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"compelled duel|MateriaSourceOfTruth",
+							"divine favor|MateriaSourceOfTruth"
+						],
+						"3": [
+							"magic weapon",
+							"spiritual weapon"
+						],
+						"5": [
+							"crusader's mantle",
+							"spirit guardians"
+						],
+						"7": [
+							"freedom of movement",
+							"stoneskin|MateriaSourceOfTruth"
+						],
+						"9": [
+							"circle of power",
+							"hold monster"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"War Domain|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|1",
+				"Channel Divinity: Guided Strike|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|2",
+				"War God's Blessing|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|6",
+				"Divine Empowerment|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|8|MateriaSourceOfTruth",
+				"Avatar of Battle|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|17"
 			]
 		}
 	],
@@ -1777,6 +1777,164 @@
 	],
 	"subclassFeature": [
 		{
+			"name": "Arcana Domain",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Arcana",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"entries": [
+				"Magic is an energy that suffuses the multiverse and that fuels both destruction and creation. Gods of the Arcana domain know the secrets and potential of magic intimately. For some of these gods, magical knowledge is a great responsibility that comes with a special understanding of the nature of reality. Other gods of Arcana see magic as pure power, to be used as its wielder sees fit.",
+				"At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
+				{
+					"type": "table",
+					"caption": "Arcana Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell detect magic}, {@spell magic missile}"
+						],
+						[
+							"3rd",
+							"{@spell Nystul's magic aura}, {@spell silence}"
+						],
+						[
+							"5th",
+							"{@spell dispel magic}, {@spell magic circle|MateriaSourceOfTruth}"
+						],
+						[
+							"7th",
+							"{@spell arcane eye}, {@spell otiluke's resilient sphere}"
+						],
+						[
+							"9th",
+							"{@spell telekinesis|MateriaSourceOfTruth}, {@spell teleportation circle|MateriaSourceOfTruth}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Initiate|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|1"
+				}
+			]
+		},
+		{
+			"name": "Arcane Initiate",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Arcana",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you choose this domain at 1st level, you gain proficiency in the {@skill Arcana} skill and you can add your Wisdom modifier to any {@skill Arcana} check you make.  If you already have this proficiency, you gain proficiency in one skill of your choice from the list of skills available to clerics at 1st level. You gain two cantrips of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips.",
+                "You also can prepare a number of spells from the Wizard spell list of a level you are able to cast equal to twice your proficiency bonus. Spells prepared in this way count as cleric spells for you. The level of these spells cannot exceed your Wisdom modifier."
+			]
+		},
+		{
+			"name": "Channel Divinity: Abjure the Explanar",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Arcana",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity to abjure otherworldly creatures.",
+				"As an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provided that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
+				"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, then the creature can use the {@action Dodge} action.",
+				"After you reach 5th level, when a creature fails its saving throw against your Abjure the Explanar feature, the creature is banished for 1 minute (as in the {@spell banishment} spell, no concentration required) if it isn't on its plane of origin, and its challenge rating is at or below a certain threshold, as shown below.",
+				{
+					"type": "table",
+					"caption": "Arcane Banishment",
+					"colLabels": [
+						"Cleric level",
+						"Banishes Creatures of CR..."
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"5th",
+							"1/2 or lower"
+						],
+						[
+							"8th",
+							"1 or lower"
+						],
+						[
+							"11th",
+							"2 or lower"
+						],
+						[
+							"14th",
+							"3 or lower"
+						],
+						[
+							"17th",
+							"4 or lower"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Spell Breaker",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Arcana",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, when you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than the level of the spell slot you use to cast the healing spell."
+			]
+		},
+		{
+			"name": "Divine Empowerment",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Arcana",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
+                "Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} force damage. When you reach 14th level, the extra damage on weapon attacks increases to {@dice 2d8}."
+			]
+		},
+		{
+			"name": "Arcane Mastery",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Arcana",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, you choose four spells from the Wizard spell list, one from each of the following levels: 6th, 7th, 8th, and 9th. You add them to your list of domain spells. Like your other domain spells, they are always prepared and count as cleric spells for you."
+			]
+		},
+		{
 			"name": "Death Domain",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
@@ -1808,7 +1966,7 @@
 						],
 						[
 							"5th",
-							"{@spell animate dead}, {@spell vampiric touch|MateriaSourceOfTruth}"
+							"{@spell animate dead|MateriaSourceOfTruth}, {@spell vampiric touch|MateriaSourceOfTruth}"
 						],
 						[
 							"7th",
@@ -1926,6 +2084,307 @@
 			"entries": [
 				"Starting at 17th level, when the cleric casts a Necromancy spell that targets only one creature, the spell can instead target two creatures within range. If the spell consumes its material components, the cleric must provide them for each target.",
 				"You can further increase the number of targets of your necromancy spells by expending a use of your Harness Divine Power (no action required) when casting.  Each use expended in this way increases the number of targets by one."
+			]
+		},
+		{
+			"name": "Forge Domain",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Forge",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"entries": [
+				"The gods of the forge are patrons of artisans who work with metal, from a humble blacksmith who keeps a village in horseshoes and plow blades to the mighty elf artisan whose diamond-tipped arrows of mithral have felled demon lords. The gods of the forge teach that, with patience and hard work, even the most intractable metal can be transformed from a lump of ore to a beautifully wrought object. Clerics of these deities search for objects lost to the forces of darkness, liberate mines overrun by orcs, and uncover rare and wondrous materials necessary to create potent magic items. Followers of these gods take great pride in their work, and they are willing to craft and use heavy armor and powerful weapons to protect them.",
+				"At each indicated cleric level, add the listed spells to your spells prepared.",
+				{
+					"type": "table",
+					"caption": "Forge Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell identify|MateriaSourceOfTruth}, {@spell searing smite|MateriaSourceOfTruth}"
+						],
+						[
+							"3rd",
+							"{@spell heat metal}, {@spell magic weapon}"
+						],
+						[
+							"5th",
+							"{@spell elemental weapon|MateriaSourceOfTruth}, {@spell protection from energy|MateriaSourceOfTruth}"
+						],
+						[
+							"7th",
+							"{@spell fabricate}, {@spell wall of fire|MateriaSourceOfTruth}"
+						],
+						[
+							"9th",
+							"{@spell animate objects}, {@spell creation|MateriaSourceOfTruth}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiency|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blessing of the Forge|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|1"
+				}
+			]
+		},
+		{
+			"name": "Blessing of the Forge",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Forge",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you gain the ability to imbue magic into a weapon, shield, or armor. At the end of a long rest, you can touch one nonmagical object that is a suit of armor, shield, or a simple or martial weapon. Until the end of your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it's armor or a shield or a +1 bonus to attack and damage rolls if it's a weapon.",
+				"Alternatively, you can use your Harness Divine Power to imbue magic into a weapon, shield or armor in the same way during a short rest",
+				"Once you use this feature, you can't use it again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Bonus Proficiency",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Forge",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you choose this domain at 1st level, you gain proficiency with heavy armor and {@item smith's tools|phb}.  You learn the {@spell mending} cantrip which does not count against the number of cleric cantrips you know."
+			]
+		},
+		{
+			"name": "Channel Divinity: Artisan's Blessing",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Forge",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity to create simple items.",
+				"You conduct an hour-long ritual that crafts a nonmagical item that must include some metal: a simple or martial weapon, a suit of armor, ten pieces of ammunition, a set of tools, or another metal object (see chapter 5, \"Equipment,\" in the Player's Handbook for examples of these items). The creation is completed at the end of the hour, coalescing in an unoccupied space of your choice on a surface within 5 feet of you.",
+				"The thing you create can be something that is worth no more than 100 gp. As part of this ritual, you must lay out metal, which can include coins, with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual's end, magically forming even nonmetal parts of the creation.",
+				"The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual."
+			]
+		},
+		{
+			"name": "Soul of the Forge",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Forge",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, your mastery of the forge grants you special abilities:",
+				{
+					"type": "list",
+					"items": [
+						"You gain resistance to fire damage.",
+						"While wearing heavy armor, you gain a +1 bonus to AC.",
+						"Your {@spell mending} cantrip now has a casting time of one action.  Additionally, constructs or objects that have more than 0 hit points can spend up to your Wisdom modifier (minimum of 1) Hit Dice to regain hit points when they are the target of your {@spell mending} cantrip.  If the target does not normally have Hit Dice, they instead regain 1 hit point."
+					]
+				}
+			]
+		},
+		{
+			"name": "Divine Empowerment",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Forge",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip",
+				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} fire damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+			]
+		},
+		{
+			"name": "Saint of Forge and Fire",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Forge",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, your blessed affinity with fire and metal becomes more powerful:",
+				{
+					"type": "list",
+					"items": [
+						"You gain immunity to fire damage",
+						"You ignore the penalties to all d20 rolls and save DCs you cause as a result of being {@condition exhausted}",
+						"You have resistance to bludgeoning, piercing, and slashing damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Grave Domain",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Grave",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"entries": [
+				"Gods of the grave watch over the line between life and death. To these deities, death and the afterlife are a foundational part of the multiverse. To desecrate the peace of the dead is an abomination. Deities of the grave include {@deity Kelemvor}, {@deity Wee Jas|Greyhawk}, the ancestral spirits of {@deity the Undying Court|Eberron}, {@deity Hades|Greek}, {@deity Anubis|Egyptian}, and {@deity Osiris|Egyptian}. Followers of these deities seek to put wandering spirits to rest, destroy the undead, and ease the suffering of the dying. Their magic also allows them to stave off death for a time, particularly for a person who still has some great work to accomplish in the world. This is a delay of death, not a denial of it, for death will eventually get its due.",
+				{
+					"type": "table",
+					"caption": "Grave Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell bane}, {@spell false life}"
+						],
+						[
+							"3rd",
+							"{@spell gentle repose|MateriaSourceOfTruth}, {@spell ray of enfeeblement|MateriaSourceOfTruth}"
+						],
+						[
+							"5th",
+							"{@spell revivify}, {@spell vampiric touch|MateriaSourceOfTruth}"
+						],
+						[
+							"7th",
+							"{@spell blight|MateriaSourceOfTruth}, {@spell death ward|MateriaSourceOfTruth}"
+						],
+						[
+							"9th",
+							"{@spell antilife shell}, {@spell raise dead|MateriaSourceOfTruth}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle of Mortality|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Eyes of the Grave|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|1"
+				}
+			]
+		},
+		{
+			"name": "Circle of Mortality",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Grave",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use the highest number possible for each die.",
+				"In addition, you learn the {@spell spare the dying} cantrip, which doesn't count against the number of cleric cantrips you know. For you, it has a range of 30 feet, and you can cast it as a bonus action."
+			]
+		},
+		{
+			"name": "Eyes of the Grave",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Grave",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you are able to see {@condition invisible} undead and you know the location of any undead within 60 feet of you even through total cover, and that is not protected from divination magic. This sense doesn't tell you anything about a creature's capabilities or identity.",
+				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Channel Divinity: Path to the Grave",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Grave",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity to mark another creature's life force for termination.",
+				"As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your next turn. The next time you or an ally of yours deals damage to the cursed creature, the creature has vulnerability to all of the source's damage, and then the curse ends.",
+				"If the creature has immunity to the damage type, then it is treated as having resistance instead."
+			]
+		},
+		{
+			"name": "Sentinel at Death's Door",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Grave",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you gain the ability to impede death's progress.  When you cast your {@spell spare the dying} cantrip on a creature, they can spend a number of Hit Dice equal to your Wisdom modifier (minimum of 1) to regain hit points and are no longer {@condition unconscious}.",
+				"Additionally, As a reaction when you or a creature you can see within 30 feet of you suffers a critical hit, you can turn that hit into a normal hit. Any effects triggered by a critical hit are canceled.",
+				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.",
+				"Alternatively, you can use your Harness Divine Power to regain all expended uses of your Sentinel at Death's Door feature."
+			]
+		},
+		{
+			"name": "Divine Empowerment",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Grave",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
+				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} necrotic damage.  When you reach 14th level, the extra damage on weapon attacks increases to {@damage 2d8}. "
+			]
+		},
+		{
+			"name": "Keeper of Souls",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Grave",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, you can seize a trace of vitality from a parting soul and use it to heal the living. When an enemy you can see dies within 60 feet of you, you or one creature of your choice that is within 60 feet of you regains hit points equal to the enemy's number of Hit Dice.  If the enemy has more than 10 Hit Dice, then you can also end one condition on the chosen creature. You can use this feature only if you aren't {@condition incapacitated}. Once you use it, you can't do so again until the start of your next turn."
 			]
 		},
 		{
@@ -2123,7 +2582,7 @@
 						],
 						[
 							"3rd",
-							"{@spell lesser restoration}, {@spell spiritual weapon}"
+							"{@spell lesser restoration|MateriaSourceOfTruth}, {@spell spiritual weapon}"
 						],
 						[
 							"5th",
@@ -2131,11 +2590,11 @@
 						],
 						[
 							"7th",
-							"{@spell aura of life}, {@spell death ward|MateriaSourceOfTruth}"
+							"{@spell aura of life|MateriaSourceOfTruth}, {@spell death ward|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",
-							"{@spell greater restoration}, {@spell mass cure wounds|MateriaSourceOfTruth}"
+							"{@spell greater restoration|MateriaSourceOfTruth}, {@spell mass cure wounds|MateriaSourceOfTruth}"
 						]
 					]
 				},
@@ -2271,7 +2730,7 @@
 						],
 						[
 							"7th",
-							"{@spell guardian of faith}, {@spell wall of fire}"
+							"{@spell guardian of faith}, {@spell wall of fire|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",
@@ -2497,6 +2956,304 @@
 			]
 		},
 		{
+			"name": "Order Domain",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Order",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"entries": [
+				"The Order Domain represents discipline, as well as devotion to the laws that govern a society, an institution, or a philosophy.  Clerics of Order meditate on logic and justice as they serve their gods, examples of which appear in the Order Deities table.",
+				"Clerics of Order believe that well-crafted laws establish legitimate hierarchies, and those selected by law to lead must be obeyed.  Those who obey must do so to the best of their ability, and if those who lead fail to protect the law, they must be replaced.  In this manner, law weaves a web of obligations that create order and security in a chaotic multiverse.",
+				"At each indicated cleric level, you add the listed spells to your spells prepared.",
+				{
+					"type": "table",
+					"caption": "Order Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell command}, {@spell heroism}"
+						],
+						[
+							"3rd",
+							"{@spell hold person}, {@spell zone of truth|MateriaSourceOfTruth}"
+						],
+						[
+							"5th",
+							"{@spell mass healing word}, {@spell slow}"
+						],
+						[
+							"7th",
+							"{@spell compulsion|MateriaSourceOfTruth}, {@spell locate creature}"
+						],
+						[
+							"9th",
+							"{@spell commune|MateriaSourceOfTruth}, {@spell dominate person|MateriaSourceOfTruth}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric|MateriaSourceOfTruth|Order|MateriaSourceOfTruth|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Voice of Authority|Cleric|MateriaSourceOfTruth|Order|MateriaSourceOfTruth|1"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Order",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you choose this domain at 1st level, you gain proficiency with heavy armor. You also gain proficiency in the {@skill Intimidation} or {@skill Persuasion} skill (your choice) and can use your Wisdom modifier instead of Charisma for the chosen skill.",
+				"If you already have both of these skill proficiencies, you gain proficiency in one skill of your choice from the list of skills available to clerics at 1st level."
+			]
+		},
+		{
+			"name": "Voice of Authority",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Order",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Starting at 1st level, you can invoke the power of law to drive an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack or unarmed strike against a creature of your choice that you can see.",
+				"If the spell targets more than one ally, you choose the ally who can make the attack.",
+				"Starting at 6th level, when an ally makes an attack with a reaction granted by your Voice of Authority, you may make a single weapon attack with a weapon you are holding or an unarmed strike as a part of any action you take until the end of your next turn."
+			]
+		},
+		{
+			"name": "Channel Divinity: Order's Demand",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Order",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity to exert an intimidating presence over others.",
+				"As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be {@condition charmed} by you until the end of your next turn or until the {@condition charmed} creature takes any damage. A creature {@condition charmed} in this way is friendly to you and other creatures of your choice. You can also cause any of the {@condition charmed} creatures to drop what they are holding when they fail the saving throw.",
+				"For each creature you charm with this Channel Divinity up to your Wisdom modifier (minimum of 1), you can make one weapon attack or unarmed strike as a bonus action.  This benefit lasts until you finish a short or long rest."
+
+			]
+		},
+		{
+			"name": "Embodiment of the Law",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Order",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you become remarkably adept at channeling magical energy to compel others.",
+				"If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action.",
+				"After casting a spell like this, your next melee attack, ranged attack, or cleric cantrip deals bonus damage equal to half your cleric level until the start of your next turn",
+				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest, or you can expend a use ofyour Harness Divine Power to regain all expended uses of this feature."
+			]
+		},
+		{
+			"name": "Divine Empowerment",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Order",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip",
+				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} psychic damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+			]
+		},
+		{
+			"name": "Order's Wrath",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Order",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, enemies you designate for destruction wilt under the combined efforts of you and your allies. If you deal your Divine Empowerment damage to a creature on your turn, you can curse that creature until the start of your next turn. The next time one of your allies deals damage to the cursed creature, the target also takes {@damage 2d8} psychic damage, and the curse ends. You can curse a creature in this way only once per turn."
+			]
+		},
+		{
+			"name": "Peace Domain",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Peace",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"entries": [
+				"The balm of peace thrives at the heart of healthy communities, between friendly nations, and in the souls of the kindhearted. The gods of peace inspire people of all sorts to resolve conflict and to stand up against those forces that try to prevent peace from flourishing. See the Peace Deities table for a list of some of the gods associated with this domain.",
+				"Clerics of the Peace Domain preside over the signing of treaties, and they are often asked to arbitrate in disputes. These clerics' blessings draw people together and help them shoulder one another's burdens, and the clerics' magic aids those who are driven to fight for the way of peace.",
+				{
+					"name": "Domain Spells",
+					"type": "entries",
+					"entries": [
+						"{@i 1st-level Peace Domain feature}",
+						"You gain domain spells at the cleric levels listed in the Peace Domain Spells table. See the Divine Domain class feature for how domain spells work.",
+						{
+							"type": "table",
+							"caption": "Peace Domain Spells",
+							"colLabels": [
+								"Cleric Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell heroism}, {@spell sanctuary}"
+								],
+								[
+									"3rd",
+									"{@spell aid}, {@spell warding bond|MateriaSourceOfTruth}"
+								],
+								[
+									"5th",
+									"{@spell beacon of hope}, {@spell sending}"
+								],
+								[
+									"7th",
+									"{@spell aura of purity|MateriaSourceOfTruth}, {@spell Otiluke's resilient sphere}"
+								],
+								[
+									"9th",
+									"{@spell greater restoration|MateriaSourceOfTruth}, {@spell Rary's telepathic bond|MateriaSourceOfTruth}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Implement of Peace|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emboldening Bond|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|1"
+				}
+			]
+		},
+		{
+			"name": "Emboldening Bond",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Peace",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Peace Domain feature}",
+				"You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a {@dice d4} and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the {@dice d4} no more than once per turn.",
+				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Implement of Peace",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Peace",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Peace Domain feature}",
+				"You gain proficiency in the {@skill Insight}, {@skill Performance}, or {@skill Persuasion} skill (your choice).  If you already have all these proficiencies, you gain proficiency in one skill of your choice from the list of skills available to clerics at 1st level."
+			]
+		},
+		{
+			"name": "Channel Divinity: Balm of Peace",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Peace",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"{@i 2nd-level Peace Domain feature}",
+				"You can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore a number of hit points to that creature equal to twice your Wisdom modifier (minimum of 2 hit points). A creature can receive this healing only once whenever you take this action."
+			]
+		},
+		{
+			"name": "Protective Bond",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Peace",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Peace Domain feature}",
+				"The bond you forge between people helps them protect each other. When a creature affected by your Emboldening Bond feature is about to take damage, a second bonded creature within 30 feet of the first can use its reaction to teleport to an unoccupied space within 5 feet of the first creature. The second creature then takes all the damage instead."
+			]
+		},
+		{
+			"name": "Divine Empowerment",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Peace",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
+				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} radiant damage. When you reach 14th level, the extra damage on weapon attacks increases to 2d8."
+			]
+		},
+		{
+			"name": "Expansive Bond",
+			"source": "MateriaSourceOfTruth",
+			"className": "Cleric",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Peace",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Peace Domain feature}",
+				"The benefits of your Emboldening Bond and Protective Bond features now work when the creatures are within 60 feet of each other. Moreover, when a creature uses Protective Bond to take someone else's damage, the creature has resistance to that damage."
+			]
+		},
+		{
 			"name": "Tempest Domain",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
@@ -2533,7 +3290,7 @@
 						],
 						[
 							"7th",
-							"{@spell control water}, {@spell ice storm}"
+							"{@spell control water}, {@spell ice storm|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",
@@ -2766,604 +3523,6 @@
 			]
 		},
 		{
-			"name": "War Domain",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "War",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"entries": [
-				"War has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. In either case, the gods of war watch over warriors and reward them for their great deeds. The clerics of such gods excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers. Gods of war include champions of honor and chivalry as well as gods of destruction and pillage and gods of conquest and domination.  Other war gods take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.",
-				"At each indicated cleric level, add the listed spells to your spells prepared.",
-				{
-					"type": "table",
-					"caption": "War Domain Spells",
-					"colLabels": [
-						"Cleric Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell compelled duel}, {@spell divine favor|MateriaSourceOfTruth}"
-						],
-						[
-							"3rd",
-							"{@spell magic weapon}, {@spell spiritual weapon}"
-						],
-						[
-							"5th",
-							"{@spell crusader's mantle}, {@spell spirit guardians}"
-						],
-						[
-							"7th",
-							"{@spell freedom of movement}, {@spell stoneskin|MateriaSourceOfTruth}"
-						],
-						[
-							"9th",
-							"{@spell circle of power}, {@spell hold monster}"
-						]
-					]
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "War Priest|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|1"
-				}
-			]
-		},
-		{
-			"name": "Bonus Proficiencies",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "War",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"At 1st level, you gain proficiency with martial weapons and heavy armor."
-			]
-		},
-		{
-			"name": "War Priest",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "War",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"header": 1,
-			"entries": [
-                "From 1st level, you can perform the somatic components of spells even when you have weapons or a shield in one or both hands.",
-                "Additionally, when you use the {@action Attack} action or cast a cleric spell that uses your action, you can make one weapon attack as a bonus action.",
-                "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
-			]
-		},
-		{
-			"name": "Channel Divinity: Guided Strike",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "War",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 2,
-			"header": 2,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"Starting at 2nd level, you can use your Channel Divinity to strike with supernatural accuracy. When a creature (including yourself) within 30 feet of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
-			]
-		},
-		{
-			"name": "War God's Blessing",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "War",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"At 6th level, when you cast a cleric spell of 1st level or higher with a casting time of one action or less, you may immediately make a single weapon attack with a weapon you are holding or unarmed strike as a part of that same action or bonusaction against a target within range of your weapon or unarmed strike.",
-				"Starting at 14th level, you may immediately make a single weapon attack with a weapon you are holding or unarmed strike as part of the same action or bonus action against a target within range of your weapon or unarmed strike with a cleric cantrip with a casting time of one action or less.",
-				"Alternatively, you can use your Harness Divine Power to regain all expended uses of your War Priest feature."
-			]
-		},
-		{
-			"name": "Divine Empowerment",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "War",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
-                "Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to {@damage 2d8}."
-			]
-		},
-		{
-			"name": "Avatar of Battle",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "War",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"At 17th level, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.",
-                "Additionally, whenever you maintain concentration on a Cleric spell of 1st level or higher you are resistant to bludgeoning, piercing and slashing damage and gain temporary hit points equal to the spell's level plus your Wisdom modifier (minimum of 1) at the start of each turn while you maintain concentration."
-			]
-		},
-		{
-			"name": "Arcana Domain",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Arcana",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"entries": [
-				"Magic is an energy that suffuses the multiverse and that fuels both destruction and creation. Gods of the Arcana domain know the secrets and potential of magic intimately. For some of these gods, magical knowledge is a great responsibility that comes with a special understanding of the nature of reality. Other gods of Arcana see magic as pure power, to be used as its wielder sees fit.",
-				"At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
-				{
-					"type": "table",
-					"caption": "Arcana Domain Spells",
-					"colLabels": [
-						"Cleric Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell detect magic}, {@spell magic missile}"
-						],
-						[
-							"3rd",
-							"{@spell Nystul's magic aura}, {@spell silence}"
-						],
-						[
-							"5th",
-							"{@spell dispel magic}, {@spell magic circle|MateriaSourceOfTruth}"
-						],
-						[
-							"7th",
-							"{@spell arcane eye}, {@spell otiluke's resilient sphere}"
-						],
-						[
-							"9th",
-							"{@spell telekinesis}, {@spell teleportation circle}"
-						]
-					]
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Initiate|Cleric|MateriaSourceOfTruth|Arcana|MateriaSourceOfTruth|1"
-				}
-			]
-		},
-		{
-			"name": "Arcane Initiate",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Arcana",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"When you choose this domain at 1st level, you gain proficiency in the {@skill Arcana} skill and you can add your Wisdom modifier to any {@skill Arcana} check you make.  If you already have this proficiency, you gain proficiency in one skill of your choice from the list of skills available to clerics at 1st level. You gain two cantrips of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips.",
-                "You also can prepare a number of spells from the Wizard spell list of a level you are able to cast equal to twice your proficiency bonus. Spells prepared in this way count as cleric spells for you. The level of these spells cannot exceed your Wisdom modifier."
-			]
-		},
-		{
-			"name": "Channel Divinity: Abjure the Explanar",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Arcana",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 2,
-			"header": 2,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"Starting at 2nd level, you can use your Channel Divinity to abjure otherworldly creatures.",
-				"As an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provided that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
-				"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, then the creature can use the {@action Dodge} action.",
-				"After you reach 5th level, when a creature fails its saving throw against your Abjure the Explanar feature, the creature is banished for 1 minute (as in the {@spell banishment} spell, no concentration required) if it isn't on its plane of origin, and its challenge rating is at or below a certain threshold, as shown below.",
-				{
-					"type": "table",
-					"caption": "Arcane Banishment",
-					"colLabels": [
-						"Cleric level",
-						"Banishes Creatures of CR..."
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"5th",
-							"1/2 or lower"
-						],
-						[
-							"8th",
-							"1 or lower"
-						],
-						[
-							"11th",
-							"2 or lower"
-						],
-						[
-							"14th",
-							"3 or lower"
-						],
-						[
-							"17th",
-							"4 or lower"
-						]
-					]
-				}
-			]
-		},
-		{
-			"name": "Spell Breaker",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Arcana",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Starting at 6th level, when you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than the level of the spell slot you use to cast the healing spell."
-			]
-		},
-		{
-			"name": "Divine Empowerment",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Arcana",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
-                "Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} force damage. When you reach 14th level, the extra damage on weapon attacks increases to {@dice 2d8}."
-			]
-		},
-		{
-			"name": "Arcane Mastery",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Arcana",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"At 17th level, you choose four spells from the Wizard spell list, one from each of the following levels: 6th, 7th, 8th, and 9th. You add them to your list of domain spells. Like your other domain spells, they are always prepared and count as cleric spells for you."
-			]
-		},
-		{
-			"name": "Order Domain",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Order",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"entries": [
-				"The Order Domain represents discipline, as well as devotion to the laws that govern a society, an institution, or a philosophy.  Clerics of Order meditate on logic and justice as they serve their gods, examples of which appear in the Order Deities table.",
-				"Clerics of Order believe that well-crafted laws establish legitimate hierarchies, and those selected by law to lead must be obeyed.  Those who obey must do so to the best of their ability, and if those who lead fail to protect the law, they must be replaced.  In this manner, law weaves a web of obligations that create order and security in a chaotic multiverse.",
-				"At each indicated cleric level, you add the listed spells to your spells prepared.",
-				{
-					"type": "table",
-					"caption": "Order Domain Spells",
-					"colLabels": [
-						"Cleric Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell command}, {@spell heroism}"
-						],
-						[
-							"3rd",
-							"{@spell hold person}, {@spell zone of truth|MateriaSourceOfTruth}"
-						],
-						[
-							"5th",
-							"{@spell mass healing word}, {@spell slow}"
-						],
-						[
-							"7th",
-							"{@spell compulsion}, {@spell locate creature}"
-						],
-						[
-							"9th",
-							"{@spell commune}, {@spell dominate person|MateriaSourceOfTruth}"
-						]
-					]
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Cleric|MateriaSourceOfTruth|Order|MateriaSourceOfTruth|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Voice of Authority|Cleric|MateriaSourceOfTruth|Order|MateriaSourceOfTruth|1"
-				}
-			]
-		},
-		{
-			"name": "Bonus Proficiencies",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Order",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"When you choose this domain at 1st level, you gain proficiency with heavy armor. You also gain proficiency in the {@skill Intimidation} or {@skill Persuasion} skill (your choice) and can use your Wisdom modifier instead of Charisma for the chosen skill.",
-				"If you already have both of these skill proficiencies, you gain proficiency in one skill of your choice from the list of skills available to clerics at 1st level."
-			]
-		},
-		{
-			"name": "Voice of Authority",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Order",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"Starting at 1st level, you can invoke the power of law to drive an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack or unarmed strike against a creature of your choice that you can see.",
-				"If the spell targets more than one ally, you choose the ally who can make the attack.",
-				"Starting at 6th level, when an ally makes an attack with a reaction granted by your Voice of Authority, you may make a single weapon attack with a weapon you are holding or an unarmed strike as a part of any action you take until the end of your next turn."
-			]
-		},
-		{
-			"name": "Channel Divinity: Order's Demand",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Order",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 2,
-			"header": 2,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"Starting at 2nd level, you can use your Channel Divinity to exert an intimidating presence over others.",
-				"As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be {@condition charmed} by you until the end of your next turn or until the {@condition charmed} creature takes any damage. A creature {@condition charmed} in this way is friendly to you and other creatures of your choice. You can also cause any of the {@condition charmed} creatures to drop what they are holding when they fail the saving throw.",
-				"For each creature you charm with this Channel Divinity up to your Wisdom modifier (minimum of 1), you can make one weapon attack or unarmed strike as a bonus action.  This benefit lasts until you finish a short or long rest."
-
-			]
-		},
-		{
-			"name": "Embodiment of the Law",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Order",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"At 6th level, you become remarkably adept at channeling magical energy to compel others.",
-				"If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action.",
-				"After casting a spell like this, your next melee attack, ranged attack, or cleric cantrip deals bonus damage equal to half your cleric level until the start of your next turn",
-				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest, or you can expend a use ofyour Harness Divine Power to regain all expended uses of this feature."
-			]
-		},
-		{
-			"name": "Divine Empowerment",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Order",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip",
-				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} psychic damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
-			]
-		},
-		{
-			"name": "Order's Wrath",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Order",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"Starting at 17th level, enemies you designate for destruction wilt under the combined efforts of you and your allies. If you deal your Divine Empowerment damage to a creature on your turn, you can curse that creature until the start of your next turn. The next time one of your allies deals damage to the cursed creature, the target also takes {@damage 2d8} psychic damage, and the curse ends. You can curse a creature in this way only once per turn."
-			]
-		},
-		{
-			"name": "Peace Domain",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Peace",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"entries": [
-				"The balm of peace thrives at the heart of healthy communities, between friendly nations, and in the souls of the kindhearted. The gods of peace inspire people of all sorts to resolve conflict and to stand up against those forces that try to prevent peace from flourishing. See the Peace Deities table for a list of some of the gods associated with this domain.",
-				"Clerics of the Peace Domain preside over the signing of treaties, and they are often asked to arbitrate in disputes. These clerics' blessings draw people together and help them shoulder one another's burdens, and the clerics' magic aids those who are driven to fight for the way of peace.",
-				{
-					"name": "Domain Spells",
-					"type": "entries",
-					"entries": [
-						"{@i 1st-level Peace Domain feature}",
-						"You gain domain spells at the cleric levels listed in the Peace Domain Spells table. See the Divine Domain class feature for how domain spells work.",
-						{
-							"type": "table",
-							"caption": "Peace Domain Spells",
-							"colLabels": [
-								"Cleric Level",
-								"Spells"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1st",
-									"{@spell heroism}, {@spell sanctuary}"
-								],
-								[
-									"3rd",
-									"{@spell aid}, {@spell warding bond|MateriaSourceOfTruth}"
-								],
-								[
-									"5th",
-									"{@spell beacon of hope}, {@spell sending}"
-								],
-								[
-									"7th",
-									"{@spell aura of purity}, {@spell Otiluke's resilient sphere}"
-								],
-								[
-									"9th",
-									"{@spell greater restoration}, {@spell Rary's telepathic bond}"
-								]
-							]
-						}
-					]
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Implement of Peace|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Emboldening Bond|Cleric|MateriaSourceOfTruth|Peace|MateriaSourceOfTruth|1"
-				}
-			]
-		},
-		{
-			"name": "Emboldening Bond",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Peace",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"{@i 1st-level Peace Domain feature}",
-				"You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a {@dice d4} and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the {@dice d4} no more than once per turn.",
-				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-			]
-		},
-		{
-			"name": "Implement of Peace",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Peace",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"{@i 1st-level Peace Domain feature}",
-				"You gain proficiency in the {@skill Insight}, {@skill Performance}, or {@skill Persuasion} skill (your choice).  If you already have all these proficiencies, you gain proficiency in one skill of your choice from the list of skills available to clerics at 1st level."
-			]
-		},
-		{
-			"name": "Channel Divinity: Balm of Peace",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Peace",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 2,
-			"header": 2,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"{@i 2nd-level Peace Domain feature}",
-				"You can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore a number of hit points to that creature equal to twice your Wisdom modifier (minimum of 2 hit points). A creature can receive this healing only once whenever you take this action."
-			]
-		},
-		{
-			"name": "Protective Bond",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Peace",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"{@i 6th-level Peace Domain feature}",
-				"The bond you forge between people helps them protect each other. When a creature affected by your Emboldening Bond feature is about to take damage, a second bonded creature within 30 feet of the first can use its reaction to teleport to an unoccupied space within 5 feet of the first creature. The second creature then takes all the damage instead."
-			]
-		},
-		{
-			"name": "Divine Empowerment",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Peace",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
-				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} radiant damage. When you reach 14th level, the extra damage on weapon attacks increases to 2d8."
-			]
-		},
-		{
-			"name": "Expansive Bond",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Peace",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"{@i 17th-level Peace Domain feature}",
-				"The benefits of your Emboldening Bond and Protective Bond features now work when the creatures are within 60 feet of each other. Moreover, when a creature uses Protective Bond to take someone else's damage, the creature has resistance to that damage."
-			]
-		},
-		{
 			"name": "Twilight Domain",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
@@ -3398,7 +3557,7 @@
 								],
 								[
 									"3rd",
-									"{@spell moonbeam}, {@spell see invisibility}"
+									"{@spell moonbeam}, {@spell see invisibility|MateriaSourceOfTruth}"
 								],
 								[
 									"5th",
@@ -3406,7 +3565,7 @@
 								],
 								[
 									"7th",
-									"{@spell aura of life}, {@spell greater invisibility}"
+									"{@spell aura of life|MateriaSourceOfTruth}, {@spell greater invisibility|MateriaSourceOfTruth}"
 								],
 								[
 									"9th",
@@ -3525,19 +3684,19 @@
 			]
 		},
 		{
-			"name": "Forge Domain",
+			"name": "War Domain",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Forge",
+			"subclassShortName": "War",
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"entries": [
-				"The gods of the forge are patrons of artisans who work with metal, from a humble blacksmith who keeps a village in horseshoes and plow blades to the mighty elf artisan whose diamond-tipped arrows of mithral have felled demon lords. The gods of the forge teach that, with patience and hard work, even the most intractable metal can be transformed from a lump of ore to a beautifully wrought object. Clerics of these deities search for objects lost to the forces of darkness, liberate mines overrun by orcs, and uncover rare and wondrous materials necessary to create potent magic items. Followers of these gods take great pride in their work, and they are willing to craft and use heavy armor and powerful weapons to protect them.",
+				"War has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. In either case, the gods of war watch over warriors and reward them for their great deeds. The clerics of such gods excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers. Gods of war include champions of honor and chivalry as well as gods of destruction and pillage and gods of conquest and domination.  Other war gods take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.",
 				"At each indicated cleric level, add the listed spells to your spells prepared.",
 				{
 					"type": "table",
-					"caption": "Forge Domain Spells",
+					"caption": "War Domain Spells",
 					"colLabels": [
 						"Cleric Level",
 						"Spells"
@@ -3549,70 +3708,70 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell identify|MateriaSourceOfTruth}, {@spell searing smite|MateriaSourceOfTruth}"
+							"{@spell compelled duel|MateriaSourceOfTruth}, {@spell divine favor|MateriaSourceOfTruth}"
 						],
 						[
 							"3rd",
-							"{@spell heat metal}, {@spell magic weapon}"
+							"{@spell magic weapon}, {@spell spiritual weapon}"
 						],
 						[
 							"5th",
-							"{@spell elemental weapon|MateriaSourceOfTruth}, {@spell protection from energy|MateriaSourceOfTruth}"
+							"{@spell crusader's mantle}, {@spell spirit guardians}"
 						],
 						[
 							"7th",
-							"{@spell fabricate}, {@spell wall of fire}"
+							"{@spell freedom of movement}, {@spell stoneskin|MateriaSourceOfTruth}"
 						],
 						[
 							"9th",
-							"{@spell animate objects}, {@spell creation|MateriaSourceOfTruth}"
+							"{@spell circle of power}, {@spell hold monster}"
 						]
 					]
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiency|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|1"
+					"subclassFeature": "Bonus Proficiencies|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Blessing of the Forge|Cleric|MateriaSourceOfTruth|Forge|MateriaSourceOfTruth|1"
+					"subclassFeature": "War Priest|Cleric|MateriaSourceOfTruth|War|MateriaSourceOfTruth|1"
 				}
 			]
 		},
 		{
-			"name": "Blessing of the Forge",
+			"name": "Bonus Proficiencies",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Forge",
+			"subclassShortName": "War",
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"At 1st level, you gain the ability to imbue magic into a weapon, shield, or armor. At the end of a long rest, you can touch one nonmagical object that is a suit of armor, shield, or a simple or martial weapon. Until the end of your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it's armor or a shield or a +1 bonus to attack and damage rolls if it's a weapon.",
-				"Alternatively, you can use your Harness Divine Power to imbue magic into a weapon, shield or armor in the same way during a short rest",
-				"Once you use this feature, you can't use it again until you finish a long rest."
+				"At 1st level, you gain proficiency with martial weapons and heavy armor."
 			]
 		},
 		{
-			"name": "Bonus Proficiency",
+			"name": "War Priest",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Forge",
+			"subclassShortName": "War",
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"When you choose this domain at 1st level, you gain proficiency with heavy armor and {@item smith's tools|phb}.  You learn the {@spell mending} cantrip which does not count against the number of cleric cantrips you know."
+                "From 1st level, you can perform the somatic components of spells even when you have weapons or a shield in one or both hands.",
+                "Additionally, when you use the {@action Attack} action or cast a cleric spell that uses your action, you can make one weapon attack as a bonus action.",
+                "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
 			]
 		},
 		{
-			"name": "Channel Divinity: Artisan's Blessing",
+			"name": "Channel Divinity: Guided Strike",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Forge",
+			"subclassShortName": "War",
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 2,
 			"header": 2,
@@ -3620,31 +3779,22 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Starting at 2nd level, you can use your Channel Divinity to create simple items.",
-				"You conduct an hour-long ritual that crafts a nonmagical item that must include some metal: a simple or martial weapon, a suit of armor, ten pieces of ammunition, a set of tools, or another metal object (see chapter 5, \"Equipment,\" in the Player's Handbook for examples of these items). The creation is completed at the end of the hour, coalescing in an unoccupied space of your choice on a surface within 5 feet of you.",
-				"The thing you create can be something that is worth no more than 100 gp. As part of this ritual, you must lay out metal, which can include coins, with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual's end, magically forming even nonmetal parts of the creation.",
-				"The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual."
+				"Starting at 2nd level, you can use your Channel Divinity to strike with supernatural accuracy. When a creature (including yourself) within 30 feet of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
 			]
 		},
 		{
-			"name": "Soul of the Forge",
+			"name": "War God's Blessing",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Forge",
+			"subclassShortName": "War",
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, your mastery of the forge grants you special abilities:",
-				{
-					"type": "list",
-					"items": [
-						"You gain resistance to fire damage.",
-						"While wearing heavy armor, you gain a +1 bonus to AC.",
-						"Your {@spell mending} cantrip now has a casting time of one action.  Additionally, constructs or objects that have more than 0 hit points can spend up to your Wisdom modifier (minimum of 1) Hit Dice to regain hit points when they are the target of your {@spell mending} cantrip.  If the target does not normally have Hit Dice, they instead regain 1 hit point."
-					]
-				}
+				"At 6th level, when you cast a cleric spell of 1st level or higher with a casting time of one action or less, you may immediately make a single weapon attack with a weapon you are holding or unarmed strike as a part of that same action or bonusaction against a target within range of your weapon or unarmed strike.",
+				"Starting at 14th level, you may immediately make a single weapon attack with a weapon you are holding or unarmed strike as part of the same action or bonus action against a target within range of your weapon or unarmed strike with a cleric cantrip with a casting time of one action or less.",
+				"Alternatively, you can use your Harness Divine Power to regain all expended uses of your War Priest feature."
 			]
 		},
 		{
@@ -3652,177 +3802,27 @@
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Forge",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip",
-				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} fire damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
-			]
-		},
-		{
-			"name": "Saint of Forge and Fire",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Forge",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"At 17th level, your blessed affinity with fire and metal becomes more powerful:",
-				{
-					"type": "list",
-					"items": [
-						"You gain immunity to fire damage",
-						"You ignore the penalties to all d20 rolls and save DCs you cause as a result of being {@condition exhausted}",
-						"You have resistance to bludgeoning, piercing, and slashing damage."
-					]
-				}
-			]
-		},
-		{
-			"name": "Grave Domain",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Grave",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"entries": [
-				"Gods of the grave watch over the line between life and death. To these deities, death and the afterlife are a foundational part of the multiverse. To desecrate the peace of the dead is an abomination. Deities of the grave include {@deity Kelemvor}, {@deity Wee Jas|Greyhawk}, the ancestral spirits of {@deity the Undying Court|Eberron}, {@deity Hades|Greek}, {@deity Anubis|Egyptian}, and {@deity Osiris|Egyptian}. Followers of these deities seek to put wandering spirits to rest, destroy the undead, and ease the suffering of the dying. Their magic also allows them to stave off death for a time, particularly for a person who still has some great work to accomplish in the world. This is a delay of death, not a denial of it, for death will eventually get its due.",
-				{
-					"type": "table",
-					"caption": "Grave Domain Spells",
-					"colLabels": [
-						"Cleric Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell bane}, {@spell false life}"
-						],
-						[
-							"3rd",
-							"{@spell gentle repose|MateriaSourceOfTruth}, {@spell ray of enfeeblement|MateriaSourceOfTruth}"
-						],
-						[
-							"5th",
-							"{@spell revivify}, {@spell vampiric touch|MateriaSourceOfTruth}"
-						],
-						[
-							"7th",
-							"{@spell blight|MateriaSourceOfTruth}, {@spell death ward|MateriaSourceOfTruth}"
-						],
-						[
-							"9th",
-							"{@spell antilife shell}, {@spell raise dead}"
-						]
-					]
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Circle of Mortality|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Eyes of the Grave|Cleric|MateriaSourceOfTruth|Grave|MateriaSourceOfTruth|1"
-				}
-			]
-		},
-		{
-			"name": "Circle of Mortality",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Grave",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"At 1st level, you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use the highest number possible for each die.",
-				"In addition, you learn the {@spell spare the dying} cantrip, which doesn't count against the number of cleric cantrips you know. For you, it has a range of 30 feet, and you can cast it as a bonus action."
-			]
-		},
-		{
-			"name": "Eyes of the Grave",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Grave",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"At 1st level, you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you are able to see {@condition invisible} undead and you know the location of any undead within 60 feet of you even through total cover, and that is not protected from divination magic. This sense doesn't tell you anything about a creature's capabilities or identity.",
-				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
-			]
-		},
-		{
-			"name": "Channel Divinity: Path to the Grave",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Grave",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 2,
-			"header": 2,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"Starting at 2nd level, you can use your Channel Divinity to mark another creature's life force for termination.",
-				"As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your next turn. The next time you or an ally of yours deals damage to the cursed creature, the creature has vulnerability to all of the source's damage, and then the curse ends.",
-				"If the creature has immunity to the damage type, then it is treated as having resistance instead."
-			]
-		},
-		{
-			"name": "Sentinel at Death's Door",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Grave",
-			"subclassSource": "MateriaSourceOfTruth",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"At 6th level, you gain the ability to impede death's progress.  When you cast your {@spell spare the dying} cantrip on a creature, they can spend a number of Hit Dice equal to your Wisdom modifier (minimum of 1) to regain hit points and are no longer {@condition unconscious}.",
-				"Additionally, As a reaction when you or a creature you can see within 30 feet of you suffers a critical hit, you can turn that hit into a normal hit. Any effects triggered by a critical hit are canceled.",
-				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.",
-				"Alternatively, you can use your Harness Divine Power to regain all expended uses of your Sentinel at Death's Door feature."
-			]
-		},
-		{
-			"name": "Divine Empowerment",
-			"source": "MateriaSourceOfTruth",
-			"className": "Cleric",
-			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Grave",
+			"subclassShortName": "War",
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 8,
 			"header": 2,
 			"entries": [
 				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.",
-				"Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} necrotic damage.  When you reach 14th level, the extra damage on weapon attacks increases to {@damage 2d8}. "
+                "Alternatively, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to {@damage 2d8}."
 			]
 		},
 		{
-			"name": "Keeper of Souls",
+			"name": "Avatar of Battle",
 			"source": "MateriaSourceOfTruth",
 			"className": "Cleric",
 			"classSource": "MateriaSourceOfTruth",
-			"subclassShortName": "Grave",
+			"subclassShortName": "War",
 			"subclassSource": "MateriaSourceOfTruth",
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you can seize a trace of vitality from a parting soul and use it to heal the living. When an enemy you can see dies within 60 feet of you, you or one creature of your choice that is within 60 feet of you regains hit points equal to the enemy's number of Hit Dice.  If the enemy has more than 10 Hit Dice, then you can also end one condition on the chosen creature. You can use this feature only if you aren't {@condition incapacitated}. Once you use it, you can't do so again until the start of your next turn."
+				"At 17th level, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.",
+                "Additionally, whenever you maintain concentration on a Cleric spell of 1st level or higher you are resistant to bludgeoning, piercing and slashing damage and gain temporary hit points equal to the spell's level plus your Wisdom modifier (minimum of 1) at the start of each turn while you maintain concentration."
 			]
 		}
 	]
