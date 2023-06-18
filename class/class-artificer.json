@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 1659566259,
-        "dateLastModified": 1686965536
+        "dateLastModified": 1687120703
 	},
 	"class": [
 		{
@@ -727,7 +727,6 @@
 			],
 			"subclassFeatures": [
 				"Artillerist|Artificer|MateriaSourceOfTruth|Artillerist|MateriaSourceOfTruth|3",
-				"Artillerist Spells|Artificer|MateriaSourceOfTruth|Artillerist|MateriaSourceOfTruth|3",
 				"Arcane Firearm|Artificer|MateriaSourceOfTruth|Artillerist|MateriaSourceOfTruth|5",
 				"Upgraded Cannon|Artificer|MateriaSourceOfTruth|Artillerist|MateriaSourceOfTruth|9",
 				"Fortified Position|Artificer|MateriaSourceOfTruth|Artillerist|MateriaSourceOfTruth|15"
@@ -808,7 +807,7 @@
 					"name": "Tools Required",
 					"entries": [
 						"You produce your artificer spell effects through your tools. You must have a spellcasting focus\u2014specifically {@item thieves' tools|phb} or some kind of {@item artisan's tools|phb|artisan's tool}\u2014in hand when you cast any spell with this Spellcasting feature (meaning the spell has an 'M' component when you cast it). You must be proficient with the tool to use it in this way. See {@book chapter 5|PHB|4}, \"Equipment,\" in the {@book Player's Handbook|PHB} for descriptions of these tools.",
-						"After you gain the Infuse Item feature at 2nd level, you can also use any item bearing one of your infusions as a spellcasting focus.",
+						"After you gain the {@i Infuse Item} feature at 2nd level, you can also use any item bearing one of your infusions as a spellcasting focus.",
 						{
 							"type": "inset",
 							"name": "The Magic of Artifice",
@@ -1270,9 +1269,9 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you select this specialty at 3rd level, you gain proficiency with alchemist's supplies.  If you already have this proficiency, you gain proficiency with one other type of artisan's tool of your choice.",
-				"Additionally, you can craft an Alchemist's Satchel, a bag of reagents that you use to create a variety of concoctions.  The bag and its contents are both magical, and this magic allows you to pull out exactly the right materials you need for your Alchemical Formula options, described below.  After you use one of those options, the bag reclaims the materials.  If you lose this satchel, you can create a new one over the course of a long rest, requiring 4 hours of work and expending 50gp worth of leather, glass, and other raw materials.",
-				"The Alchemist's Satchel is considered alchemist's supplies, component pouch, healer's kit, herbalism kit, and poisoner's kit all in one.  After you complete a long rest with your Alchemist's Satchel it regains your proficiency bonus number of charges for the purpose of functioning as a healer's kit."
+				"When you select this specialty at 3rd level, you gain proficiency with {@item alchemist's supplies|phb}.  If you already have this proficiency, you gain proficiency with one other type of artisan's tool of your choice.",
+				"Additionally, you can craft an {@i Alchemist's Satchel}, a bag of reagents that you use to create a variety of concoctions.  The bag and its contents are both magical, and this magic allows you to pull out exactly the right materials you need for your Alchemical Formula options, described below.  After you use one of those options, the bag reclaims the materials.  If you lose this satchel, you can create a new one over the course of a long rest, requiring 4 hours of work and expending 50gp worth of leather, glass, and other raw materials.",
+				"The {@i Alchemist's Satchel} is considered alchemist's supplies, component pouch, healer's kit, herbalism kit, and poisoner's kit all in one.  After you complete a long rest with your {@i Alchemist's Satchel} it regains your proficiency bonus number of charges for the purpose of functioning as a healer's kit."
 			]
 		},
 		{
@@ -1285,12 +1284,12 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd levl, you learn three Alchemical Formula options of your choice.  You learn an additional formula of your choice at 5th, 9th, and 15th levels.  Youc an use this feature a number of times equal to twice your intelligence modifier (minimum of 2), and you regain all expended uses when you finish a short or long rest.",
-				"Starting at 20th level, you know all the Alchemical Formula options.",
-				"You can replace one of your chosen formulas when you complete a long rest with your Alchemist's Satchel on you.",
+				"At 3rd levl, you learn three {@i Alchemical Formula} options of your choice.  You learn an additional formula of your choice at 5th, 9th, and 15th levels.  Youc an use this feature a number of times equal to twice your intelligence modifier (minimum of 2), and you regain all expended uses when you finish a short or long rest.",
+				"Starting at 20th level, you know all the {@i Alchemical Formula} options.",
+				"You can replace one of your chosen formulas when you complete a long rest with your {@i Alchemist's Satchel} on you.",
 				"You are proficient with {@filter Adventuring Gear|items|type=adventuring gear} that is treated as an improvised weapon such as {@item Acid (vial)|phb} or {@item Alchemist's Fire (flask)|phb} (or more at your DM's discretion).",
-				"Only you can use any of these options, unless stated otherwise, as the formulas react to your specific magical influence to activate the concoctions and you must have your Alchemist's Satchel within reach.  If you draw a concoction from your satchel and do not use it as part of the action, the contents disappear if you do not hurl it by the end of the current turn, and a use of this feature is expended.",
-				"If an Alchemical Formula options requires a saving throw, the DC is calculated as follows:",
+				"Only you can use any of these options, unless stated otherwise, as the formulas react to your specific magical influence to activate the concoctions and you must have your {@i Alchemist's Satchel} within reach.  If you draw a concoction from your satchel and do not use it as part of the action, the contents disappear if you do not hurl it by the end of the current turn, and a use of this feature is expended.",
+				"If an {@i Alchemical Formula} options requires a saving throw, the DC is calculated as follows:",
 				{
 					"type": "abilityDc",
 					"name": "Alchemical Formula",
@@ -1305,84 +1304,84 @@
 							"type": "entries",
 							"name": "Alchemical Acid",
 							"entries": [
-								"As an action, you can reach into your Alchemist's Satchel, pull out a vial of acid, and hurl the vial at a creature or object within 30 feet of you.  The vial shatters on impact.  A creature must succeed on a Dexterity saving throw or take a number of d6 equal to your proficiency bonus in acid damage.  An object automatically takes the damage, and the damage is maximized plus your artificer level."
+								"As an action, you can reach into your {@i Alchemist's Satchel}, pull out a vial of acid, and hurl the vial at a creature or object within 30 feet of you.  The vial shatters on impact.  A creature must succeed on a Dexterity saving throw or take a number of d6 equal to your proficiency bonus in acid damage.  An object automatically takes the damage, and the damage is maximized plus your artificer level."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Alchemical Fire",
 							"entries": [
-								"As an action, you can reach into your Alchemist's Satchel, pull out a vial of volatile liquid, and hurl the vial at a creature, object, or surface within 30 feet of you.  On impact, the vial detonates in a 5-foot radius.  Any creature in that area must succeed on a Dexterity saving throw or take a number of d6 equal to your proficiency bonus in fire damage."
+								"As an action, you can reach into your {@i Alchemist's Satchel}, pull out a vial of volatile liquid, and hurl the vial at a creature, object, or surface within 30 feet of you.  On impact, the vial detonates in a 5-foot radius.  Any creature in that area must succeed on a Dexterity saving throw or take a number of d6 equal to your proficiency bonus in fire damage."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Flash Bang",
 							"entries": [
-								"As an action, you can reach into your Alchemist's Satchel and pull out a tiny clay vessel filled with explosive flash powder, and hurl it at a point on the ground within 30 feet of you.  The pot explodes on impact, producing a bright flash.  Each creature within ten feet of the point of impact must succeed on a Constitution saving throw or become {@condition blinded}, {@condition dazed|MateriaSourceOfTruth}, and {@condition deafened} until the end of your next turn."
+								"As an action, you can reach into your {@i Alchemist's Satchel} and pull out a tiny clay vessel filled with explosive flash powder, and hurl it at a point on the ground within 30 feet of you.  The pot explodes on impact, producing a bright flash.  Each creature within ten feet of the point of impact must succeed on a Constitution saving throw or become {@condition blinded}, {@condition dazed|MateriaSourceOfTruth}, and {@condition deafened} until the end of your next turn."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Healing Draught",
 							"entries": [
-								"As a bonus action, you can reach into your Alchemist's Satchel and pull out a vial of vibrant healing liquid.  A creature of your choice can drink it as a bonus action to allow them to expend a number of Hit Dice up to your proficiency bonus to regain hit points.  The creature must be within your reach to be given the vial.  You can drink the vial as part of the same bonus action used to pull the vial out.  Once consumed, the vial then disappears.  If not used, the vial and its contents disappear after 1 hour.  While the vial exists, you cannot use this formula."
+								"As a bonus action, you can reach into your {@i Alchemist's Satchel} and pull out a vial of vibrant healing liquid.  A creature of your choice can drink it as a bonus action to allow them to expend a number of Hit Dice up to your proficiency bonus to regain hit points.  The creature must be within your reach to be given the vial.  You can drink the vial as part of the same bonus action used to pull the vial out.  Once consumed, the vial then disappears.  If not used, the vial and its contents disappear after 1 hour.  While the vial exists, you cannot use this formula."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Malific Catalyst",
 							"entries": [
-								"As an action, you can reach into your Alchemist's Satchel and pull out a flask of bubbling dark liquid, and hurl it at a creature within 30 feet of you.  The creature takes a number of d6 equal to your proficiency bonus in necrotic damage for each melee or ranged attack it makes beyond the first during a turn."
+								"As an action, you can reach into your {@i Alchemist's Satchel} and pull out a flask of bubbling dark liquid, and hurl it at a creature within 30 feet of you.  The creature takes a number of d6 equal to your proficiency bonus in necrotic damage for each melee or ranged attack it makes beyond the first during a turn."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Noxious Fumes",
 							"entries": [
-								"As an action, you can reach into your Alchemist's Satchel and pull out a glass vial of greenish-brown fluid and hurl it at a point on the ground within 30 feet of you.  The vial shatters on impact, producing a cloud of poisonous fumes.  Each creature wihtin 15 feet of the point of impact must succeed on a Constitution saving throw or become {@condition poisoned} until the end of your next turn."
+								"As an action, you can reach into your {@i Alchemist's Satchel} and pull out a glass vial of greenish-brown fluid and hurl it at a point on the ground within 30 feet of you.  The vial shatters on impact, producing a cloud of poisonous fumes.  Each creature wihtin 15 feet of the point of impact must succeed on a Constitution saving throw or become {@condition poisoned} until the end of your next turn."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Smoke Stick",
 							"entries": [
-								"As an action, you can reach into your Alchemist's Satchel and pull out a stick that produces a thick plume of smoke.  You can hold onto the stick or throw it to a point up to 30 feet away as part of the action used to produce it.  The area in a 10-foot radius around the stick is filled with thick smoke that blocks vision, including darkvision.  The stick and smoke persist for 1 minute and then disappear.  Even strong winds will not disperse the smoke."
+								"As an action, you can reach into your {@i Alchemist's Satchel} and pull out a stick that produces a thick plume of smoke.  You can hold onto the stick or throw it to a point up to 30 feet away as part of the action used to produce it.  The area in a 10-foot radius around the stick is filled with thick smoke that blocks vision, including darkvision.  The stick and smoke persist for 1 minute and then disappear.  Even strong winds will not disperse the smoke."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Stunning Powder",
 							"entries": [
-								"As an action, you can reach into your Alchemist's Satchel and pull out a pouch of fine powder, and fling it in a direction you choose.  The contents spill forth, producing a spray of fine powder.  Each creature within a 15-foot cone in front of you must succeed on a Constitution saving throw or become {@condition stunned} until the end of your next turn."
+								"As an action, you can reach into your {@i Alchemist's Satchel} and pull out a pouch of fine powder, and fling it in a direction you choose.  The contents spill forth, producing a spray of fine powder.  Each creature within a 15-foot cone in front of you must succeed on a Constitution saving throw or become {@condition stunned} until the end of your next turn."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Swift Step Draught",
 							"entries": [
-								"As a bonus action, you can reach into your Alchemist's Satchel and pull out a vial filled with a bubbling, colorful liquid.  A creature of your choice can drink it as a bonus action.  You can drink the vial as part of the same bonus action used to pull the vial out.  Drinking this increases the creature's speed by a number of feet equal to 5 times your proficiency bonus for 1 minute, and the vial disappears.  If not used, the vial and its contents disappear after 1 hour.  While the vial exists, you cannot use this formula."
+								"As a bonus action, you can reach into your {@i Alchemist's Satchel} and pull out a vial filled with a bubbling, colorful liquid.  A creature of your choice can drink it as a bonus action.  You can drink the vial as part of the same bonus action used to pull the vial out.  Drinking this increases the creature's speed by a number of feet equal to 5 times your proficiency bonus for 1 minute, and the vial disappears.  If not used, the vial and its contents disappear after 1 hour.  While the vial exists, you cannot use this formula."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Tanglefoot Bag",
 							"entries": [
-								"As an action, you can reach into your Alchemist's Satchel and pull out a bag filled with writhing, sticky black tar and hurl it at a point on the ground within 30 feet of you.  The bag bursts on impact and covers the ground in a 5-foot radius with sticky goo.  That area becomes difficult terrain for 1 minute, and any creature that enters the area for the first time on a turn or starts its turn on the ground in that area has its speed halved for that turn, and if the creature is Huge or smaller is unable to take the {@action Dash}, {@action Disengage}, or {@action Dodge} action.  If a creature was already taking the Dash, Disengage, or Dodge action they immediately stop doing so."
+								"As an action, you can reach into your {@i Alchemist's Satchel} and pull out a bag filled with writhing, sticky black tar and hurl it at a point on the ground within 30 feet of you.  The bag bursts on impact and covers the ground in a 5-foot radius with sticky goo.  That area becomes difficult terrain for 1 minute, and any creature that enters the area for the first time on a turn or starts its turn on the ground in that area has its speed halved for that turn, and if the creature is Huge or smaller is unable to take the {@action Dash}, {@action Disengage}, or {@action Dodge} action.  If a creature was already taking the Dash, Disengage, or Dodge action they immediately stop doing so."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Tracking Brew",
 							"entries": [
-								"As an action, you can reach into your Alchemist's Satchel and pullout a flask of neon colored brew, and hurl it at a creature or object within 30 feet of you. The flask shatters on impact. You always know the direction to the target of the brew as long as it is on the same plane as you. Creatures within 30 feet of the target ignore the {@condition invisible} condition affecting it. This effect lasts until you dismiss it (no action required) or until you use this brew on another creature or object. Your effect can be dispelled with {@spell dispel magic}, and is treated as a spell with a level equal to half your artificer level (maximum 9th level)."
+								"As an action, you can reach into your {@i Alchemist's Satchel} and pullout a flask of neon colored brew, and hurl it at a creature or object within 30 feet of you. The flask shatters on impact. You always know the direction to the target of the brew as long as it is on the same plane as you. Creatures within 30 feet of the target ignore the {@condition invisible} condition affecting it. This effect lasts until you dismiss it (no action required) or until you use this brew on another creature or object. Your effect can be dispelled with {@spell dispel magic}, and is treated as a spell with a level equal to half your artificer level (maximum 9th level)."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Thunderstone",
 							"entries": [
-								"As an action, you can reach into your Alchemist's Satchel and pull out a crystalline shard and hurl it at a creature, object, or surface within 30 feet of you. The shard shatters on impact with a blast of concussive energy. Each creature of huge size or smaller within 10 feet of the point of impact must succeed on a Constitution saving throw or be knocked {@condition prone|MateriaSourceOfTruth} and pushed 10 feet away from that point if they are Huge or Large; pushed 15 feet away if they are Medium or smaller"
+								"As an action, you can reach into your {@i Alchemist's Satchel} and pull out a crystalline shard and hurl it at a creature, object, or surface within 30 feet of you. The shard shatters on impact with a blast of concussive energy. Each creature of huge size or smaller within 10 feet of the point of impact must succeed on a Constitution saving throw or be knocked {@condition prone|MateriaSourceOfTruth} and pushed 10 feet away from that point if they are Huge or Large; pushed 15 feet away if they are Medium or smaller"
 							]
 						}
 					]
@@ -1399,7 +1398,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
-				"By 5th level, while you have your Alchemist's Satchel within reach, you are able to improve the properties of various potions during a short or long rest.  You are able to add potent reagents to a number of potions equal to your Intelligence modifier (minimum of 1), you regain all expended uses when you finish a long rest.  For more information on creating potions see Chapter 2: Downtime Revisited in Xanathar's Guide to Everything.  Potions gain the following benefits:",
+				"By 5th level, while you have your {@i Alchemist's Satchel} within reach, you are able to improve the properties of various potions during a short or long rest.  You are able to add potent reagents to a number of potions equal to your Intelligence modifier (minimum of 1), you regain all expended uses when you finish a long rest.  For more information on creating potions see {@book chapter 2|XGE|2}, \"Downtime Revisited,\" in the {@book Xanathar's Guide to Everything|XGE}. Potions gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -1422,7 +1421,7 @@
 			"header": 2,
 			"entries": [
 				"Starting at 9th level, when you cast a cantrip with your action, you can use one of your Alchemical Formulas as a bonus action.",
-				"Additionally, you can cast {@spell lesser restoration|MateriaSourceOfTruth} without expending a spell slot and without preparing the spell, provided you use an Alchemist's Satchel within reach.  Your {@spell lesser restoration|MateriaSourceOfTruth} adds the {@condition charmed}, {@condition frightened}, or {@condition weakened|MateriaSourceOfTruth} condition as one condition that can end.  You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+				"Additionally, you can cast {@spell lesser restoration|MateriaSourceOfTruth} without expending a spell slot and without preparing the spell, provided you use an {@i Alchemist's Satchel} within reach.  Your {@spell lesser restoration|MateriaSourceOfTruth} adds the {@condition charmed}, {@condition frightened}, or {@condition weakened|MateriaSourceOfTruth} condition as one condition that can end.  You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			]
 		},
 		{
@@ -1435,8 +1434,8 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Upon reaching 15th level, when a creature you can see or hear within 30 feet of you consumes or makes a saving throw against one of your Alchemical Formulas or consumes one of your Potent Potions, you can use your reaction to cause an additional effect.  See the list of possible effects below.",
-				"Once you have taken this reaction, you cannot use it again until you finish a short or long rest, unless you expend a use of your Flash of Genius to take it again.",
+				"Upon reaching 15th level, when a creature you can see or hear within 30 feet of you consumes or makes a saving throw against one of your {@i Alchemical Formulas} or consumes one of your {@i Potent Potions}, you can use your reaction to cause an additional effect.  See the list of possible effects below.",
+				"Once you have taken this reaction, you cannot use it again until you finish a short or long rest, unless you expend a use of your {@i Flash of Genius} to take it again.",
 				{
 					"type": "list",
 					"items": [
@@ -1444,21 +1443,21 @@
 							"type": "entries",
 							"name": "Bombs and Grenades",
 							"entries": [
-								"When a creature succeeds its saving throw against one of your Alchemical Formulas, it must reroll the saving throw at disadvantage and take the new result."
+								"When a creature succeeds its saving throw against one of your {@i Alchemical Formulas}, it must reroll the saving throw at disadvantage and take the new result."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Catalytic Cocktail",
 							"entries": [
-								"When a creature consumes one of your Alchemical Formulas or Potent Potions their attack rolls score a critical hit on a roll of 19 or 20; or further increase your critical range by 1 for 1 minute.  Furthermore, they can roll one additional damage die when determining the extra damage for a critical hit."
+								"When a creature consumes one of your {@i Alchemical Formulas} or {@i Potent Potions} their attack rolls score a critical hit on a roll of 19 or 20; or further increase your critical range by 1 for 1 minute.  Furthermore, they can roll one additional damage die when determining the extra damage for a critical hit."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Chemical Rage",
 							"entries": [
-								"When a creature consumes one of your Alchemical Formulas or Potent Potions they gain resistance to bludgeoning, piercing, poison, and slashing damage and gains an additional action on each of its turns for 1 minute.  That action can be used only to take the {@action Attack} (one weapon attack only), {@action Dash}, {@action Disengage}, {@action Hide}, or {@action Use an Object} action.",
+								"When a creature consumes one of your {@i Alchemical Formulas} or {@i Potent Potions} they gain resistance to bludgeoning, piercing, poison, and slashing damage and gains an additional action on each of its turns for 1 minute.  That action can be used only to take the {@action Attack} (one weapon attack only), {@action Dash}, {@action Disengage}, {@action Hide}, or {@action Use an Object} action.",
 								"While under this effect the creature has disadvantage on all Constitution saving throws made to maintain concentration on a spell."
 							]
 						},
@@ -1466,7 +1465,7 @@
 							"type": "entries",
 							"name": "Stimpack",
 							"entries": [
-								"When a creature consumes one of your Alchemical Formulas or Potent Potions their movement speed is increased by a number of feet equal to 5 times your Intelligence modifier (minimum of 1) and they gain a bonus to all saving throws equal to your Intelligence modifier (minimum of 1) for 1 minute."
+								"When a creature consumes one of your {@i Alchemical Formulas} or {@i Potent Potions} their movement speed is increased by a number of feet equal to 5 times your Intelligence modifier (minimum of 1) and they gain a bonus to all saving throws equal to your Intelligence modifier (minimum of 1) for 1 minute."
 							]
 						}
 					]
@@ -1560,7 +1559,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Armorer feature}",
-				"Your metallurgical pursuits have led to you making armor a conduit for your magic. As an action, you can turn a suit of armor you are wearing into Arcane Armor, provided you have {@item smith's tools|PHB} in hand.",
+				"Your metallurgical pursuits have led to you making armor a conduit for your magic. As an action, you can turn a suit of armor you are wearing into {@i Arcane Armor}, provided you have {@item smith's tools|PHB} in hand.",
 				"You gain the following benefits while wearing this armor:",
 				{
 					"type": "list",
@@ -1572,7 +1571,7 @@
 						"You can doff or don the armor as an action." 
 					]
 				},
-				"The armor continues to be Arcane Armor until you don another suit of armor or you die."
+				"The armor continues to be {@i Arcane Armor} until you don another suit of armor or you die."
 			]
 		},
 		{
@@ -1586,7 +1585,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Armorer feature}",
-				"You can customize your Arcane Armor. When you do so, choose one of the following armor models: Guardian or Infiltrator. The model you choose gives you special benefits while you wear it.",
+				"You can customize your {@i Arcane Armor}. When you do so, choose one of the following armor models: Guardian or Infiltrator. The model you choose gives you special benefits while you wear it.",
 				"Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls.  Your special weapon attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
 				"You can change the armor's model whenever you finish a short or long rest, provided you have {@item smith's tools|PHB} in hand.",
 				{
@@ -1763,8 +1762,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 9th-level Armorer feature}",
-				"You learn how to use your artificer infusions to specially modify your Arcane Armor. That armor now counts as separate items for the purposes of your Infuse Items feature: armor (the chest piece), boots, helmet, and the armor's special weapon. Each of those items can bear one of your infusions, and the infusions transfer over if you change your armor's model with the Armor Model feature. In addition, the maximum number of items you can infuse at once increases by half your proficiency bonus (rounded up), but those extra items must be part of your Arcane Armor.",
-				"Additionally, your Arcane Armor's Power Gauntlets special weapon can use the magical properties of melee weapons that you are attuned to, and your Flux Launcher special weapon can use the magical properties of ranged or throwing weapons that you are attuned to."
+				"You learn how to use your artificer infusions to specially modify your {@i Arcane Armor}. That armor now counts as separate items for the purposes of your Infuse Items feature: armor (the chest piece), boots, helmet, and the armor's special weapon. Each of those items can bear one of your infusions, and the infusions transfer over if you change your armor's model with the Armor Model feature. In addition, the maximum number of items you can infuse at once increases by half your proficiency bonus (rounded up), but those extra items must be part of your {@i Arcane Armor}.",
+				"Additionally, your {@i Arcane Armor}'s {@i Power Gauntlets} special weapon can use the magical properties of melee weapons that you are attuned to, and your {@i Flux Launcher} special weapon can use the magical properties of ranged or throwing weapons that you are attuned to."
 			]
 		},
 		{
@@ -1778,7 +1777,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Armorer feature}",
-				"Your Arcane Armor gains additional benefits based on its model, as shown below.",
+				"Your {@i Arcane Armor} gains additional benefits based on its model, as shown below.",
 				{
 					"type": "entries",
 					"name": "Guardian",
@@ -1791,7 +1790,7 @@
 					"type": "entries",
 					"name": "Infiltrator",
 					"entries": [
-						"Any creature that takes lightning damage from your Flux Launcher glimmers with magical light until the start of your next turn. The glimmering creature sheds dim light in a 5-foot radius, and it has disadvantage on attack rolls against you, as the light jolts it if it attacks you. In addition, the next attack roll against it has advantage, and if that attack hits, the target takes an extra die of damage based on the attack."
+						"Any creature that takes lightning damage from your {@i Flux Launcher} glimmers with magical light until the start of your next turn. The glimmering creature sheds dim light in a 5-foot radius, and it has disadvantage on attack rolls against you, as the light jolts it if it attacks you. In addition, the next attack roll against it has advantage, and if that attack hits, the target takes an extra die of damage based on the attack."
 					]
 				}
 			]
@@ -1830,7 +1829,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Artillerist Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.",
+				"Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the {@i Artillerist Spells} table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.",
 				{
 					"type": "table",
 					"caption": "Artillerist Spells",
@@ -1861,7 +1860,7 @@
 						],
 						[
 							"17th",
-							"{@spell cone of cold|MateriaSourceOfTruth}, {@spell wall of force|MateriaSourceOfTruth}"
+							"{@spell destructive wave|MateriaSourceOfTruth}, {@spell wall of force|MateriaSourceOfTruth}"
 						]
 					]
 				}
@@ -1880,7 +1879,7 @@
 				"At 3rd level, you learn how to create a magical cannon. Using {@item woodcarver's tools|PHB} or {@item smith's tools|PHB}, you can take an action to magically create a Small or Tiny eldritch cannon in an unoccupied space on a horizontal surface within 5 feet of you. A Small eldritch cannon occupies its space, and a Tiny one can be held in one hand (or potentially mounted on the forearm or shoulder).",
 				"Once you create a cannon, you can't do so again until you finish a long rest or until you expend a spell slot of 1st level or higher. You can have only one cannon at a time and can't create one while your cannon is present.",
 				"The cannon is a magical object. Regardless of size, the cannon has an AC of 18 and a number of hit points equal to five times your artificer level. It is immune to poison damage and psychic damage, and all conditions. If it is forced to make an ability check or a saving throw, treat all its ability scores as 10 (+0). If the {@spell mending} spell is cast on it, it regains {@dice 2d6} + its creator's proficiency bonus hit points. It disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action.",
-				"When you create the cannon, you determine its appearance and whether it has legs. You also decide which type it is, choosing from the options on the Eldritch Cannons table. On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs.",
+				"When you create the cannon, you determine its appearance and whether it has legs. You also decide which type it is, choosing from the options on the {@i Eldritch Cannons} table. On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs.",
 				{
 					"type": "table",
 					"caption": "Eldritch Cannons",
@@ -1895,7 +1894,7 @@
 					"rows": [
 						[
 							"Arcane Screamer",
-							"The cannon exhales your choice of fire, lightning, necrotic, radiant, or thunder damage in an adjacent 15-foot cone or 5 by 30-foot line on each of its turns.  Each creature in that area must make a Dexterity saving throw against your spell save DC, taking {@dice 2d8} + your Intelligence modifier damage of the chosen type on a failed save or half as much on a successful save.  If the damage is fire, it ignites any flammable objects in the area that are not being worn or held."
+							"The cannon exhales your choice of fire, lightning, necrotic, radiant, or thunder damage in an adjacent 15-foot cone or 5 by 30-foot line on each of its turns.  Each creature in that area must make a Dexterity saving throw against your spell save DC, taking {@dice 2d8} + your Intelligence modifier damage of the chosen type on a failed save or half as much on a successful save.  If the damage is fire, it ignites any flammable objects in the area that are not being worn or carried."
 						],
 						[
 							"Force Ballista",
@@ -1933,7 +1932,7 @@
 			"header": 2,
 			"entries": [
 				"At 5th level, you know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a long rest, you can use {@item woodcarver's tools|PHB} to carve special sigils into a wand, staff, or rod and thereby turn it into your arcane firearm.  The sigils make the item count a a magical simple ranged weapon for you with a normal range of 150 feet and a long range of 600 feet, and it deals {@damage 1d8} plus your Intelligence modifier force, piercing, or thunder damage (your choice when carving the special sigils). The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely.",
-				"You can use your arcane firearm as a spellcasting focus for your artificer spells. When you cast an artificer spell through the firearm, roll a {@damage d8}, and you gain a bonus to one of the spell's damage rolls equal to the number rolled.  Starting at 15th level, roll {@damage 2d8}, and at 20th level roll (@damage 3d8)."
+				"You can use your arcane firearm as a spellcasting focus for your artificer spells. When you cast an artificer spell through the firearm, roll a {@damage d8}, and you gain a bonus to one of the spell's damage rolls equal to the number rolled.  Starting at 15th level, roll {@damage 2d8}, and at 20th level roll {@damage 3d8})."
 			]
 		},
 		{
@@ -1967,13 +1966,13 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Starting at 15th level, you're a master at forming well-defended emplacements using Eldritch Cannon:",
+				"Starting at 15th level, you're a master at forming well-defended emplacements using {@i Eldritch Cannon}:",
 				{
 					"type": "list",
 					"items": [
-						"You and your allies have half cover while within 10 feet of a cannon you create with Eldritch Cannon, as a result of a shimmering field of magical protection that the cannon emits.",
+						"You and your allies have half cover while within 10 feet of a cannon you create with {@i Eldritch Cannon}, as a result of a shimmering field of magical protection that the cannon emits.",
 						"You can now have two cannons at the same time. You can create two with the same action (but not the same spell slot), and you can activate both of them with the same bonus action. You determine whether the cannons are identical to each other or different. You can't create a third cannon while you have two.",
-						"Alternatively, you can place one oversized cannon (of medium size) rather than two at the same time that functions like its smaller versions, has twice the hit points, but has a 0 movement speed and must be placed on a surface.  You must place either an Arcane Screamer or Force Ballista and you must expend a spell slot of 3rd level or higher (this does not use your free cannon placement).  This cannon always has the Protector activation.  The cannon's damage rolls and temporary hit points granted all increase by {@dice 1d8} and the areas it effects and effective ranges are doubled."
+						"Alternatively, you can place one oversized cannon (of medium size) rather than two at the same time that functions like its smaller versions, has twice the hit points, but has a 0 movement speed and must be placed on a surface.  You must place either an {@i Arcane Screamer} or {@i Force Ballista} and you must expend a spell slot of 3rd level or higher (this does not use your free cannon placement).  This cannon always has the {@i Protector} activation.  The cannon's damage rolls and temporary hit points granted all increase by {@dice 1d8} and the areas it effects and effective ranges are doubled."
 					]
 				}
 			]
