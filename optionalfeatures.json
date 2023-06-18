@@ -977,6 +977,664 @@
                 "Over the next 10 minutes, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, but as part of this invocation the corpse recognizes you as someone near and dear to it in life. This should aid you in getting less cryptic answers from it, but does not guarantee you will get the answers you seek.",
                 "This invocation does not return the creature's soul to its body, only its animating spirit. Thus, the corpse can't learn new information, does not comprehend anything that has happened since it died, and can't speculate about future events."
 			]
+		},
+		{
+			"name": "Arcane Implement",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A rod or wand"
+					]
+				}
+			],
+			"entries": [
+				"The infused rod or wand holds an artificer cantrip.  As an action, a creature can produce the imbued cantrip, using the infuser's spellcasting modifier to cast the spell"
+			]
+		},
+		{
+			"name": "Armor of Magical Strength",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A suit of armor (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"This armor has 6 charges. The wearer can expend the armor's charges in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"When the wearer makes a Strength check or a Strength saving throw, it can expend 1 charge to add a bonus to the roll equal to the infuser's Intelligence modifier.",
+						"If the creature would be knocked {@condition prone|MateriaSourceOfTruth}, it can use its reaction to expend 1 charge to avoid being knocked {@condition prone|MateriaSourceOfTruth}."
+					]
+				},
+				"The armor regains the infuser's proficiency bonus expended charges daily at dawn, up to the maximum."
+			]
+		},
+		{
+			"name": "Enhanced Instrument",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A musical instrument (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"The wielder is considered proficient with this instrument and can use it as a spellcasting focus.  Whenever they make an ability check using this instrument, they gain a bonus to the roll equal to the infuser's Intelligence modifier (minimum of +1).",
+				"While holding this item, a creature gains a +1 bonus to spell attack rolls.  In addition, the creature ignores half cover when making a spell attack.",
+				"The bonus increases to +2 when you reach 10th level in this class."
+			]
+		},
+		{
+			"name": "Featherweighting Fabric",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A belt or cloak (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"When worn, this magic belt reduces the user to one-tenth their weight without decreasing their physical abilities.",
+				"The wearer has fall damage taken reduced by 5 times the infuser's Artificer level."
+			]
+		},
+		{
+			"name": "Folding Weapon",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"A simple or martial weapon (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"This magic weapon grants a +1 bonus to attack and damage rolls made with it.",
+				"The wielder of this weapon can speak a command word as a bonus action to make the weapon magically fold in on itself and appear as a rod up to 6 inches long.",
+				"Speaking the command word again while holding the compact wewapon causes it to unfold.",
+				"A creature inspecting the compacted weapon can determine its true nature by making an Intelligence ({@skill Investigation}) check contested by your spell save DC."
+			]
+		},
+		{
+			"name": "Goggles of Clearsight",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A pair of goggles or glasses"
+					]
+				}
+			],
+			"entries": [
+				"While wearing these goggles, the wearer can see through lightly obscured areas without disadvantage on Wisdom ({@skill Perception}) checks.  In addition, the wearer no longer suffers the negative effects from {@i Sunlight Sensitivity}, and they have advantage on saving throws to resist being {@condition blinded}."
+			]
+		},
+		{
+			"name": "Homunculus Servant",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A gem or crystal worth at least 100 gp"
+					]
+				}
+			],
+			"entries": [
+				"You learn intricate methods for magically creating a special {@creature Homunculus Servant|MateriaSourceOfTruth|homunculus} that serves you. The item you infuse serves as the creature's heart, around which the creature's body instantly forms.",
+				"You determine the homunculus's appearance. Some artificers prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.",
+				"The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the {@creature Homunculus Servant|MateriaSourceOfTruth} stat block, which uses your proficiency bonus (PB) in several places.",
+				"In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition incapacitated}, the homunculus can take any action of its choice, not just {@action Dodge}.",
+				"The homunculus regains {@dice 2d6} + its creator's proficiency bonus hit points if the {@spell mending} spell is cast on it. If you or the homunculus dies, it vanishes, leaving its heart in its space, and the infusion ends."
+			]
+		},
+		{
+			"name": "Mercurial Tool Set",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A set of artisan's tools (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"The wielder is considered proficient with this magical set of tools, and as an action, they can transform this set of tools into another set of artisan's tools of their choice."
+			]
+		},
+		{
+			"name": "Mind Sharpener",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A suit of armor or robes"
+					]
+				}
+			],
+			"entries": [
+				"The infused item can send a jolt to the wearer to refocus their mind. The item has 4 charges. When the wearer fails a Constitution saving throw to maintain {@status concentration} on a spell, the wearer can use its reaction to expend 1 of the item's charges to succeed instead.",
+				"The armor regains the infuser's proficiency bonus expended charges daily at dawn, up to the maximum."
+			]
+		},
+		{
+			"name": "Olfactory Adaptor",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"A helmet or mask (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"While wearing this headgear, you can breathe normally in any environment (such as underwater), have advantage on Wisdom ({@skill Perception}) checks that rely on smell and you have advantage on Saving Throws made against harmful gases and vapors (such as {@spell cloudkill|MateriaSourceOfTruth} and {@spell stinking cloud} effects, inhaled poisons, and the breath wepons of some dragons)."
+			]
+		},
+		{
+			"name": "Portable Bastion",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"A buckler, shield, or tower shield"
+					]
+				}
+			],
+			"entries": [
+				"While wielding this buckler, shield, or tower shield a creature can speak its command word and set it on its edge as a bonus action.  The bastion will stay in place in an unoccupied space within 5 feet of you, and magically provide half-cover to any creature that uses it as cover.  Larger or smaller creatures within 5 feet of you can use this bastion as half-cover and gain the component shield's AC.  They do not gain the component shield's AC if they are wielding a shield of their own.",
+				"The bastion can be moved from its position and the effect ended if the wielder speaks the command word again, or if another creature succeeds on a Strength check contested by your spell save DC to forcefully move the shield."
+			]
+		},
+		{
+			"name": "Power Knuckles",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"Gloves, gauntlets, or similar handwear"
+					]
+				}
+			],
+			"entries": [
+				"This magic handwear grants a +1 bonus to attack and damage rolls made with unarmed strikes.",
+				"The bonus increases to +2 when you reach 10th level in this class."
+			]
+		},
+		{
+			"name": "Rebalanced Weapon",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A simple or martial weapon, that has the heavy property (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"This magic weapon grants a +1 bonus to attack and damage rolls made with it.",
+				"A small creature can wield this weapon without the penalties of the heavy property."
+			]
+		},
+		{
+			"name": "Replicate Magic Item",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"entries": [
+				"Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table's title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the {@filter common magic items|items|type=!potion;!scroll|rarity=common} in the game, not including potions or scrolls.",
+				"In the tables, an item's entry tells you whether the item requires attunement. See the item's description in the {@book Dungeon Master's Guide|DMG} for more information about it, including the type of object required for its making.",
+				{
+					"type": "table",
+					"caption": "Replicable Items (2nd-Level Artificer)",
+					"colLabels": [
+						"Magic Item",
+						"Attunement"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item Alchemy jug}",
+							"No"
+						],
+						[
+							"{@item Bag of holding}",
+							"No"
+						],
+						[
+							"{@item Cap of water breathing}",
+							"No"
+						],
+						[
+							"{@item Goggles of night}",
+							"No"
+						],
+						[
+							"{@item Rope of climbing}",
+							"No"
+						],
+						[
+							"{@item Sending stones}",
+							"No"
+						],
+						[
+							"{@item Wand of magic detection}",
+							"No"
+						],
+						[
+							"{@item Wand of secrets}",
+							"No"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Replicable Items (6th-Level Artificer)",
+					"colLabels": [
+						"Magic Item",
+						"Attunement"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item Boots of elvenkind}",
+							"No"
+						],
+						[
+							"{@item Cloak of elvenkind}",
+							"Yes"
+						],
+						[
+							"{@item Cloak of the manta ray}",
+							"No"
+						],
+						[
+							"{@item Eyes of charming}",
+							"Yes"
+						],
+						[
+							"{@item Gloves of thievery}",
+							"No"
+						],
+						[
+							"{@item Lantern of revealing}",
+							"No"
+						],
+						[
+							"{@item Pipes of haunting}",
+							"No"
+						],
+						[
+							"{@item Ring of water walking}",
+							"No"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Replicable Items (10th-Level Artificer)",
+					"colLabels": [
+						"Magic Item",
+						"Attunement"
+					],
+					"colStyles": [
+						"col-11",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item Boots of striding and springing}",
+							"Yes"
+						],
+						[
+							"{@item Boots of the winterlands}",
+							"Yes"
+						],
+						[
+							"{@item Bracers of archery}",
+							"Yes"
+						],
+						[
+							"{@item Brooch of shielding}",
+							"Yes"
+						],
+						[
+							"{@item Cloak of protection}",
+							"Yes"
+						],
+						[
+							"{@item Eyes of the eagle}",
+							"Yes"
+						],
+						[
+							"{@item Gauntlets of ogre power}",
+							"Yes"
+						],
+						[
+							"{@item Gloves of missile snaring}",
+							"Yes"
+						],
+						[
+							"{@item Gloves of swimming and climbing}",
+							"Yes"
+						],
+						[
+							"{@item Hat of disguise}",
+							"Yes"
+						],
+						[
+							"{@item Headband of intellect}",
+							"Yes"
+						],
+						[
+							"{@item Helm of telepathy}",
+							"Yes"
+						],
+						[
+							"{@item Medallion of thoughts}",
+							"Yes"
+						],
+						[
+							"{@item Necklace of adaptation}",
+							"Yes"
+						],
+						[
+							"{@item Periapt of wound closure}",
+							"Yes"
+						],
+						[
+							"{@item Pipes of the sewers}",
+							"Yes"
+						],
+						[
+							"{@item Quiver of Ehlonna}",
+							"No"
+						],
+						[
+							"{@item Ring of jumping}",
+							"Yes"
+						],
+						[
+							"{@item Ring of mind shielding}",
+							"Yes"
+						],
+						[
+							"{@item Slippers of spider climbing}",
+							"Yes"
+						],
+						[
+							"{@item Ventilating lungs|ERLW} (detailed in {@book chapter 5|ERLW|13})",
+							"Yes"
+						],
+						[
+							"{@item Winged boots}",
+							"Yes"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Replicable Items (14th-Level Artificer)",
+					"colLabels": [
+						"Magic Item",
+						"Attunement"
+					],
+					"colStyles": [
+						"col-11",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"{@item Amulet of health}",
+							"Yes"
+						],
+						[
+							"{@item Arcane propulsion arm|ERLW} (detailed in {@book chapter 5|ERLW|13})",
+							"Yes"
+						],
+						[
+							"{@item Belt of hill giant strength}",
+							"Yes"
+						],
+						[
+							"{@item Boots of levitation}",
+							"Yes"
+						],
+						[
+							"{@item Boots of speed}",
+							"Yes"
+						],
+						[
+							"{@item Bracers of defense}",
+							"Yes"
+						],
+						[
+							"{@item Cloak of the bat}",
+							"Yes"
+						],
+						[
+							"{@item Dimensional shackles}",
+							"No"
+						],
+						[
+							"{@item Gem of seeing}",
+							"Yes"
+						],
+						[
+							"{@item Horn of blasting}",
+							"No"
+						],
+						[
+							"{@item Ring of free action}",
+							"Yes"
+						],
+						[
+							"{@item Ring of protection}",
+							"Yes"
+						],
+						[
+							"{@item Ring of the ram}",
+							"Yes"
+						],
+						[
+							"{@item Winged boots}",
+							"Yes"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Repulsion Band",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"A pair of gloves, bangles, or rings (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"These infused items have 4 charges.  When the wearer hits a creature with an unarmed strike, they can expend 1 charge and force a target of one size larger or smaller than the wearer to make a Strength saving throw.  On a failed save, the creature is knocked back 15 feet.",
+				"These infused items grant a +1 bonus to attack and damage rolls made with unarmed strikes.",
+				"The armor regains the infuser's proficiency bonus expended charges daily at dawn, up to the maximum."
+			]
+		},
+		{
+			"name": "Repulsion Shield",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"A shield (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"A creature gains a +1 bonus to Armor Class while wielding this shield.",
+				"The shield has 4 charges. While holding it, the wielder can use a reaction immediately after being hit by a melee attack to expend 1 of the shield's charges and push the attacker up to 15 feet away.",
+				"The shield regains the infuser's proficiency bonus expended charges daily at dawn, up to the maximum."
+			]
+		},
+		{
+			"name": "Shared Pouch",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"Your proficiency bonus number of pouches or satchels"
+					]
+				}
+			],
+			"entries": [
+				"The infused pouches all share one interdimensional space of the same capacity as a single pouch.  Thus, reaching into any of the pouches allows access to the same storage space.",
+				"A pouch operates as long as it is within 100 miles of another pouches; the pouch is otherwise empty and will not accept any contents.",
+				"If the infusion ends, the items stored in the shared space move into one of the pouches, determined at random.  The rest of the pouches become empty."
+			]
+		},
+		{
+			"name": "Skyfall Harness",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"A cloak, vest, or harness"
+					]
+				}
+			],
+			"entries": [
+				"This magic harness automatically sizes to fit the wearer, and can be worn over clothing or light armor.  It has wing-like fins between your limbs that can slow your fall or allow you to glide.  When you fall, and are not {@condition incapacitated}, you subtract up to 100 feet from your fall when calculating falling damage, and can move 2 feet horizontally every 1 foot you fall"
+			]
+		},
+		{
+			"name": "Streamlined Weapon",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"A simple or martial weapon that does not have the heavy property (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"This magic weapon grants a +1 bonus to attack and damage rolls made with it.",
+				"The weapons gains the finesse property and its weight is reduced by 3 pounds, down to a minimum of 1 pound."
+			]
 		}
 	]
 }
