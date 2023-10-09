@@ -256,19 +256,19 @@
                     "entries": [
                         {
                             "type": "refOptionalfeature",
-                            "optionalfeature": "Archery"
+                            "optionalfeature": "Archery - Improved|MateriaSourceOfTruth"
                         },
                         {
                             "type": "refOptionalfeature",
-                            "optionalfeature": "Defense"
+                            "optionalfeature": "Defense - Improved|MateriaSourceOfTruth"
                         },
                         {
                             "type": "refOptionalfeature",
-                            "optionalfeature": "Dueling"
+                            "optionalfeature": "Dueling - Improved|MateriaSourceOfTruth"
                         },
                         {
                             "type": "refOptionalfeature",
-                            "optionalfeature": "Great Weapon Fighting"
+                            "optionalfeature": "Great Weapon Fighting - Improved|MateriaSourceOfTruth"
                         },
                         {
                             "type": "refOptionalfeature",
