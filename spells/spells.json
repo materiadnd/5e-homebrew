@@ -18116,6 +18116,7 @@
     {
         "name": "Synaptic Static",
         "source": "MateriaSourceOfTruth",
+        "level": 5,
         "school": "E",
         "time": [
             {
