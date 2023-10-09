@@ -19088,7 +19088,7 @@
             }
         ],
         "entries": [
-            "You create linked teleportation portals that remain open for the duration. Choose two points on the ground within range. A circular portal, 10 feet in diameter, opens over each point. If the portal would open in the space occupied by a creature, the spell fails, and the casting is lost.",
+            "You create linked teleportation portals that remain open for the duration. Choose two points on the ground within range, one point within 10 feet of you and one point within 500 feet of you. A circular portal, 10 feet in diameter, opens over each point. If the portal would open in the space occupied by a creature, the spell fails, and the casting is lost.",
             "The portals are two-dimensional glowing rings filled with mist, hovering inches from the ground and perpendicular to it at the points you choose. A ring is visible only from one side (your choice), which is the side that functions as a portal.",
             "Any creature or object entering the portal exits from the other portal as if the two were adjacent to each other; passing through a portal from the nonportal side has no effect. The mist that fills each portal is opaque and blocks vision through it. On your turn, you can rotate the rings as a bonus action so that the active side faces in a different direction."
         ],
@@ -19271,8 +19271,8 @@
                 "type": "entries",
                 "name": "At Higher Levels",
                 "entries": [
-                    "When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 8d6|6-9|2d6} for each slot level above 6th.",
-                    "When you cast this spell using a spell slot of 9th level or higher, the damage increases by {@dice 9d6}. This spells total would damage be {@damage 25d6} necrotic damage."
+                    "When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 12|6-8|2d6} for each slot level above 6th.",
+                    "When you cast this spell using a spell slot of 9th level or higher, the damage increases by {@dice 9d6}. This spell's total damage would be {@damage 25d6} necrotic damage."
                 ]
             }
         ],
@@ -19295,6 +19295,159 @@
                 {
                     "name": "Wizard",
                     "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Create Homunculus",
+        "source": "MateriaSourceOfTruth",
+        "level": 6,
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "hour"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "clay, ash, and mandrake root, all of which the spell consumes, and a jewel-encrusted dagger worth at least 250 gp",
+                "cost": 25000,
+                "consume": true
+            }
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "While speaking an intricate incantation, you cut yourself with a jewel-encrusted dagger, taking {@damage 2d4} piercing damage that can't be reduced in any way. You then drip your blood on the spell's other components and touch them, transforming them into a special construct called a {@creature homunculus}.",
+            "You determine the homunculus's appearance.  Some wizards prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.",
+            "The homunculus is friendly to you and your companions, and it obeys your commands.  See this creature's game statistics in the {@creature Homunculus Servant|MateriaSourceOfTruth} stat block, which uses your proficiency bonus (PB) in several places.",
+            "In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours.  It can move and use its reaction on its own, but the only action it takes on its turn is the {@action dodge} action, unless you take a bonus action on your turn to command it to take another acton.  That action can be one in its stat block or some other action.  If you are incapacitated, the homunculus can take any action of its choice, not just {@action dodge}.",
+            "You and the homunculus servant share a telepathic bond.  While the homunculus servant is on the same plane of existence as its master, it can magically convey what it senses to its master, and the two can communicate telepathically.",
+            "The homunculus regains {@dice 2d6} + its creator's proficiency bonus hit points if the {@spell mending} spell is cast on it.  If you or the homunculus dies, it vanishes, leaving its heart in its space, and the infusion ends.",
+            "You can have only one homunculus servant at a time. If you cast this spell while your homunculus servant lives, the spell fails."
+        ],
+        "miscTags": [
+            "PRM"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Destructive Ward",
+        "source": "MateriaSourceOfTruth",
+        "level": 6,
+        "school": "A",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "self"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                    {
+                        "type": "item",
+                        "entries": [
+                            "You have resistance to force, necrotic, psychic, poison, and radiant damage for the spell's duration."
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "entries": [
+                            "When you take damage of one of those types, you can use your reaction to gain immunity to that type of damage, including against the triggering damage and can ignore any additional effects that would affect you."
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "entries": [
+                            "If you do so, the resistances end, and you have the immunity until the end of your next turn, at which time the spell ends."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
                 }
             ]
         }
@@ -19339,7 +19492,7 @@
                 "name": "At Higher Levels",
                 "entries": [
                     "When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 10d6 + 40|6-9|3d6} for each slot level above 6th.",
-                    "When you cast this spell using a spell slot of 9th level or higher, the flat force damage is increased to 100"
+                    "When you cast this spell using a spell slot of 9th level or higher, the flat force damage is increased to 100."
                 ]
             }
         ],
@@ -19383,8 +19536,8 @@
             "v": true,
             "s": true,
             "m": {
-                "text": "a gemstone worth 1,000 gp",
-                "cost": 100000
+                "text": "a gemstone worth 100 gp",
+                "cost": 10000
             }
         },
         "duration": [
@@ -19408,6 +19561,117 @@
             "fromClassList": [
                 {
                     "name": "Wizard",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Druid Grove",
+        "source": "MateriaSourceOfTruth",
+        "level": 6,
+        "school": "A",
+        "time": [
+            {
+                "number": 10,
+                "unit": "minute"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "mistletoe, which the spell consumes, that was harvested with a golden sickle under the light of a full moon",
+                "consume": true
+            }
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 24
+                }
+            }
+        ],
+        "entries": [
+            "You invoke the spirits of nature to protect an area outdoors or underground. The area can be as small as a 30-foot cube or as large as a 90-foot cube. Buildings and other structures are excluded from the affected area. If you cast this spell in the same area every day for a year, the spell lasts until dispelled.",
+            "The spell creates the following effects within the area. When you cast this spell, you can specify creatures as friends who are immune to the effects. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.",
+            "The entire warded area radiates magic. A {@spell dispel magic} cast on the area, if successful, removes only one of the following effects, not the entire area. That spell's caster chooses which effect to end. Only when all its effects are gone is this spell dispelled.",
+            {
+                "type": "entries",
+                "name": "Grasping Undergrowth",
+                "entries": [
+                    "You can fill any number of 5-foot squares on the ground that aren't filled with fog with grasping weeds and vines, as if they were affected by an {@spell entangle} spell. To a creature immune to this effect, the weeds and vines feel soft and reshape themselves to serve as temporary seats or beds."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Grove Guardians",
+                "entries": [
+                    "You can animate up to four trees and plants in the area, causing them to uproot themselves from the ground. These trees have the same statistics as a {@creature grove guardian|MateriaSourceOfTruth}, which appears in the Monster Manual, except they can't speak, and their bark is covered with druidic symbols. If any creature not immune to this effect enters the warded area, the grove guardians fight until they have driven off or slain the intruders. The grove guardians also obey your spoken commands (no action required by you) that you issue while in the area. If you don't give them commands and no intruders are present, the grove guardians do nothing. The grove guardians can't leave the warded area. When the spell ends, the magic animating them disappears, and the trees take root again if possible."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Rejuvenating Mist",
+                "entries": [
+                    "You can fill any number of 5-foot squares on the ground with a gentle mist, making them lightly obscured.  The mist reaches 10 feet high.  Creatures of your choice regain additional hit points equal to your spellcasting ability modifier when they regain hit points while in the mist.  To a creature immune to this effect, the mist obscures nothing."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Solid Fog",
+                "entries": [
+                    "You can fill any number of 5-foot squares on the ground with thick fog, making them heavily obscured. The fog reaches 10 feet high. In addition, every foot of movement through the fog costs 2 extra feet. To a creature immune to this effect, the fog obscures nothing and looks like soft mist, with motes of green light floating in the air."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Additional Spell Effect",
+                "entries": [
+                    "You can place your choice of one of the following magical effects within the warded area:"
+                ]
+            },
+            {
+                "type": "list",
+                "items": [
+                    "A constant {@spell gust of wind} in two locations of your choice",
+                    "{@spell Spike growth} in one location of your choice",
+                    "{@spell Wind wall} in two locations of your choice"
+                ]
+            },
+            "To a creature immune to this effect, the winds are a fragrant, gentle breeze, and the area of {@spell spike growth} is harmless."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 8th level, it counts as 10 days for the purpose of making this effect permanent",
+                    "When you cast this spell using a spell slot of 9th level or higher, it counts as 30 days for the purpose of making this effect permanent."
+                ]
+            }
+        ],
+        "miscTags": [
+            "OBS",
+            "PRM",
+            "SMN"
+        ],
+        "areaTags": [
+            "C",
+            "Q"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
                     "source": "PHB"
                 }
             ]
@@ -19555,86 +19819,6 @@
                 },
                 {
                     "name": "Druid",
-                    "source": "PHB"
-                }
-            ]
-        }
-    },
-    {
-        "name": "Fizban's Platinum Shield",
-        "source": "MateriaSourceOfTruth",
-        "level": 6,
-        "school": "A",
-        "time": [
-            {
-                "number": 1,
-                "unit": "bonus"
-            }
-        ],
-        "range": {
-            "type": "point",
-            "distance": {
-                "type": "feet",
-                "amount": 60
-            }
-        },
-        "components": {
-            "v": true,
-            "s": true,
-            "m": {
-                "text": "a platinum-plated dragon scale, worth at least 500 gp",
-                "cost": 50000
-            }
-        },
-        "duration": [
-            {
-                "type": "timed",
-                "duration": {
-                    "type": "minute",
-                    "amount": 1
-                },
-                "concentration": true
-            }
-        ],
-        "entries": [
-            "You create a field of silvery light that surrounds a creature of your choice within range (you can choose yourself). The field sheds dim light out to 5 feet. While surrounded by the field, a creature gains the following benefits:",
-            {
-                "type": "list",
-                "style": "list-hang-notitle",
-                "items": [
-                    {
-                        "type": "item",
-                        "name": "Cover",
-                        "entries": [
-                            "The creature has half cover."
-                        ]
-                    },
-                    {
-                        "type": "item",
-                        "name": "Damage Resistance",
-                        "entries": [
-                            "The creature has resistance to acid, cold, fire, lightning, and poison damage."
-                        ]
-                    },
-                    {
-                        "type": "item",
-                        "name": "Dampen Harm",
-                        "entries": [
-                            "If the creature is subjected to an effect that allows it to make a saving throw to take only half damage, the creature instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
-                        ]
-                    }
-                ]
-            },
-            "As a bonus action on subsequent turns, you can move the field to another creature within 60 feet of the field."
-        ],
-        "classes": {
-            "fromClassList": [
-                {
-                    "name": "Sorcerer",
-                    "source": "PHB"
-                },
-                {
-                    "name": "Wizard",
                     "source": "PHB"
                 }
             ]
@@ -19852,15 +20036,132 @@
         }
     },
     {
-        "name": "Investiture of Flame",
-        "source": "XGE",
-        "page": 159,
-        "otherSources": [
+        "name": "Guards and Wards",
+        "source": "MateriaSourceOfTruth",
+        "level": 6,
+        "school": "A",
+        "time": [
             {
-                "source": "EEPC",
-                "page": 19
+                "number": 10,
+                "unit": "minute"
             }
         ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "burning incense, a small measure of brimstone and oil, a knotted string, a small amount of umber hulk blood, and a small silver rod worth at least 10 gp",
+                "cost": 1000
+            }
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 24
+                }
+            }
+        ],
+        "entries": [
+            "You create a ward that protects up to 2,500 square feet of floor space (an area 50 feet square, or one hundred 5-foot squares or twenty-five 10-foot squares). The warded area can be up to 20 feet tall, and shaped as you desire. You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the spell.",
+            "When you cast this spell, you can specify individuals that are unaffected by any or all of the effects that you choose. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.",
+            "Guards and wards creates the following effects within the warded area.",
+            {
+                "type": "entries",
+                "name": "Corridors",
+                "entries": [
+                    "Fog fills all the warded corridors, making them {@quickref Vision and Light|PHB|2||heavily obscured}. In addition, at each intersection or branching passage offering a choice of direction, there is a {@chance 50|||Disoriented!|No effect} chance that a creature other than you will believe it is going in the opposite direction from the one it chooses.  To a creature immune to this effect, the fog obscures nothing and looks like soft mist, with motes of colored light floating in the air."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Doors",
+                "entries": [
+                    "All doors in the warded area are magically locked, as if sealed by an {@spell arcane lock} spell. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the {@spell minor illusion} spell) to make them appear as plain sections of wall."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Stairs",
+                "entries": [
+                    "Webs fill all stairs, ramps, ladders, and other similar areas used to traverse the area up and down (at the DM's discretion) in the warded area from top to bottom, as the {@spell web} spell. These strands regrow in 10 minutes if they are burned or torn away while guards and wards lasts."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Other Spell Effect",
+                "entries": [
+                    "You can place your choice of one of the following magical effects within the warded area of the stronghold.",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Place {@spell dancing lights} in four corridors. You can designate a simple program that the lights repeat as long as guards and wards lasts.",
+                            "Place {@spell grease} in two locations.",
+                            "Place {@spell magic mouth} in two locations.",
+                            "Place {@spell silence} in one location.",
+                            "Place {@spell stinking cloud} in two locations. The vapors appear in the places you designate; they return within 10 minutes if dispersed by wind while guards and wards lasts.",
+                            "Place a constant {@spell gust of wind} in one corridor or room.",
+                            "Place a {@spell suggestion} in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally."
+                        ]
+                    }
+                ]
+            },
+            "The whole warded area radiates magic. A {@spell dispel magic} cast on a specific effect, if successful, removes only that effect.",
+            "You can create a permanently guarded and warded structure by casting this spell there every day for one year."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 8th level, it counts as 10 days for the purpose of making this effect permanent.",
+                    "When you cast this spell using a spell slot of 9th level or higher, it counts as 30 days for the purpose of making this effect permanent."
+                ]
+            }
+        ],
+        "miscTags": [
+            "OBS",
+            "PRM"
+        ],
+        "areaTags": [
+            "Q"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Investiture of Flame",
+        "source": "MateriaSourceOfTruth",
         "level": 6,
         "school": "T",
         "time": [
@@ -19974,7 +20275,7 @@
             }
         ],
         "entries": [
-            "Ice rimes your body,and and chills the area around you. Liquid water within a 10-foot raidus of you or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 10 feet square of {@quickref difficult terrain||3}. This ice lasts for 1 minute, and creatures can move across the icy path.  Until the spell ends, you gain the following benefits:",
+            "Ice rimes your body,and and chills the area around you. Liquid water within a 10-foot radius of you or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 10 feet square of {@quickref difficult terrain||3}. This ice lasts for 1 minute, and creatures can move across the icy path.  Until the spell ends, you gain the following benefits:",
             {
                 "type": "list",
                 "items": [
@@ -20284,14 +20585,14 @@
             }
         ],
         "entries": [
-            "You attempt to bind a creature within an illusory cell that only it perceives. Alternatively, you can utter a creature's name.  If the named target is within range, it becomes the spell's target even if you can't see it.  If the named target isn't within range, the binding dissipates without effect. The creature must make an Intelligence saving throw. The target succeeds automatically if it is immune to being {@condition charmed}. On a successful save, the target takes {@damage 5d10} psychic damage, and the spell ends. On a failed save, the target takes {@damage 5d10} psychic damage, and you make the area immediately around the target's space appear dangerous to it in some way. You might cause the target to perceive itself as being surrounded by fire, floating razors, or hideous maws filled with dripping teeth. Whatever form the illusion takes, the target can't see or hear anything beyond it and is {@condition restrained} for the spell's duration. If the target is moved out of the illusion, makes a melee attack through it, or reaches any part of its body through it, the target takes {@damage 10d10} psychic damage, and the spell ends."
+            "You attempt to bind a creature within an illusory cell that only it perceives. Alternatively, you can utter a creature's name.  If the named target is within range, it becomes the spell's target even if you can't see it.  If the named target isn't within range, the binding dissipates without effect. The creature must make an Intelligence saving throw. The target succeeds automatically if it is immune to being {@condition charmed}. On a successful save, the target takes {@damage 5d10} plus your spellcasting modifier psychic damage, and the spell ends. On a failed save, the target takes {@damage 5d10} plus your spellcasting modifier psychic damage, and you make the area immediately around the target's space appear dangerous to it in some way. You might cause the target to perceive itself as being surrounded by fire, floating razors, or hideous maws filled with dripping teeth. Whatever form the illusion takes, the target can't see or hear anything beyond it and is {@condition restrained} for the spell's duration. If the target is moved out of the illusion, makes a melee attack through it, or reaches any part of its body through it, the target takes {@damage 10d10} psychic damage, and the spell ends."
         ],
         "entriesHigherLevel": [
             {
                 "type": "entries",
                 "name": "At Higher Levels",
                 "entries": [
-                    "When you cast this spell using a spell slot of 7th level or higher, you can target one additional creature for each slot level above 6th.",
+                    "When you cast this spell using a spell slot of 7th level or higher, you can target one additional creature for each slot level above 6th.  The creatures must be within 30 feet of each other when you target them.",
                     "When you cast this spell using a spell slot of 9th level or higher, instead of targeting multiple creatures you can target one creature, grants a duration that does not require concentration."
                 ]
             }
@@ -20346,15 +20647,14 @@
             {
                 "type": "timed",
                 "duration": {
-                    "type": "hour",
-                    "amount": 2
+                    "type": "special"
                 },
                 "concentration": true
             }
         ],
         "entries": [
             "Choose an area of terrain no larger than 40 feet on a side within range. You can reshape dirt, sand, or clay in the area in any manner you choose for the duration. You can raise or lower the area's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. So, if you affect a 40-foot square, you can create a pillar up to 20 feet high, raise or lower the square's elevation by up to 20 feet, dig a trench up to 20 feet deep, and so on. It takes 10 minutes for these changes to complete.",
-            "This spell can manipulate natural stone (such as the walls of a cavern, or rubble from a cave-in), but the spell may only dig into the stone, creating a 5-foot square excavation for every 10 minutes concentrating on this spell. At the end of every 10 minutes you spend concentrating on the spell, you can choose a new area of terrain to affect.",
+            "This spell can manipulate natural stone (such as the walls of a cavern, or rubble from a cave-in), but the spell may only dig into the stone, creating a 5-foot square excavation for every 10 minutes concentrating on this spell. At the end of every 10 minutes you spend concentrating on the spell, you can choose a new area of terrain to affect.  The duration of this spell is up to the caster's spellcasting modifier in hours.",
             "Because the terrain's transformation occurs slowly, creatures in the area can't usually be trapped or injured by the ground's movement.",
             "This spell can't manipulate natural stone or stone construction. Rocks and structures shift to accommodate the new terrain. If the way you shape the terrain would make a structure unstable, it might collapse.",
             "Similarly, this spell doesn't directly affect plant growth. The moved earth carries any plants along with it."
@@ -20407,7 +20707,7 @@
         "entries": [
             "A frigid globe of cold energy streaks from your fingertips to a point of your choice within range, where it explodes in a 60-foot-radius sphere. Each creature within the area must make a Constitution saving throw. On a failed save, a creature takes {@damage 10d8} cold damage. On a successful save, it takes half as much damage.",
             "If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice. A trapped creature can use an action to make a Strength check against your spell save DC to break free.",
-            "You can refrain from firing the globe after completing the spell, if you wish. A small globe about the size of a sling stone, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe (to a range of 80 feet) or hurl it with a sling (to the sling's long range). It shatters on impact, with the same effect as the normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasn't already shattered, it explodes."
+            "You can refrain from firing the globe after completing the spell, if you wish. A small globe about the size of a sling stone, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe (to a range of 90 feet) or hurl it with a sling (to the sling's long range). It shatters on impact, with the same effect as the normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasn't already shattered, it explodes."
         ],
         "entriesHigherLevel": [
             {
@@ -20495,6 +20795,95 @@
             "fromClassList": [
                 {
                     "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Platinum Shield",
+        "source": "MateriaSourceOfTruth",
+        "level": 6,
+        "school": "A",
+        "time": [
+            {
+                "number": 1,
+                "unit": "bonus"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "a platinum-plated dragon scale, worth at least 500 gp",
+                "cost": 50000
+            }
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "You create a field of silvery light that surrounds a creature of your choice within range (you can choose yourself). The field sheds dim light out to 5 feet. While surrounded by the field, a creature gains the following benefits:",
+            {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                    {
+                        "type": "item",
+                        "name": "Cover",
+                        "entries": [
+                            "The creature has half cover."
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "name": "Damage Resistance",
+                        "entries": [
+                            "The creature has resistance to acid, cold, fire, lightning, and poison damage."
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "name": "Dampen Harm",
+                        "entries": [
+                            "If the creature is subjected to an effect that allows it to make any saving throw to take only half damage, the creature instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+                        ]
+                    }
+                ]
+            },
+            "As a bonus action on subsequent turns, you can move the field to another creature within 60 feet of the field."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Sorcerer",
                     "source": "PHB"
                 },
                 {
@@ -20902,7 +21291,8 @@
                 "type": "entries",
                 "name": "At Higher Levels",
                 "entries": [
-                    "When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears as well as the damage from passing through the sheet of frigid air increases by {@scaledamage 10d6|6-9|2d6}, for each slot level above 6th."
+                    "When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears as well as the damage from passing through the sheet of frigid air increases by {@scaledamage 10d6|6-9|2d6}, for each slot level above 6th.",
+                    "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
                 ]
             }
         ],
@@ -20966,7 +21356,7 @@
                 "name": "At Higher Levels",
                 "entries": [
                     "When you cast this spell using a spell slot of 7th level or higher, both types of damage increase by {@scaledamage 7d8|6-9|1d8} for each slot level above 6th.",
-                    "When you cast this spell using a spell slot of 9th level or higher, the wall and circle are 10 feet thick"
+                    "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
                 ]
             }
         ],
@@ -21117,7 +21507,7 @@
                 "type": "entries",
                 "name": "At Higher Levels",
                 "entries": [
-                    "When you cast this spell using a spell slot of 8th level or higher, the base damage increases by {@scaledamage 12d6|7-9|1d6} for each slot level above 7th."
+                    "When you cast this spell using a spell slot of 8th level or higher, the damage increase each round increases by {@scaledamage 12d6|7-9|1d6} for each slot level above 7th."
                 ]
             }
         ],
@@ -21309,7 +21699,7 @@
                         "type": "item",
                         "name": "Wing Attack",
                         "entries": [
-                            "You can beat your wings as a bonus action. Each creature within 15 feet of the you must succeed a Dexterity saving throw or 2d6 plus your spellcasting modifier bludgeoning damage and be knocked {@condition prone}. You can then fly up to half your flying speed"
+                            "You can beat your wings as a bonus action. Each creature within 15 feet of the you must succeed a Dexterity saving throw or 2d6 plus your spellcasting modifier bludgeoning damage and be knocked {@condition prone}. You can then fly up to half your flying speed."
                         ]
                     }
                 ]
