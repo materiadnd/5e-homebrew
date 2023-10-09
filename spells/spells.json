@@ -20986,6 +20986,1316 @@
         }
     },
     {
+        "name": "Crown of Stars",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "self"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "special",
+                "condition": "A number of hours equal to your spellcasting modifier",
+                "ends": [
+                    "dispel"
+                ]
+            }
+        ],
+        "entries": [
+            "Seven star-like motes of light appear and orbit your head until the spell ends, lasting a number of hours equal to your spellcasting modifier. You can use a bonus action to send one of the motes streaking toward one creature or object within 120 feet of you. When you do so, make a ranged spell attack. On a hit, the target takes {@damage 4d12} plus your spellcasting modifier radiant damage. Whether you hit or miss, the mote is expended. The spell ends early if you expend the last mote.",
+            "If you have four or more motes remaining, they shed bright light in a 30-foot radius and dim light for an additional 30 feet. If you have one to three motes remaining, they shed dim light in a 30-foot radius."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 8th level or higher, the number of motes created increases by two for each slot level above 7th."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "radiant"
+        ],
+        "spellAttack": [
+            "R"
+        ],
+        "miscTags": [
+            "LGT",
+            "OBJ",
+            "UBA"
+        ],
+        "areaTags": [
+            "ST"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Delayed Blast Fireball",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 150
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "a tiny ball of bat guano and sulfur"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "A beam of yellow light flashes from your pointing finger, then condenses to linger at a chosen point within range as a glowing bead for the duration. When the spell ends, either because your {@status concentration} is broken or because you decide to end it, the bead blossoms with a low roar into an explosion of flame that spreads around corners. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.",
+            "The spell's base damage is {@damage 12d6}. If at the end of your turn the bead has not yet detonated, the damage increases by {@dice 2d6}.",
+            "If the glowing bead is touched before the interval has expired, the creature touching it must make a Dexterity saving throw. On a failed save, the spell ends immediately, causing the bead to erupt in flame. On a successful save, the creature can throw the bead up to 40 feet. When it strikes a creature or a solid object, the spell ends, and the bead explodes.",
+            "The fire damages objects in the area and ignites flammable objects that aren't being worn or carried."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 8th level or higher, the base damage increases by {@scaledamage 12d6|7-9|1d6} for each slot level above 7th."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "fire"
+        ],
+        "savingThrow": [
+            "dexterity"
+        ],
+        "miscTags": [
+            "OBJ"
+        ],
+        "areaTags": [
+            "S"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Divine Word",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "bonus"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "You utter a divine word, imbued with the power that shaped the world at the dawn of creation. Choose any number of creatures you can see within range. Each creature that can hear you must make a Charisma saving throw. On a failed save, a creature suffers an effect based on its current hit points:",
+            {
+                "type": "list",
+                "items": [
+                    "50 hit points or fewer: {@condition deafened} for 1 minute",
+                    "40 hit points or fewer: {@condition deafened} and {@condition blinded} for 10 minutes",
+                    "30 hit points or fewer: {@condition blinded}, {@condition deafened}, and {@condition stunned} for 1 hour",
+                    "20 hit points or fewer: killed instantly"
+                ]
+            },
+            "Regardless of its current hit points, an aberration, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to your current plane for 24 hours by any means short of a {@spell wish} spell."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 8th level or higher, the range is increased by 30 feet for each slot level above 7th."
+                ]
+            }
+        ],
+        "conditionInflict": [
+            "blinded",
+            "deafened",
+            "stunned"
+        ],
+        "savingThrow": [
+            "charisma"
+        ],
+        "miscTags": [
+            "SGT"
+        ],
+        "areaTags": [
+            "MT"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Draconic Transformation",
+        "source": "MateriaSourceOfTruth",
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "bonus"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "self"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "a statuette of a dragon, worth at least 500 gp",
+                "cost": 50000
+            }
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "With a roar, you draw on the magic of dragons to transform yourself, taking on draconic features. You gain the following benefits until the spell ends:",
+            {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                    {
+                        "type": "item",
+                        "name": "Blindsight",
+                        "entries": [
+                            "You have {@sense blindsight} with a range of 30 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're {@condition blinded} or in darkness. Moreover, you can see an {@condition invisible} creature, unless the creature successfully hides from you."
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "name": "Breath Weapon",
+                        "entries": [
+                            "When you cast this spell, and as a bonus action on subsequent turns for the duration, you can exhale shimmering energy in a 60-foot cone or 120-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw, taking {@damage 6d8} force damage on a failed save, or half as much damage on a successful one."
+                        ]
+                    },
+                    {
+                        "type": "item",
+                        "name": "Wings",
+                        "entries": [
+                            "Incorporeal wings sprout from your back, giving you a flying speed of 60 feet."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "force"
+        ],
+        "savingThrow": [
+            "dexterity"
+        ],
+        "miscTags": [
+            "SGT",
+            "UBA"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Finger of Death",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "N",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes {@damage 7d8 + 30} necrotic damage on a failed save, or half as much damage on a successful one.",
+            "A humanoid killed by this spell rises at the start of your next turn as an undead creature that is permanently under your command, following your verbal orders to the best of its ability.  The animated target uses the {@creature Undead Creature|MateriaSourceOfTruth} stat block."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a slot of 8th level or higher, the damage increases by {@damage 2d12} for each slot level above 7th."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "necrotic"
+        ],
+        "savingThrow": [
+            "constitution"
+        ],
+        "miscTags": [
+            "PRM",
+            "SGT",
+            "SMN"
+        ],
+        "areaTags": [
+            "ST"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Fire Storm",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 150
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a Dexterity saving throw. It takes {@damage 10d12} fire damage on a failed save, or half as much damage on a successful one.",
+            "The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 8th level or higher, increase the 10-foot cubes available by 3 for each slot level above 7th."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "fire"
+        ],
+        "savingThrow": [
+            "dexterity"
+        ],
+        "miscTags": [
+            "OBJ"
+        ],
+        "areaTags": [
+            "C"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Magnificent Mansion",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "C",
+        "time": [
+            {
+                "number": 1,
+                "unit": "minute"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 300
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "a miniature portal carved from ivory, a small piece of polished marble, and a tiny silver spoon, each item worth at least 5 gp",
+                "cost": 1500
+            }
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 24
+                }
+            }
+        ],
+        "meta": {
+            "ritual": true
+        },
+        "entries": [
+            "You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its one entrance is located. The entrance shimmers faintly and is 5 feet wide and 10 feet tall. You and any creature you designate when you cast the spell can enter the extradimensional dwelling as long as the portal remains open. You can open or close the portal if you are within 30 feet of it. While closed, the portal is invisible.",
+            "Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm.",
+            "You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can't leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the mansion. When the spell ends, any creatures or objects left inside the extradimensional space are expelled into the open spaces nearest to the entrance.",
+            "If you cast this spell again while a previous dwelling is in existence, the previous spell ends."
+        ],
+        "miscTags": [
+            "OBJ"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Mordenkainen's Armament",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "bonus"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "a miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp",
+                "cost": 25000
+            }
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 1
+                }
+            }
+        ],
+        "entries": [
+            "You create a weapon-shaped plane of force that hovers within range. It lasts for the duration.",
+            "When the weapon appears, you make a melee spell attack against a target of your choice within 5 feet of the weapon. On a hit, the target takes {@damage 3d10} force damage. Until the spell ends, you can use a bonus action on each of your turns to move the weapon up to 60 feet to a spot you can see and repeat this attack against the same target or a different one."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 8th level or higher, the damage increases by {@damage 1d10} for each slot level by 7th."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "force"
+        ],
+        "spellAttack": [
+            "M"
+        ],
+        "miscTags": [
+            "SGT",
+            "UBA"
+        ],
+        "areaTags": [
+            "ST"
+        ],
+        "hasFluffImages": true,
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Power Word Pain",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "E",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "As an action, buy before casting the spell, you can make a {@skill Medicine} check using your spellcasting ability in place of Wisdom to determine whether this spell will affect your target or not.  If it would not affect your target, you can choose not to cast the spell, preserving the spell slot.  If you choose to cast the spell, you speak a word of power that causes waves of intense pain to assail one creature you can see within range. If the target has 100 hit points or fewer, it is subject to crippling pain. Otherwise, the spell has no effect on it. A target is also unaffected if it is immune to being {@condition charmed}.",
+            "While the target is affected by crippling pain, any speed it has can be no higher than 10 feet. The target also has disadvantage on attack rolls, ability checks, and all saving throws. Finally, if the target tries to cast a spell, it must first succeed on a Constitution saving throw, or the casting fails and the spell is wasted.",
+            "A target suffering this pain can make a Constitution saving throw at the end of each of its turns. On a successful save, the pain ends."
+        ],
+        "savingThrow": [
+            "constitution"
+        ],
+        "miscTags": [
+            "SGT"
+        ],
+        "areaTags": [
+            "ST"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Prismatic Spray",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "cone",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a Dexterity saving throw. For each target, roll two {@dice d8}s to determine which color rays affect it.  If you roll the same effect twice, the creature is affected twice by the same color.",
+            {
+                "type": "entries",
+                "name": "1-Red",
+                "entries": [
+                    "The target takes {@damage 10d6} fire damage on a failed save, or half as much damage on a successful one."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "2-Orange",
+                "entries": [
+                    "The target takes {@damage 10d6} acid damage on a failed save, or half as much damage on a successful one."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "3-Yellow",
+                "entries": [
+                    "The target takes {@damage 10d6} lightning damage on a failed save, or half as much damage on a successful one."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "4-Green",
+                "entries": [
+                    "The target takes {@damage 10d6} poison damage on a failed save, or half as much damage on a successful one."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "5-Blue",
+                "entries": [
+                    "The target takes {@damage 10d6} cold damage on a failed save, or half as much damage on a successful one."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "6-Indigo",
+                "entries": [
+                    "On a failed save, the target is {@condition restrained}. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the {@condition petrified} condition. The successes and failures don't need to be consecutive, keep track of both until the target collects three of a kind."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "7-Violet",
+                "entries": [
+                    "On a failed save, the target is {@condition blinded}. It must then make a Charisma saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM's choosing and is no longer {@condition blinded}. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.)"
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "8-Special",
+                "entries": [
+                    "The target is struck by two rays. Roll twice more, rerolling any 8."
+                ]
+            }
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 8th level or higher, increase the number of rays that affect creatures by 1 for each slot level above 7th."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "poison"
+        ],
+        "conditionInflict": [
+            "blinded",
+            "petrified",
+            "restrained"
+        ],
+        "savingThrow": [
+            "dexterity",
+            "constitution",
+            "wisdom"
+        ],
+        "miscTags": [
+            "PRM"
+        ],
+        "areaTags": [
+            "N"
+        ],
+        "hasFluffImages": true,
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Regenerate",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "minute"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "a prayer wheel and holy water"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 1
+                }
+            }
+        ],
+        "entries": [
+            "You touch a creature and stimulate its natural healing ability. The target regains hit points equal to a number of hit dice equal to your spellcasting modifier, adding the target's Constitution modifier to each die rolled in this way.  For the duration of the spell, the target regains hit points equal to one of its hit dice, adding the target's Constitution modifier on each die rolled in this way at the end of every minute  (60 hit dice over the full one hour duration).",
+            "The target's severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit to the stump."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, the target always regains hit points equal to the maximum number possible on their hit dice from the healing received by this spell."
+                ]
+            }
+        ],
+        "miscTags": [
+            "HL"
+        ],
+        "areaTags": [
+            "ST"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Sequester",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "a powder composed of precious gems worth at least 5,000 gp, which the spell consumes",
+                "cost": 500000,
+                "consume": true
+            }
+        },
+        "duration": [
+            {
+                "type": "permanent",
+                "ends": [
+                    "dispel"
+                ]
+            }
+        ],
+        "entries": [
+            "By means of this spell, a willing creature or an object can be hidden away, safe from detection for the duration. When you cast the spell and touch the target, it becomes {@condition invisible} and can't be targeted by {@filter divination spells|spells|school=D} or perceived through scrying sensors created by divination spells.",
+            "If the target is a creature, it falls into a state of suspended animation. Time ceases to flow for it, and it doesn't grow older.",
+            "You can set a condition for the spell to end early. The condition can be anything you choose, but it must occur or be visible within 1 mile of the target. Examples include \"after 1,000 years\" or \"when the {@creature tarrasque} awakens.\" This spell also ends if the target takes any damage."
+        ],
+        "conditionInflict": [
+            "invisible"
+        ],
+        "miscTags": [
+            "OBJ"
+        ],
+        "areaTags": [
+            "ST"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Simulacrum",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "I",
+        "time": [
+            {
+                "number": 12,
+                "unit": "hour"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "snow or ice in quantities sufficient to make a life-size copy of the duplicated creature; some hair, fingernail clippings, or other piece of that creature's body placed inside the snow or ice; and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed by the spell",
+                "cost": 150000,
+                "consume": true
+            }
+        },
+        "duration": [
+            {
+                "type": "permanent",
+                "ends": [
+                    "dispel"
+                ]
+            }
+        ],
+        "entries": [
+            "You shape an illusory duplicate of one beast or humanoid that is within range for the entire casting time of the spell. The duplicate is a creature, partially real and formed from ice or snow, and it can take actions and otherwise be affected as a normal creature. It appears to be the same as the original, but it has half the creature's hit point maximum and is formed without any equipment. Otherwise, the illusion uses all the statistics of the creature it duplicates, except that it is a construct.",
+            "The simulacrum is friendly to you and creatures you designate. It obeys your spoken commands, moving and acting in accordance with your wishes and acting on your turn in combat. The simulacrum lacks the ability to learn or become more powerful, so it never increases its level or other abilities, nor does it gain any benefits from short or long rets.  A simulacrum with spell slots may not use a spell slot above 5th level.",
+            "If the simulacrum is damaged, it can only be repaired in an alchemical laboratory, using rare herbs and minerals worth 100 gp per hit point it regains. The simulacrum lasts until it drops to 0 hit points, at which point it reverts to snow and melts instantly.",
+            "If you cast this spell again, any currently active duplicates you created with this spell are instantly destroyed."
+        ],
+        "affectsCreatureType": [
+            "beast",
+            "humanoid"
+        ],
+        "areaTags": [
+            "ST"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Symbol",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "A",
+        "time": [
+            {
+                "number": 1,
+                "unit": "minute"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "touch"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "mercury, phosphorus, and powdered diamond and opal with a total value of at least 100 gp, which the spell consumes",
+                "cost": 10000,
+                "consume": true
+            }
+        },
+        "duration": [
+            {
+                "type": "permanent",
+                "ends": [
+                    "dispel",
+                    "trigger"
+                ]
+            }
+        ],
+        "entries": [
+            "When you cast this spell, you inscribe a harmful glyph either on a surface (such as a section of floor, a wall, or a table) or within an object that can be closed to conceal the glyph (such as a book, a scroll, or a treasure chest). If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.",
+            "The glyph is nearly invisible, requiring an Intelligence ({@skill Investigation}) check against your spell save DC to find it.",
+            "You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or stepping on the glyph, removing another object covering it, approaching within a certain distance of it, or manipulating the object that holds it. For glyphs inscribed within an object, the most common triggers are opening the object, approaching within a certain distance of it, or seeing or reading the glyph.",
+            "You can further refine the trigger so the spell is activated only under certain circumstances or according to a creature's physical characteristics (such as height or weight), or physical kind (for example, the ward could be set to affect hags or shapechangers). You can also specify creatures that don't trigger the glyph, such as those who say a certain password.",
+            "When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 60-foot-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activates is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there.",
+            {
+                "type": "entries",
+                "name": "Death",
+                "entries": [
+                    "Each target must make a Constitution saving throw, taking {@damage 10d10} necrotic damage on a failed save, or half as much damage on a successful save."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Discord",
+                "entries": [
+                    "Each target must make a Constitution saving throw. On a failed save, a target bickers and argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has disadvantage on attack rolls and ability checks."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Enfeeble",
+                "entries": [
+                    "Each target must make a Charisma saving throw and becomes {@condition weakened} for 10 minutes on a failed save."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Fear",
+                "entries": [
+                    "Each target must make a Wisdom saving throw and becomes {@condition frightened} for 1 minute on a failed save. While {@condition frightened}, the target drops whatever it is holding and must move at least 30 feet away from the glyph on each of its turns, if able."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Hopelessness",
+                "entries": [
+                    "Each target must make a Charisma saving throw. On a failed save, the target is overwhelmed with despair for 1 minute. During this time, it can't attack or target any creature with harmful abilities, spells, or other magical effects."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Insanity",
+                "entries": [
+                    "Each target must make an Intelligence saving throw. On a failed save, the target is driven insane for 1 minute. An insane creature can't take actions, can't understand what other creatures say, can't read, and speaks only in gibberish. The DM controls its movement, which is erratic."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Pain",
+                "entries": [
+                    "Each target must make a Constitution saving throw and becomes {@condition incapacitated} with excruciating pain for 1 minute on a failed save."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Sleep",
+                "entries": [
+                    "Each target must make a Wisdom saving throw and falls {@condition unconscious} for 10 minutes on a failed save. A creature awakens if it takes damage or if someone uses an action to shake or slap it awake."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Stunning",
+                "entries": [
+                    "Each target must make a Wisdom saving throw and becomes {@condition stunned} for 1 minute on a failed save."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Stupefy",
+                "entries": [
+                    "Each target must make a Charisma saving throw and becomes {@condition dazed} and {@condition deafened} for 1 minute on a failed save."
+                ]
+            }
+
+        ],
+        "damageInflict": [
+            "necrotic"
+        ],
+        "conditionInflict": [
+            "frightened",
+            "incapacitated",
+            "stunned",
+            "unconscious"
+        ],
+        "savingThrow": [
+            "constitution",
+            "wisdom",
+            "charisma",
+            "intelligence"
+        ],
+        "abilityCheck": [
+            "intelligence"
+        ],
+        "miscTags": [
+            "LGT",
+            "OBJ"
+        ],
+        "areaTags": [
+            "S"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                }
+            ]
+        }
+    },
+    {
         "name": "Temple of the Gods",
         "source": "MateriaSourceOfTruth",
         "level": 7,
@@ -21026,8 +22336,8 @@
             "The temple's interior is an open space with an idol or altar at one end. You decide whether the temple is illuminated and whether that illumination is bright light or dim light. The smell of burning incense fills the air within, and the temperature is mild.",
             "The temple opposes types of creatures you choose when you cast this spell. Choose one or more of the following: aberrations, celestials, elementals, fey, fiends, or undead. If a creature of the chosen type attempts to enter the temple, that creature must make a Charisma saving throw. On a failed save, it can't enter the temple for 24 hours. Even if the creature can enter the temple, the magic there hinders it; whenever it makes an attack roll, an ability check, or a saving throw inside the temple, it must roll a {@dice d4} and subtract the number rolled from the {@dice d20} roll.",
             "In addition, the sensors created by divination spells can't appear inside the temple, and creatures within can't be targeted by divination spells.",
-            "Finally, whenever any creature in the temple regains hit points from a spell of 1st level or higher, the creature regains additional hit points equal to your Wisdom modifier (minimum 1 hit point).",
-            "The temple is made from opaque magical force that extends into the Ethereal Plane, thus blocking ethereal travel into the temple's interior. Nothing can physically pass through the temple's exterior. It can't be dispelled by {@spell dispel magic}, and {@spell antimagic field} has no effect on it. A {@spell disintegrate} spell destroys the temple instantly.",
+            "Finally, whenever any creature in the temple regains hit points from a spell of 1st level or higher, the creature regains additional hit points equal to your spellcasting ability modifier (minimum 1 hit point).",
+            "The temple is made from opaque magical force that extends into the Ethereal Plane, thus blocking ethereal travel into the temple's interior. Nothing can physically pass through the temple's exterior. It can't be dispelled by {@spell dispel magic}, and {@spell antimagic field} has no effect on it. A {@spell disintegrate} spell destroys the temple instantly, unless the temple is permanent.",
             "Casting this spell on the same spot every day for a year makes this effect permanent."
         ],
         "entriesHigherLevel": [
@@ -21055,6 +22365,94 @@
                 {
                     "name": "Cleric",
                     "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Whirlwind",
+        "source": "MateriaSourceOfTruth",
+        "level": 7,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 300
+            }
+        },
+        "components": {
+            "v": true,
+            "m": "a piece of straw"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "A whirlwind howls down to a point that you can see on the ground within range. The whirlwind is a 10-foot-radius, 120-foot-high cylinder centered on that point. Until the spell ends, you can use your action to move the whirlwind up to 30 feet in any direction along the ground. The whirlwind sucks up any Medium or smaller objects that aren't secured to anything and that aren't worn or carried by anyone.",
+            "A creature must make a Dexterity saving throw the first time on a turn that it enters the whirlwind or that the whirlwind enters its space, including when the whirlwind first appears. A creature takes {@damage 10d6} magical bludgeoning damage on a failed save, or half as much damage on a successful one. In addition, a Large or smaller creature that fails the save must succeed on a Strength saving throw or become {@condition restrained} in the whirlwind until the spell ends. When a creature starts its turn {@condition restrained} by the whirlwind, the creature is pulled 5 times your spell casting modifier feet higher inside it, unless the creature is at the top. A {@condition restrained} creature moves with the whirlwind and falls when the spell ends, unless the creature has some means to stay aloft.",
+            "A {@condition restrained} creature can use an action to make a Strength or Dexterity check against your spell save DC. If successful, the creature is no longer {@condition restrained} by the whirlwind and is hurled {@dice 3d6 × 10} feet away from it in a random direction, taking fall damage from where they impact or land."
+        ],
+        "damageInflict": [
+            "bludgeoning"
+        ],
+        "conditionInflict": [
+            "restrained"
+        ],
+        "savingThrow": [
+            "dexterity",
+            "strength"
+        ],
+        "abilityCheck": [
+            "strength",
+            "dexterity"
+        ],
+        "miscTags": [
+            "FMV",
+            "SGT"
+        ],
+        "areaTags": [
+            "Y"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
                 }
             ]
         }
