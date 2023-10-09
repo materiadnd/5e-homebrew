@@ -21302,6 +21302,13 @@
                         "entries": [
                             "Incorporeal wings sprout from your back, giving you a flying speed of 60 feet."
                         ]
+                    },
+                    {
+                        "type": "item",
+                        "name": "Wing Attack",
+                        "entries": [
+                            "You can beat your wings as a bonus action. Each creature within 15 feet of the you must succeed a Dexterity saving throw or 2d6 plus your spellcasting modifier bludgeoning damage and be knocked {@condition prone}. You can then fly up to half your flying speed"
+                        ]
                     }
                 ]
             }
