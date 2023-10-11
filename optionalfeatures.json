@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1686933390
+        "dateLastModified": 1697053635
 	},
 	"optionalfeature": [
 		{
@@ -1634,6 +1634,66 @@
 			"entries": [
 				"This magic weapon grants a +1 bonus to attack and damage rolls made with it.",
 				"The weapons gains the finesse property and its weight is reduced by 3 pounds, down to a minimum of 1 pound."
+			]
+		},
+		{
+			"name": "Animal of the Land",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"RN"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Druid"
+						}
+					}
+				}
+			],
+			"entries": [
+				"An Animal of the Land is a flightless terrestrial animal, such as a bear, cat, deer, dog, horse, rodent, spider, or velociratpor.  While in this form, you use the {@creature Animal of the Land|MateriaSourceOfTruth} stat block."
+			]
+		},
+		{
+			"name": "Animal of the Sea",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"RN"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Druid"
+						}
+					}
+				}
+			],
+			"entries": [
+				"An Animal of the Sea is an aquatic or semiaquatic animal, such as a crocodile, dolphin, frog, octopus, sea turtle, or shark.  While in this form, you use the {@creature Animal of the Sea|MateriaSourceOfTruth} stat block."
+			]
+		},
+		{
+			"name": "Animal of the Sky",
+			"source": "MateriaSourceOfTruth",
+			"featureType": [
+				"RN"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8,
+						"class": {
+							"name": "Druid"
+						}
+					}
+				}
+			],
+			"entries": [
+				"An Animal of the Sky is a winged animal, such as a bat, dragonfly, eagle, falcon, owl, or pterandodon.  While in this form, you use the {@creature Animal of the Land|MateriaSourceOfTruth} stat block."
 			]
 		}
 	]
