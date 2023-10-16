@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1696972287
+        "dateLastModified": 1697428426
 	},
     "spell": [
         {
@@ -22853,6 +22853,1302 @@
                         "shortName": "Arcana",
                         "source": "SCAG"
                     }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Animal Shapes",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 30
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 24
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "Your magic turns others into beasts. Choose any number of willing creatures that you can see within range (yourself included). You transform each target into the form of a Large or smaller beast that uses the {@creature Bestial Spirit|MateriaSourceOfTruth} stat block. If the form taken is Tiny, then use the Small Bestial Spirit stat block and replace its Hit Dice with d4s.  On subsequent turns, you can use your action to transform affected creatures into new forms as shown in the Bestial Spirit stat block.",
+            "The transformation lasts for the duration for each target, or until the target drops to 0 hit points or dies. You can choose a different form for each target. A target's game statistics are replaced by the statistics of the chosen beast, though the target retains its alignment and Intelligence, Wisdom, and Charisma scores. The target assumes the hit points of its new form, and when it reverts to its normal form, it returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked {@condition unconscious}. The creature is limited in the actions it can perform by the nature of its new form, and it can't speak or cast spells.",
+            "The target's gear melds into the new form. The target can't activate, wield, or otherwise benefit from any of its equipment."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Antimagic Field",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "A",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "sphere",
+            "distance": {
+                "type": "feet",
+                "amount": 10
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "a pinch of powdered iron or iron filings"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.",
+            "Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.",
+            "While the field is active, you may suspend it for up to 1 minute at a time (no action required).  If the time suspended is less than 1 minute, the duration is still reduced in increments of 1 minute.",
+            {
+                "type": "entries",
+                "name": "Targeted Effects",
+                "entries": [
+                    "Spells and other magical effects, such as {@spell magic missile} and {@spell charm person}, that target a creature or an object in the sphere have no effect on that target."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Areas of Magic",
+                "entries": [
+                    "The area of another spell or magical effect, such as {@spell fireball}, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Spells",
+                "entries": [
+                    "Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Magic Items",
+                "entries": [
+                    "The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword.",
+                    "A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Magical Travel",
+                "entries": [
+                    "Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Creatures and Objects",
+                "entries": [
+                    "A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Dispel Magic",
+                "entries": [
+                    "Spells and magical effects such as {@spell dispel magic} have no effect on the sphere. Likewise, the spheres created by different {@spell antimagic field} spells don't nullify each other."
+                ]
+            }
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Control Weather",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "T",
+        "time": [
+            {
+                "number": 1,
+                "unit": "minute"
+            }
+        ],
+        "range": {
+            "type": "radius",
+            "distance": {
+                "type": "miles",
+                "amount": 5
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "burning incense and bits of earth and wood mixed in water"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 24
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early.",
+            "When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes {@dice 1d4} minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.",
+            "When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.",
+            {
+                "type": "table",
+                "caption": "Precipitation",
+                "colLabels": [
+                    "Stage",
+                    "Condition"
+                ],
+                "colStyles": [
+                    "col-1 text-center",
+                    "col-11"
+                ],
+                "rows": [
+                    [
+                        "1",
+                        "Clear"
+                    ],
+                    [
+                        "2",
+                        "Light clouds"
+                    ],
+                    [
+                        "3",
+                        "Overcast or ground fog"
+                    ],
+                    [
+                        "4",
+                        "Rain, hail, or snow"
+                    ],
+                    [
+                        "5",
+                        "Torrential rain, driving hail, or blizzard"
+                    ]
+                ]
+            },
+            {
+                "type": "table",
+                "caption": "Temperature",
+                "colLabels": [
+                    "Stage",
+                    "Condition"
+                ],
+                "colStyles": [
+                    "col-1 text-center",
+                    "col-11"
+                ],
+                "rows": [
+                    [
+                        "1",
+                        "Unbearable heat"
+                    ],
+                    [
+                        "2",
+                        "Hot"
+                    ],
+                    [
+                        "3",
+                        "Warm"
+                    ],
+                    [
+                        "4",
+                        "Cool"
+                    ],
+                    [
+                        "5",
+                        "Cold"
+                    ],
+                    [
+                        "6",
+                        "Arctic cold"
+                    ]
+                ]
+            },
+            {
+                "type": "table",
+                "caption": "Wind",
+                "colLabels": [
+                    "Stage",
+                    "Condition"
+                ],
+                "colStyles": [
+                    "col-1 text-center",
+                    "col-11"
+                ],
+                "rows": [
+                    [
+                        "1",
+                        "Calm"
+                    ],
+                    [
+                        "2",
+                        "Moderate wind"
+                    ],
+                    [
+                        "3",
+                        "Gale"
+                    ],
+                    [
+                        "4",
+                        "Wind Storm"
+                    ],
+                    [
+                        "5",
+                        "Hurricane"
+                    ]
+                ]
+            }
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Demiplane",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "C",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 1
+                }
+            }
+        ],
+        "entries": [
+            "You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the spell ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side.",
+            "Each time you cast this spell, you can create a new demiplane, or have the shadowy door connect to a demiplane you created with a previous casting of this spell reappear. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can have the shadowy door connect to its demiplane instead."
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromClassListVariant": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Dominate Monster",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "E",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "You attempt to beguile a creature that you can see within range. It must succeed on a Wisdom saving throw or be {@condition charmed} by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.",
+            "While the creature is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
+            "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
+            "If the target takes damage, it makes a new Wisdom saving throw against the spell.  If the saving throw succeeds, the spell ends.  The target cannot receive another saving throw this way until the beginning of its next turn."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell with a 9th-level spell slot, the duration is {@status concentration}, up to 8 hours."
+                ]
+            }
+        ],
+        "conditionInflict": [
+            "charmed"
+        ],
+        "savingThrow": [
+            "wisdom"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Earthquake",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 500
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "a pinch of dirt, a piece of rock, and a lump of clay"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that point and shakes creatures and structures in contact with the ground in that area.",
+            "The ground in the area becomes {@quickref difficult terrain||3}. Each creature on the ground that is {@status concentration||concentrating} must make a Constitution saving throw. On a failed save, the creature's {@status concentration} is broken.",
+            "When you cast this spell and at the end of each turn you spend {@status concentration||concentrating} on it, each creature on the ground in the area must make a Dexterity saving throw. On a failed save, the creature is knocked {@condition prone}.",
+            "This spell can have additional effects depending on the terrain in the area, as determined by the DM.",
+            {
+                "type": "entries",
+                "name": "Fissures",
+                "entries": [
+                    "While you concentrate on this spell, you may open a fissure at the beginning of each of your turns in a location of your choice in the spell's area.  Each is {@dice 1d10 × 10} feet deep, 10 feet wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a Dexterity saving throw or fall in and takes falling damage of {@dice 1d6} for every 10 feet of depth of fissure. A creature that successfully saves moves with the fissure's edge as it opens.",
+                    "Alternatively, you may have a fissure grow rather than creating a new fissure, extending the width by 10 feet and the depth by {@dice 1d10 × 10} feet.  A creature in the fissure must make a Dexterity save or fall as normal, but on a successful save is able to hold onto the side of the fissure, remaining at the previous depth.",
+                    "A fissure that opens beneath a structure causes it to automatically collapse (see below)."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Structures",
+                "entries": [
+                    "The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a Dexterity saving throw. On a failed save, the creature takes {@damage 12d6} bludgeoning damage, is knocked {@condition prone}, and is buried in the rubble, requiring a DC 20 Strength ({@skill Athletics}) check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall {@condition prone} or become buried."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "bludgeoning"
+        ],
+        "conditionInflict": [
+            "prone"
+        ],
+        "savingThrow": [
+            "constitution",
+            "dexterity"
+        ],
+        "abilityCheck": [
+            "strength"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Holy Aura",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "A",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "self"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": {
+                "text": "a tiny reliquary worth at least 1,000 gp containing a sacred relic, such as a scrap of cloth from a saint's robe or a piece of parchment from a religious text",
+                "cost": 100000
+            }
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 10
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you. Creatures of your choice in that radius when you cast this spell shed dim light in a 5-foot radius and have advantage on all saving throws, and other creatures have disadvantage on attack rolls against them until the spell ends. In addition, when a fiend or an undead hits an affected creature with a melee attack, the aura flashes with brilliant light. The attacker must succeed on a Constitution saving throw or be {@condition blinded} until the spell ends."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using spell slot of 9th level or higher, grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "conditionInflict": [
+            "blinded"
+        ],
+        "savingThrow": [
+            "constitution"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": " Horrid Wilting",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "N",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 150
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "a bit of sponge"
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren't affected, and plants and water elementals and creatures that breathe water make this saving throw with disadvantage. A creature takes {@damage 12d12} necrotic damage on a failed save and are {@condition weakened|MateriaSourceOfTruth} for 1 minute, or take half as much damage and are {@condition weakened|MateriaSourceOfTruth} until the end of their turn on a successful one.",
+            "Nonmagical plants in the area that aren't creatures, such as trees and shrubs, wither and die instantly."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, it can be cast as a Bonus Action instead of an Action."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "necrotic"
+        ],
+        "savingThrow": [
+            "constitution"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Illusory Dragon",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "I",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 120
+            }
+        },
+        "components": {
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "By gathering threads of shadow material from the Unformed Maze, you create a Huge shadowy dragon in an unoccupied space that you can see within range. The illusion lasts for the spell's duration and occupies its space, as if it were a creature.",
+            "When the illusion appears, any of your enemies that can see it must succeed on a Wisdom saving throw or become {@condition frightened} of it for 1 minute.  If a creature fails the Wisdom saving throw by 5 or more they are {@condition paralyzed} while {@condition frightened} in this way. If a {@condition frightened} creature ends its turn in a location where it doesn't have line of sight to the illusion, it can repeat the saving throw, ending the effect on itself on a success.",
+            "As a bonus action on your turn, you can move the illusion up to 60 feet. At any point during its movement, you can cause it to exhale a blast of energy in a 60-foot cone originating from its space. When you create the dragon, choose a damage type: acid, cold, fire, lightning, necrotic, poison, radiant, or thunder. Each creature in the cone must make an Intelligence saving throw, taking {@damage 8d10} damage of the chosen damage type on a failed save, or half as much damage on a successful one.",
+            "The illusion is tangible because of the shadow stuff used to create it, but attacks miss it automatically, it succeeds on all saving throws, and it is immune to all damage and conditions. A creature that uses an action to examine the dragon can determine that it is an illusion by succeeding on an Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through it and has advantage on saving throws against its breath."
+        ],
+        "damageInflict": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "necrotic",
+            "poison"
+        ],
+        "conditionInflict": [
+            "frightened"
+        ],
+        "savingThrow": [
+            "wisdom",
+            "intelligence"
+        ],
+        "abilityCheck": [
+            "intelligence"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Incendiary Cloud",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "C",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 150
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "A swirling cloud of smoke shot through with white-hot embers appears in a 20-foot-radius sphere centered on a point within range. The cloud spreads around corners and is {@quickref Vision and Light|PHB|2||heavily obscured}. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.",
+            "When the cloud appears, each creature in it must make a Dexterity saving throw. A creature takes {@damage 10d8} fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.",
+            "Each creature that is completely within the cloud at the start of its turn must make a Constitution saving throw due to the thick smoke and ash in the area.  On a failed save, the creature spends its action that turn choking and gasping for breath.  Creatures that do not need to breathe automatically succeed on this saving throw.",
+            "The cloud moves 10 feet in a direction that you choose at the start of each of your turns."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "fire"
+        ],
+        "savingThrow": [
+            "dexterity"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromClassListVariant": [
+                {
+                    "name": "Druid",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Maddening Darkness",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 150
+            }
+        },
+        "components": {
+            "v": true,
+            "m": "a drop of pitch mixed with a drop of mercury"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 10
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "Magical darkness spreads from a point you choose within range to fill a 60-foot-radius sphere until the spell ends. The darkness spreads around corners. A creature with {@sense darkvision} can't see through this darkness. Non-magical light, as well as light created by spells of 8th level or lower, can't illuminate the area.",
+            "Shrieks, gibbering, and mad laughter can be heard within the sphere. Whenever a creature starts its turn in the sphere, it must make a Wisdom saving throw, taking {@damage 13d8} psychic damage on a failed save, or half as much damage on a successful one.  A creature that takes psychic damage from this spell is unable to concentrate and if they were concentrating their concentration is broken.",
+            "If a creature attempts to cast a spell that requires concentration while in the area of the spell, the spell casting fails and the spell slot is consumed."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, grants a duration that does not require concentration."
+                ]
+            }
+        ],
+        "damageInflict": [
+            "psychic"
+        ],
+        "savingThrow": [
+            "wisdom"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Power Word Stun",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "E",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 60
+            }
+        },
+        "components": {
+            "v": true
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "You speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is {@condition stunned}. If it has more than 150 hit points, it must make a Constitution saving throw or be {@condition stunned}.",
+            "The {@condition stunned} target must make a Constitution saving throw at disadvantage at the end of each of its turns. On a successful save, this stunning effect ends."
+        ],
+        "entriesHigherLevel": [
+            {
+                "type": "entries",
+                "name": "At Higher Levels",
+                "entries": [
+                    "When you cast this spell using a spell slot of 9th level or higher, the range is increased by an additional 60 feet."
+                ]
+            }
+        ],
+        "conditionInflict": [
+            "stunned"
+        ],
+        "savingThrow": [
+            "constitution"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Bard",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Sunburst",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "V",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "feet",
+                "amount": 150
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true,
+            "m": "fire and a piece of sunstone"
+        },
+        "duration": [
+            {
+                "type": "instant"
+            }
+        ],
+        "entries": [
+            "Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a Constitution saving throw. On a failed save, a creature takes {@damage 12d6} radiant damage and is {@condition blinded}. On a successful save, it takes half as much damage and isn't {@condition blinded} by this spell. Undead, creatures with sunlight sensitivity, and oozes have disadvantage on this saving throw.",
+            "Undead with a Challenge Rating of 4 or lower are automatically destroyed and disintegrated.",
+            "A creature {@condition blinded} by this spell makes another Constitution saving throw after one minute has passed. On a successful save, it is no longer {@condition blinded}.",
+            "This spell dispels any darkness in its area that was created by a spell."
+        ],
+        "damageInflict": [
+            "radiant"
+        ],
+        "conditionInflict": [
+            "blinded"
+        ],
+        "savingThrow": [
+            "constitution"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Sorcerer",
+                    "source": "PHB"
+                },
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromClassListVariant": [
+                {
+                    "name": "Cleric",
+                    "source": "PHB",
+                    "definedInSource": "TCE"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                },
+                {
+                    "class": {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Divine Soul",
+                        "shortName": "Divine Soul",
+                        "source": "XGE"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Telepathy",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "D",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "unlimited"
+            }
+        },
+        "components": {
+            "s": true,
+            "m": "a pair of linked silver rings"
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "hour",
+                    "amount": 24
+                }
+            }
+        ],
+        "entries": [
+            "You create a telepathic link between yourself and a willing creature with which you are familiar.",
+            "Until the spell ends, you and the target can instantaneously share words, images, sounds, and other sensory messages with one another through the link, and the target recognizes you as the creature it is communicating with. The spell enables a creature with an Intelligence score of at least 1 to understand the meaning of your words and take in the scope of any sensory messages you send to it."
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Wizard",
+                    "source": "PHB"
+                }
+            ],
+            "fromSubclass": [
+                {
+                    "class": {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    "subclass": {
+                        "name": "Arcana Domain",
+                        "shortName": "Arcana",
+                        "source": "SCAG"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "Tsunami",
+        "source": "MateriaSourceOfTruth",
+        "level": 8,
+        "school": "C",
+        "time": [
+            {
+                "number": 1,
+                "unit": "action"
+            }
+        ],
+        "range": {
+            "type": "point",
+            "distance": {
+                "type": "sight"
+            }
+        },
+        "components": {
+            "v": true,
+            "s": true
+        },
+        "duration": [
+            {
+                "type": "timed",
+                "duration": {
+                    "type": "minute",
+                    "amount": 1
+                },
+                "concentration": true
+            }
+        ],
+        "entries": [
+            "A wall of water springs into existence at a point you choose within range. You can make the wall up to 300 feet long, 300 feet high, and 50 feet thick. The wall lasts for the duration.",
+            "When the wall appears, each creature within its area must make a Strength saving throw. On a failed save, a creature takes {@damage 6d10} bludgeoning damage, or half as much damage on a successful save.",
+            "At the start of each of your turns after the wall appears, the wall, along with any creatures in it, moves 50 feet away from you. Any Huge or smaller creature inside the wall or whose space the wall enters when it moves must succeed on a Strength saving throw or take {@damage 5d10} bludgeoning damage. A creature can take this damage only once per round. At the end of the turn, the wall's height is reduced by 50 feet, and the damage creatures take from the spell on subsequent rounds is reduced by {@dice 1d10}. When the wall reaches 0 feet in height, the spell ends.",
+            "A creature caught in the wall can move by swimming. Because of the force of the wave, though, the creature must make a successful Strength ({@skill Athletics}) check against your spell save DC in order to move at all. If it fails the check, it can't move. A creature that moves out of the area falls to the ground."
+        ],
+        "damageInflict": [
+            "bludgeoning"
+        ],
+        "savingThrow": [
+            "strength"
+        ],
+        "abilityCheck": [
+            "strength"
+        ],
+        "classes": {
+            "fromClassList": [
+                {
+                    "name": "Druid",
+                    "source": "PHB"
                 }
             ]
         }
