@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1686933390
+        "dateLastModified": 1706425970
 	},
 	"class": [
 		{
@@ -101,23 +101,23 @@
 						0,
 						2,
 						2,
-						2,
+						3,
 						3,
 						3,
 						4,
 						4,
 						5,
 						5,
-						5,
 						6,
 						6,
 						6,
-						7,
 						7,
 						7,
 						8,
 						8,
-						8
+						9,
+						9,
+						10
 					]
 				},
 				{
@@ -256,7 +256,7 @@
 							5,
 							2,
 							"{@filter 2nd|spells|level=2|class=Warlock}",
-							2
+							3
 						],
 						[
 							3,
@@ -296,7 +296,7 @@
 						[
 							4,
 							10,
-							2,
+							3,
 							"{@filter 5th|spells|level=5|class=Warlock}",
 							5
 						],
@@ -305,7 +305,7 @@
 							11,
 							3,
 							"{@filter 5th|spells|level=5|class=Warlock}",
-							5
+							6
 						],
 						[
 							4,
@@ -326,28 +326,21 @@
 							12,
 							3,
 							"{@filter 5th|spells|level=5|class=Warlock}",
-							6
-						],
-						[
-							4,
-							13,
-							3,
-							"{@filter 5th|spells|level=5|class=Warlock}",
 							7
 						],
 						[
 							4,
 							13,
-							3,
+							4,
 							"{@filter 5th|spells|level=5|class=Warlock}",
 							7
 						],
 						[
 							4,
-							14,
+							13,
 							4,
 							"{@filter 5th|spells|level=5|class=Warlock}",
-							7
+							8
 						],
 						[
 							4,
@@ -358,27 +351,35 @@
 						],
 						[
 							4,
-							15,
+							14,
 							4,
 							"{@filter 5th|spells|level=5|class=Warlock}",
-							8
+							9
 						],
 						[
 							4,
 							15,
-							4,
+							5,
 							"{@filter 5th|spells|level=5|class=Warlock}",
-							8
+							9
+						],
+						[
+							4,
+							15,
+							5,
+							"{@filter 5th|spells|level=5|class=Warlock}",
+							10
 						]
 					]
 				}
 			],
 			"classFeatures": [
-				"Pact Magic|Warlock|MateriaSourceOfTruth|1",
+				"Eldritch Blast|Warlock|MateriaSourceOfTruth|1",
 				{
 					"classFeature": "Otherworldly Patron|Warlock|MateriaSourceOfTruth|1",
 					"gainSubclassFeature": true
 				},
+				"Pact Magic|Warlock|MateriaSourceOfTruth|1",
 				"Eldritch Invocations|Warlock|MateriaSourceOfTruth|2",
 				"Pact Boon|Warlock|MateriaSourceOfTruth|3",
 				"Ability Score Improvement|Warlock|MateriaSourceOfTruth|4",
@@ -396,6 +397,7 @@
 					"classFeature": "Otherworldly Patron feature|Warlock|MateriaSourceOfTruth|10",
 					"gainSubclassFeature": true
 				},
+                "Improved Eldritch Blast (3)|Warlock|MateriaSourceOfTruth|11|MateriaSourceOfTruth",
 				"Otherworldly Glimpse|Warlock|MateriaSourceOfTruth|11",
 				"Mystic Arcanum (6th level)|Warlock|MateriaSourceOfTruth|11",
 				"Ability Score Improvement|Warlock|MateriaSourceOfTruth|12",
@@ -407,8 +409,9 @@
 				},
 				"Mystic Arcanum (8th level)|Warlock|MateriaSourceOfTruth|15",
 				"Ability Score Improvement|Warlock|MateriaSourceOfTruth|16",
-				"Mystic Arcanum (9th level)|Warlock|MateriaSourceOfTruth|17",
                 "Improved Pact Boon (3)|Warlock|MateriaSourceOfTruth|17|MateriaSourceOfTruth",
+                "Improved Eldritch Blast (4)|Warlock|MateriaSourceOfTruth|17|MateriaSourceOfTruth",
+				"Mystic Arcanum (9th level)|Warlock|MateriaSourceOfTruth|17",
 				"Ability Score Improvement|Warlock|MateriaSourceOfTruth|19",
 				"Eldritch Master|Warlock|MateriaSourceOfTruth|20"
 			],
@@ -686,6 +689,10 @@
 			"additionalSpells": [
 				{
 					"expanded": {
+						"s0": [
+							"guidance",
+							"vicious mockery"
+						],
 						"s1": [
 							"faerie fire",
 							"sleep"
@@ -710,7 +717,8 @@
 				}
 			],
 			"subclassFeatures": [
-				"The Archfey|Warlock|MateriaSourceOfTruth|Archfey|MateriaSourceOfTruth|1",
+                "The Archfey|Warlock|MateriaSourceOfTruth|Archfey|MateriaSourceOfTruth|1",
+				"Puckish Twist|Warlock|MateriaSourceOfTruth|Archfey|MateriaSourceOfTruth|1",
 				"Misty Escape|Warlock|MateriaSourceOfTruth|Archfey|MateriaSourceOfTruth|6",
 				"Beguiling Defenses|Warlock|MateriaSourceOfTruth|Archfey|MateriaSourceOfTruth|10",
 				"Dark Delirium|Warlock|MateriaSourceOfTruth|Archfey|MateriaSourceOfTruth|14"
@@ -1206,6 +1214,16 @@
 			]
 		},
 		{
+			"name": "Eldritch Blast",
+			"source": "MateriaSourceOfTruth",
+			"className": "Warlock",
+			"classSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"entries": [
+				"Beginning at 1st level, as an action, you can fire a beam of crackling energy that streaks toward a creature within 120 feet. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} force damage. You must provide a verbal and somatic component as if casting a spell."
+			]
+		},
+		{
 			"name": "Eldritch Invocations",
 			"source": "MateriaSourceOfTruth",
 			"className": "Warlock",
@@ -1289,7 +1307,7 @@
 			"classSource": "MateriaSourceOfTruth",
 			"level": 5,
 			"entries": [
-				"Beginning at 5th level, your growing manifestation of the pact held with your patron is represented by the granted ability for you to cast {@spell Eldritch Blast} cantrip, but it does not count against your number of cantrips known. If you already know {@spell Eldritch Blast} than pick another cantrip from the warlock spell list."
+				"Beginning at 5th level, your Eldritch Blast now fires two beams when cast."
 			]
 		},
 		{
@@ -1330,7 +1348,7 @@
 			"classSource": "MateriaSourceOfTruth",
 			"level": 9,
 			"entries": [
-				"At 9th level, the damage increases to {@damage 1d12} force damage per beam of {@spell Eldritch Blast}."
+				"At 9th level, the damage increases to {@damage 1d12} force damage per beam of Eldritch Blast."
 			]
 		},
 		{
@@ -1354,13 +1372,23 @@
 			]
 		},
         {
+			"name": "Improved Eldritch Blast (3)",
+			"source": "MateriaSourceOfTruth",
+			"className": "Warlock",
+			"classSource": "MateriaSourceOfTruth",
+			"level": 11,
+			"entries": [
+				"At 11th level, your Eldritch Blast now fires three beams when cast."
+			]
+        },
+        {
 			"name": "Otherworldly Glimpse",
 			"source": "MateriaSourceOfTruth",
 			"className": "Warlock",
 			"classSource": "MateriaSourceOfTruth",
 			"level": 11,
 			"entries": [
-				"Beginning at 11th level, your patron allows you to draw on powers that have potentially always been available to you. You can cast any spell from your Expanded Spell List is if you know the spell with your Pact Magic spell slot without the need of material components, once per long rest."
+				"Beginning at 11th level, your patron allows you to draw on powers that have potentially always been available to you. You can cast any spell from your Expanded Spell List as if you know the spell with your Pact Magic spell slot without the need of material components, once per long rest."
 			]
         },
 		{
@@ -1394,7 +1422,7 @@
 			"classSource": "MateriaSourceOfTruth",
 			"level": 13,
 			"entries": [
-				"Beginning at 13th level, when you reduce a creature to 0 hit points with a warlock spell or your pact weapon you may attempted to usher their soul to your patron (at your DM's discretion). You can roll a {@dice d6}. On a 4 or higher, you regain an expended pact magic spell slot. You can attempt this a number of times equal to your Charisma modifier (minimum of 1) per long rest."
+				"Beginning at 13th level, when you reduce a creature to 0 hit points with your Eldritch Blast, a warlock spell, or your pact weapon you may attempt to usher their soul to your patron (at your DM's discretion). You can roll a {@dice d6}. On a 4 or higher, you regain an expended pact magic spell slot. You can attempt this a number of times equal to your Charisma modifier (minimum of 1) per long rest."
 			]
 		},
 		{
@@ -1405,7 +1433,8 @@
 			"level": 13,
 			"entries": [
 				"At 13th level, your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 7th-level spell from the warlock spell list|spells|level=7|class=Warlock} as this arcanum.",
-				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
+                "Additionally, when you gain a level in this class, you can replace one of your Mystic Arcanum spell choices with another spell from the warlock spell list of the same level."
 			]
 		},
 		{
@@ -1426,7 +1455,8 @@
 			"level": 15,
 			"entries": [
 				"At 15th level, your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 8th-level spell from the warlock spell list|spells|level=8|class=Warlock} as this arcanum.",
-				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
+                "Additionally, when you gain a level in this class, you can replace one of your Mystic Arcanum spell choices with another spell from the warlock spell list of the same level."
 			]
 		},
 		{
@@ -1448,9 +1478,20 @@
 			"level": 17,
 			"entries": [
 				"At 17th level, your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 9th-level spell from the warlock spell list|spells|level=9|class=Warlock} as this arcanum.",
-				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
+                "Additionally, when you gain a level in this class, you can replace one of your Mystic Arcanum spell choices with another spell from the warlock spell list of the same level."
 			]
 		},
+        {
+			"name": "Improved Eldritch Blast (4)",
+			"source": "MateriaSourceOfTruth",
+			"className": "Warlock",
+			"classSource": "MateriaSourceOfTruth",
+			"level": 17,
+			"entries": [
+				"At 17th level, your Eldritch Blast now fires four beams when cast."
+			]
+        },
 		{
 			"name": "Improved Pact Boon (3)",
 			"source": "MateriaSourceOfTruth",
@@ -1557,6 +1598,19 @@
 			"entries": [
 				"Starting at 1st level, your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you can cause any creature of your choice within 30 feet of you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all {@condition charmed} or {@condition frightened} by you (your choice) until the end of your next turn.",
 				"Once you use this feature, you can't use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Puckish Twist",
+			"source": "MateriaSourceOfTruth",
+			"className": "Warlock",
+			"classSource": "MateriaSourceOfTruth",
+			"subclassShortName": "Archfey",
+			"subclassSource": "MateriaSourceOfTruth",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Beginning at 1st level, when you target a single creature with an ability or warlock spell and that target succeeds on a saving throw causing nothing to happen, you can use your reaction to redirect the ability or warlock spell at another target within range of the original effect.  The new target must succeed a saving throw against the effect."
 			]
 		},
 		{

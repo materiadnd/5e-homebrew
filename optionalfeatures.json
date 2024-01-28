@@ -17,7 +17,7 @@
 			}
 		],
         "dateAdded": 0,
-        "dateLastModified": 1697053635
+        "dateLastModified": 1706425970
 	},
 	"optionalfeature": [
 		{
@@ -341,28 +341,43 @@
 				}
 			],
 			"entries": [
-				"You learn the {@spell find familiar} spell and can cast it as a ritual. The spell doesn't count against your number of spells known.",
-				"When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: {@creature imp}, {@creature pseudodragon}, {@creature quasit}, {@creature sprite}, or others as introduced in Volo's Guide to Everything.  If you choose the psuedodragon or any appropriate familiar that does not have the ability to turn invisible may choose to do the following as an action:",
+				"You learn the {@spell find familiar|MateriaSourceOfTruth} spell and can cast it as a ritual. The spell doesn't count against your number of spells known.",
+				"When you cast the spell, your Otherworldly Familiar's stat block utilizes all three environment options at the same time.  Your familiar also gains proficiency in a number of skills of your choice equal to your proficiency bonus when summoned.  Also, its appearance can be that of a tiny bipedal creature similar to an imp, pseudodragon, or sprit.",
+				"Your familiar is more resilient than most.  Its Hit Points equal 10 + 5 for each spell level above 1st instead, and it has the Magic Resistance trait which gives it advantage on saving throws against spells and other magical effects.  When the familiar is within 10 feet of you, you share the familiar's Magic Resistance trait.",
+				"When you take the Attack action, you can forego one of your attacks to allow your familiar to make one attack with its reaction.",
+				"You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence.  Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech.",
+				"Your familiar ganes some unique Actions:",
                 {
-                    "type": "entries",
-                    "name": "Invisibility",
-                    "entries": [
-                        "The familiar magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the familiar wears or carries is invisible with it.",
-                        "Additionally, when you take the {@action Attack} action, you can forgo one of your own attacks to allow your familiar to make one attack with its reaction."
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+							"name": "Invisibility",
+                            "entries": [
+                                "The familiar magically turns {@condition invisible} until it attacks or until its concentration ends (as if concentrating on a spell).  Any equipment the familiar wears or carries is invisible with it."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+							"name": "Shapechanger",
+                            "entries": [
+                                "The familiar can assume a form that resembles a Tiny animal of your choice of environment.  Its statistics are the same in each form, except for the speed changes noted for the chosen environment.  Any equipment it is wearing or carrying is not transformed.  It reverts to its true form if it dies."
+                            ]
+                        }
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Enduring Chains",
                     "entries": [
-                        "At 5th level in warlock, your familiar appears with more hit points than normal: your Charsima modifier (minimum of 1) extra hit points per Hit Die it has."
+                        "At 5th level in warlock, your familiar adds your Charisma modifier (minimum of 1) to all of its saving throws."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Linked Invocations",
                     "entries": [
-                        "At 9th level in warlock, your familiar learns half of your Eldritch Invocation options. If the invocation has a prerequestite of any kind, then your familiar cannot learn it. If the invocation grants the ability to cast spells then the familiar can only learn those that have a range of Self."
+                        "At 9th level in warlock, your familiar learns half of your Eldritch Invocation options. If the invocation has a prerequestite of any kind, then your familiar cannot learn it. If the invocation grants the ability to cast spells then the familiar can only learn those that have a range of Self.  Each time you summon your familiar using the {@spell find familiar|MateriaSourceOfTruth} spell you choose which invocations your familiar has."
                     ]
                 },
                 {
